@@ -1,0 +1,27 @@
+section#hero {
+    background-image: url("./img/header_homepage.webp");
+    background-size: cover;
+    background-position: center bottom;
+    padding: 100px 0;
+}
+section#home-page-content {
+    background-color: $rmmh_gray;
+
+    .home-page-card {
+        padding: 24px;
+        min-height: 265px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+
+        h3 {
+            font-size: 18px !important;
+        }
+
+        a {
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+}

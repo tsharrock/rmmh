@@ -1,0 +1,198 @@
+@import "bootstrap/scss/bootstrap";
+
+html, body {
+    height: 100%;
+}
+
+/* Apply Inter to the entire site as the base font */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333; /* Soft black for better readability */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Apply Montserrat to all headings for a bold, authoritative look */
+h1, h2, h3, h4, .site-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em; /* Tighter spacing looks more modern */
+    color: #1a1a1a;
+}
+
+/* Optional: Make your call-to-action buttons pop */
+.button, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+
+$rmmh_red: #d3203b;
+
+.rmmh_red {
+    color: $rmmh_red;
+}
+
+.bg_rmmh_red {
+    background-color: $rmmh_red;
+}
+
+
+$rmmh_gray: #f0f3f3;
+
+.rmmh_gray {
+    color: $rmmh_gray;
+}
+.bg_rmmh_gray {
+    background-color: $rmmh_gray;
+}
+
+
+.fs-14 {
+    font-size: 14px;
+}
+
+a.appt, button.appt {
+    border-radius: 8px;
+    background-color: $rmmh_red;
+    color: white;
+
+    &:hover {
+        color: white;
+        background-color: #971227;
+    }
+}
+
+.hero {
+    padding: 150px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &.about {
+        background-image: url("./img/header_about.webp");
+        background-size: 100%;
+        background-position: center 50%;
+    }
+    &.psychiatric-care {
+        background-image: url("./img/header_psych.webp");
+    }
+    &.ketamine {
+        background-image: url("./img/header_mental_health.webp");
+    }
+    &.family-medicine {
+        background-image: url("./img/header_family_medicine.webp");
+        background-position: center bottom;
+    }
+    &.weight {
+        background-image: url("./img/header_weight_loss.webp");
+    }
+    &.iv {
+        background-image: url("./img/header_iv.webp");
+        background-position: center bottom;
+    }
+    &.telehealth {
+        background-image: url("./img/header_telehealth.webp");
+        background-position: center 39%;
+    }
+
+}
+
+.sidebar-border {
+    border-top: 1px solid $rmmh_red;
+
+    @media (min-width: 768px) {
+        border-left: 1px solid $rmmh_red;
+        border-radius: 10px 0 0 0;
+    }
+
+    .nextpatient-provider-image-cell, .nextpatient-provider-small-photo {
+        display: none !important;
+    }
+    .nextpatient-provider-table .nextpatient-provider {
+        border: none !important;
+    }
+    .nextpatient-provider-name {
+        display: none;
+    }
+    img {
+        width: 150px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+}
+
+.divider-line {
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid $rmmh_gray;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    @media (min-width: 992px) {
+        margin-top: 56px;
+        margin-bottom: 56px;
+    }
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.breadcrumb {
+    margin-bottom: 32px;
+    a {
+        color: $rmmh_red;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    span {
+        padding: 0 8px;
+    }
+}
+
+.question {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+footer {
+    font-size: 14px;
+    border-top: 1px solid #dee2e6;
+
+    .copy {
+        font-size: 12px;
+    }
+}
+
+div.contact {
+    h4 {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    a {
+        color: black
+    }
+}
+.form-wrapper {
+    border-radius: 8px;
+    padding: 24px;
+    background-color: #ededec;
+
+    .form-error {
+        color: red;
+        font-size: 11px;
+    }
+
+}
+.form-label {
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+@import "buttons";
+@import "home_page";
+@import "about";
+
