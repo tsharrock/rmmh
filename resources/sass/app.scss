@@ -192,6 +192,13 @@ div.contact {
     margin-top: 16px;
 }
 
+section#service-area-footer {
+    background-color: #e0b973;
+    .table > :not(caption) > * > * {
+        background-color: transparent;
+    }
+}
+
 @import "buttons";
 @import "home_page";
 @import "about";
