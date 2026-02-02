@@ -16,7 +16,7 @@
         </div>
     </div>
 </section>
-<section id="home-page-content">
+<section id="page-content">
     <div class="container py-lg-5">
         <div class="row">
             <div class="col">
@@ -25,45 +25,45 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4 mb-lg-3">
-                <div class="home-page-card">
+                <div class="info-card">
                     <h3 class="text-center">Psychiatric Care</h3>
                     <p>Comprehensive diagnosis and medication management for conditions ranging from anxiety and depression to ADHD and bipolar disorder, focused on long-term mental stability.</p>
-                    <p><a class="rmmh_red" href="#">Read More</a></p>
+                    <p class="link"><a class="rmmh_red" href="#">Read More</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-lg-3">
-                <div class="home-page-card">
+                <div class="info-card">
                     <h3 class="text-center">Ketamine Therapy</h3>
                     <p>An innovative, rapid-acting treatment using intramuscular injections to help repair neural pathways for patients struggling with treatment-resistant depression, PTSD, and chronic pain.</p>
-                    <p><a class="rmmh_red" href="#">Read More</a></p>
+                    <p class="link"><a class="rmmh_red" href="#">Read More</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-lg-3">
-                <div class="home-page-card">
+                <div class="info-card">
                     <h3 class="text-center">Family Medicine & Women’s Health</h3>
                     <p>Holistic primary care that integrates annual wellness exams and chronic disease management with specialized women’s services like contraception and hormonal health.</p>
-                    <p><a class="rmmh_red" href="#">Read More</a></p>
+                    <p class="link"><a class="rmmh_red" href="#">Read More</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="home-page-card">
+                <div class="info-card">
                     <h3 class="text-center">Medical Weight Loss</h3>
                     <p>Evidence-based weight management programs featuring GLP-1 medications (like Semaglutide) combined with nutritional support to help you achieve and maintain a healthy weight.</p>
-                    <p><a class="rmmh_red" href="#">Read More</a></p>
+                    <p class="link"><a class="rmmh_red" href="#">Read More</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="home-page-card">
+                <div class="info-card">
                     <h3 class="text-center">IV Therapy & Injectables</h3>
                     <p>Customizable nutrient infusions and vitamin injections designed to instantly boost energy, enhance immunity, and accelerate physical recovery.</p>
-                    <p><a class="rmmh_red" href="#">Read More</a></p>
+                    <p class="link"><a class="rmmh_red" href="#">Read More</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="home-page-card">
+                <div class="info-card">
                     <h3 class="text-center">Telehealth Services</h3>
                     <p>Convenient virtual consultations that allow you to receive high-quality psychiatric care, medication management, and medical follow-ups from the comfort and privacy of your own home.</p>
-                    <p><a class="rmmh_red" href="#">Read More</a></p>
+                    <p class="link"><a class="rmmh_red" href="#">Read More</a></p>
                 </div>
             </div>
         </div>

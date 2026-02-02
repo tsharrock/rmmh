@@ -96,6 +96,10 @@ a.appt, button.appt {
         background-image: url("./img/header_telehealth.webp");
         background-position: center 39%;
     }
+    &.cedar-city {
+        background-image: url("./img/header_cedar_city.webp");
+        background-position: center 39%;
+    }
 
 }
 
@@ -196,6 +200,33 @@ section#service-area-footer {
     background-color: #e0b973;
     .table > :not(caption) > * > * {
         background-color: transparent;
+    }
+}
+
+section#page-content {
+    background-color: $rmmh_gray;
+}
+
+.info-card {
+    padding: 24px;
+    min-height: 290px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    height: 100%;
+    position: relative;
+    h3 {
+            font-size: 18px !important;
+        }
+
+    a {
+        font-weight: 600;
+        text-decoration: none;
+    }
+    p.link {
+        position: absolute;
+        bottom: 24px;
     }
 }
 
