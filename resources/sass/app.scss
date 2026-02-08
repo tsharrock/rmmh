@@ -100,6 +100,22 @@ a.appt, button.appt {
         background-image: url("./img/header_cedar_city.webp");
         background-position: center 39%;
     }
+    &.salt-lake-city {
+        background-image: url("./img/header_salt_lake_city.webp");
+        background-position: center 39%;
+    }
+    &.st-george {
+        background-image: url("./img/header_st_george.webp");
+        background-position: center 39%;
+    }
+    &.ogden {
+        background-image: url("./img/header_ogden.webp");
+        background-position: center 39%;
+    }
+    &.provo {
+        background-image: url("./img/header_provo.webp");
+        background-position: center 39%;
+    }
 
 }
 
@@ -216,6 +232,7 @@ section#page-content {
     border-radius: 5px;
     height: 100%;
     position: relative;
+    font-size: 15px;
     h3 {
             font-size: 18px !important;
         }

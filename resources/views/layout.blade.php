@@ -6,7 +6,7 @@
 
         <title>@yield('title')</title>
         <meta name="description" content="@yield('description', 'Redmond Medical and Mental Health')">
-
+        <meta name="keywords" content="@yield('keywords', 'Salt Lake City Psychiatry, St. George Weight Loss, Ogden Online Therapy, Provo Mental Health')">
 
         <link rel="icon" type="image/png" href="/cross_icon.png">
 
@@ -19,6 +19,8 @@
 
         <!-- Styles / Scripts -->
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+        @yield('jsonld')
 
     </head>
     <body>
