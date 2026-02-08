@@ -23,6 +23,7 @@ class ContactMail extends Mailable
     public function build()
     {
         return $this->subject('New Contact Form Submission')
+            ->to(env('MAIL_TO_ADDRESS'))
             ->view('emails.contact_template');
     }
 }

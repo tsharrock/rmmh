@@ -20,8 +20,9 @@ class ContactController extends Controller
             'message' => 'required|string',
         ]);
 
+
         // Send the email to the admin
-        Mail::to('admin@redmondmmh.com')->send(new ContactMail($contactData));
+        Mail::to(env('MAIL_TO_ADDRESS'))->send(new ContactMail($contactData));
 
         return back()->with('success', 'Thank you! Your message has been sent.');
     }
