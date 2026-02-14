@@ -65,12 +65,6 @@
         padding-left: 5px;
     }
 
-    .location-text {
-        font-weight: bold;
-        color: var(--white);
-        display: block;
-    }
-
     .footer-bottom {
         max-width: 1100px;
         margin: 50px auto 0 auto;
@@ -121,16 +115,15 @@
         </div>
 
         <div class="footer-col">
-            <h4>Northern Utah</h4>
+            <h4>Serving remotely through telehealth</h4>
             <ul>
-                <li><a href="/cache-valley"><strong>Cache Valley:</strong> All Medical & Mental Health Services</a></li>
+                <li><a href="{{ route('logan-cache-valley') }}"><strong>Cache Valley:</strong> All Medical & Mental Health Services</a></li>
                 <li><a href="/telehealth/salt-lake-city"><strong>Salt Lake City:</strong> Telehealth</a></li>
                 <li><a href="/telehealth/ogden"><strong>Ogden:</strong> Telehealth</a></li>
             </ul>
         </div>
 
         <div class="footer-col">
-            <h4>Southern & Specialized</h4>
             <ul>
                 <li><a href="/telehealth/provo"><strong>Provo:</strong> Telehealth</a></li>
                 <li><a href="/telehealth/st-george"><strong>St. George:</strong> Telehealth</a></li>

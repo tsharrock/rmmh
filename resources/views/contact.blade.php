@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-lg-4 offset-lg-2">
                 <h4 class="mt-4">Redmond Medical and Mental Health</h4>
-                <p>3935 N. 75 W., Hyde Park, UT 84318</p>
+                <p>245 N 700 W, Hyde Park, UT 84318</p>
                 <a href="tel:4359381440">(435) 938-1440</a>
 
                 <h4 class="mt-4">Email us at:</h4>
@@ -38,7 +38,7 @@
 
             </div>
             <div class="col-lg-3 offset-lg-1">
-                <h4 class="mt-4">Send us an email</h4>
+                <h4 class="my-4">Send us an email</h4>
                 <div class="form-wrapper">
                     @if(session('success'))
                         <div class="alert alert-success">{{ session('success') }}</div>
@@ -46,8 +46,8 @@
 
                     <form action="{{ route('contact.submit') }}" method="POST">
                         @csrf
-                        <div class="mt-3">
-                            <label class="form-label" for="name">Name</label>
+                        <div>
+                            <label class="form-label mt-0" for="name">Name</label>
                             <input class="form-control" id="name" type="text" name="name" value="{{ old('name') }}" >
                             @error('name') <span class="form-error">{{ $message }}</span> @enderror
                         </div>
@@ -69,7 +69,7 @@
                             <textarea class="form-control" id="message" name="message" >{{ old('message') }}</textarea>
                         </div>
 
-                        <button type="submit" class="btn rmmh_button_primary">Send Message</button>
+                        <button type="submit" class="btn rmmh_button_primary mt-3">Send Message</button>
                     </form>
                 </div>
             </div>

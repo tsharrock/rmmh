@@ -51,7 +51,9 @@ Route::get('/telehealth', function () {
 Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
-Route::view('/cache-valley', 'cache-valley')->name('cache-valley');
+Route::view('/logan', 'logan')->name('logan');
+
+Route::view('/logan-cache-valley', 'logan-cache-valley')->name('logan-cache-valley');
 Route::view('/telehealth/salt-lake-city', 'telehealth.salt-lake-city')->name('telehealth.salt-lake-city');
 Route::view('/telehealth/ogden', 'telehealth.ogden')->name('telehealth.ogden');
 Route::view('/telehealth/provo', 'telehealth.provo')->name('telehealth.provo');
