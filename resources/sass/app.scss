@@ -76,7 +76,13 @@ a.appt, button.appt {
         background-position: center 50%;
     }
     &.psychiatric-care {
-        background-image: url("./img/header_psych.webp");
+        background-image: url(https://rmmh.test:5174/resources/sass/img/header_psych.jpg);
+        padding: 160px 0;
+        background-position: center 80%;
+        color: #fff !important;
+        h1 {
+            color: #fff !important;
+        }
     }
     &.ketamine {
         background-image: url("./img/header_mental_health.webp");
