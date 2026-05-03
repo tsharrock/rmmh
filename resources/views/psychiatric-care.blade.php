@@ -1,7 +1,8 @@
 @extends('layout')
 
-@section('title', 'Psychiatric Medication Management & ADHD Treatment | Redmond Medical & Mental Health | Hyde Park, UT')
-@section('description', 'Specialized mental health care in Redmond. We provide expert diagnosis and medication management for ADHD, anxiety, depression, and bipolar disorder. Accepting new patients.')
+@section('title', 'Psychiatric Medication Management & ADHD Treatment | Utah & Arizona')
+@section('description', 'Specialized mental health care in Utah and Arizona. We provide expert diagnosis and medication management for ADHD, anxiety, depression, bipolar disorder, and addictions.')
+@section('keywords', 'Psychiatric Medication Management Utah, ADHD Treatment Arizona, Depression Help, Bipolar Disorder Care, Mental Health Services Utah')
 
 @section('content')
     <div class="hero psychiatric-care border-bottom">
@@ -16,23 +17,27 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-md-8">
-                <p>At Redmond Medical and Mental Health, we care for our patients. Tiffany offers compassionate support for a wide range of mental health concerns. With integrated care, patients can receive medication management and routine health services all in one convenient, welcoming location. We're here to help you and your family feel your best—every day.</p></p>
+                <div class="breadcrumb">
+                    <a href="{{ route('home') }}">Home</a> <span>></span> Psychiatric Care
+                </div>
+                <p>When you schedule a psychiatric appointment with Tiffany, rest assured that you’re in good hands; she has been practicing in mental health for over 30 years! Tiffany offers compassionate support for a wide range of mental health concerns including:</p>
                 <ul>
                     <li>Depression</li>
-                    <li>IM Ketamine Therapy</li>
                     <li>Anxiety and Panic Disorders</li>
-                    <li>Drug/Alcohol Addiction</li>
-                    <li>Suboxone Treatment</li>
+                    <li>Drug/Alcohol Addiction with Suboxone Treatment</li>
+                    <li>Anger and Irritability</li>
                     <li>Bipolar Disorder</li>
                     <li>Schizophrenia</li>
-                    <li>Schizoaffective Disorder</li>
                     <li>Borderline Personality Disorder</li>
-                    <li>Obesity and Weight Loss (Semaglutide therapy)</li>
-                    <li>Obsessive-Compulsive Disorders</li>
-                    <li>Attention-Deficit Disorders</li>
+                    <li>Obsessive-Compulsive Disorder</li>
+                    <li>Attention Deficit Disorders</li>
                     <li>Sleep Disorders</li>
                     <li>Eating Disorders</li>
+                    <li>Behavioral/Conduct Disorders</li>
+                    <li>Sexual Addictions</li>
+                    <li>Skin Picking/Excoriation Disorders</li>
                 </ul>
+                <p>At your appointment, Tiffany will review your medical and psychiatric history and may prescribe medications, order or draw labs on site, refer for therapeutic services or counseling, recommend additional services such as ketamine therapy or trans-magnetic stimulation and schedule your follow-up appointment. You will be able to text, call or email our staff should you have any questions after your appointment.</p>
 
             </div>
             <div class="col-md-4">

@@ -1,7 +1,8 @@
 @extends('layout')
 
-@section('title', 'Redmond Medical and Mental Health | Tiffany Redmond PA-C | Welcome')
-@section('description', 'Find rapid relief from treatment-resistant depression and chronic pain. Learn how our medically supervised Ketamine treatments can help rewire your brain for wellness.')
+@section('title', 'Ketamine Therapy for Depression & PTSD | Utah & Arizona')
+@section('description', 'Find rapid relief from treatment-resistant depression and chronic pain in Utah and Arizona. Learn how our medically supervised Ketamine treatments help.')
+@section('keywords', 'Ketamine Therapy Utah, Ketamine Therapy Arizona, PTSD Treatment, IM Ketamine Therapy, Mental Health Innovation')
 
 
 @section('content')
@@ -44,11 +45,13 @@
                 <h2>What We Treat</h2>
                 <p>Our IM Ketamine protocols are designed to address:</p>
                 <ul>
-                    <li><strong>Treatment-Resistant Depression:</strong> For those who haven't found success with standard prescriptions.</li>
+                    <li><strong>Treatment-Resistant Depression:</strong> For those who haven't found success with standard antidepressant therapy.</li>
+                    <li><strong>Suicidal Ideation:</strong> Providing a fast-acting intervention for acute mental health crises.</li>
                     <li><strong>Anxiety & Panic Disorders:</strong> Calming the nervous system to restore a sense of peace.</li>
                     <li><strong>PTSD & Trauma:</strong> Helping the brain process and overcome traumatic memories.</li>
-                    <li><strong>Chronic Pain & Migraines:</strong> Alleviating physical distress from conditions like fibromyalgia.</li>
-                    <li><strong>Suicidal Ideation:</strong> Providing a fast-acting intervention for acute mental health crises.</li>
+                    <li><strong>Bipolar Disorders:</strong> Helps to improve depressive and suicidal symptoms quickly.</li>
+                    <li><strong>Chronic Pain & Migraines:</strong> Alleviating physical distress from conditions like fibromyalgia, nerve pain and chronic headaches.</li>
+                    <li><strong>Complex Regional Pain Syndrome:</strong> a debilitating condition that is often unresponsive to traditional therapies.</li>
                 </ul>
 
                 <div class="divider-line"></div>
@@ -56,39 +59,45 @@
                 <h2>Your Treatment Journey</h2>
                 <p>We don't believe in a "one-size-fits-all" approach. Your Ketamine experience is medically supervised and tailored to your unique needs.</p>
                 <ol>
-                    <li><strong>Comprehensive Evaluation:</strong> We begin with a full psychiatric and medical
-                        assessment to ensure Ketamine is the right path for you.
-                    </li>
-                    <li><strong>The Induction Phase:</strong> For psychiatric symptoms, we typically recommend a series
-                        of two treatments per week for three consecutive weeks (6 total) to build long-term
-                        neuroplasticity.
-                    </li>
-                    <li><strong>The Dosing Session:</strong> You will receive a precisely calculated IM injection in a
-                        calm, clinical environment. Most patients enter a "dissociative" or dream-like state for about
-                        40–60 minutes while being closely monitored by our medical team.
-                    </li>
-                    <li><strong>Integration & Maintenance:</strong> Following your series, we work with you to determine
-                        if "booster" sessions are needed to maintain your results over months or years.
-                    </li>
+                    <li><strong>Comprehensive Evaluation:</strong> We begin with a full psychiatric and medical assessment to ensure Ketamine is the right path for you.</li>
+                    <li><strong>The Induction Phase:</strong> For psychiatric symptoms, we typically recommend a series of two treatments per week for three consecutive weeks (6 total) to build long-term neuroplasticity.</li>
+                    <li><strong>The Dosing Session:</strong> You will receive a precisely calculated IM injection in a calm, clinical environment. Most patients enter a "dissociative" or dream-like state for about 40–60 minutes while being closely monitored by our medical team.</li>
+                    <li><strong>Integration & Maintenance:</strong> Following your series, we work with you to determine if "booster" sessions are needed to maintain your results over months or years.</li>
                 </ol>
 
                 <div class="divider-line"></div>
 
                 <h2>Frequently Asked Questions</h2>
-                <p>Is it covered by insurance?<br />
-                Possibly! While Ketamine is an "off-label" use for mental health, we are happy to review your specific insurance plan to see if your treatments or consultations can be covered.</p>
+                <p><strong>Is ketamine covered by insurance?</strong><br />
+                Possibly! While Ketamine is an "off-label" use for mental health conditions, we are happy to review your specific insurance plan to see if your treatments can be covered. We can use your insurance for your initial consultation.</p>
 
-                <p>Will I be awake?<br />
-                Yes. While you may feel "detached" from your body or surroundings (dissociation), you remain conscious and able to talk throughout the session.</p>
+                <p><strong>Will I be awake?</strong><br />
+                Yes. While you may feel "detached" from your body or surroundings, you remain conscious and are able to talk throughout the session.</p>
 
-                <p>Can I drive home?<br />
+                <p><strong>Is ketamine addictive?</strong><br />
+                Ketamine is a controlled substance like opioids, stimulants and benzodiazepines. When used off the street, incorrectly, or not as prescribed, it can be abused and can cause dependence. In our controlled medical setting, this will not occur. Ketamine, used correctly, is very safe and effective.</p>
+
+                <p><strong>Are there any medical conditions that would prevent me from trying ketamine therapy?</strong><br />
+                Yes, patients with some medical conditions may not be good candidates for ketamine therapy. These include:</p>
+                <ul>
+                    <li>Active Psychosis or Schizophrenia</li>
+                    <li>Uncontrolled High Blood Pressure</li>
+                    <li>Severe Cardiovascular Disease (history of recent stroke, heart attack, angina or aneurysm)</li>
+                    <li>Pregnancy or Breastfeeding</li>
+                    <li>Seizure Disorders</li>
+                    <li>Liver or Kidney Disease</li>
+                    <li>Glaucoma</li>
+                    <li>Increased Intracranial Pressure (as seen with severe head injuries)</li>
+                </ul>
+
+                <p><strong>Can I drive home?</strong><br />
                 No. To ensure your safety, you must arrange for a driver to take you home following your appointment. You should not operate machinery or make major decisions until the following day.</p>
 
                 <div class="divider-line"></div>
 
                 <h2>Ready to find a new perspective?</h2>
                 <p>Don't wait months for a "maybe." Experience the rapid change that integrated medical and mental health care can provide.</p>
-                <a class="btn rmmh_button_primary" href="#">Book Your Evaluation</a> <a class="btn rmmh_button_secondary" href="tel:4359381440">Call/Text (435) 938-1440</a>
+                <a class="btn rmmh_button_primary" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Book Your Evaluation</a> <a class="btn rmmh_button_secondary" href="tel:4359381440">Call/Text (435) 938-1440</a>
 
             </div>
 

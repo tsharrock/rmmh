@@ -1,7 +1,8 @@
 @extends('layout')
 
-@section('title', 'Medical Weight Loss | Semaglutide & Tirzepatide in Utah | Redmond Medical and Mental Health | Tiffany Redmond PA-C')
-@section('description', 'Start your journey to a healthier you with RedmondMMH. We offer physician-supervised medical weight loss, GLP-1 treatments, and behavioral support in Utah.')
+@section('title', 'Medical Weight Loss | Semaglutide & Tirzepatide in Utah & Arizona')
+@section('description', 'Start your journey to a healthier you with RedmondMMH. We offer physician-supervised medical weight loss, GLP-1 treatments, and behavioral support in Utah and Arizona.')
+@section('keywords', 'Medical Weight Loss Utah, Medical Weight Loss Arizona, Semaglutide, Tirzepatide, GLP-1 Therapy, Medical Weight Management')
 
 @section('content')
     <div class="hero weight border-bottom">
@@ -21,7 +22,7 @@
                 </div>
 
                 <h2>Why Medical Weight Loss?</h2>
-                <p>Losing weight isn't just about "willpower"—it’s about biology. At RedmondMMH, we treat weight management as a medical condition, addressing the hormonal, metabolic, and psychological factors that often make traditional dieting unsuccessful.</p>
+                <p>Losing weight isn't just about "willpower"—it’s about biology. At Redmond Medical and Mental Health, we treat weight management as a medical condition, addressing the hormonal, metabolic, and psychological factors that often make traditional dieting unsuccessful.</p>
 
                 <p>Our program is designed to help you lose weight safely under the supervision of medical professionals while improving your energy levels and overall quality of life.</p>
 
@@ -64,7 +65,7 @@
                     <li><strong>Initial Consultation:</strong> A deep dive into your medical history, previous weight loss attempts, and current goals.</li>
                     <li><strong>Clinical Assessment:</strong> We perform a comprehensive physical and metabolic panel to understand your unique baseline.</li>
                     <li><strong>Customized Plan:</strong> You receive a tailored protocol that may include medication, lifestyle shifts, and regular check-ins.</li>
-                    <li><strong>Ongoing Support:</strong> Monthly telehealth or in-person visits to monitor progress, manage side effects, and adjust your plan for long-term maintenance.</li>
+                    <li><strong>Ongoing Support:</strong> Monthly telehealth or in-person visits to monitor progress, manage side effects, and adjust your plan for long-term maintenance. We can also submit referrals for a local dietitian or bariatric surgeon, if needed.</li>
                 </ul>
 
                 <div class="divider-line"></div>

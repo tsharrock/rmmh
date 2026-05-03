@@ -1,7 +1,8 @@
 @extends('layout')
 
-@section('title', '')
-@section('description', '')
+@section('title', 'IV Therapy & Injectables | Nutrient Infusion in Utah & Arizona')
+@section('description', 'Revitalize your body with custom IV nutrition therapy and injectables in Utah and Arizona. We offer energy infusions, immunity boosts, and recovery drips.')
+@section('keywords', 'IV Therapy Utah, IV Nutrition Arizona, Vitamin Injections, Immunity Boost Drip, Energy Infusion, Hyde Park Clinic')
 
 @section('content')
     <div class="hero iv border-bottom">
@@ -18,10 +19,10 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="breadcrumb">
-                    <a href="{{ route('home') }}">Home</a> <span>></span> Ketamine Therapy
+                    <a href="{{ route('home') }}">Home</a> <span>></span> IV Nutrition & Injectables
                 </div>
                 <h2>Why Choose IV Therapy at RedmondMMH?</h2>
-                <p>At Redmond Medical and Mental Health, we believe that true wellness requires a balance of physical and mental health. Traditional oral vitamins often lose potency during the digestion process. IV Nutrition Therapy delivers high doses of essential vitamins, minerals, and amino acids directly into your bloodstream, ensuring 100% absorption and immediate results.</p>
+                <p>Oral vitamins often lose potency during the digestion process. IV Nutrition Therapy delivers high doses of essential vitamins, minerals, and amino acids directly into your bloodstream, ensuring 100% absorption and immediate results.</p>
 
                 <p>Whether you are recovering from an illness, training for an event, or managing a chronic condition, our medical team provides a safe, clinical environment for your revitalization.</p>
 

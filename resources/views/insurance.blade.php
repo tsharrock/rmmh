@@ -1,10 +1,11 @@
 @extends('layout')
 
-@section('title', '')
-@section('description', '')
+@section('title', 'Accepted Insurance | Redmond Medical & Mental Health | Utah & Arizona')
+@section('description', 'View the list of insurance providers accepted at our clinic. We work with Aetna, SelectHealth, BCBS, Humana and many other providers in Utah and Arizona.')
+@section('keywords', 'Accepted Insurance Redmond MMH, SelectHealth Utah, Blue Cross Blue Shield, Humana Utah, Arizona Insurance')
 
 @section('sidebar')
-    @@parent
+    @parent
 
     <p>This is appended to the master sidebar.</p>
 @endsection
@@ -37,6 +38,7 @@
                         <li>HealthNet Tricare</li>
                         <li>HealthUtah Physicians Network</li>
                         <li>HealthWest Administrators</li>
+                        <li>Humana</li>
                         <li>Medicaid of Utah</li>
                         <li>Medicaid of Idaho</li>
                         <li>Medicare Part B of Utah</li>
@@ -58,7 +60,6 @@
                 <div class="col-lg-4">
                     <h2>Pending credentials:</h2>
                     <ul>
-                        <li>Humana</li>
                         <li>Triwest Healthcare Alliance</li>
                     </ul>
                 </div>

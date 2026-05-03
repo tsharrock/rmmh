@@ -1,7 +1,8 @@
 @extends('layout')
 
-@section('title', 'About Redmond Medical & Mental Health Logan, Utah')
-@section('description', 'Meet Tiffany Redmond, PA-C, providing integrated primary care and psychiatric services in Hyde Park, UT. Learn about our holistic approach to mental and physical wellness in the Cache Valley.')
+@section('title', 'About Redmond Medical & Mental Health | Utah & Arizona')
+@section('description', 'Meet Tiffany Redmond, PA-C, providing integrated primary care and psychiatric services in Utah and Arizona. Learn about our holistic approach to mental and physical wellness.')
+@section('keywords', 'Tiffany Redmond PA-C, Redmond Medical and Mental Health, Hyde Park Clinic, Cache Valley Healthcare, Integrated Medicine Utah, Arizona Telehealth')
 
 @section('sidebar')
     @@parent
@@ -34,11 +35,7 @@
                     <div class="divider-line"></div>
 
                     <h3>What Makes Us Different?</h3>
-                    <ul class="my-4">
-                        <li><strong>Integrated Expertise:</strong> Our team works collaboratively, meaning your mental health provider and medical provider are on the same page, ensuring safer and more effective treatment plans.</li>
-                        <li><strong>Cutting-Edge Treatments:</strong> We are proud to offer advanced modalities like Ketamine Therapy and Medical Weight Loss (GLP-1s) that go beyond traditional "quick fixes" to create lasting biological change.</li>
-                        <li><strong>Patient-Centered Innovation:</strong> From secure Telehealth options to our revitalizing IV Therapy lounge, every service is designed to fit your modern lifestyle while maintaining a high standard of clinical excellence.</li>
-                    </ul>
+                    <p class="my-4">By housing primary care, psychiatry, and innovative wellness under one roof, we ensure that your care is coordinated, efficient, and deeply personalized. We have removed the barriers that many patients face when seeking treatment; having to schedule with multiple providers who only treat specific problems. Being told that your high blood pressure will need to be treated elsewhere because your psychiatrist can’t prescribe those medications. Being told that your psychiatrist will need to refill your ADD medication because GYN providers can’t do that. It’s a lot, so let us help simplify things for you.</p>
 
                     <div class="divider-line"></div>
 
@@ -59,8 +56,8 @@
                 <div class="col-lg-8 offset-lg-2 ">
                     <img class="float-start me-3" src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C" />
                     <h4>Tiffany Redmond, PA-C</h4>
-                    <p>After graduating from Arizona State University, Tiffany began her career working in juvenile correctional facilities, overseeing treatment groups for adolescent violent offenders, sex offenders, and substance abusers. She also spent time working in adolescent and adult group homes and a residential treatment facility in inner-city Los Angeles. She then went on to earn a Master's in Counseling Psychology, after which she spent four years in Nebraska providing therapeutic services for foster children with severe psychiatric issues. Tiffany then went on to work as a civilian for the U.S. Army, conducting neuropsychological assessments of service members returning from the Middle East with traumatic brain injuries.  Upon graduating from the University of Alabama's surgical Physician Assistant Program in 2016, Tiffany moved to Utah, where she has since been providing family medicine and psychiatric services to the Cache Valley community.</p>
-                    <p>Tiffany is currently accepting new patients both in person and via <a href="{{ route('telehealth') }}">Telehealth services</a>. Whether you are seeking mental health support or a new primary care home, she is ready to partner with you on your journey.</p>
+                    <p>After graduating from Arizona State University in 1997, Tiffany began her career working in juvenile correctional facilities, overseeing treatment groups for adolescent violent offenders, sex offenders, and substance abusers. She also spent time working in adolescent and adult group homes and a residential treatment facility in inner-city Los Angeles. She then went on to earn a Master's in Counseling Psychology, after which she spent four years in Nebraska providing therapeutic services for foster children with severe psychiatric issues. Tiffany then went on to work as a civilian for the U.S. Army, conducting neuropsychological assessments of service members returning from the Middle East with traumatic brain injuries. Upon graduating from the University of Alabama's surgical Physician Assistant Program in 2016, Tiffany moved to Utah, where she has since been providing family medicine and psychiatric services to the Cache Valley community.</p>
+                    <p>Tiffany is licensed to see patients in Utah and Arizona and currently accepting new patients for both in person and telehealth services. Whether you are seeking mental health support or a new primary care home, she is ready to partner with you on your journey.</p>
                 </div>
             </div>
         </div>

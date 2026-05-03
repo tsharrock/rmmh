@@ -92,7 +92,7 @@
 
 
 <footer>
-    <div class="tagline text-center mb-3"><h3>Serving All of Utah</h3></div>
+    <div class="tagline text-center mb-3"><h3>Serving All of Utah and Arizona</h3></div>
     <div class="footer-container">
 
         <div class="footer-col">
@@ -107,27 +107,34 @@
         <div class="footer-col">
             <h4>Our Services</h4>
             <ul>
-                <li><a href="/mental-health">Mental Health</a></li>
-                <li><a href="/family-medicine">Family Medicine</a></li>
-                <li><a href="/ketamine">Ketamine</a></li>
-                <li><a href="/iv-nutrition">IV Nutrition & Injectables</a></li>
+                <li><a href="{{ route('psychiatric-care') }}">Psychiatric Care</a></li>
+                <li><a href="{{ route('family-medicine') }}">Family Medicine</a></li>
+                <li><a href="{{ route('ketamine') }}">Ketamine</a></li>
+                <li><a href="{{ route('iv-fluids') }}">IV Nutrition & Injectables</a></li>
             </ul>
         </div>
 
         <div class="footer-col">
-            <h4>Serving remotely through telehealth</h4>
+            <h4>Utah Telehealth</h4>
             <ul>
                 <li><a href="{{ route('logan-cache-valley') }}"><strong>Cache Valley:</strong> All Medical & Mental Health Services</a></li>
-                <li><a href="/telehealth/salt-lake-city"><strong>Salt Lake City:</strong> Telehealth</a></li>
-                <li><a href="/telehealth/ogden"><strong>Ogden:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.utah.salt-lake-city') }}"><strong>Salt Lake City:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.utah.ogden') }}"><strong>Ogden:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.utah.provo') }}"><strong>Provo:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.utah.st-george') }}"><strong>St. George:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.utah.cedar-city') }}"><strong>Cedar City:</strong> Telehealth</a></li>
             </ul>
         </div>
 
         <div class="footer-col">
+            <h4>Arizona Telehealth</h4>
             <ul>
-                <li><a href="/telehealth/provo"><strong>Provo:</strong> Telehealth</a></li>
-                <li><a href="/telehealth/st-george"><strong>St. George:</strong> Telehealth</a></li>
-                <li><a href="/telehealth/cedar-city"><strong>Cedar City:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.arizona.phoenix') }}"><strong>Phoenix:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.arizona.tucson') }}"><strong>Tucson:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.arizona.mesa') }}"><strong>Mesa:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.arizona.scottsdale') }}"><strong>Scottsdale:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.arizona.tempe') }}"><strong>Tempe:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.arizona.flagstaff') }}"><strong>Flagstaff:</strong> Telehealth</a></li>
             </ul>
         </div>
     </div>
