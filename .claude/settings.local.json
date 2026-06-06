@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(git mv *)",
-      "WebFetch(domain:rmmh.laravel.cloud)"
+      "WebFetch(domain:rmmh.laravel.cloud)",
+      "Bash(curl -sL https://rmmh.com)",
+      "Bash(curl -sI https://redmondmmh.com)",
+      "Bash(curl -s https://www.redmondmmh.com)"
     ]
   }
 }
