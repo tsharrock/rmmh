@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-lg-5">
                     <h1>Telehealth in Blanding</h1>
-                    <p>Specialty Mental Health and Medical Care for the Four Corners region.</p>
+                    <p>Expert Mental Health and medical care for the Four Corners region, from the comfort of home.</p>
                     <a class="btn rmmh_button_primary me-3" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Schedule Your Visit</a>
                 </div>
             </div>
@@ -57,21 +57,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Specialty psychiatric providers are scarce in southeastern Utah. Tiffany has over 30 years of experience treating ADHD, anxiety, depression, bipolar disorders, eating disorders, and addiction—now available to Blanding residents without driving to Moab or Cortez.</p>
+                        <p>Experienced psychiatric providers in the Blanding area can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
+                        <p>Tiffany is licensed in Arizona and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>Manage chronic conditions, address acute concerns, and review lab results from your home in Blanding, Monticello, Bluff, or anywhere across San Juan County.</p>
+                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
+                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
+                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Access individualized weight management programs from home, including Semaglutide and Tirzepatide therapy with coaching and nutritional guidance.</p>
+                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -83,11 +86,11 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Blanding and the Four Corners</h2>
-                    <p>Our telehealth services reach Blanding, Monticello, Bluff, White Mesa, and the surrounding San Juan County communities. Whether you are looking for an "online psychiatrist near Blanding" or "telehealth in southeastern Utah," Redmond MMH brings specialty care to a region long underserved by in-person providers.</p>
+                    <p>Our telehealth services reach Blanding, Monticello, Bluff, White Mesa, and the surrounding San Juan County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We also accept most major insurance plans.</p>
                     <ul>
-                        <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Blanding pharmacy.</li>
-                        <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one appointment.</li>
-                        <li><strong>Experienced Provider:</strong> Tiffany Redmond, PA-C, has extensive experience in both family medicine and psychiatric care, ensuring comprehensive treatment.</li>
+                        <li><strong>Utah-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Utah medical license and treats Blanding residents directly via secure telehealth.</li>
+                        <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Blanding area pharmacy.</li>
+                        <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one convenient appointment.  Scheduling is easy and most patients can be seen the same day or next.  We allow you to save time and save copays.</li>
                     </ul>
                 </div>
             </div>
@@ -99,7 +102,7 @@
                         <li><strong>Book Online:</strong> Select a "Telehealth" appointment through our secure portal.</li>
                         <li><strong>Secure Connection:</strong> Receive a HIPAA-compliant video link via email or text.</li>
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
-                        <li><strong>Prescriptions & Follow-up:</strong> Any necessary medications are sent to your preferred Blanding pharmacy immediately.</li>
+                        <li><strong>Prescriptions & Follow-up:</strong> Any necessary medications are sent to your preferred local pharmacy immediately.</li>
                     </ol>
                 </div>
             </div>

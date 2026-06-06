@@ -51,8 +51,6 @@ Route::get('/telehealth', function () {
 Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
-Route::view('/logan', 'logan')->name('logan');
-
 Route::view('/logan-cache-valley', 'logan-cache-valley')->name('logan-cache-valley');
 
 // Utah telehealth city pages

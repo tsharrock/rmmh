@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-lg-5">
                     <h1>Telehealth in Sandy</h1>
-                    <p>Expert Mental Health and Medical Care from the Comfort of Your Sandy Home.</p>
+                    <p>Expert Mental Health and medical care from the comfort of home.</p>
                     <a class="btn rmmh_button_primary me-3" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Schedule Your Visit</a>
                 </div>
             </div>
@@ -50,28 +50,31 @@
         <div class="container py-lg-5">
             <div class="row">
                 <div class="col">
-                    <h2>Accessible Care for Sandy</h2>
+                    <h2>Accessible Care for Sandy, UT</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Tiffany has over 30 years of experience treating ADHD, anxiety, depression, bipolar disorders, eating disorders, and addiction. Sandy residents bypass the long wait lists at large Salt Lake Valley health systems for direct, personalized psychiatric care.</p>
+                        <p>Experienced psychiatric providers in Sandy can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
+                        <p>Tiffany is licensed in Arizona and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>Manage chronic conditions, address acute concerns, and review lab results from your home in Sandy without battling I-15 traffic or hunting for parking.</p>
+                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
+                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
+                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Access individualized weight management programs from home, including Semaglutide and Tirzepatide therapy with coaching and nutritional guidance.</p>
+                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -83,11 +86,11 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Sandy and South Salt Lake County</h2>
-                    <p>Our telehealth services reach Sandy, Draper, Cottonwood Heights, Midvale, White City, and the surrounding South Salt Lake County communities. Whether you are searching for an "online psychiatrist in Sandy" or "telehealth weight loss near Salt Lake City," Redmond MMH provides integrated medical and mental health care.</p>
+                    <p>Our telehealth services reach Sandy, Draper, Cottonwood Heights, Midvale, White City, and the surrounding South Salt Lake County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We also accept most major insurance plans.</p>
                     <ul>
-                        <li><strong>Local Pharmacy Partnerships:</strong> We work with Sandy pharmacies to ensure your prescriptions are filled quickly.</li>
-                        <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one appointment.</li>
-                        <li><strong>Experienced Provider:</strong> Tiffany Redmond, PA-C, has extensive experience in both family medicine and psychiatric care, ensuring comprehensive treatment.</li>
+                        <li><strong>Utah-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Utah medical license and treats Utah residents directly via secure telehealth.</li>
+                        <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Sandy area pharmacy.</li>
+                        <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one convenient appointment.  Scheduling is easy and most patients can be seen the same day or next.  We allow you to save time and save copays.</li>
                     </ul>
                 </div>
             </div>
