@@ -140,6 +140,6 @@
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2026 Redmond Medical & Mental Health. All Rights Reserved.</p>
+        <p>&copy; {{ date('Y') }} Redmond Medical & Mental Health. All Rights Reserved.</p>
     </div>
 </footer>
