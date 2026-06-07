@@ -70,6 +70,11 @@
                             <textarea class="form-control" id="message" name="message" >{{ old('message') }}</textarea>
                         </div>
 
+                        <div class="mt-3">
+                            <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.site_key') }}"></div>
+                            @error('g-recaptcha-response') <span class="form-error">{{ $message }}</span> @enderror
+                        </div>
+
                         <button type="submit" class="btn rmmh_button_primary mt-3">Send Message</button>
                     </form>
                 </div>
@@ -77,3 +82,7 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+@endpush
