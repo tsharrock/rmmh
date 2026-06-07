@@ -93,6 +93,7 @@
                             <li><a href="{{ route('telehealth.arizona.surprise') }}">Surprise</a></li>
                             <li><a href="{{ route('telehealth.arizona.queen-creek') }}">Queen Creek</a></li>
                             <li><a href="{{ route('telehealth.arizona.san-tan-valley') }}">San Tan Valley</a></li>
+                            <li><a href="{{ route('telehealth.arizona.apache-junction') }}">Apache Junction</a></li>
                             <li><a href="{{ route('telehealth.arizona.maricopa') }}">Maricopa</a></li>
                             <li><a href="{{ route('telehealth.arizona.casa-grande') }}">Casa Grande</a></li>
                             <li><a href="{{ route('telehealth.arizona.flagstaff') }}">Flagstaff</a></li>

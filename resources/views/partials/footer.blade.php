@@ -98,9 +98,9 @@
         <div class="footer-col">
             <h4>Redmond MMH</h4>
             <ul>
-                <li><a href="/about">About</a></li>
-                <li><a href="/insurance">Insurance Credentials</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="{{ route('about') }}">About</a></li>
+                <li><a href="{{ route('insurance') }}">Insurance Credentials</a></li>
+                <li><a href="{{ route('contact') }}">Contact</a></li>
             </ul>
         </div>
 
