@@ -38,7 +38,7 @@
                 <p class="mt-4">Fax: (833) 359-1642</p>
 
             </div>
-            <div class="col-lg-3 offset-lg-1">
+            <div class="col-lg-4 offset-lg-1">
                 <h4 class="my-4">Send us an email</h4>
                 <div class="form-wrapper">
                     @if(session('success'))
