@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Mesa | Online Mental Health & Psychiatry in AZ | Redmond Medical & Mental Health')
+@section('title', 'Telehealth Mesa | Online Mental Health & Psychiatry in AZ | Redmond MMH')
 @section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Mesa residents via secure telehealth. Skip the East Valley wait list.')
 @section('keywords', 'Telehealth Mesa AZ, Online Psychiatrist Mesa, Mental Health East Valley, Telehealth Arizona, Online Doctor Mesa Arizona, Redmond MMH')
 
@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Mesa Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Mesa and the East Valley through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/mesa",
+  "url": "https://redmondmmh.com/telehealth/arizona/mesa",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Mesa",
@@ -32,6 +32,46 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is telehealth psychiatry available to Mesa residents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tiffany Redmond, PA-C is licensed in Arizona and sees Mesa and Maricopa County patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long is the wait for a new patient appointment in Mesa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many Maricopa County practices carry multi-week waitlists for psychiatry. We typically offer new telehealth patients an appointment within a few days, often the same day or next."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does insurance cover a Mesa telehealth visit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We're in-network with most major Arizona insurance plans. See our full accepted insurance list or call our office to confirm your specific plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to visit an office in Mesa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No physical office visit is required — Arizona telehealth appointments are conducted securely from home. Services that require a hands-on exam, such as Ketamine therapy or IV nutrition, are only available in person at our Hyde Park, Utah clinic."
+      }
+    }
+  ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -46,6 +86,26 @@
             </div>
         </div>
     </div>
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('telehealth') }}">Telehealth</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Mesa</li>
+            </ol>
+        </nav>
+    </div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://redmondmmh.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Telehealth", "item": "https://redmondmmh.com/telehealth" },
+        { "@type": "ListItem", "position": 3, "name": "Mesa", "item": "https://redmondmmh.com/telehealth/arizona/mesa" }
+      ]
+    }
+    </script>
     <section id="page-content">
         <div class="container py-lg-5">
             <div class="row">
@@ -86,7 +146,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Mesa and the East Valley</h2>
-                    <p>Our Arizona-licensed telehealth services reach Mesa, Gilbert, Apache Junction, Tempe, Chandler, and the surrounding East Valley communities.  Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We also accept most major insurance plans.</p>
+                    <p>Our Arizona-licensed telehealth services reach Mesa, Gilbert, Apache Junction, Tempe, Chandler, and the surrounding East Valley communities.  Home to Mesa Community College, Mesa is one of the largest cities in the East Valley, and Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We also accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Arizona-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Arizona license and treats Arizona residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Mesa area pharmacy.</li>
@@ -117,10 +177,52 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 ">
-                    <img class="float-start me-3" src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C" />
+                    <img class="float-start me-3" src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C" width="233" height="260" loading="lazy" decoding="async" />
                     <h4>Tiffany Redmond, PA-C</h4>
-                    <p>After graduating from Arizona State University in 1997, Tiffany began her career working in juvenile correctional facilities, overseeing treatment groups for adolescent violent offenders, sex offenders, and substance abusers. She also spent time working in adolescent and adult group homes and a residential treatment facility in inner-city Los Angeles. She then went on to earn a Master’s in Counseling Psychology, after which she spent four years in Nebraska providing therapeutic services for foster children with severe psychiatric issues. Tiffany then went on to work as a civilian for the U.S. Army, conducting neuropsychological assessments of service members returning from the Middle East with traumatic brain injuries. Upon graduating from the University of Alabama’s surgical Physician Assistant Program in 2016, Tiffany moved to Utah, where she has since been providing family medicine and psychiatric services to the Cache Valley community.</p>
-                    <p>Tiffany is licensed to see patients in Utah and Arizona and is currently accepting new patients for both in-person and telehealth services. Whether you are seeking mental health support or a new primary care home, she is ready to partner with you on your journey.</p>
+                    <div class="credential-strip mb-3">
+                        <span class="credential-badge">PA-C</span>
+                        <span class="credential-badge">30+ Years Experience</span>
+                        <span class="credential-badge">Licensed in UT &amp; AZ</span>
+                        <span class="credential-badge">Same/Next-Day Scheduling</span>
+                        <span class="credential-badge credential-badge-local">Serves Maricopa County</span>
+                    </div>
+                    <p>As a board-credentialed Physician Assistant with three decades of integrated medical and psychiatric experience, Tiffany Redmond brings that expertise directly to Mesa patients. <a class="rmmh_red" href="{{ route('about') }}">Read her full story on our About page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Mesa Telehealth FAQs</h2>
+                    <p><span class="question">Is telehealth psychiatry available to Mesa residents?</span><br />
+                    Yes. Tiffany Redmond, PA-C is licensed in Arizona and sees Mesa and Maricopa County patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit.</p>
+
+                    <p><span class="question">How long is the wait for a new patient appointment in Mesa?</span><br />
+                    Many Maricopa County practices carry multi-week waitlists for psychiatry. We typically offer new telehealth patients an appointment within a few days, often the same day or next.</p>
+
+                    <p><span class="question">Does insurance cover a Mesa telehealth visit?</span><br />
+                    We're in-network with most major Arizona insurance plans. See our <a class="rmmh_red" href="{{ route('insurance') }}">full accepted insurance list</a> or call our office to confirm your specific plan.</p>
+
+                    <p><span class="question">Do I need to visit an office in Mesa?</span><br />
+                    No physical office visit is required — Arizona telehealth appointments are conducted securely from home. Services that require a hands-on exam, such as <a class="rmmh_red" href="{{ route('ketamine') }}">Ketamine therapy</a> or <a class="rmmh_red" href="{{ route('iv-fluids') }}">IV nutrition</a>, are only available in person at our Hyde Park, Utah clinic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="also-serve" class="bg_rmmh_gray py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h3>We Also Serve</h3>
+                    <p>Redmond MMH offers the same telehealth services throughout Arizona, including:</p>
+                    <ul>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.arizona.tempe') }}">Tempe</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.arizona.scottsdale') }}">Scottsdale</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.arizona.apache-junction') }}">Apache Junction</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.arizona.queen-creek') }}">Queen Creek</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
