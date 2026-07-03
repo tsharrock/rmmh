@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://redmondmmh.com/sitemap.xml
