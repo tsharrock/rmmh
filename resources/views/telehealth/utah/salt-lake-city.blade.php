@@ -1,8 +1,82 @@
 @extends('layout')
 
-@section('title', 'Telehealth Salt Lake City | Online Mental Health & Psychiatry | Redmond Medical & Mental Health')
-@section('description', 'Access expert psychiatric care, mental health services, and medical weight loss from home. Redmond MMH offers secure telehealth for Salt Lake City residents. Schedule your virtual visit today.')
+@section('title', 'Telehealth Salt Lake City | Online Mental Health & Psychiatry | Redmond MMH')
+@section('description', 'Secure telehealth psychiatry, primary care, and medical weight loss for Salt Lake City residents. Skip the waitlist and book your visit with Redmond MMH.')
 @section('keywords', 'Telehealth Salt Lake City, Online Psychiatry SLC, Mental Health Utah, Online Weight Loss Salt Lake City, Redmond MMH')
+
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Salt Lake City Telehealth",
+  "alternateName": "Redmond MMH",
+  "description": "Secure telehealth psychiatry, primary care, and medical weight loss for Salt Lake City and Salt Lake County residents.",
+  "url": "https://redmondmmh.com/telehealth/utah/salt-lake-city",
+  "telephone": "+1-435-938-1440",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Salt Lake City",
+    "addressRegion": "UT",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Salt Lake City, UT"
+  },
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.7608,
+      "longitude": -111.8910
+    },
+    "geoRadius": "30000"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is telehealth psychiatry available to Salt Lake City residents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tiffany Redmond, PA-C is licensed in Utah and sees Salt Lake City, West Valley City, Murray, Sandy, and Draper patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long is the wait for a new patient appointment in Salt Lake City?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many Salt Lake County practices carry multi-week waitlists for psychiatry. We typically offer new telehealth patients an appointment within a few days, often the same day or next."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does insurance cover a Salt Lake City telehealth visit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We're in-network with most major Utah insurance plans, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our full accepted insurance list or call our office to confirm your specific plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to travel to an office for care in Salt Lake City?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Psychiatric medication management, primary care, and weight loss visits are handled entirely by video. Services that require a hands-on exam, such as Ketamine therapy or IV nutrition, are provided in person at our Hyde Park, UT clinic, about an hour north of downtown Salt Lake City."
+      }
+    }
+  ]
+}
+</script>
+@endsection
 
 @section('content')
     <div class="hero salt-lake-city border-bottom">
@@ -16,6 +90,26 @@
             </div>
         </div>
     </div>
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('telehealth') }}">Telehealth</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Salt Lake City</li>
+            </ol>
+        </nav>
+    </div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://redmondmmh.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Telehealth", "item": "https://redmondmmh.com/telehealth" },
+        { "@type": "ListItem", "position": 3, "name": "Salt Lake City", "item": "https://redmondmmh.com/telehealth/utah/salt-lake-city" }
+      ]
+    }
+    </script>
     <section id="page-content">
         <div class="container py-lg-5">
             <div class="row">
@@ -53,7 +147,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving the Salt Lake Valley</h2>
-                    <p>Our telehealth services are available to all residents of Salt Lake City, West Valley City, Murray, Sandy, and Draper. Whether you are looking for an "online psychiatrist near me" or "telehealth weight loss in SLC," Redmond MMH is here to provide integrated medical and mental health solutions across Utah.</p>
+                    <p>Our telehealth services are available to all residents of Salt Lake City, West Valley City, Murray, Sandy, and Draper. Whether you are looking for an "online psychiatrist near me" or "telehealth weight loss in SLC," Redmond MMH is here to provide integrated medical and mental health solutions across Utah. From students near the University of Utah to state employees working downtown near the Capitol, we help Salt Lake County residents skip the drive and the waitlist for psychiatric and primary care.</p>
                     <ul>
                         <li><strong>Local Pharmacy Partnerships:</strong> We work with Salt Lake City pharmacies to ensure your prescriptions are filled quickly and conveniently.</li>
 
@@ -86,10 +180,53 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 ">
-                    <img class="float-start me-3" src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C" />
+                    <img class="float-start me-3" src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C" width="233" height="260" loading="lazy" decoding="async" />
                     <h4>Tiffany Redmond, PA-C</h4>
-                    <p>After graduating from Arizona State University in 1997, Tiffany began her career working in juvenile correctional facilities, overseeing treatment groups for adolescent violent offenders, sex offenders, and substance abusers. She also spent time working in adolescent and adult group homes and a residential treatment facility in inner-city Los Angeles. She then went on to earn a Master's in Counseling Psychology, after which she spent four years in Nebraska providing therapeutic services for foster children with severe psychiatric issues. Tiffany then went on to work as a civilian for the U.S. Army, conducting neuropsychological assessments of service members returning from the Middle East with traumatic brain injuries. Upon graduating from the University of Alabama's surgical Physician Assistant Program in 2016, Tiffany moved to Utah, where she has since been providing family medicine and psychiatric services to the Cache Valley community.</p>
-                    <p>Tiffany is licensed to see patients in Utah and Arizona and currently accepting new patients for both in person and telehealth services. Whether you are seeking mental health support or a new primary care home, she is ready to partner with you on your journey.</p>
+                    <div class="credential-strip mb-3">
+                        <span class="credential-badge">PA-C</span>
+                        <span class="credential-badge">30+ Years Experience</span>
+                        <span class="credential-badge">Licensed in UT &amp; AZ</span>
+                        <span class="credential-badge">Same/Next-Day Scheduling</span>
+                        <span class="credential-badge credential-badge-local">Serves Salt Lake County</span>
+                    </div>
+                    <p>With more than three decades in mental health and primary care, Tiffany Redmond, PA-C, has helped patients across Salt Lake County manage everything from ADHD to chronic conditions. <a class="rmmh_red" href="{{ route('about') }}">Read her full story on our About page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Salt Lake City Telehealth FAQs</h2>
+                    <p><span class="question">Is telehealth psychiatry available to Salt Lake City residents?</span><br />
+                    Yes. Tiffany Redmond, PA-C is licensed in Utah and sees Salt Lake City, West Valley City, Murray, Sandy, and Draper patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit.</p>
+
+                    <p><span class="question">How long is the wait for a new patient appointment in Salt Lake City?</span><br />
+                    Many Salt Lake County practices carry multi-week waitlists for psychiatry. We typically offer new telehealth patients an appointment within a few days, often the same day or next.</p>
+
+                    <p><span class="question">Does insurance cover a Salt Lake City telehealth visit?</span><br />
+                    We're in-network with most major Utah insurance plans, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our <a class="rmmh_red" href="{{ route('insurance') }}">full accepted insurance list</a> or call our office to confirm your specific plan.</p>
+
+                    <p><span class="question">Do I need to travel to an office for care in Salt Lake City?</span><br />
+                    No. Psychiatric medication management, primary care, and weight loss visits are handled entirely by video. Services that require a hands-on exam, such as <a class="rmmh_red" href="{{ route('ketamine') }}">Ketamine therapy</a> or <a class="rmmh_red" href="{{ route('iv-fluids') }}">IV nutrition</a>, are provided in person at our Hyde Park, UT clinic, about an hour north of downtown Salt Lake City.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="also-serve" class="bg_rmmh_gray py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h3>We Also Serve</h3>
+                    <p>Redmond MMH offers the same telehealth services throughout Utah, including:</p>
+                    <ul>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.sandy') }}">Sandy</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.layton') }}">Layton</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.provo') }}">Provo</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.ogden') }}">Ogden</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.park-city') }}">Park City</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
