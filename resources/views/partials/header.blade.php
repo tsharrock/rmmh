@@ -11,7 +11,7 @@
     </div>
     <nav class="navbar navbar-expand-lg border-bottom" aria-label="navbar">
         <div class="container">
-            <a class="navbar-brand" href="{{ route("home") }}"><img src="/img/logo.png" alt="Redmond Medical and Mental Health" width="175" /></a>
+            <a class="navbar-brand" href="{{ route("home") }}"><img src="/img/logo.png" alt="Redmond Medical and Mental Health" width="175" height="44" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

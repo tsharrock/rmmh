@@ -9,6 +9,86 @@
     'Integrated Mental Health Utah, Primary Care Hyde Park, IV Therapy Logan, Ketamine Treatment Utah,
     Medical Weight Loss Logan, Telehealth Montana, Telehealth Iowa')
 
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "@id": "https://redmondmmh.com/#organization",
+  "name": "Redmond Medical & Mental Health",
+  "alternateName": "Redmond MMH",
+  "description": "Integrated psychiatric care, family medicine, medical weight loss, ketamine therapy, and IV nutrition, offered in person in Hyde Park, Utah and via telehealth throughout Utah and Arizona.",
+  "url": "https://redmondmmh.com/",
+  "telephone": "+1-435-938-1440",
+  "email": "PatientSupport@RedmondMMH.com",
+  "priceRange": "$$",
+  "image": "https://redmondmmh.com/img/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "245 N. 700 W.",
+    "addressLocality": "Hyde Park",
+    "addressRegion": "UT",
+    "postalCode": "84318",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.7961,
+    "longitude": -111.8138
+  },
+  "employee": {
+    "@type": "Physician",
+    "name": "Tiffany Redmond, PA-C",
+    "url": "https://redmondmmh.com/about"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Hyde Park, UT" },
+    { "@type": "City", "name": "Logan, UT" },
+    { "@type": "City", "name": "Salt Lake City, UT" },
+    { "@type": "City", "name": "Ogden, UT" },
+    { "@type": "City", "name": "Layton, UT" },
+    { "@type": "City", "name": "Sandy, UT" },
+    { "@type": "City", "name": "Provo, UT" },
+    { "@type": "City", "name": "Orem, UT" },
+    { "@type": "City", "name": "Spanish Fork, UT" },
+    { "@type": "City", "name": "Park City, UT" },
+    { "@type": "City", "name": "Heber City, UT" },
+    { "@type": "City", "name": "St. George, UT" },
+    { "@type": "City", "name": "Cedar City, UT" },
+    { "@type": "City", "name": "Beaver, UT" },
+    { "@type": "City", "name": "Moab, UT" },
+    { "@type": "City", "name": "Blanding, UT" },
+    { "@type": "City", "name": "Price, UT" },
+    { "@type": "City", "name": "Helper, UT" },
+    { "@type": "City", "name": "Vernal, UT" },
+    { "@type": "City", "name": "Dutch John, UT" },
+    { "@type": "City", "name": "Wendover, UT" },
+    { "@type": "City", "name": "Phoenix, AZ" },
+    { "@type": "City", "name": "Tucson, AZ" },
+    { "@type": "City", "name": "Mesa, AZ" },
+    { "@type": "City", "name": "Scottsdale, AZ" },
+    { "@type": "City", "name": "Tempe, AZ" },
+    { "@type": "City", "name": "Goodyear, AZ" },
+    { "@type": "City", "name": "Buckeye, AZ" },
+    { "@type": "City", "name": "Surprise, AZ" },
+    { "@type": "City", "name": "Queen Creek, AZ" },
+    { "@type": "City", "name": "San Tan Valley, AZ" },
+    { "@type": "City", "name": "Apache Junction, AZ" },
+    { "@type": "City", "name": "Maricopa, AZ" },
+    { "@type": "City", "name": "Casa Grande, AZ" },
+    { "@type": "City", "name": "Flagstaff, AZ" },
+    { "@type": "City", "name": "Prescott, AZ" },
+    { "@type": "City", "name": "Sierra Vista, AZ" },
+    { "@type": "City", "name": "Yuma, AZ" },
+    { "@type": "City", "name": "Kingman, AZ" },
+    { "@type": "City", "name": "Lake Havasu City, AZ" },
+    { "@type": "City", "name": "Page, AZ" },
+    { "@type": "City", "name": "Tuba City, AZ" }
+  ]
+}
+</script>
+@endsection
+
 @section('content')
     <section id="hero">
         <div class="container">
