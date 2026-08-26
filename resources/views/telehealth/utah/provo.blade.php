@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Psychiatry Services Provo | Online Mental Health | Redmond Medical & Mental Health')
+@section('title', 'Psychiatry Services Provo | Online Mental Health | Redmond MMH')
 @section('description', 'Expert psychiatric care and medication management for Provo residents. Redmond MMH offers secure telehealth services for ADHD, depression, and anxiety in Utah County.')
 @section('keywords', 'Provo Psychiatry, Online Mental Health Provo, Utah County Telehealth, Psychiatrist Provo UT, Redmond Medical and Mental Health')
 
@@ -17,6 +17,26 @@
             </div>
         </div>
     </div>
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('telehealth') }}">Telehealth</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Provo</li>
+            </ol>
+        </nav>
+    </div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://redmondmmh.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Telehealth", "item": "https://redmondmmh.com/telehealth" },
+        { "@type": "ListItem", "position": 3, "name": "Provo", "item": "https://redmondmmh.com/telehealth/utah/provo" }
+      ]
+    }
+    </script>
     <section id="page-content">
         <div class="container py-lg-5">
             <div class="row">
@@ -54,7 +74,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Provo, Orem, and Utah County</h2>
-                    <p>Redmond Medical & Mental Health (Redmond MMH) provides specialized psychiatry in Provo, Utah, via our advanced telehealth platform. We are committed to making mental health care accessible to everyone in Utah County, from Orem to Spanish Fork. Tiffany Redmond, PA-C and our team offer the integrated medical and psychiatric support you need to thrive.</p>
+                    <p>Redmond Medical & Mental Health (Redmond MMH) provides specialized psychiatry in Provo, Utah, via our advanced telehealth platform. We are committed to making mental health care accessible to everyone in Utah County, from students near Brigham Young University to families in Orem and Spanish Fork. Tiffany Redmond, PA-C and our team offer the integrated medical and psychiatric support you need to thrive.</p>
                     <ul>
                         <li><strong>Local Pharmacy Partnerships:</strong> We work with Provo and Orem pharmacies to ensure your prescriptions are filled quickly and conveniently.</li>
 
@@ -90,10 +110,52 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 ">
-                    <img class="float-start me-3" src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C" />
+                    <img class="float-start me-3" src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C" width="233" height="260" loading="lazy" decoding="async" />
                     <h4>Tiffany Redmond, PA-C</h4>
-                    <p>After graduating from Arizona State University in 1997, Tiffany began her career working in juvenile correctional facilities, overseeing treatment groups for adolescent violent offenders, sex offenders, and substance abusers. She also spent time working in adolescent and adult group homes and a residential treatment facility in inner-city Los Angeles. She then went on to earn a Master's in Counseling Psychology, after which she spent four years in Nebraska providing therapeutic services for foster children with severe psychiatric issues. Tiffany then went on to work as a civilian for the U.S. Army, conducting neuropsychological assessments of service members returning from the Middle East with traumatic brain injuries. Upon graduating from the University of Alabama's surgical Physician Assistant Program in 2016, Tiffany moved to Utah, where she has since been providing family medicine and psychiatric services to the Cache Valley community.</p>
-                    <p>Tiffany is licensed to see patients in Utah and Arizona and currently accepting new patients for both in person and telehealth services. Whether you are seeking mental health support or a new primary care home, she is ready to partner with you on your journey.</p>
+                    <div class="credential-strip mb-3">
+                        <span class="credential-badge">PA-C</span>
+                        <span class="credential-badge">30+ Years Experience</span>
+                        <span class="credential-badge">Licensed in UT &amp; AZ</span>
+                        <span class="credential-badge">Same/Next-Day Scheduling</span>
+                        <span class="credential-badge credential-badge-local">Serves Utah County</span>
+                    </div>
+                    <p>Tiffany Redmond, PA-C, brings over 30 years of combined mental health and primary care experience to every Provo telehealth visit. <a class="rmmh_red" href="{{ route('about') }}">Read Tiffany's full story on our About page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Provo Telehealth FAQs</h2>
+                    <p><span class="question">Is telehealth psychiatry available to Provo residents?</span><br />
+                    Yes. Tiffany Redmond, PA-C is licensed in Utah and sees Provo, Orem, and Utah County patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit.</p>
+
+                    <p><span class="question">How long is the wait for a new patient appointment in Provo?</span><br />
+                    Utah County's fast growth has stretched local psychiatry waitlists. We typically offer new telehealth patients an appointment within a few days, often the same day or next.</p>
+
+                    <p><span class="question">Does insurance cover a Provo telehealth visit?</span><br />
+                    We're in-network with most major Utah insurance plans, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our <a class="rmmh_red" href="{{ route('insurance') }}">full accepted insurance list</a> or call our office to confirm your specific plan.</p>
+
+                    <p><span class="question">Do I need to travel to an office for care in Provo?</span><br />
+                    No. Psychiatric medication management, primary care, and weight loss visits are handled entirely by video. Services that require a hands-on exam, such as <a class="rmmh_red" href="{{ route('ketamine') }}">Ketamine therapy</a> or <a class="rmmh_red" href="{{ route('iv-fluids') }}">IV nutrition</a>, are provided in person at our Hyde Park, UT clinic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="also-serve" class="bg_rmmh_gray py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h3>We Also Serve</h3>
+                    <p>Redmond MMH offers the same telehealth services throughout Utah County and beyond, including:</p>
+                    <ul>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.orem') }}">Orem</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.spanish-fork') }}">Spanish Fork</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.salt-lake-city') }}">Salt Lake City</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.park-city') }}">Park City</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -102,11 +164,39 @@
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is telehealth psychiatry available to Provo residents?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Tiffany Redmond, PA-C is licensed in Utah and sees Provo, Orem, and Utah County patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit." }
+            },
+            {
+              "@type": "Question",
+              "name": "How long is the wait for a new patient appointment in Provo?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Utah County's fast growth has stretched local psychiatry waitlists. We typically offer new telehealth patients an appointment within a few days, often the same day or next." }
+            },
+            {
+              "@type": "Question",
+              "name": "Does insurance cover a Provo telehealth visit?",
+              "acceptedAnswer": { "@type": "Answer", "text": "We're in-network with most major Utah insurance plans, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our full accepted insurance list or call our office to confirm your specific plan." }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to travel to an office for care in Provo?",
+              "acceptedAnswer": { "@type": "Answer", "text": "No. Psychiatric medication management, primary care, and weight loss visits are handled entirely by video. Services that require a hands-on exam, such as Ketamine therapy or IV nutrition, are provided in person at our Hyde Park, UT clinic." }
+            }
+          ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
           "@type": "MedicalBusiness",
           "name": "Redmond Medical & Mental Health - Provo Psychiatry",
           "alternateName": "Redmond MMH",
           "description": "Specialized online psychiatry and mental health medication management for Provo and Utah County residents via secure telehealth.",
-          "url": "https://www.redmondmmh.com/telehealth/provo",
+          "url": "https://redmondmmh.com/telehealth/utah/provo",
           "telephone": "+1-435-938-1440",
           "priceRange": "$$",
           "address": {

@@ -87,7 +87,7 @@ a.appt, button.appt {
         background-position: center 50%;
     }
     &.psychiatric-care {
-        background-image: url(https://rmmh.test:5174/resources/sass/img/header_psych.jpg);
+        background-image: url("./img/header_psych.webp");
         padding: 160px 0;
         background-position: center 80%;
         color: #fff !important;
@@ -114,19 +114,19 @@ a.appt, button.appt {
         background-position: center 39%;
     }
     &.cedar-city {
-        background-image: url("./img/header_cedar_city.png");
+        background-image: url("./img/header_cedar_city.webp");
         background-position: center 39%;
     }
     &.salt-lake-city {
-        background-image: url("./img/header_salt_lake_city.jpg");
+        background-image: url("./img/header_salt_lake_city.webp");
         background-position: center 120%;
     }
     &.st-george {
-        background-image: url("./img/header_st_george.jpg");
+        background-image: url("./img/header_st_george.webp");
         background-position: center 39%;
     }
     &.ogden {
-        background-image: url("./img/header_ogden.jpg");
+        background-image: url("./img/header_ogden.webp");
         background-position: center 0;
     }
     &.provo {
@@ -217,7 +217,7 @@ a.appt, button.appt {
     }
 
     &.moab {
-        background-image: url("./img/header_moab.jpg");
+        background-image: url("./img/header_moab.webp");
         background-position: center 39%;
     }
 
@@ -227,7 +227,7 @@ a.appt, button.appt {
     &.page,
     &.sierra-vista,
     &.yuma {
-        background-image: url("./img/az/az1.jpg");
+        background-image: url("./img/az/az1.webp");
         background-position: center 39%;
     }
 
@@ -236,7 +236,7 @@ a.appt, button.appt {
     &.prescott,
     &.queen-creek,
     &.tuba-city {
-        background-image: url("./img/az/az2.jpg");
+        background-image: url("./img/az/az2.webp");
         background-position: center 39%;
     }
 
@@ -245,41 +245,41 @@ a.appt, button.appt {
     &.maricopa,
     &.san-tan-valley,
     &.surprise {
-        background-image: url("./img/az/az3.jpg");
+        background-image: url("./img/az/az3.webp");
         background-position: center 39%;
     }
 
     &.flagstaff {
-        background-image: url("./img/az/header_flagstaff.jpg");
+        background-image: url("./img/az/header_flagstaff.webp");
         background-position: center 39%;
     }
 
     &.tempe {
-        background-image: url("./img/az/tempe.jpg");
+        background-image: url("./img/az/tempe.webp");
         background-position: center 60%;
     }
 
     &.mesa {
-        background-image: url("./img/az/header_mesa.jpg");
+        background-image: url("./img/az/header_mesa.webp");
         background-position: center 90%;
     }
 
     &.phoenix {
-        background-image: url("./img/az/header_phoenix.jpg");
+        background-image: url("./img/az/header_phoenix.webp");
         background-position: center 39%;
     }
 
     &.scottsdale {
-        background-image: url("./img/az/header_scottsdale.jpg");
+        background-image: url("./img/az/header_scottsdale.webp");
         background-position: center 39%;
     }
 
     &.tucson {
-        background-image: url("./img/az/header_tucson.jpg");
+        background-image: url("./img/az/header_tucson.webp");
         background-position: center 39%;
     }
     &.park-city {
-        background-image: url("./img/header_parkcity.jpg");
+        background-image: url("./img/header_parkcity.webp");
         background-position: center 1%;
     }
 
@@ -549,6 +549,31 @@ section#page-content {
         position: absolute;
         bottom: 24px;
     }
+}
+
+.credential-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0 14px;
+}
+
+.credential-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: $rmmh_red;
+    border: 1px solid $rmmh_red;
+    border-radius: 999px;
+    background-color: #fff;
+    white-space: nowrap;
+}
+
+.credential-badge-local {
+    color: #fff;
+    background-color: $rmmh_red;
 }
 
 @import "buttons";

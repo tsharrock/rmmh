@@ -24,22 +24,22 @@
         </div>
         <div class="row">
             <div class="col-lg-4 offset-lg-2">
-                <h4 class="mt-4">Redmond Medical and Mental Health</h4>
+                <h2 class="h4 mt-4">Redmond Medical and Mental Health</h2>
                 <p>245 N. 700 W. Hyde Park, UT 84318</p>
                 <a href="tel:4359381440">(435) 938-1440</a>
 
-                <h4 class="mt-4">Email us at:</h4>
+                <h2 class="h4 mt-4">Email us at:</h2>
                 <p><a href="mailto:PatientSupport@RedmondMMH.com" target="_blank">PatientSupport@RedmondMMH.com</a></p>
 
                 <div class="ratio ratio-16x9 border">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.101529562913!2d-111.83606019999999!3d41.8045732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87547db546537017%3A0x4f9d9c9e48698725!2sRedmond%20Medical%20and%20Mental%20Health!5e0!3m2!1sen!2sus!4v1769358269542!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Map to Redmond Medical and Mental Health" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.101529562913!2d-111.83606019999999!3d41.8045732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87547db546537017%3A0x4f9d9c9e48698725!2sRedmond%20Medical%20and%20Mental%20Health!5e0!3m2!1sen!2sus!4v1769358269542!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <p class="mt-4">Fax: (833) 359-1642</p>
 
             </div>
             <div class="col-lg-4 offset-lg-1">
-                <h4 class="my-4">Send us an email</h4>
+                <h2 class="h4 my-4">Send us an email</h2>
                 <div class="form-wrapper">
                     @if(session('success'))
                         <div class="alert alert-success">{{ session('success') }}</div>
