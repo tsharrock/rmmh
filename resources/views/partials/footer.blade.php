@@ -92,7 +92,7 @@
 
 
 <footer>
-    <div class="tagline text-center mb-3"><h3>Serving All of Utah and Arizona</h3></div>
+    <div class="tagline text-center mb-3"><h3>Serving Utah, Arizona, Montana & Iowa</h3></div>
     <div class="footer-container">
 
         <div class="footer-col">
@@ -135,6 +135,30 @@
                 <li><a href="{{ route('telehealth.arizona.scottsdale') }}"><strong>Scottsdale:</strong> Telehealth</a></li>
                 <li><a href="{{ route('telehealth.arizona.tempe') }}"><strong>Tempe:</strong> Telehealth</a></li>
                 <li><a href="{{ route('telehealth.arizona.flagstaff') }}"><strong>Flagstaff:</strong> Telehealth</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Montana Telehealth</h4>
+            <ul>
+                <li><a href="{{ route('telehealth.montana.billings') }}"><strong>Billings:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.montana.missoula') }}"><strong>Missoula:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.montana.great-falls') }}"><strong>Great Falls:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.montana.bozeman') }}"><strong>Bozeman:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.montana.helena') }}"><strong>Helena:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.montana.kalispell') }}"><strong>Kalispell:</strong> Telehealth</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Iowa Telehealth</h4>
+            <ul>
+                <li><a href="{{ route('telehealth.iowa.des-moines') }}"><strong>Des Moines:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.iowa.cedar-rapids') }}"><strong>Cedar Rapids:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.iowa.davenport') }}"><strong>Davenport:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.iowa.sioux-city') }}"><strong>Sioux City:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.iowa.iowa-city') }}"><strong>Iowa City:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.iowa.waterloo') }}"><strong>Waterloo:</strong> Telehealth</a></li>
             </ul>
         </div>
     </div>

@@ -18,7 +18,8 @@
       "Bash(qlmanage -t -s 1400 -o /tmp/ql \"content_docs/new-montana/Billings.docx\")",
       "Read(//tmp/**)",
       "Bash(mkdir -p /tmp/ql2)",
-      "Bash(qlmanage -t -s 1400 -o /tmp/ql2 \"content_docs/new-montana/Billings.docx\")"
+      "Bash(qlmanage -t -s 1400 -o /tmp/ql2 \"content_docs/new-montana/Billings.docx\")",
+      "Bash(cd /Users/tomsharrock/sites/rmmh; rm -rf scratch_docs node_modules/docx /tmp/ql2 /tmp/ql; echo \"cleaned temp artifacts\"; echo \"=== git status \\(excluding settings.local\\) ===\"; git status --short | grep -v \"settings.local\"; echo \"=== branch ===\"; git branch --show-current; git log --oneline -2)"
     ]
   }
 }

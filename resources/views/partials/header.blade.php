@@ -32,7 +32,15 @@
                     </li>
                     <li class="nav-item"><a href="{{ route("about") }}" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="{{ route("telehealth") }}" class="nav-link">Telehealth</a></li>
-                    <li class="nav-item"><a href="{{ route("insurance") }}" class="nav-link">Insurance Credentials</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Insurance Credentials</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ route('services.utah') }}">Utah</a></li>
+                            <li><a class="dropdown-item" href="{{ route('services.arizona') }}">Arizona</a></li>
+                            <li><a class="dropdown-item" href="{{ route('services.montana') }}">Montana</a></li>
+                            <li><a class="dropdown-item" href="{{ route('services.iowa') }}">Iowa</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a href="{{ route("contact") }}" class="nav-link">Contact</a></li>
 
                     <li class="nav-item pt-3 pt-lg-0 ps-lg-4 text-center"><a href="https://nextpatient.co/p/redmondmedical/schedule" class="nav-link appt" target="_blank">Schedule an Appointment</a></li>

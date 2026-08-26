@@ -39,6 +39,12 @@ Route::get('/insurance', function () {
     return view('insurance');
 })->name('insurance');
 
+// State services & insurance pages
+Route::view('/services/utah', 'services.utah')->name('services.utah');
+Route::view('/services/arizona', 'services.arizona')->name('services.arizona');
+Route::view('/services/montana', 'services.montana')->name('services.montana');
+Route::view('/services/iowa', 'services.iowa')->name('services.iowa');
+
 Route::get('/telehealth', function () {
     return view('telehealth');
 })->name('telehealth');

@@ -1,14 +1,8 @@
 @extends('layout')
 
-@section('title', 'Accepted Insurance | Redmond Medical & Mental Health | Utah & Arizona')
-@section('description', 'View the list of insurance providers accepted at our clinic. We work with Aetna, SelectHealth, BCBS, Humana and many other providers in Utah and Arizona.')
-@section('keywords', 'Accepted Insurance Redmond MMH, SelectHealth Utah, Blue Cross Blue Shield, Humana Utah, Arizona Insurance')
-
-@section('sidebar')
-    @parent
-
-    <p>This is appended to the master sidebar.</p>
-@endsection
+@section('title', 'Accepted Insurance | Redmond Medical & Mental Health | Utah, Arizona, Montana & Iowa')
+@section('description', 'View accepted insurance providers by state. Redmond Medical & Mental Health is credentialed with Aetna, SelectHealth, BCBS, Humana, Curative Health, and more across Utah, Arizona, Montana, and Iowa.')
+@section('keywords', 'Accepted Insurance Redmond MMH, SelectHealth Utah, Blue Cross Blue Shield, Curative Health, Arizona Insurance, Montana Insurance, Iowa Insurance')
 
 @section('content')
 
@@ -18,50 +12,34 @@
                 <div class="col text-center"><h1>Accepted Insurance Providers</h1></div>
             </div>
             <div class="row">
-                <div class="col-lg-4 offset-lg-2">
-                    <h2>Current credentials:</h2>
-                    <ul>
-                        <li>Aetna</li>
-                        <li>Altius/Coventry</li>
-                        <li>Beacon Health</li>
-                        <li>BIND Benefits</li>
-                        <li>Blue Cross Blue Shield of Idaho</li>
-                        <li>Blue Cross Blue Shield of Utah</li>
-                        <li>Blue Cross Federal</li>
-                        <li>CHAMPVA</li>
-                        <li>Cigna</li>
-                        <li>Deseret Mutual - DMBA</li>
-                        <li>EMI Health</li>
-                        <li>Great-West (Cigna)</li>
-                        <li>HealthChoice Medicaid</li>
-                        <li>HealthEZ</li>
-                        <li>HealthNet Tricare</li>
-                        <li>HealthUtah Physicians Network</li>
-                        <li>HealthWest Administrators</li>
-                        <li>Humana</li>
-                        <li>Medicaid of Utah</li>
-                        <li>Medicaid of Idaho</li>
-                        <li>Medicare Part B of Utah</li>
-                        <li>Medicare Railroad</li>
-                        <li>Molina Medicaid</li>
-                        <li>Motiv Health</li>
-                        <li>MultiPlan/PHCS (Beech Street)</li>
-                        <li>Optum Behavioral Health</li>
-                        <li>PEHP</li>
-                        <li>Regence Blue Cross Blue Shield</li>
-                        <li>Samera Health</li>
-                        <li>Select Health</li>
-                        <li>UMR</li>
-                        <li>United Healthcare</li>
-                        <li>University of Utah Health Plan / Healthy U</li>
-                        <li>Wise</li>
-                    </ul>
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <p>Insurance credentialing varies by state. Choose your state below to see the plans we accept along with our full range of services there.</p>
                 </div>
-                <div class="col-lg-4">
-                    <h2>Pending credentials:</h2>
-                    <ul>
-                        <li>Triwest Healthcare Alliance</li>
-                    </ul>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="info-card">
+                        <h3>Utah</h3>
+                        <p class="link"><a class="rmmh_red" href="{{ route('services.utah') }}">View Insurance</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="info-card">
+                        <h3>Arizona</h3>
+                        <p class="link"><a class="rmmh_red" href="{{ route('services.arizona') }}">View Insurance</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="info-card">
+                        <h3>Montana</h3>
+                        <p class="link"><a class="rmmh_red" href="{{ route('services.montana') }}">View Insurance</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="info-card">
+                        <h3>Iowa</h3>
+                        <p class="link"><a class="rmmh_red" href="{{ route('services.iowa') }}">View Insurance</a></p>
+                    </div>
                 </div>
             </div>
         </div>
