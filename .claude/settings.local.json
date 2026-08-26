@@ -10,6 +10,15 @@
       "Bash(herd logs *)",
       "Bash(herd *)",
       "Bash(/Users/tomsharrock/Library/Application Support/Herd/bin/herd.phar list *)",
+      "Bash(php -r ' *)",
+      "Bash(git rm *)",
+      "Bash(git add *)",
+      "Bash(git commit -q -m 'Add Utah expansion + Montana & Iowa telehealth city pages *)",
+      "Bash(rm -f /tmp/ql/*.png)",
+      "Bash(qlmanage -t -s 1400 -o /tmp/ql \"content_docs/new-montana/Billings.docx\")",
+      "Read(//tmp/**)",
+      "Bash(mkdir -p /tmp/ql2)",
+      "Bash(qlmanage -t -s 1400 -o /tmp/ql2 \"content_docs/new-montana/Billings.docx\")"
       "Read(//Users/tomsharrock/sites/**)",
       "Bash(php --version)",
       "Bash(composer --version)"
