@@ -464,6 +464,65 @@ a.appt, button.appt {
     background-color: #fff;
 }
 
+.site-navbar {
+    padding: 16px 0;
+}
+
+.navbar-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.site-navbar .navbar-collapse {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-top: 12px;
+}
+
+@media (min-width: 992px) {
+    .site-navbar.navbar-expand-lg {
+        flex-wrap: wrap;
+    }
+}
+
+.site-logo {
+    height: 40px;
+    width: auto;
+    max-width: 100%;
+
+    @media (min-width: 992px) {
+        height: 80px;
+    }
+}
+
+.nav-cta {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-phone {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.appt-sm {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav-cta-mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 16px;
+}
+
 .breadcrumb {
     margin-bottom: 32px;
     a {
