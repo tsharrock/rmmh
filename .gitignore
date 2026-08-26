@@ -26,3 +26,4 @@ yarn-error.log
 /content_docs
 
 /public/sitemap.xml
+.claude/settings.local.json
