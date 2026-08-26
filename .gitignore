@@ -24,3 +24,5 @@ yarn-error.log
 /word_docs
 /scratch_docs
 /content_docs
+
+/public/sitemap.xml

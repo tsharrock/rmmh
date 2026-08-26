@@ -24,6 +24,7 @@ class ContactMail extends Mailable
     {
         return $this->subject('New Contact Form Submission')
             ->to(env('MAIL_TO_ADDRESS'))
+            ->replyTo($this->data['email'], $this->data['name'])
             ->view('emails.contact_template');
     }
 }

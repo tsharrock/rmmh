@@ -4,6 +4,37 @@
 @section('description', 'Meet Tiffany Redmond, PA-C, providing integrated primary care and psychiatric services in Utah and Arizona. Learn about our holistic approach to mental and physical wellness.')
 @section('keywords', 'Tiffany Redmond PA-C, Redmond Medical and Mental Health, Hyde Park Clinic, Cache Valley Healthcare, Integrated Medicine Utah, Arizona Telehealth')
 
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Tiffany Redmond, PA-C",
+  "url": "https://redmondmmh.com/about",
+  "image": "https://redmondmmh.com/img/tiffany_redmond_cropped.webp",
+  "medicalSpecialty": ["Psychiatry", "Family Medicine"],
+  "worksFor": {
+    "@type": "MedicalBusiness",
+    "@id": "https://redmondmmh.com/#organization",
+    "name": "Redmond Medical & Mental Health",
+    "telephone": "+1-435-938-1440",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "245 N. 700 W.",
+      "addressLocality": "Hyde Park",
+      "addressRegion": "UT",
+      "postalCode": "84318",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Utah" },
+    { "@type": "State", "name": "Arizona" }
+  ]
+}
+</script>
+@endsection
+
 @section('sidebar')
     @@parent
 
@@ -24,13 +55,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
-                    <h2>Bridging the Gap Between Body and Mind</h2>
-                    <p class="my-4">At Redmond Medical & Mental Health (RMMH), we believe that true wellness cannot be achieved by treating the body and mind in isolation. Located in the heart of the Cache Valley, our clinic was founded on a simple but powerful mission: to provide integrated, compassionate, and cutting-edge care that addresses the whole person.</p>
-
-                    <div class="divider-line"></div>
 
                     <h3>Our Philosophy</h3>
-                    <p class="my-4">Most healthcare systems force patients to navigate separate worlds for their physical and mental needs. We’ve removed those barriers. By housing Primary Care, Psychiatry, and Innovative Wellness under one roof, we ensure that your care is coordinated, efficient, and deeply personalized. Whether you are seeking relief from treatment-resistant depression or managing a chronic medical condition, we look at the full picture of your health.</p>
+                    <p class="my-4">Most healthcare systems require patients to be seen at separate clinics for different concerns. We’ve removed those barriers. By housing Primary Care, Psychiatry, and Innovative Wellness under one roof, we ensure that your care is coordinated, efficient, and deeply personalized. Whether you are seeking relief from treatment-resistant depression or managing a chronic medical condition, we look at the full picture of your health.</p>
 
                     <div class="divider-line"></div>
 
@@ -54,7 +81,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 ">
-                    <img class="float-start me-3" src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C" />
+                    <img class="float-start me-3" src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C" width="233" height="260" loading="lazy" decoding="async" />
                     <h4>Tiffany Redmond, PA-C</h4>
                     <p>After graduating from Arizona State University in 1997, Tiffany began her career working in juvenile correctional facilities, overseeing treatment groups for adolescent violent offenders, sex offenders, and substance abusers. She also spent time working in adolescent and adult group homes and a residential treatment facility in inner-city Los Angeles. She then went on to earn a Master's in Counseling Psychology, after which she spent four years in Nebraska providing therapeutic services for foster children with severe psychiatric issues. Tiffany then went on to work as a civilian for the U.S. Army, conducting neuropsychological assessments of service members returning from the Middle East with traumatic brain injuries. Upon graduating from the University of Alabama's surgical Physician Assistant Program in 2016, Tiffany moved to Utah, where she has since been providing family medicine and psychiatric services to the Cache Valley community.</p>
                     <p>Tiffany is licensed to see patients in Utah and Arizona and currently accepting new patients for both in person and telehealth services. Whether you are seeking mental health support or a new primary care home, she is ready to partner with you on your journey.</p>

@@ -19,6 +19,9 @@
       "Read(//tmp/**)",
       "Bash(mkdir -p /tmp/ql2)",
       "Bash(qlmanage -t -s 1400 -o /tmp/ql2 \"content_docs/new-montana/Billings.docx\")"
+      "Read(//Users/tomsharrock/sites/**)",
+      "Bash(php --version)",
+      "Bash(composer --version)"
     ]
   }
 }
