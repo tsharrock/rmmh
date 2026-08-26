@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Cedar Rapids | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Cedar Rapids | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Cedar Rapids and Linn County via secure telehealth.')
 @section('keywords', 'Telehealth Cedar Rapids, Online Psychiatrist Cedar Rapids IA, Mental Health Linn County, Telehealth Iowa, Redmond MMH')
 

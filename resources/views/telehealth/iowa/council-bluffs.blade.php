@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Council Bluffs | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Council Bluffs | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Council Bluffs and Pottawattamie County via secure telehealth.')
 @section('keywords', 'Telehealth Council Bluffs, Online Psychiatrist Council Bluffs IA, Mental Health Pottawattamie County, Telehealth Iowa, Redmond MMH')
 

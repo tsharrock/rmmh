@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Davenport | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Davenport | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Davenport and the Quad Cities via secure telehealth.')
 @section('keywords', 'Telehealth Davenport, Online Psychiatrist Davenport IA, Mental Health Scott County, Telehealth Iowa, Redmond MMH')
 

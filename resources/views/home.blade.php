@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Redmond Medical and Mental Health | Integrated Care in Utah and Arizona')
+@section('title', 'Redmond Medical and Mental Health | Integrated Care in Utah, Arizona, Montana, and Iowa')
 @section('description',
     'Redmond Medical and Mental Health offers a unique "one-stop-shop" for Psychiatric care, IV
     Therapy, Ketamine treatments, and Family Medicine, plus telehealth now serving Utah, Arizona, Montana, and Iowa. Book
@@ -10,7 +10,7 @@
     Medical Weight Loss Logan, Telehealth Montana, Telehealth Iowa')
 
 @section('jsonld')
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",

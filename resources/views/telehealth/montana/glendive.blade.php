@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Glendive | Online Mental Health &amp; Psychiatry in MT | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Glendive | Online Mental Health & Psychiatry in MT | Redmond MMH')
 @section('description', 'Montana-licensed psychiatric care, family medicine, and weight loss treatment for Glendive and Dawson County via secure telehealth.')
 @section('keywords', 'Telehealth Glendive, Online Psychiatrist Glendive MT, Mental Health Dawson County, Telehealth Montana, Redmond MMH')
 

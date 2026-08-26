@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Iowa City | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Iowa City | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Iowa City and Johnson County via secure telehealth.')
 @section('keywords', 'Telehealth Iowa City, Online Psychiatrist Iowa City IA, Mental Health Johnson County, Telehealth Iowa, Redmond MMH')
 

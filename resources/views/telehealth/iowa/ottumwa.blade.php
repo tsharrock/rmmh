@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Ottumwa | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Ottumwa | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Ottumwa and Southeast Iowa via secure telehealth.')
 @section('keywords', 'Telehealth Ottumwa, Online Psychiatrist Ottumwa IA, Mental Health Wapello County, Telehealth Iowa, Redmond MMH')
 

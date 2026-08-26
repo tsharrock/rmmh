@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Havre | Online Mental Health &amp; Psychiatry in MT | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Havre | Online Mental Health & Psychiatry in MT | Redmond MMH')
 @section('description', 'Montana-licensed psychiatric care, family medicine, and weight loss treatment for Havre and the Hi-Line via secure telehealth.')
 @section('keywords', 'Telehealth Havre, Online Psychiatrist Havre MT, Mental Health Hill County, Telehealth Montana, Redmond MMH')
 

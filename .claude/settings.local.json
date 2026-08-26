@@ -1,28 +1,28 @@
 {
-  "permissions": {
-    "allow": [
-      "Bash(git mv *)",
-      "WebFetch(domain:rmmh.laravel.cloud)",
-      "Bash(curl -sL https://rmmh.com)",
-      "Bash(curl -sI https://redmondmmh.com)",
-      "Bash(curl -s https://www.redmondmmh.com)",
-      "Bash(herd status *)",
-      "Bash(herd logs *)",
-      "Bash(herd *)",
-      "Bash(/Users/tomsharrock/Library/Application Support/Herd/bin/herd.phar list *)",
-      "Bash(php -r ' *)",
-      "Bash(git rm *)",
-      "Bash(git add *)",
-      "Bash(git commit -q -m 'Add Utah expansion + Montana & Iowa telehealth city pages *)",
-      "Bash(rm -f /tmp/ql/*.png)",
-      "Bash(qlmanage -t -s 1400 -o /tmp/ql \"content_docs/new-montana/Billings.docx\")",
-      "Read(//tmp/**)",
-      "Bash(mkdir -p /tmp/ql2)",
-      "Bash(qlmanage -t -s 1400 -o /tmp/ql2 \"content_docs/new-montana/Billings.docx\")",
-      "Bash(cd /Users/tomsharrock/sites/rmmh; rm -rf scratch_docs node_modules/docx /tmp/ql2 /tmp/ql; echo \"cleaned temp artifacts\"; echo \"=== git status \\(excluding settings.local\\) ===\"; git status --short | grep -v \"settings.local\"; echo \"=== branch ===\"; git branch --show-current; git log --oneline -2)"
-      "Read(//Users/tomsharrock/sites/**)",
-      "Bash(php --version)",
-      "Bash(composer --version)"
-    ]
-  }
+    "permissions": {
+        "allow": [
+            "Bash(git mv *)",
+            "WebFetch(domain:rmmh.laravel.cloud)",
+            "Bash(curl -sL https://rmmh.com)",
+            "Bash(curl -sI https://redmondmmh.com)",
+            "Bash(curl -s https://www.redmondmmh.com)",
+            "Bash(herd status *)",
+            "Bash(herd logs *)",
+            "Bash(herd *)",
+            "Bash(/Users/tomsharrock/Library/Application Support/Herd/bin/herd.phar list *)",
+            "Bash(php -r ' *)",
+            "Bash(git rm *)",
+            "Bash(git add *)",
+            "Bash(git commit -q -m 'Add Utah expansion + Montana & Iowa telehealth city pages *)",
+            "Bash(rm -f /tmp/ql/*.png)",
+            "Bash(qlmanage -t -s 1400 -o /tmp/ql \"content_docs/new-montana/Billings.docx\")",
+            "Read(//tmp/**)",
+            "Bash(mkdir -p /tmp/ql2)",
+            "Bash(qlmanage -t -s 1400 -o /tmp/ql2 \"content_docs/new-montana/Billings.docx\")",
+            "Bash(cd /Users/tomsharrock/sites/rmmh; rm -rf scratch_docs node_modules/docx /tmp/ql2 /tmp/ql; echo \"cleaned temp artifacts\"; echo \"=== git status \\(excluding settings.local\\) ===\"; git status --short | grep -v \"settings.local\"; echo \"=== branch ===\"; git branch --show-current; git log --oneline -2)",
+            "Read(//Users/tomsharrock/sites/**)",
+            "Bash(php --version)",
+            "Bash(composer --version)"
+        ]
+    }
 }

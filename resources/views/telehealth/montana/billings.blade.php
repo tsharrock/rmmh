@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Billings | Online Mental Health &amp; Psychiatry in MT | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Billings | Online Mental Health & Psychiatry in MT | Redmond MMH')
 @section('description', 'Montana-licensed psychiatric care, family medicine, and weight loss treatment for Billings and Yellowstone County via secure telehealth.')
 @section('keywords', 'Telehealth Billings, Online Psychiatrist Billings MT, Mental Health Yellowstone County, Telehealth Montana, Redmond MMH')
 

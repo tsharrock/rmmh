@@ -485,82 +485,62 @@ a.appt, button.appt {
 }
 
 .site-navbar {
+    padding: 16px 0;
+}
+
+.navbar-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.site-navbar .navbar-collapse {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-top: 12px;
+}
+
+@media (min-width: 992px) {
+    .site-navbar.navbar-expand-lg {
+        flex-wrap: wrap;
+    }
+}
+
+.site-logo {
+    height: 40px;
+    width: auto;
+    max-width: 100%;
+
+    @media (min-width: 992px) {
+        height: 80px;
+    }
+}
+
+.nav-cta {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-phone {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.appt-sm {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav-cta-mobile {
     flex-direction: column;
-    align-items: stretch;
-
-    > .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar-top-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding: 16px 0;
-
-        @media (min-width: 992px) {
-            align-items: flex-start;
-            padding: 24px 0 16px;
-        }
-    }
-
-    .navbar-brand {
-        margin-right: 0;
-    }
-
-    .site-logo {
-        width: 280px;
-        height: auto;
-
-        @media (min-width: 992px) {
-            width: 520px;
-        }
-    }
-
-    .navbar-collapse {
-        @media (min-width: 992px) {
-            justify-content: center;
-            padding-bottom: 16px;
-        }
-    }
-
-    .navbar-nav {
-        @media (min-width: 992px) {
-            flex-direction: row;
-        }
-    }
-
-    .nav-cta {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 8px;
-        text-align: right;
-    }
-
-    .nav-cta-mobile {
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        padding-top: 12px;
-        margin-top: 8px;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-phone {
-        font-size: 14px;
-        white-space: nowrap;
-    }
-
-    .appt-sm {
-        display: inline-block;
-        padding: 6px 16px;
-        font-size: 13px;
-        text-decoration: none;
-        white-space: nowrap;
-    }
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 16px;
 }
 
 .breadcrumb {

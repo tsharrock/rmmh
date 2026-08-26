@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Butte | Online Mental Health &amp; Psychiatry in MT | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Butte | Online Mental Health & Psychiatry in MT | Redmond MMH')
 @section('description', 'Montana-licensed psychiatric care, family medicine, and weight loss treatment for Butte and Silver Bow County via secure telehealth.')
 @section('keywords', 'Telehealth Butte, Online Psychiatrist Butte MT, Mental Health Silver Bow County, Telehealth Montana, Redmond MMH')
 

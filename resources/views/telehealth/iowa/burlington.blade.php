@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Burlington | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Burlington | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Burlington and the Great River region via secure telehealth.')
 @section('keywords', 'Telehealth Burlington, Online Psychiatrist Burlington IA, Mental Health Des Moines County, Telehealth Iowa, Redmond MMH')
 

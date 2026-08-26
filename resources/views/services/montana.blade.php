@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth Services & Insurance in Montana | Redmond Medical & Mental Health')
-@section('description', 'Redmond Medical and Mental Health offers telehealth Psychiatric Care, Family Medicine, and Medical Weight Loss to patients across Montana, plus accepted insurance plans.')
+@section('description', 'Telehealth psychiatric care, family medicine, and medical weight loss for patients across Montana, plus accepted insurance plans and credentialing.')
 @section('keywords', 'Montana Telehealth, Montana Mental Health, Montana Insurance Credentials, Psychiatric Care Montana, Medical Weight Loss Montana')
 
 @section('content')

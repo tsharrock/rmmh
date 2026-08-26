@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Dillon | Online Mental Health &amp; Psychiatry in MT | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Dillon | Online Mental Health & Psychiatry in MT | Redmond MMH')
 @section('description', 'Montana-licensed psychiatric care, family medicine, and weight loss treatment for Dillon and Beaverhead County via secure telehealth.')
 @section('keywords', 'Telehealth Dillon, Online Psychiatrist Dillon MT, Mental Health Beaverhead County, Telehealth Montana, Redmond MMH')
 

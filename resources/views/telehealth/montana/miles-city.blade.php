@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Miles City | Online Mental Health &amp; Psychiatry in MT | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Miles City | Online Mental Health & Psychiatry in MT | Redmond MMH')
 @section('description', 'Montana-licensed psychiatric care, family medicine, and weight loss treatment for Miles City and Eastern Montana via secure telehealth.')
 @section('keywords', 'Telehealth Miles City, Online Psychiatrist Miles City MT, Mental Health Custer County, Telehealth Montana, Redmond MMH')
 

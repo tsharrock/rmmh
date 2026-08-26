@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Ames | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Ames | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Ames and Story County via secure telehealth.')
 @section('keywords', 'Telehealth Ames, Online Psychiatrist Ames IA, Mental Health Story County, Telehealth Iowa, Redmond MMH')
 
