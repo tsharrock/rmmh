@@ -1,9 +1,12 @@
 <style>
     /* Redmond MMH Brand Colors */
     :root {
-        --redmond-red: #b32025; /* Primary Brand Red */
-        --redmond-dark: #1a1a1a; /* Dark Charcoal Background */
-        --redmond-light: #f4f4f4; /* Light Grey Text/Accents */
+        --redmond-red: #b32025;
+        /* Primary Brand Red */
+        --redmond-dark: #1a1a1a;
+        /* Dark Charcoal Background */
+        --redmond-light: #f4f4f4;
+        /* Light Grey Text/Accents */
         --white: #ffffff;
     }
 
@@ -19,14 +22,20 @@
         max-width: 1100px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 30px;
+    }
+
+    @media (min-width: 992px) {
+        .footer-container {
+            grid-template-columns: repeat(6, 1fr);
+        }
     }
 
     .footer-col h4 {
         color: var(--redmond-red);
-        font-size: 1.1rem;
-        margin-bottom: 25px;
+        font-size: 0.85rem;
+        margin-bottom: 15px;
         position: relative;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -50,13 +59,13 @@
     }
 
     .footer-col ul li {
-        margin-bottom: 15px;
+        margin-bottom: 8px;
     }
 
     .footer-col ul li a {
         color: var(--redmond-dark);
         text-decoration: none;
-        font-size: 0.95rem;
+        font-size: 0.8rem;
         transition: all 0.3s ease;
     }
 
@@ -92,14 +101,16 @@
 
 
 <footer>
-    <div class="tagline text-center mb-3"><h3>Serving Utah, Arizona, Montana & Iowa</h3></div>
+    <div class="tagline text-center mb-3">
+        <h3>Serving Utah, Arizona, Montana & Iowa</h3>
+    </div>
     <div class="footer-container">
 
         <div class="footer-col">
             <h4>Redmond MMH</h4>
             <ul>
                 <li><a href="{{ route('about') }}">About</a></li>
-                <li><a href="{{ route('insurance') }}">Insurance Credentials</a></li>
+                <li><a href="{{ route('insurance') }}">Accepted Insurance Plans</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
             </ul>
         </div>
@@ -117,12 +128,15 @@
         <div class="footer-col">
             <h4>Utah Telehealth</h4>
             <ul>
-                <li><a href="{{ route('logan-cache-valley') }}"><strong>Cache Valley:</strong> All Medical & Mental Health Services</a></li>
-                <li><a href="{{ route('telehealth.utah.salt-lake-city') }}"><strong>Salt Lake City:</strong> Telehealth</a></li>
+                <li><a href="{{ route('logan-cache-valley') }}"><strong>Cache Valley:</strong> All Medical & Mental
+                        Health Services</a></li>
+                <li><a href="{{ route('telehealth.utah.salt-lake-city') }}"><strong>Salt Lake City:</strong>
+                        Telehealth</a></li>
                 <li><a href="{{ route('telehealth.utah.ogden') }}"><strong>Ogden:</strong> Telehealth</a></li>
                 <li><a href="{{ route('telehealth.utah.provo') }}"><strong>Provo:</strong> Telehealth</a></li>
                 <li><a href="{{ route('telehealth.utah.st-george') }}"><strong>St. George:</strong> Telehealth</a></li>
-                <li><a href="{{ route('telehealth.utah.cedar-city') }}"><strong>Cedar City:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.utah.cedar-city') }}"><strong>Cedar City:</strong> Telehealth</a>
+                </li>
             </ul>
         </div>
 
@@ -132,9 +146,11 @@
                 <li><a href="{{ route('telehealth.arizona.phoenix') }}"><strong>Phoenix:</strong> Telehealth</a></li>
                 <li><a href="{{ route('telehealth.arizona.tucson') }}"><strong>Tucson:</strong> Telehealth</a></li>
                 <li><a href="{{ route('telehealth.arizona.mesa') }}"><strong>Mesa:</strong> Telehealth</a></li>
-                <li><a href="{{ route('telehealth.arizona.scottsdale') }}"><strong>Scottsdale:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.arizona.scottsdale') }}"><strong>Scottsdale:</strong> Telehealth</a>
+                </li>
                 <li><a href="{{ route('telehealth.arizona.tempe') }}"><strong>Tempe:</strong> Telehealth</a></li>
-                <li><a href="{{ route('telehealth.arizona.flagstaff') }}"><strong>Flagstaff:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.arizona.flagstaff') }}"><strong>Flagstaff:</strong> Telehealth</a>
+                </li>
             </ul>
         </div>
 
@@ -143,20 +159,25 @@
             <ul>
                 <li><a href="{{ route('telehealth.montana.billings') }}"><strong>Billings:</strong> Telehealth</a></li>
                 <li><a href="{{ route('telehealth.montana.missoula') }}"><strong>Missoula:</strong> Telehealth</a></li>
-                <li><a href="{{ route('telehealth.montana.great-falls') }}"><strong>Great Falls:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.montana.great-falls') }}"><strong>Great Falls:</strong>
+                        Telehealth</a></li>
                 <li><a href="{{ route('telehealth.montana.bozeman') }}"><strong>Bozeman:</strong> Telehealth</a></li>
                 <li><a href="{{ route('telehealth.montana.helena') }}"><strong>Helena:</strong> Telehealth</a></li>
-                <li><a href="{{ route('telehealth.montana.kalispell') }}"><strong>Kalispell:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.montana.kalispell') }}"><strong>Kalispell:</strong> Telehealth</a>
+                </li>
             </ul>
         </div>
 
         <div class="footer-col">
             <h4>Iowa Telehealth</h4>
             <ul>
-                <li><a href="{{ route('telehealth.iowa.des-moines') }}"><strong>Des Moines:</strong> Telehealth</a></li>
-                <li><a href="{{ route('telehealth.iowa.cedar-rapids') }}"><strong>Cedar Rapids:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.iowa.des-moines') }}"><strong>Des Moines:</strong> Telehealth</a>
+                </li>
+                <li><a href="{{ route('telehealth.iowa.cedar-rapids') }}"><strong>Cedar Rapids:</strong> Telehealth</a>
+                </li>
                 <li><a href="{{ route('telehealth.iowa.davenport') }}"><strong>Davenport:</strong> Telehealth</a></li>
-                <li><a href="{{ route('telehealth.iowa.sioux-city') }}"><strong>Sioux City:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.iowa.sioux-city') }}"><strong>Sioux City:</strong> Telehealth</a>
+                </li>
                 <li><a href="{{ route('telehealth.iowa.iowa-city') }}"><strong>Iowa City:</strong> Telehealth</a></li>
                 <li><a href="{{ route('telehealth.iowa.waterloo') }}"><strong>Waterloo:</strong> Telehealth</a></li>
             </ul>

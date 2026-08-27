@@ -8,8 +8,8 @@
     <div class="hero utah border-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 offset-lg-1">
-                    <h1>Services & Insurance in Utah</h1>
+                <div class="col-md-6">
+                    <h1>Telehealth Services<br class="d-none d-md-block"> in Utah</h1>
                 </div>
             </div>
         </div>
@@ -22,55 +22,7 @@
                 </div>
                 <p>Our Hyde Park clinic offers the full range of Redmond Medical & Mental Health services in person, alongside telehealth visits for patients across the state.</p>
 
-                <h2>Services offered in Utah</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 mb-3">
-                        <div class="info-card">
-                            <h3 class="text-center">Psychiatric Care</h3>
-                            <p>Comprehensive diagnosis and medication management for conditions ranging from anxiety and depression to ADHD, bipolar disorder, and addictions.</p>
-                            <p class="link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="info-card">
-                            <h3 class="text-center">Ketamine Therapy</h3>
-                            <p>An innovative, rapid-acting treatment using intramuscular injections to help repair neural pathways for patients struggling with treatment-resistant depression and suicidal ideation, PTSD, migraine headaches, addictions, and chronic pain.</p>
-                            <p class="link"><a class="rmmh_red" href="{{ route('ketamine') }}">Read More</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="info-card">
-                            <h3 class="text-center">Family Medicine & Women's Health</h3>
-                            <p>Holistic primary care that integrates annual wellness exams, labs and acute and chronic disease management. Specialized women's services include contraception and hormonal health.</p>
-                            <p class="link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="info-card">
-                            <h3 class="text-center">Medical Weight Loss</h3>
-                            <p>Evidence-based weight management programs featuring GLP-1 medications (like semaglutide and tirzepatide) combined with nutritional support to help you achieve and maintain a healthy weight.</p>
-                            <p class="link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="info-card">
-                            <h3 class="text-center">IV Therapy & Injectables</h3>
-                            <p>Customizable nutrient infusions and vitamin injections designed to instantly boost energy, enhance immunity, decrease pain and accelerate physical recovery.</p>
-                            <p class="link"><a class="rmmh_red" href="{{ route('iv-fluids') }}">Read More</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="info-card">
-                            <h3 class="text-center">Telehealth Services</h3>
-                            <p>Convenient virtual consultations that allow you to receive high-quality primary care and psychiatric services, medication management, and medical follow-ups from the comfort and privacy of your own home.</p>
-                            <p class="link"><a class="rmmh_red" href="{{ route('telehealth') }}">Read More</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="divider-line"></div>
-
-                <h2>Insurance & Credentialing in Utah</h2>
+                <h2>Accepted Insurance Plans in Utah</h2>
                 <p>We're credentialed with the following insurance plans in Utah. Coverage can vary by plan, so we recommend confirming your telemedicine or in-office benefit before your visit.</p>
                 <div class="row">
                     <div class="col-lg-6">
@@ -118,6 +70,55 @@
                         <ul>
                             <li>Triwest Healthcare Alliance</li>
                         </ul>
+                    </div>
+                </div>
+                <p>Don't have insurance, or prefer not to bill your plan? We also accept cash pay for all services.</p>
+
+                <div class="divider-line"></div>
+
+                <h2>Services offered in Utah</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mb-3">
+                        <div class="info-card">
+                            <h3 class="text-center">Psychiatric Care</h3>
+                            <p>Comprehensive diagnosis and medication management for conditions ranging from anxiety and depression to ADHD, bipolar disorder, and addictions.</p>
+                            <p class="link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="info-card">
+                            <h3 class="text-center">Ketamine Therapy</h3>
+                            <p>An innovative, rapid-acting treatment using intramuscular injections to help repair neural pathways for patients struggling with treatment-resistant depression and suicidal ideation, PTSD, migraine headaches, addictions, and chronic pain.</p>
+                            <p class="link"><a class="rmmh_red" href="{{ route('ketamine') }}">Read More</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="info-card">
+                            <h3 class="text-center">Family Medicine & Women's Health</h3>
+                            <p>Holistic primary care that integrates annual wellness exams, labs and acute and chronic disease management. Specialized women's services include contraception and hormonal health.</p>
+                            <p class="link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="info-card">
+                            <h3 class="text-center">Medical Weight Loss</h3>
+                            <p>Evidence-based weight management programs featuring GLP-1 medications (like semaglutide and tirzepatide) combined with nutritional support to help you achieve and maintain a healthy weight.</p>
+                            <p class="link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="info-card">
+                            <h3 class="text-center">IV Therapy & Injectables</h3>
+                            <p>Customizable nutrient infusions and vitamin injections designed to instantly boost energy, enhance immunity, decrease pain and accelerate physical recovery.</p>
+                            <p class="link"><a class="rmmh_red" href="{{ route('iv-fluids') }}">Read More</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="info-card">
+                            <h3 class="text-center">Telehealth Services</h3>
+                            <p>Convenient virtual consultations that allow you to receive high-quality primary care and psychiatric services, medication management, and medical follow-ups from the comfort and privacy of your own home.</p>
+                            <p class="link"><a class="rmmh_red" href="{{ route('telehealth') }}">Read More</a></p>
+                        </div>
                     </div>
                 </div>
 

@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero burlington border-bottom">
+    <div class="hero burlington hero-ia-{{ random_int(1, 5) }} border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">

@@ -299,6 +299,21 @@ a.appt, button.appt {
         background-position: center 39%;
     }
 
+    // Montana — randomly chosen per page load from resources/sass/img/mt
+    &.hero-mt-1 { background-image: url("./img/mt/mt-1.webp"); background-position: center 39%; }
+    &.hero-mt-2 { background-image: url("./img/mt/mt-2.webp"); background-position: center 39%; }
+    &.hero-mt-3 { background-image: url("./img/mt/mt-3.webp"); background-position: center 39%; }
+    &.hero-mt-4 { background-image: url("./img/mt/mt-4.webp"); background-position: center 39%; }
+    &.hero-mt-5 { background-image: url("./img/mt/mt-5.webp"); background-position: center 39%; }
+    &.hero-mt-6 { background-image: url("./img/mt/mt-6.webp"); background-position: center 39%; }
+
+    // Iowa — randomly chosen per page load from resources/sass/img/ia
+    &.hero-ia-1 { background-image: url("./img/ia/ia-1.webp"); background-position: center 39%; }
+    &.hero-ia-2 { background-image: url("./img/ia/ia-2.webp"); background-position: center 39%; }
+    &.hero-ia-3 { background-image: url("./img/ia/ia-3.webp"); background-position: center 39%; }
+    &.hero-ia-4 { background-image: url("./img/ia/ia-4.webp"); background-position: center 69%; }
+    &.hero-ia-5 { background-image: url("./img/ia/ia-5.webp"); background-position: center 39%; }
+
     // Frosted-glass panel behind hero text on city pages (AZ + UT).
     &.apache-junction,
     &.beaver,
@@ -444,11 +459,11 @@ a.appt, button.appt {
 }
 
 .sidebar-border {
-    border-top: 1px solid $rmmh_red;
+    border: 1px solid $rmmh_red;
+    border-radius: 10px;
 
-    @media (min-width: 768px) {
-        border-left: 1px solid $rmmh_red;
-        border-radius: 10px 0 0 0;
+    h4 {
+        font-size: 1.1rem;
     }
 
     .nextpatient-provider-image-cell, .nextpatient-provider-small-photo {
@@ -506,6 +521,14 @@ a.appt, button.appt {
 @media (min-width: 992px) {
     .site-navbar.navbar-expand-lg {
         flex-wrap: wrap;
+    }
+
+    .site-navbar .navbar-nav {
+        gap: 32px;
+    }
+
+    .site-navbar .navbar-nav .nav-link {
+        font-size: 18px;
     }
 }
 
