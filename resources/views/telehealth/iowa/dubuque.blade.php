@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Dubuque | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Dubuque | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Dubuque and Dubuque County via secure telehealth.')
 @section('keywords', 'Telehealth Dubuque, Online Psychiatrist Dubuque IA, Mental Health Dubuque County, Telehealth Iowa, Redmond MMH')
 
@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero dubuque border-bottom">
+    <div class="hero dubuque hero-ia-1 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Great Falls | Online Mental Health &amp; Psychiatry in MT | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Great Falls | Online Mental Health & Psychiatry in MT | Redmond MMH')
 @section('description', 'Montana-licensed psychiatric care, family medicine, and weight loss treatment for Great Falls and Cascade County via secure telehealth.')
 @section('keywords', 'Telehealth Great Falls, Online Psychiatrist Great Falls MT, Mental Health Cascade County, Telehealth Montana, Redmond MMH')
 
@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero great-falls border-bottom">
+    <div class="hero great-falls hero-mt-4 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">

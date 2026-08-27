@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Sidney | Online Mental Health &amp; Psychiatry in MT | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Sidney | Online Mental Health & Psychiatry in MT | Redmond MMH')
 @section('description', 'Montana-licensed psychiatric care, family medicine, and weight loss treatment for Sidney and the MonDak region via secure telehealth.')
 @section('keywords', 'Telehealth Sidney, Online Psychiatrist Sidney MT, Mental Health Richland County, Telehealth Montana, Redmond MMH')
 
@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero sidney border-bottom">
+    <div class="hero sidney hero-mt-5 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">

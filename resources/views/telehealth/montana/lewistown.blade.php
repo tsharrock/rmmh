@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Lewistown | Online Mental Health &amp; Psychiatry in MT | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Lewistown | Online Mental Health & Psychiatry in MT | Redmond MMH')
 @section('description', 'Montana-licensed psychiatric care, family medicine, and weight loss treatment for Lewistown and Central Montana via secure telehealth.')
 @section('keywords', 'Telehealth Lewistown, Online Psychiatrist Lewistown MT, Mental Health Fergus County, Telehealth Montana, Redmond MMH')
 
@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero lewistown border-bottom">
+    <div class="hero lewistown hero-mt-1 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">

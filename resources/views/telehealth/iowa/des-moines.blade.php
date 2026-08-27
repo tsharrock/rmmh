@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Des Moines | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Des Moines | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Des Moines and Polk County via secure telehealth.')
 @section('keywords', 'Telehealth Des Moines, Online Psychiatrist Des Moines IA, Mental Health Polk County, Telehealth Iowa, Redmond MMH')
 
@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero des-moines border-bottom">
+    <div class="hero des-moines hero-ia-2 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">

@@ -5,3 +5,75 @@ section#hero {
     padding: 100px 0;
 }
 
+.state-tile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    text-decoration: none;
+
+    .state-tile-shape {
+        position: absolute;
+        inset: 0;
+        background-color: $rmmh_red;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: contain;
+        transition: 0.3s;
+    }
+
+    // Width follows each state's real aspect ratio so the visible shapes
+    // sit close together instead of leaving uneven whitespace inside a
+    // fixed-width column.
+    &.utah {
+        width: 220px * (50 / 63);
+    }
+    &.arizona {
+        width: 220px * (53 / 62);
+    }
+    &.montana {
+        width: 220px * (85 / 50);
+    }
+    &.iowa {
+        width: 220px * (76 / 50);
+    }
+
+    &:hover .state-tile-shape {
+        background-color: #971227;
+    }
+
+    .state-tile-label {
+        position: relative;
+        z-index: 1;
+        margin-top: -15%;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    &.utah .state-tile-shape {
+        mask-image: url("./img/states/utah.svg");
+        -webkit-mask-image: url("./img/states/utah.svg");
+    }
+    &.arizona .state-tile-shape {
+        mask-image: url("./img/states/arizona.svg");
+        -webkit-mask-image: url("./img/states/arizona.svg");
+    }
+    &.montana .state-tile-shape {
+        mask-image: url("./img/states/montana.svg");
+        -webkit-mask-image: url("./img/states/montana.svg");
+    }
+    &.iowa .state-tile-shape {
+        mask-image: url("./img/states/iowa.svg");
+        -webkit-mask-image: url("./img/states/iowa.svg");
+    }
+}
+

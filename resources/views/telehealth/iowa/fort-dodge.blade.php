@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Fort Dodge | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Fort Dodge | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Fort Dodge and Webster County via secure telehealth.')
 @section('keywords', 'Telehealth Fort Dodge, Online Psychiatrist Fort Dodge IA, Mental Health Webster County, Telehealth Iowa, Redmond MMH')
 
@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero fort-dodge border-bottom">
+    <div class="hero fort-dodge hero-ia-3 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">

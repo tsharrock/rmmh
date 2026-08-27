@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Carroll | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Carroll | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Carroll and West Central Iowa via secure telehealth.')
 @section('keywords', 'Telehealth Carroll, Online Psychiatrist Carroll IA, Mental Health Carroll County, Telehealth Iowa, Redmond MMH')
 
@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero carroll border-bottom">
+    <div class="hero carroll hero-ia-5 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">

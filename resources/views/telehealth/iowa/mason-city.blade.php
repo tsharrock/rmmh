@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Mason City | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Mason City | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Mason City and North Central Iowa via secure telehealth.')
 @section('keywords', 'Telehealth Mason City, Online Psychiatrist Mason City IA, Mental Health Cerro Gordo County, Telehealth Iowa, Redmond MMH')
 
@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero mason-city border-bottom">
+    <div class="hero mason-city hero-ia-2 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">

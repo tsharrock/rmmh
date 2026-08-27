@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Sioux City | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Sioux City | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Sioux City and Woodbury County via secure telehealth.')
 @section('keywords', 'Telehealth Sioux City, Online Psychiatrist Sioux City IA, Mental Health Woodbury County, Telehealth Iowa, Redmond MMH')
 
@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero sioux-city border-bottom">
+    <div class="hero sioux-city hero-ia-4 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">

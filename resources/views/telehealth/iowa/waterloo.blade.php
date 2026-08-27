@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Waterloo | Online Mental Health &amp; Psychiatry in IA | Redmond Medical &amp; Mental Health')
+@section('title', 'Telehealth Waterloo | Online Mental Health & Psychiatry in IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Waterloo and the Cedar Valley via secure telehealth.')
 @section('keywords', 'Telehealth Waterloo, Online Psychiatrist Waterloo IA, Mental Health Black Hawk County, Telehealth Iowa, Redmond MMH')
 
@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero waterloo border-bottom">
+    <div class="hero waterloo hero-ia-5 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
