@@ -441,8 +441,11 @@ a.appt, button.appt {
         }
     }
 
-    // Provo: dark-tinted panel with white text
-    &.provo {
+    // Provo, and MT/IA variants with dark imagery behind the text panel: dark-tinted panel with white text
+    &.provo,
+    &.hero-mt-3,
+    &.hero-ia-3,
+    &.hero-ia-5 {
         > .container > .row > [class*="col-"] {
             background: rgba(0, 0, 0, 0.4);
             border-color: rgba(255, 255, 255, 0.18);

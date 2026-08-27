@@ -9,7 +9,7 @@
     Montana, Medical Weight Loss Montana')
 
 @section('content')
-    <div class="hero montana hero-mt-{{ random_int(1, 6) }} border-bottom">
+    <div class="hero montana hero-mt-6 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">

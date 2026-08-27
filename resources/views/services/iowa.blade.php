@@ -7,7 +7,7 @@
     Weight Loss Iowa')
 
 @section('content')
-    <div class="hero iowa hero-ia-{{ random_int(1, 5) }} border-bottom">
+    <div class="hero iowa hero-ia-4 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">

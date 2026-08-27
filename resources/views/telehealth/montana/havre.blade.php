@@ -35,7 +35,7 @@
 @endsection
 
 @section('content')
-    <div class="hero havre hero-mt-{{ random_int(1, 6) }} border-bottom">
+    <div class="hero havre hero-mt-1 border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
