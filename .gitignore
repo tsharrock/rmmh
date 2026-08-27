@@ -22,5 +22,8 @@ yarn-error.log
 /.vscode
 /.zed
 /word_docs
+/scratch_docs
+/content_docs
 
 /public/sitemap.xml
+.claude/settings.local.json
