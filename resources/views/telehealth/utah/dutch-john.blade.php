@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Dutch John Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Dutch John and the Flaming Gorge region through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/dutch-john",
+  "url": "https://redmondmmh.com/telehealth/utah/dutch-john",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Dutch John",

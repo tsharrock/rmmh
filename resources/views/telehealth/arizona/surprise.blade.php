@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Surprise Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Surprise and the Northwest Valley through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/surprise",
+  "url": "https://redmondmmh.com/telehealth/arizona/surprise",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Surprise",

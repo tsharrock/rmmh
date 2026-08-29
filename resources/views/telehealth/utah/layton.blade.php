@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Layton Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Layton and Davis County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/layton",
+  "url": "https://redmondmmh.com/telehealth/utah/layton",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Layton",

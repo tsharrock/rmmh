@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Mesa Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Mesa and the East Valley through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/mesa",
+  "url": "https://redmondmmh.com/telehealth/arizona/mesa",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Mesa",

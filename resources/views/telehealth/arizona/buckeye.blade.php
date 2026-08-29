@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Buckeye Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Buckeye and the Far West Valley through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/buckeye",
+  "url": "https://redmondmmh.com/telehealth/arizona/buckeye",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Buckeye",

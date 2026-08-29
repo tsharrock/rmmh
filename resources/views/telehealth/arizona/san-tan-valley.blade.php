@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - San Tan Valley Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for San Tan Valley and the surrounding Southeast Valley through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/san-tan-valley",
+  "url": "https://redmondmmh.com/telehealth/arizona/san-tan-valley",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "San Tan Valley",

@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Maricopa Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Maricopa, AZ and the surrounding Pinal County communities through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/maricopa",
+  "url": "https://redmondmmh.com/telehealth/arizona/maricopa",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Maricopa",

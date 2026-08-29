@@ -119,7 +119,7 @@
           "name": "Redmond Medical & Mental Health - Ogden Telehealth",
           "alternateName": "Redmond MMH",
           "description": "Providing expert online therapy, psychiatry, and family medicine services to the Ogden area through secure telehealth.",
-          "url": "https://www.redmondmmh.com/telehealth/ogden",
+          "url": "https://redmondmmh.com/telehealth/utah/ogden",
           "telephone": "+1-435-938-1440",
           "priceRange": "$$",
           "address": {

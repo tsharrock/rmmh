@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Page Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Page, Arizona and the Lake Powell area through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/page",
+  "url": "https://redmondmmh.com/telehealth/arizona/page",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Page",

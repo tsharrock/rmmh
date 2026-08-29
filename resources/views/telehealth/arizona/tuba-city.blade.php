@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Tuba City Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Tuba City and the western Navajo Nation through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/tuba-city",
+  "url": "https://redmondmmh.com/telehealth/arizona/tuba-city",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Tuba City",

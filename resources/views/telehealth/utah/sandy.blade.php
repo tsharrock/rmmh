@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Sandy Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Sandy and South Salt Lake County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/sandy",
+  "url": "https://redmondmmh.com/telehealth/utah/sandy",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Sandy",

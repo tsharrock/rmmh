@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Lake Havasu City Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Lake Havasu City and Mohave County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/lake-havasu-city",
+  "url": "https://redmondmmh.com/telehealth/arizona/lake-havasu-city",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Lake Havasu City",

@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Sierra Vista Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Sierra Vista, Fort Huachuca, and Cochise County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/sierra-vista",
+  "url": "https://redmondmmh.com/telehealth/arizona/sierra-vista",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Sierra Vista",

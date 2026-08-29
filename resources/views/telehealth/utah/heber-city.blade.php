@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Heber City Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Heber City and Wasatch County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/heber-city",
+  "url": "https://redmondmmh.com/telehealth/utah/heber-city",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Heber City",

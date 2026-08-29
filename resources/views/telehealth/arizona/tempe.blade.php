@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Tempe Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Tempe and the East Valley through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/tempe",
+  "url": "https://redmondmmh.com/telehealth/arizona/tempe",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Tempe",

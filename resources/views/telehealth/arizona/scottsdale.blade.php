@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Scottsdale Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Scottsdale residents through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/scottsdale",
+  "url": "https://redmondmmh.com/telehealth/arizona/scottsdale",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Scottsdale",

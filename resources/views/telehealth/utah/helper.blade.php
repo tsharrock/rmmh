@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Helper Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Helper, Utah and surrounding Carbon County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/helper",
+  "url": "https://redmondmmh.com/telehealth/utah/helper",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Helper",

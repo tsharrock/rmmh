@@ -106,7 +106,7 @@
           "name": "Redmond Medical & Mental Health - Provo Psychiatry",
           "alternateName": "Redmond MMH",
           "description": "Specialized online psychiatry and mental health medication management for Provo and Utah County residents via secure telehealth.",
-          "url": "https://www.redmondmmh.com/telehealth/provo",
+          "url": "https://redmondmmh.com/telehealth/utah/provo",
           "telephone": "+1-435-938-1440",
           "priceRange": "$$",
           "address": {

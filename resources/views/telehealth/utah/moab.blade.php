@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Moab Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Moab and southeastern Utah residents through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/moab",
+  "url": "https://redmondmmh.com/telehealth/utah/moab",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Moab",

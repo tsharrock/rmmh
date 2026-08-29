@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Prescott Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Prescott and Yavapai County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/prescott",
+  "url": "https://redmondmmh.com/telehealth/arizona/prescott",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Prescott",

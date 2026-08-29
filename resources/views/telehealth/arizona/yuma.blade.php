@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Yuma Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Yuma and Yuma County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/yuma",
+  "url": "https://redmondmmh.com/telehealth/arizona/yuma",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Yuma",

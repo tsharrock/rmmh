@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Spanish Fork Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Spanish Fork and South Utah County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/spanish-fork",
+  "url": "https://redmondmmh.com/telehealth/utah/spanish-fork",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Spanish Fork",

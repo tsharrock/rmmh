@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Kingman Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Kingman and Mohave County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/kingman",
+  "url": "https://redmondmmh.com/telehealth/arizona/kingman",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Kingman",

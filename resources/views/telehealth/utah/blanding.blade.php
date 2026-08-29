@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Blanding Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Blanding and San Juan County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/blanding",
+  "url": "https://redmondmmh.com/telehealth/utah/blanding",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Blanding",

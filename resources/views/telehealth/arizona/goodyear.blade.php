@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Goodyear Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Goodyear and the West Valley through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/goodyear",
+  "url": "https://redmondmmh.com/telehealth/arizona/goodyear",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Goodyear",

@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Wendover Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Wendover, Utah and the West Desert through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/wendover",
+  "url": "https://redmondmmh.com/telehealth/utah/wendover",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Wendover",

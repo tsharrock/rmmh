@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Price Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Price and Carbon County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/price",
+  "url": "https://redmondmmh.com/telehealth/utah/price",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Price",

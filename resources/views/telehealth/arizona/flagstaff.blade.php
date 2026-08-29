@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Flagstaff Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Flagstaff, Coconino County, and northern Arizona through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/flagstaff",
+  "url": "https://redmondmmh.com/telehealth/arizona/flagstaff",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Flagstaff",

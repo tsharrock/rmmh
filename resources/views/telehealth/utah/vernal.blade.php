@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Vernal Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Vernal and the Uintah Basin through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/vernal",
+  "url": "https://redmondmmh.com/telehealth/utah/vernal",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Vernal",

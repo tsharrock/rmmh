@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Park City Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Park City and Summit County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/park-city",
+  "url": "https://redmondmmh.com/telehealth/utah/park-city",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Park City",

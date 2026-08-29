@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Beaver Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Beaver County and rural southern Utah through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/beaver",
+  "url": "https://redmondmmh.com/telehealth/utah/beaver",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Beaver",

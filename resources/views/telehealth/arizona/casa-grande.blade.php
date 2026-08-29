@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Casa Grande Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Casa Grande and Pinal County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/casa-grande",
+  "url": "https://redmondmmh.com/telehealth/arizona/casa-grande",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Casa Grande",

@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Orem Telehealth",
   "description": "Online psychiatry, primary care, and weight loss services for Orem and Utah County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/utah/orem",
+  "url": "https://redmondmmh.com/telehealth/utah/orem",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Orem",

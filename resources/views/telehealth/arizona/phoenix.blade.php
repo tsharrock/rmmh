@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Phoenix Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Phoenix and Maricopa County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/phoenix",
+  "url": "https://redmondmmh.com/telehealth/arizona/phoenix",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Phoenix",

@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Queen Creek Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Queen Creek and the Southeast Valley through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/queen-creek",
+  "url": "https://redmondmmh.com/telehealth/arizona/queen-creek",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Queen Creek",

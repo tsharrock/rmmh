@@ -11,7 +11,7 @@
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Tucson Telehealth",
   "description": "Arizona-licensed online psychiatry, primary care, and weight loss services for Tucson and Pima County through secure telehealth.",
-  "url": "https://www.redmondmmh.com/telehealth/arizona/tucson",
+  "url": "https://redmondmmh.com/telehealth/arizona/tucson",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Tucson",
