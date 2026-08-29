@@ -53,7 +53,7 @@
                 <div class="divider-line"></div>
 
                 <h3>Telehealth Service Areas</h3>
-                <p>Tiffany Redmond, PA-C, is licensed in Utah and Arizona. Pick your city below for an overview of how telehealth fits your area:</p>
+                <p>Tiffany Redmond, PA-C, is licensed in Utah, Arizona, Montana, and Iowa. Pick your city below for an overview of how telehealth fits your area:</p>
                 <div class="row">
                     <div class="col-md-6">
                         <h4 class="mt-3">Utah</h4>
@@ -78,6 +78,37 @@
                             <li><a href="{{ route('telehealth.utah.vernal') }}">Vernal</a></li>
                             <li><a href="{{ route('telehealth.utah.dutch-john') }}">Dutch John</a></li>
                             <li><a href="{{ route('telehealth.utah.wendover') }}">Wendover</a></li>
+                            <li><a href="{{ route('telehealth.utah.richfield') }}">Richfield</a></li>
+                            <li><a href="{{ route('telehealth.utah.roosevelt') }}">Roosevelt</a></li>
+                            <li><a href="{{ route('telehealth.utah.nephi') }}">Nephi</a></li>
+                            <li><a href="{{ route('telehealth.utah.delta') }}">Delta</a></li>
+                            <li><a href="{{ route('telehealth.utah.kanab') }}">Kanab</a></li>
+                            <li><a href="{{ route('telehealth.utah.monticello') }}">Monticello</a></li>
+                            <li><a href="{{ route('telehealth.utah.ephraim') }}">Ephraim</a></li>
+                            <li><a href="{{ route('telehealth.utah.tremonton') }}">Tremonton</a></li>
+                            <li><a href="{{ route('telehealth.utah.tooele') }}">Tooele</a></li>
+                            <li><a href="{{ route('telehealth.utah.brigham-city') }}">Brigham City</a></li>
+                            <li><a href="{{ route('telehealth.utah.fillmore') }}">Fillmore</a></li>
+                            <li><a href="{{ route('telehealth.utah.panguitch') }}">Panguitch</a></li>
+                            <li><a href="{{ route('telehealth.utah.gunnison') }}">Gunnison</a></li>
+                            <li><a href="{{ route('telehealth.utah.mount-pleasant') }}">Mount Pleasant</a></li>
+                            <li><a href="{{ route('telehealth.utah.green-river') }}">Green River</a></li>
+                            <li><a href="{{ route('telehealth.utah.castle-dale') }}">Castle Dale</a></li>
+                            <li><a href="{{ route('telehealth.utah.duchesne') }}">Duchesne</a></li>
+                            <li><a href="{{ route('telehealth.utah.milford') }}">Milford</a></li>
+                            <li><a href="{{ route('telehealth.utah.hurricane') }}">Hurricane</a></li>
+                            <li><a href="{{ route('telehealth.utah.escalante') }}">Escalante</a></li>
+                            <li><a href="{{ route('telehealth.utah.loa') }}">Loa</a></li>
+                            <li><a href="{{ route('telehealth.utah.garden-city') }}">Garden City</a></li>
+                            <li><a href="{{ route('telehealth.utah.roy') }}">Roy</a></li>
+                            <li><a href="{{ route('telehealth.utah.american-fork') }}">American Fork</a></li>
+                            <li><a href="{{ route('telehealth.utah.murray') }}">Murray</a></li>
+                            <li><a href="{{ route('telehealth.utah.west-valley-city') }}">West Valley City</a></li>
+                            <li><a href="{{ route('telehealth.utah.coalville') }}">Coalville</a></li>
+                            <li><a href="{{ route('telehealth.utah.bluff') }}">Bluff</a></li>
+                            <li><a href="{{ route('telehealth.utah.hanksville') }}">Hanksville</a></li>
+                            <li><a href="{{ route('telehealth.utah.parowan') }}">Parowan</a></li>
+                            <li><a href="{{ route('telehealth.utah.morgan') }}">Morgan</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6">
@@ -106,6 +137,46 @@
                             <li><a href="{{ route('telehealth.arizona.tuba-city') }}">Tuba City</a></li>
                         </ul>
                     </div>
+                    <div class="col-md-6">
+                        <h4 class="mt-3">Montana</h4>
+                        <ul>
+                            <li><a href="{{ route('telehealth.montana.billings') }}">Billings</a></li>
+                            <li><a href="{{ route('telehealth.montana.missoula') }}">Missoula</a></li>
+                            <li><a href="{{ route('telehealth.montana.great-falls') }}">Great Falls</a></li>
+                            <li><a href="{{ route('telehealth.montana.bozeman') }}">Bozeman</a></li>
+                            <li><a href="{{ route('telehealth.montana.butte') }}">Butte</a></li>
+                            <li><a href="{{ route('telehealth.montana.helena') }}">Helena</a></li>
+                            <li><a href="{{ route('telehealth.montana.kalispell') }}">Kalispell</a></li>
+                            <li><a href="{{ route('telehealth.montana.havre') }}">Havre</a></li>
+                            <li><a href="{{ route('telehealth.montana.miles-city') }}">Miles City</a></li>
+                            <li><a href="{{ route('telehealth.montana.glendive') }}">Glendive</a></li>
+                            <li><a href="{{ route('telehealth.montana.lewistown') }}">Lewistown</a></li>
+                            <li><a href="{{ route('telehealth.montana.dillon') }}">Dillon</a></li>
+                            <li><a href="{{ route('telehealth.montana.hamilton') }}">Hamilton</a></li>
+                            <li><a href="{{ route('telehealth.montana.polson') }}">Polson</a></li>
+                            <li><a href="{{ route('telehealth.montana.sidney') }}">Sidney</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mt-3">Iowa</h4>
+                        <ul>
+                            <li><a href="{{ route('telehealth.iowa.des-moines') }}">Des Moines</a></li>
+                            <li><a href="{{ route('telehealth.iowa.cedar-rapids') }}">Cedar Rapids</a></li>
+                            <li><a href="{{ route('telehealth.iowa.davenport') }}">Davenport</a></li>
+                            <li><a href="{{ route('telehealth.iowa.sioux-city') }}">Sioux City</a></li>
+                            <li><a href="{{ route('telehealth.iowa.iowa-city') }}">Iowa City</a></li>
+                            <li><a href="{{ route('telehealth.iowa.waterloo') }}">Waterloo</a></li>
+                            <li><a href="{{ route('telehealth.iowa.ames') }}">Ames</a></li>
+                            <li><a href="{{ route('telehealth.iowa.council-bluffs') }}">Council Bluffs</a></li>
+                            <li><a href="{{ route('telehealth.iowa.dubuque') }}">Dubuque</a></li>
+                            <li><a href="{{ route('telehealth.iowa.mason-city') }}">Mason City</a></li>
+                            <li><a href="{{ route('telehealth.iowa.fort-dodge') }}">Fort Dodge</a></li>
+                            <li><a href="{{ route('telehealth.iowa.marshalltown') }}">Marshalltown</a></li>
+                            <li><a href="{{ route('telehealth.iowa.ottumwa') }}">Ottumwa</a></li>
+                            <li><a href="{{ route('telehealth.iowa.burlington') }}">Burlington</a></li>
+                            <li><a href="{{ route('telehealth.iowa.carroll') }}">Carroll</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="divider-line"></div>
@@ -115,7 +186,7 @@
                 Yes. We use HIPAA-compliant video platforms that encrypt all data. Your session is private and is never recorded, ensuring the same level of confidentiality as an in-office visit.</p>
 
                 <p><span class="question">Does insurance cover telehealth?</span><br />
-                Most major insurance plans in Utah and Arizona cover telehealth for mental health and primary care. However, coverage can vary by plan. We recommend calling the number on the back of your card to confirm your "telemedicine benefit."</p>
+                Most major insurance plans in Utah, Arizona, Montana, and Iowa cover telehealth for mental health and primary care. However, coverage can vary by plan. We recommend calling the number on the back of your card to confirm your "telemedicine benefit."</p>
 
                 <p><span class="question">Can I get prescriptions through a virtual visit?</span><br />
                 Yes. For most conditions, we can send prescriptions electronically to your pharmacy during the call. Certain controlled substances may require an initial in-person evaluation or periodic face-to-face visits per state and federal regulations.</p>

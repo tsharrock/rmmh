@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Heber City | Online Mental Health & Psychiatry | Redmond Medical & Mental Health')
+@section('title', 'Telehealth Heber City | Online Mental Health & Psychiatry | Redmond MMH')
 @section('description', 'Skip the canyon drive. Redmond MMH provides expert psychiatric care, family medicine, and weight loss treatment to Heber City and the Heber Valley via secure telehealth.')
 @section('keywords', 'Telehealth Heber City, Online Psychiatry Wasatch County, Mental Health Heber Valley, Telehealth Utah, Redmond MMH')
 
@@ -32,6 +32,46 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is telehealth psychiatry available to Heber City residents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tiffany Redmond, PA-C is licensed in Utah and sees Heber City, Midway, and Charleston patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long is the wait for a new patient appointment in Heber City?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many Wasatch County practices carry multi-week waitlists for psychiatry. We typically offer new telehealth patients an appointment within a few days, often the same day or next."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does insurance cover a Heber City telehealth visit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We're in-network with most major Utah insurance plans, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our full accepted insurance list or call our office to confirm your specific plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to travel to an office for care in Heber City?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Psychiatric medication management, primary care, and weight loss visits are handled entirely by video. Services that require a hands-on exam, such as Ketamine therapy or IV nutrition, are provided in person at our Hyde Park, UT clinic."
+      }
+    }
+  ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -46,6 +86,26 @@
             </div>
         </div>
     </div>
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('telehealth') }}">Telehealth</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Heber City</li>
+            </ol>
+        </nav>
+    </div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://redmondmmh.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Telehealth", "item": "https://redmondmmh.com/telehealth" },
+        { "@type": "ListItem", "position": 3, "name": "Heber City", "item": "https://redmondmmh.com/telehealth/utah/heber-city" }
+      ]
+    }
+    </script>
     <section id="page-content">
         <div class="container py-lg-5">
             <div class="row">
@@ -86,7 +146,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Heber City and Wasatch County</h2>
-                    <p>Our telehealth services reach Heber City, Midway, Charleston, Daniel, and the surrounding Wasatch County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We also accept most major insurance plans.</p>
+                    <p>Our telehealth services reach Heber City, Midway, Charleston, Daniel, and the surrounding Wasatch County communities near Deer Valley and the Jordanelle Reservoir. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We also accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Utah-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Utah medical license and treats Utah residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Heber area pharmacy.</li>
@@ -117,10 +177,52 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 ">
-                    <img class="float-start me-3" src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C" />
+                    <img class="float-start me-3" src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C" width="233" height="260" loading="lazy" decoding="async" />
                     <h4>Tiffany Redmond, PA-C</h4>
-                    <p>After graduating from Arizona State University in 1997, Tiffany began her career working in juvenile correctional facilities, overseeing treatment groups for adolescent violent offenders, sex offenders, and substance abusers. She also spent time working in adolescent and adult group homes and a residential treatment facility in inner-city Los Angeles. She then went on to earn a Master's in Counseling Psychology, after which she spent four years in Nebraska providing therapeutic services for foster children with severe psychiatric issues. Tiffany then went on to work as a civilian for the U.S. Army, conducting neuropsychological assessments of service members returning from the Middle East with traumatic brain injuries. Upon graduating from the University of Alabama's surgical Physician Assistant Program in 2016, Tiffany moved to Utah, where she has since been providing family medicine and psychiatric services to the Cache Valley community.</p>
-                    <p>Tiffany is licensed to see patients in Utah and Arizona and is currently accepting new patients for both in-person and telehealth services. Whether you are seeking mental health support or a new primary care home, she is ready to partner with you on your journey.</p>
+                    <div class="credential-strip mb-3">
+                        <span class="credential-badge">PA-C</span>
+                        <span class="credential-badge">30+ Years Experience</span>
+                        <span class="credential-badge">Licensed in UT &amp; AZ</span>
+                        <span class="credential-badge">Same/Next-Day Scheduling</span>
+                        <span class="credential-badge credential-badge-local">Serves Wasatch County</span>
+                    </div>
+                    <p>Heber City patients work directly with Tiffany Redmond, PA-C, a provider with over 30 years of combined family medicine and psychiatric care experience. <a class="rmmh_red" href="{{ route('about') }}">See her full background on our About page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Heber City Telehealth FAQs</h2>
+                    <p><span class="question">Is telehealth psychiatry available to Heber City residents?</span><br />
+                    Yes. Tiffany Redmond, PA-C is licensed in Utah and sees Heber City, Midway, and Charleston patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit.</p>
+
+                    <p><span class="question">How long is the wait for a new patient appointment in Heber City?</span><br />
+                    Many Wasatch County practices carry multi-week waitlists for psychiatry. We typically offer new telehealth patients an appointment within a few days, often the same day or next.</p>
+
+                    <p><span class="question">Does insurance cover a Heber City telehealth visit?</span><br />
+                    We're in-network with most major Utah insurance plans, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our <a class="rmmh_red" href="{{ route('insurance') }}">full accepted insurance list</a> or call our office to confirm your specific plan.</p>
+
+                    <p><span class="question">Do I need to travel to an office for care in Heber City?</span><br />
+                    No. Psychiatric medication management, primary care, and weight loss visits are handled entirely by video. Services that require a hands-on exam, such as <a class="rmmh_red" href="{{ route('ketamine') }}">Ketamine therapy</a> or <a class="rmmh_red" href="{{ route('iv-fluids') }}">IV nutrition</a>, are provided in person at our Hyde Park, UT clinic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="also-serve" class="bg_rmmh_gray py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h3>We Also Serve</h3>
+                    <p>Redmond MMH offers the same telehealth services throughout Utah, including:</p>
+                    <ul>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.park-city') }}">Park City</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.salt-lake-city') }}">Salt Lake City</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.provo') }}">Provo</a></li>
+                        <li><a class="rmmh_red" href="{{ route('telehealth.utah.orem') }}">Orem</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

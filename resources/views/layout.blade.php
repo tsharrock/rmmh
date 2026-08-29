@@ -11,6 +11,22 @@
         <link rel="canonical" href="{{ str_replace('://www.', '://', url()->current()) }}">
 
         <link rel="icon" type="image/png" href="/cross_icon.png">
+        @php($canonicalUrl = rtrim(config('app.url'), '/') . request()->getPathInfo())
+        <link rel="canonical" href="{{ $canonicalUrl }}">
+
+        {{-- Open Graph / social sharing --}}
+        <meta property="og:type" content="@yield('og_type', 'website')">
+        <meta property="og:site_name" content="Redmond Medical & Mental Health">
+        <meta property="og:title" content="@yield('title')">
+        <meta property="og:description" content="@yield('description', 'Redmond Medical and Mental Health')">
+        <meta property="og:url" content="{{ $canonicalUrl }}">
+        <meta property="og:image" content="{{ rtrim(config('app.url'), '/') }}/@yield('og_image', 'img/logo.png')">
+
+        {{-- Twitter Card --}}
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="@yield('title')">
+        <meta name="twitter:description" content="@yield('description', 'Redmond Medical and Mental Health')">
+        <meta name="twitter:image" content="{{ rtrim(config('app.url'), '/') }}/@yield('og_image', 'img/logo.png')">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -41,7 +41,7 @@ h3 {
 }
 
 
-$rmmh_red: #d3203b;
+$rmmh_red: #D2123A;
 
 .rmmh_red {
     color: $rmmh_red;
@@ -87,7 +87,7 @@ a.appt, button.appt {
         background-position: center 50%;
     }
     &.psychiatric-care {
-        background-image: url(https://rmmh.test:5174/resources/sass/img/header_psych.jpg);
+        background-image: url("./img/header_psych.webp");
         padding: 160px 0;
         background-position: center 80%;
         color: #fff !important;
@@ -114,19 +114,19 @@ a.appt, button.appt {
         background-position: center 39%;
     }
     &.cedar-city {
-        background-image: url("./img/header_cedar_city.png");
+        background-image: url("./img/header_cedar_city.webp");
         background-position: center 39%;
     }
     &.salt-lake-city {
-        background-image: url("./img/header_salt_lake_city.jpg");
+        background-image: url("./img/header_salt_lake_city.webp");
         background-position: center 120%;
     }
     &.st-george {
-        background-image: url("./img/header_st_george.jpg");
+        background-image: url("./img/header_st_george.webp");
         background-position: center 39%;
     }
     &.ogden {
-        background-image: url("./img/header_ogden.jpg");
+        background-image: url("./img/header_ogden.webp");
         background-position: center 0;
     }
     &.provo {
@@ -150,13 +150,74 @@ a.appt, button.appt {
     &.sandy,
     &.spanish-fork,
     &.vernal,
+    &.richfield,
+    &.roosevelt,
+    &.nephi,
+    &.delta,
+    &.kanab,
+    &.monticello,
+    &.ephraim,
+    &.tremonton,
+    &.tooele,
+    &.brigham-city,
+    &.fillmore,
+    &.panguitch,
+    &.gunnison,
+    &.mount-pleasant,
+    &.green-river,
+    &.castle-dale,
+    &.duchesne,
+    &.milford,
+    &.hurricane,
+    &.escalante,
+    &.loa,
+    &.garden-city,
+    &.roy,
+    &.american-fork,
+    &.murray,
+    &.west-valley-city,
+    &.coalville,
+    &.bluff,
+    &.hanksville,
+    &.parowan,
+    &.morgan,
+    &.billings,
+    &.missoula,
+    &.great-falls,
+    &.bozeman,
+    &.butte,
+    &.helena,
+    &.kalispell,
+    &.havre,
+    &.miles-city,
+    &.glendive,
+    &.lewistown,
+    &.dillon,
+    &.hamilton,
+    &.polson,
+    &.sidney,
+    &.des-moines,
+    &.cedar-rapids,
+    &.davenport,
+    &.sioux-city,
+    &.iowa-city,
+    &.waterloo,
+    &.ames,
+    &.council-bluffs,
+    &.dubuque,
+    &.mason-city,
+    &.fort-dodge,
+    &.marshalltown,
+    &.ottumwa,
+    &.burlington,
+    &.carroll,
     &.wendover {
         background-image: url("./img/header_telehealth.webp");
         background-position: center 39%;
     }
 
     &.moab {
-        background-image: url("./img/header_moab.jpg");
+        background-image: url("./img/header_moab.webp");
         background-position: center 39%;
     }
 
@@ -166,7 +227,7 @@ a.appt, button.appt {
     &.page,
     &.sierra-vista,
     &.yuma {
-        background-image: url("./img/az/az1.jpg");
+        background-image: url("./img/az/az1.webp");
         background-position: center 39%;
     }
 
@@ -175,7 +236,7 @@ a.appt, button.appt {
     &.prescott,
     &.queen-creek,
     &.tuba-city {
-        background-image: url("./img/az/az2.jpg");
+        background-image: url("./img/az/az2.webp");
         background-position: center 39%;
     }
 
@@ -184,43 +245,74 @@ a.appt, button.appt {
     &.maricopa,
     &.san-tan-valley,
     &.surprise {
-        background-image: url("./img/az/az3.jpg");
+        background-image: url("./img/az/az3.webp");
         background-position: center 39%;
     }
 
     &.flagstaff {
-        background-image: url("./img/az/header_flagstaff.jpg");
+        background-image: url("./img/az/header_flagstaff.webp");
         background-position: center 39%;
     }
 
     &.tempe {
-        background-image: url("./img/az/tempe.jpg");
+        background-image: url("./img/az/tempe.webp");
         background-position: center 60%;
     }
 
     &.mesa {
-        background-image: url("./img/az/header_mesa.jpg");
+        background-image: url("./img/az/header_mesa.webp");
         background-position: center 90%;
     }
 
     &.phoenix {
-        background-image: url("./img/az/header_phoenix.jpg");
+        background-image: url("./img/az/header_phoenix.webp");
         background-position: center 39%;
     }
 
     &.scottsdale {
-        background-image: url("./img/az/header_scottsdale.jpg");
+        background-image: url("./img/az/header_scottsdale.webp");
         background-position: center 39%;
     }
 
     &.tucson {
-        background-image: url("./img/az/header_tucson.jpg");
+        background-image: url("./img/az/header_tucson.webp");
         background-position: center 39%;
     }
     &.park-city {
-        background-image: url("./img/header_parkcity.jpg");
+        background-image: url("./img/header_parkcity.webp");
         background-position: center 1%;
     }
+
+    // State services & insurance pages
+    &.utah {
+        background-image: url("./img/header_about.webp");
+        background-position: center 50%;
+    }
+    &.arizona {
+        background-image: url("./img/az/az1.webp");
+        background-position: center 39%;
+    }
+    // Montana & Iowa — placeholder image until per-state assets are dropped in
+    &.montana,
+    &.iowa {
+        background-image: url("./img/header_telehealth.webp");
+        background-position: center 39%;
+    }
+
+    // Montana — randomly chosen per page load from resources/sass/img/mt
+    &.hero-mt-1 { background-image: url("./img/mt/mt-1.webp"); background-position: center 39%; }
+    &.hero-mt-2 { background-image: url("./img/mt/mt-2.webp"); background-position: center 39%; }
+    &.hero-mt-3 { background-image: url("./img/mt/mt-3.webp"); background-position: center 39%; }
+    &.hero-mt-4 { background-image: url("./img/mt/mt-4.webp"); background-position: center 39%; }
+    &.hero-mt-5 { background-image: url("./img/mt/mt-5.webp"); background-position: center 39%; }
+    &.hero-mt-6 { background-image: url("./img/mt/mt-6.webp"); background-position: center 39%; }
+
+    // Iowa — randomly chosen per page load from resources/sass/img/ia
+    &.hero-ia-1 { background-image: url("./img/ia/ia-1.webp"); background-position: center 39%; }
+    &.hero-ia-2 { background-image: url("./img/ia/ia-2.webp"); background-position: center 39%; }
+    &.hero-ia-3 { background-image: url("./img/ia/ia-3.webp"); background-position: center 39%; }
+    &.hero-ia-4 { background-image: url("./img/ia/ia-4.webp"); background-position: center 69%; }
+    &.hero-ia-5 { background-image: url("./img/ia/ia-5.webp"); background-position: center 39%; }
 
     // Frosted-glass panel behind hero text on city pages (AZ + UT).
     &.apache-junction,
@@ -263,7 +355,72 @@ a.appt, button.appt {
     &.tucson,
     &.vernal,
     &.wendover,
-    &.yuma {
+    &.richfield,
+    &.roosevelt,
+    &.nephi,
+    &.delta,
+    &.kanab,
+    &.monticello,
+    &.ephraim,
+    &.tremonton,
+    &.tooele,
+    &.brigham-city,
+    &.fillmore,
+    &.panguitch,
+    &.gunnison,
+    &.mount-pleasant,
+    &.green-river,
+    &.castle-dale,
+    &.duchesne,
+    &.milford,
+    &.hurricane,
+    &.escalante,
+    &.loa,
+    &.garden-city,
+    &.roy,
+    &.american-fork,
+    &.murray,
+    &.west-valley-city,
+    &.coalville,
+    &.bluff,
+    &.hanksville,
+    &.parowan,
+    &.morgan,
+    &.billings,
+    &.missoula,
+    &.great-falls,
+    &.bozeman,
+    &.butte,
+    &.helena,
+    &.kalispell,
+    &.havre,
+    &.miles-city,
+    &.glendive,
+    &.lewistown,
+    &.dillon,
+    &.hamilton,
+    &.polson,
+    &.sidney,
+    &.des-moines,
+    &.cedar-rapids,
+    &.davenport,
+    &.sioux-city,
+    &.iowa-city,
+    &.waterloo,
+    &.ames,
+    &.council-bluffs,
+    &.dubuque,
+    &.mason-city,
+    &.fort-dodge,
+    &.marshalltown,
+    &.ottumwa,
+    &.burlington,
+    &.carroll,
+    &.yuma,
+    &.utah,
+    &.arizona,
+    &.montana,
+    &.iowa {
         > .container > .row > [class*="col-"] {
             background: rgba(255, 255, 255, 0.32);
             backdrop-filter: blur(5px) saturate(140%);
@@ -284,8 +441,11 @@ a.appt, button.appt {
         }
     }
 
-    // Provo: dark-tinted panel with white text
-    &.provo {
+    // Provo, and MT/IA variants with dark imagery behind the text panel: dark-tinted panel with white text
+    &.provo,
+    &.hero-mt-3,
+    &.hero-ia-3,
+    &.hero-ia-5 {
         > .container > .row > [class*="col-"] {
             background: rgba(0, 0, 0, 0.4);
             border-color: rgba(255, 255, 255, 0.18);
@@ -302,11 +462,11 @@ a.appt, button.appt {
 }
 
 .sidebar-border {
-    border-top: 1px solid $rmmh_red;
+    border: 1px solid $rmmh_red;
+    border-radius: 10px;
 
-    @media (min-width: 768px) {
-        border-left: 1px solid $rmmh_red;
-        border-radius: 10px 0 0 0;
+    h4 {
+        font-size: 1.1rem;
     }
 
     .nextpatient-provider-image-cell, .nextpatient-provider-small-photo {
@@ -340,6 +500,73 @@ a.appt, button.appt {
 
 .navbar {
     background-color: #fff;
+}
+
+.site-navbar {
+    padding: 16px 0;
+}
+
+.navbar-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.site-navbar .navbar-collapse {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-top: 12px;
+}
+
+@media (min-width: 992px) {
+    .site-navbar.navbar-expand-lg {
+        flex-wrap: wrap;
+    }
+
+    .site-navbar .navbar-nav {
+        gap: 32px;
+    }
+
+    .site-navbar .navbar-nav .nav-link {
+        font-size: 18px;
+    }
+}
+
+.site-logo {
+    height: 40px;
+    width: auto;
+    max-width: 100%;
+
+    @media (min-width: 992px) {
+        height: 80px;
+    }
+}
+
+.nav-cta {
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-phone {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.appt-sm {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav-cta-mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 16px;
 }
 
 .breadcrumb {
@@ -427,6 +654,31 @@ section#page-content {
         position: absolute;
         bottom: 24px;
     }
+}
+
+.credential-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0 14px;
+}
+
+.credential-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: $rmmh_red;
+    border: 1px solid $rmmh_red;
+    border-radius: 999px;
+    background-color: #fff;
+    white-space: nowrap;
+}
+
+.credential-badge-local {
+    color: #fff;
+    background-color: $rmmh_red;
 }
 
 @import "buttons";
