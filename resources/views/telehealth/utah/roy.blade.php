@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Roy | Online Mental Health &amp; Medical Care | Redmond MMH')
+@section('title', 'Telehealth Roy | Online Mental Health & Medical Care | Redmond MMH')
 @section('description', 'Skip the commute and the weeks-long wait. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Roy and Weber County via secure telehealth.')
 @section('keywords', 'Telehealth Roy, Online Psychiatry Weber County, Telehealth Utah, Redmond MMH')
 

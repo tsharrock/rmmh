@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Davenport Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Davenport and the Quad Cities through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/davenport",
+    "url": "https://redmondmmh.com/telehealth/iowa/davenport",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Davenport",

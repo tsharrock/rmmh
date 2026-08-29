@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Sidney Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Sidney and the MonDak region through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/sidney",
+    "url": "https://redmondmmh.com/telehealth/montana/sidney",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Sidney",

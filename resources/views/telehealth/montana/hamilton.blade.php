@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Hamilton Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Hamilton and the Bitterroot Valley through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/hamilton",
+    "url": "https://redmondmmh.com/telehealth/montana/hamilton",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Hamilton",

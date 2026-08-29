@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Carroll Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Carroll and West Central Iowa through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/carroll",
+    "url": "https://redmondmmh.com/telehealth/iowa/carroll",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Carroll",

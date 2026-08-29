@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Roosevelt | Online Mental Health &amp; Medical Care | Redmond MMH')
+@section('title', 'Telehealth Roosevelt | Online Mental Health & Medical Care | Redmond MMH')
 @section('description', 'No more long drives to Provo, a long haul over the mountains for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Roosevelt and Duchesne County via secure telehealth.')
 @section('keywords', 'Telehealth Roosevelt, Online Psychiatry Duchesne County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Green River Telehealth | Psychiatry, Primary Care &amp; Weight Loss | Redmond MMH')
+@section('title', 'Green River Telehealth | Psychiatry, Primary Care & Weight Loss | Redmond MMH')
 @section('description', 'No more long drives to Price or Moab, each roughly an hour away for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Green River and Emery County via secure telehealth.')
 @section('keywords', 'Telehealth Green River, Online Psychiatry Emery County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 

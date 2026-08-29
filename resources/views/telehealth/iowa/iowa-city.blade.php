@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Iowa City Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Iowa City and Johnson County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/iowa-city",
+    "url": "https://redmondmmh.com/telehealth/iowa/iowa-city",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Iowa City",

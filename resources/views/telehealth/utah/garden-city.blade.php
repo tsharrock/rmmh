@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Garden City | Online Psychiatry &amp; Mental Health | Redmond MMH')
+@section('title', 'Telehealth Garden City | Online Psychiatry & Mental Health | Redmond MMH')
 @section('description', 'No more long drives to Logan, an hour west over the summit for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Garden City and Rich County via secure telehealth.')
 @section('keywords', 'Telehealth Garden City, Online Psychiatry Rich County, Telehealth Utah, Redmond MMH')
 

@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Kalispell Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Kalispell and the Flathead Valley through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/kalispell",
+    "url": "https://redmondmmh.com/telehealth/montana/kalispell",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Kalispell",

@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Missoula Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Missoula and Missoula County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/missoula",
+    "url": "https://redmondmmh.com/telehealth/montana/missoula",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Missoula",

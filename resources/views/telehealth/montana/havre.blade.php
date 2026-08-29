@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Havre Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Havre and the Hi-Line through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/havre",
+    "url": "https://redmondmmh.com/telehealth/montana/havre",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Havre",

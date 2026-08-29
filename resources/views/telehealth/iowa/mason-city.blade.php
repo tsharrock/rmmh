@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Mason City Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Mason City and North Central Iowa through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/mason-city",
+    "url": "https://redmondmmh.com/telehealth/iowa/mason-city",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Mason City",

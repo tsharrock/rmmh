@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Dubuque Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Dubuque and Dubuque County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/dubuque",
+    "url": "https://redmondmmh.com/telehealth/iowa/dubuque",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Dubuque",

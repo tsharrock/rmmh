@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Tremonton | Online Mental Health &amp; Medical Care | Redmond MMH')
+@section('title', 'Telehealth Tremonton | Online Mental Health & Medical Care | Redmond MMH')
 @section('description', 'No more long drives to Ogden or Logan for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Tremonton and Box Elder County via secure telehealth.')
 @section('keywords', 'Telehealth Tremonton, Online Psychiatry Box Elder County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 

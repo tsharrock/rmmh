@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Bozeman Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Bozeman and Gallatin County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/bozeman",
+    "url": "https://redmondmmh.com/telehealth/montana/bozeman",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Bozeman",

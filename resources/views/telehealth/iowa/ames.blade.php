@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Ames Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Ames and Story County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/ames",
+    "url": "https://redmondmmh.com/telehealth/iowa/ames",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ames",

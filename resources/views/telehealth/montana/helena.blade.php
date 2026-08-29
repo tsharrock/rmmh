@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Helena Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Helena and Lewis and Clark County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/helena",
+    "url": "https://redmondmmh.com/telehealth/montana/helena",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Helena",

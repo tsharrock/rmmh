@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Cedar Rapids Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Cedar Rapids and Linn County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/cedar-rapids",
+    "url": "https://redmondmmh.com/telehealth/iowa/cedar-rapids",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Cedar Rapids",
