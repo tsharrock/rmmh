@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Council Bluffs Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Council Bluffs and Pottawattamie County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/council-bluffs",
+    "url": "https://redmondmmh.com/telehealth/iowa/council-bluffs",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Council Bluffs",

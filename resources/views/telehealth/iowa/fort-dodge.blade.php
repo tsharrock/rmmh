@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Fort Dodge Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Fort Dodge and Webster County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/fort-dodge",
+    "url": "https://redmondmmh.com/telehealth/iowa/fort-dodge",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Fort Dodge",

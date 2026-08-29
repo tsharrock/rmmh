@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'American Fork Telehealth | Psychiatry, Primary Care &amp; Weight Loss | Redmond MMH')
+@section('title', 'American Fork Telehealth | Psychiatry, Primary Care & Weight Loss | Redmond MMH')
 @section('description', 'Skip the commute and the weeks-long wait. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to American Fork and Utah County via secure telehealth.')
 @section('keywords', 'Telehealth American Fork, Online Psychiatry Utah County, Telehealth Utah, Redmond MMH')
 

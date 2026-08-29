@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Polson Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Polson and the Flathead Reservation through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/polson",
+    "url": "https://redmondmmh.com/telehealth/montana/polson",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Polson",

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Parowan Telehealth | Psychiatry, Primary Care &amp; Weight Loss | Redmond MMH')
+@section('title', 'Parowan Telehealth | Psychiatry, Primary Care & Weight Loss | Redmond MMH')
 @section('description', 'No more long drives to Cedar City, a short drive south for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Parowan and Iron County via secure telehealth.')
 @section('keywords', 'Telehealth Parowan, Online Psychiatry Iron County, Telehealth Utah, Redmond MMH')
 

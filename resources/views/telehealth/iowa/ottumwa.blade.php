@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Ottumwa Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Ottumwa and Southeast Iowa through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/ottumwa",
+    "url": "https://redmondmmh.com/telehealth/iowa/ottumwa",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ottumwa",

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Nephi Telehealth | Psychiatry, Primary Care &amp; Weight Loss | Redmond MMH')
+@section('title', 'Nephi Telehealth | Psychiatry, Primary Care & Weight Loss | Redmond MMH')
 @section('description', 'No more long drives to Provo to the north for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Nephi and Juab County via secure telehealth.')
 @section('keywords', 'Telehealth Nephi, Online Psychiatry Juab County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 

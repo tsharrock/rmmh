@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Richfield | Online Psychiatry &amp; Mental Health | Redmond MMH')
+@section('title', 'Telehealth Richfield | Online Psychiatry & Mental Health | Redmond MMH')
 @section('description', 'No more long drives to Provo or Salt Lake City, more than two hours north for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Richfield and Sevier County via secure telehealth.')
 @section('keywords', 'Telehealth Richfield, Online Psychiatry Sevier County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 

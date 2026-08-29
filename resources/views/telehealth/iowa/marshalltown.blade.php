@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Marshalltown Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Marshalltown and Marshall County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/marshalltown",
+    "url": "https://redmondmmh.com/telehealth/iowa/marshalltown",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Marshalltown",

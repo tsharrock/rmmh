@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Miles City Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Miles City and Eastern Montana through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/miles-city",
+    "url": "https://redmondmmh.com/telehealth/montana/miles-city",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Miles City",

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Mount Pleasant | Online Mental Health &amp; Medical Care | Redmond MMH')
+@section('title', 'Telehealth Mount Pleasant | Online Mental Health & Medical Care | Redmond MMH')
 @section('description', 'No more long drives to Provo, over the mountains for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Mount Pleasant and Sanpete County via secure telehealth.')
 @section('keywords', 'Telehealth Mount Pleasant, Online Psychiatry Sanpete County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 

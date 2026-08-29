@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Lewistown Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Lewistown and Central Montana through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/lewistown",
+    "url": "https://redmondmmh.com/telehealth/montana/lewistown",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Lewistown",

@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Great Falls Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Great Falls and Cascade County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/great-falls",
+    "url": "https://redmondmmh.com/telehealth/montana/great-falls",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Great Falls",

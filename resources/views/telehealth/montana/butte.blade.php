@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Butte Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Butte and Silver Bow County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/butte",
+    "url": "https://redmondmmh.com/telehealth/montana/butte",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Butte",

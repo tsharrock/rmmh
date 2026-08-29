@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Dillon Telehealth",
     "description": "Montana-licensed online psychiatry, primary care, and weight loss services for Dillon and Beaverhead County through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/montana/dillon",
+    "url": "https://redmondmmh.com/telehealth/montana/dillon",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Dillon",

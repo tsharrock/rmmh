@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Milford Telehealth | Psychiatry, Primary Care &amp; Weight Loss | Redmond MMH')
+@section('title', 'Milford Telehealth | Psychiatry, Primary Care & Weight Loss | Redmond MMH')
 @section('description', 'No more long drives to Cedar City or Beaver for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Milford and Beaver County via secure telehealth.')
 @section('keywords', 'Telehealth Milford, Online Psychiatry Beaver County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 

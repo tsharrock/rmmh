@@ -11,7 +11,7 @@
     "@type": "MedicalBusiness",
     "name": "Redmond Medical & Mental Health - Waterloo Telehealth",
     "description": "Iowa-licensed online psychiatry, primary care, and weight loss services for Waterloo and the Cedar Valley through secure telehealth.",
-    "url": "https://www.redmondmmh.com/telehealth/iowa/waterloo",
+    "url": "https://redmondmmh.com/telehealth/iowa/waterloo",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Waterloo",

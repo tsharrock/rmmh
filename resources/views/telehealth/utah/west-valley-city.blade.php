@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth West Valley City | Online Mental Health &amp; Medical Care | Redmond MMH')
+@section('title', 'Telehealth West Valley City | Online Mental Health & Medical Care | Redmond MMH')
 @section('description', 'Skip the commute and the weeks-long wait. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to West Valley City and Salt Lake County via secure telehealth.')
 @section('keywords', 'Telehealth West Valley City, Online Psychiatry Salt Lake County, Telehealth Utah, Redmond MMH')
 

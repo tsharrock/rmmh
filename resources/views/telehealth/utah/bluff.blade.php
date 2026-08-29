@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Bluff | Online Psychiatry &amp; Mental Health | Redmond MMH')
+@section('title', 'Telehealth Bluff | Online Psychiatry & Mental Health | Redmond MMH')
 @section('description', 'No more long drives to Blanding or Cortez, each well over an hour away for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Bluff and San Juan County via secure telehealth.')
 @section('keywords', 'Telehealth Bluff, Online Psychiatry San Juan County, Telehealth Utah, Redmond MMH')
 
