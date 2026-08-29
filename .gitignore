@@ -22,6 +22,7 @@ yarn-error.log
 /.vscode
 /.zed
 /word_docs
+*.docx
 /scratch_docs
 /content_docs
 
