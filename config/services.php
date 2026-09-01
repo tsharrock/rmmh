@@ -51,4 +51,8 @@ return [
         'token' => env('IPINFO_TOKEN'),
     ],
 
+    'google_analytics' => [
+        'id' => env('GOOGLE_ANALYTICS_ID'),
+    ],
+
 ];

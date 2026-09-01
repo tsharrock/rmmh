@@ -43,6 +43,11 @@
                 <div class="form-wrapper">
                     @if(session('success'))
                         <div class="alert alert-success">{{ session('success') }}</div>
+                        <script>
+                            if (typeof gtag === 'function') {
+                                gtag('event', 'contact_form_submit');
+                            }
+                        </script>
                     @endif
 
                     <form action="{{ route('contact.submit') }}" method="POST">
