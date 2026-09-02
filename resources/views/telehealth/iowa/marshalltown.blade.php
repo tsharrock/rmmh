@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is telehealth psychiatric care really an option if I live outside Marshalltown proper?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Patients throughout Marshall County — including State Center, Toledo, Tama, and Gladbrook — can meet with Tiffany by secure video from home, which matters in a rural, agricultural region where many communities have limited local access to psychiatric providers."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I get labs done locally as part of a virtual primary care visit?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Labs can be drawn at UnityPoint Health–Marshalltown Hospital or another lab near you, with results reviewed during a follow-up telehealth visit."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Are weight-loss medications like Semaglutide and Tirzepatide accessible in Marshalltown?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Iowa has one of the higher rates of adult overweight and obesity in the country, and by working with local compounding pharmacies, Tiffany is able to offer GLP-1 therapy at a more accessible cost for non-diabetic patients in the Marshalltown area."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,25 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Marshalltown can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Finding a psychiatric provider in Marshall County with real openings can be a challenge &mdash; many central Iowa communities along the Iowa River have limited local access to psychiatric care, and waitlists for a new appointment can stretch for weeks. Tiffany typically offers same-day or next-day scheduling, so you're not stuck waiting months just to get started.</p>
+                        <p>Licensed in Iowa with more than 30 years in psychiatric practice, she manages ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation, and addiction &mdash; all from a secure video visit at home.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>Ongoing conditions like high blood pressure, diabetes, thyroid disorders, PCOS, and hormonal changes &mdash; including menopause and low testosterone &mdash; are managed with the same continuity of care you'd expect from an in-person clinic.</p>
+                        <p>Same-week visits are also available for acute issues: flu symptoms, a stubborn rash, a urinary or sexually transmitted infection, an eye concern, a minor injury, or unexplained pain.</p>
+                        <p>When labs are needed, they can be drawn locally at UnityPoint Health&ndash;Marshalltown Hospital or another lab of your choosing, with results reviewed and specialty referrals arranged as needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>GLP-1 therapy &mdash; Semaglutide and Tirzepatide &mdash; has helped many of Tiffany's patients reach sustainable results, paired with individualized coaching and nutrition guidance built around your goals.</p>
+                        <p>Working with local compounding pharmacies keeps these medications accessible and affordable for non-diabetic patients, so a Marshalltown-area weight-loss plan no longer has to start with a long drive or an insurance fight.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +119,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Marshalltown and Marshall County</h2>
-                    <p>Our Iowa-licensed telehealth services reach Marshalltown, State Center, Toledo, Tama, Gladbrook, and the surrounding Marshall County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Iowa-licensed telehealth services reach Marshalltown, State Center, Toledo, Tama, Gladbrook, and the surrounding Marshall County communities. The Iowa River runs directly through downtown Marshalltown, near the historic Marshall County Courthouse, one of the county's most recognizable landmarks. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Marshalltown area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Marshalltown pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="divider-line"></div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Is telehealth psychiatric care really an option if I live outside Marshalltown proper?</h3>
+                    <p>Yes. Patients throughout Marshall County &mdash; including State Center, Toledo, Tama, and Gladbrook &mdash; can meet with Tiffany by secure video from home, which matters in a rural, agricultural region where many communities have limited local access to psychiatric providers.</p>
+                    <h3>Can I get labs done locally as part of a virtual primary care visit?</h3>
+                    <p>Yes. Labs can be drawn at UnityPoint Health&ndash;Marshalltown Hospital or another lab near you, with results reviewed during a follow-up telehealth visit.</p>
+                    <h3>Are weight-loss medications like Semaglutide and Tirzepatide accessible in Marshalltown?</h3>
+                    <p>Yes. Iowa has one of the higher rates of adult overweight and obesity in the country, and by working with local compounding pharmacies, Tiffany is able to offer GLP-1 therapy at a more accessible cost for non-diabetic patients in the Marshalltown area.</p>
                 </div>
             </div>
         </div>

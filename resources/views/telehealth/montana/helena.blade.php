@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Do you see state government employees and Carroll College students?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, telehealth visits are open to anyone in the Helena area, including state employees and Carroll College students and staff."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Where can I get labs drawn in Helena?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We can order labs to be drawn at St. Peter's Health or another local facility and review the results with you remotely."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you treat injuries from hiking around Mount Helena?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, acute injuries and pain from hiking, trail running or other outdoor activity around Mount Helena and the Helena-Lewis and Clark National Forest are a common reason patients schedule a virtual primary care visit."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Helena can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Montana and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Between state government work, Carroll College, and long Montana winters, Helena residents juggle a lot — and finding a psychiatric provider with real openings isn't always easy. Tiffany typically offers same-day or next-day telehealth visits.</p>
+                        <p>Licensed in Montana with more than 30 years of psychiatric experience, Tiffany treats ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions, so you can address your mental health without taking time off to drive across town.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We diagnose and manage chronic conditions such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid conditions.</p>
+                        <p>We also treat acute concerns — the flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, and the sprains and injuries that come from hiking the trails on Mount Helena or in the surrounding Helena-Lewis and Clark National Forest.</p>
+                        <p>Labs can be ordered through St. Peter's Health or another Helena-area facility, with results reviewed remotely and specialty referrals sent when needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany has helped patients succeed with GLP-1 medications and can build a plan around your goals, too. Our individualized weight management programs are delivered entirely by telehealth, combining Semaglutide or Tirzepatide therapy with coaching and nutritional guidance. Working with local compounding pharmacies keeps these medications accessible for non-diabetic patients and more affordable than many expect.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +118,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Helena and Lewis and Clark County</h2>
-                    <p>Our Montana-licensed telehealth services reach Helena, East Helena, Montana City, Boulder, Lincoln, and the surrounding Lewis and Clark County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Montana-licensed telehealth services reach Helena, East Helena, Montana City, Boulder, Lincoln, and the surrounding Lewis and Clark County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans. As Montana's state capital, Helena is home to St. Peter's Health and Carroll College, with Mount Helena and the Helena-Lewis and Clark National Forest right at the city's edge.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Helena area pharmacy.</li>
@@ -104,6 +136,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Helena pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Do you see state government employees and Carroll College students?</h3>
+                    <p>Yes, telehealth visits are open to anyone in the Helena area, including state employees and Carroll College students and staff.</p>
+                    <h3>Where can I get labs drawn in Helena?</h3>
+                    <p>We can order labs to be drawn at St. Peter's Health or another local facility and review the results with you remotely.</p>
+                    <h3>Do you treat injuries from hiking around Mount Helena?</h3>
+                    <p>Yes, acute injuries and pain from hiking, trail running or other outdoor activity around Mount Helena and the Helena-Lewis and Clark National Forest are a common reason patients schedule a virtual primary care visit.</p>
                 </div>
             </div>
         </div>

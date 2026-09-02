@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is psychiatric care available without driving to Billings or Bismarck?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Holy Rosary Healthcare anchors medical care for this 11-county region, but psychiatric specialists are limited locally. Tiffany provides psychiatric medication management by secure video, so Custer County residents can be seen without the long drive."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you treat injuries related to ranch or agricultural work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Virtual primary care covers everyday injuries and acute pain that come with ranching and outdoor work, along with chronic condition management, and we can order labs locally at Holy Rosary Healthcare."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can telehealth help with the isolation of eastern Montana's long winters?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Seasonal mood changes are common across eastern Montana's long winters, and Tiffany treats anxiety, depression, and related conditions as part of ongoing psychiatric care."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Miles City can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Montana and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Eastern Montana's 11-county region relies heavily on Holy Rosary Healthcare here in Miles City, but psychiatric specialists remain hard to find and appointments can mean a long wait. Tiffany offers a faster path — secure video visits that can usually be scheduled within a day or two, no trip to Billings required.</p>
+                        <p>Licensed in Montana with more than 30 years in psychiatry, Tiffany treats ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions — comprehensive mental health care from wherever you call home in Custer County.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We manage chronic conditions common in ranching communities — high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid conditions.</p>
+                        <p>Acute concerns are covered too: the flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, and the cuts, sprains and strains that come with ranch and rodeo work.</p>
+                        <p>Lab work can be drawn locally at Holy Rosary Healthcare, with results reviewed and specialty referrals sent when needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany's individualized weight-management program — Semaglutide and Tirzepatide therapy, paired with coaching and nutritional guidance — is available to Miles City and the surrounding Cowboy Capital region by video visit. Working with local compounding pharmacies keeps these medications accessible for non-diabetic patients and more affordable than ever.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +118,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Miles City and Eastern Montana</h2>
-                    <p>Our Montana-licensed telehealth services reach Miles City, Forsyth, Terry, Baker, Broadus, and the surrounding ranching communities of eastern Montana. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Montana-licensed telehealth services reach Miles City, Forsyth, Terry, Baker, Broadus, and the surrounding ranching communities of eastern Montana. Miles City sits where the Tongue River meets the Yellowstone, home to Holy Rosary Healthcare, the region's hospital for an 11-county stretch of eastern Montana. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Miles City area pharmacy.</li>
@@ -104,6 +136,18 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Miles City pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+            <div class="divider-line"></div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ: Telehealth in Miles City &amp; Eastern Montana</h2>
+                    <h3>Is psychiatric care available without driving to Billings or Bismarck?</h3>
+                    <p>Yes. Holy Rosary Healthcare anchors medical care for this 11-county region, but psychiatric specialists are limited locally. Tiffany provides psychiatric medication management by secure video, so Custer County residents can be seen without the long drive.</p>
+                    <h3>Do you treat injuries related to ranch or agricultural work?</h3>
+                    <p>Yes. Virtual primary care covers everyday injuries and acute pain that come with ranching and outdoor work, along with chronic condition management, and we can order labs locally at Holy Rosary Healthcare.</p>
+                    <h3>Can telehealth help with the isolation of eastern Montana's long winters?</h3>
+                    <p>Yes. Seasonal mood changes are common across eastern Montana's long winters, and Tiffany treats anxiety, depression, and related conditions as part of ongoing psychiatric care.</p>
                 </div>
             </div>
         </div>

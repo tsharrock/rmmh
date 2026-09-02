@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Do I need to live directly in Davenport to use these services?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Tiffany is licensed throughout Iowa, so patients throughout the Quad Cities — including Bettendorf, Eldridge, LeClaire, and Blue Grass — can schedule the same telehealth visit."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I still use a Quad Cities hospital for labs and referrals?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We can order labs at a hospital or lab near you, including Genesis Health System locations, and send referrals to specialists in the Quad Cities when your care calls for it."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "I'm looking for a psychiatric provider with a shorter wait than what's available locally — can telehealth help?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Many patients around the Quad Cities have told us how hard it is to find a psychiatric appointment quickly. Tiffany typically sees patients the same day or next, without the long wait common at many local practices."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,25 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Davenport can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Finding an experienced psychiatric provider who can see you soon is a real challenge in much of eastern Iowa, and many communities around the Quad Cities have limited local access to psychiatric care. Tiffany is easy to schedule with and typically sees patients the same day or next.</p>
+                        <p>Tiffany is licensed in Iowa and brings over 30 years of psychiatric experience to conditions including ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation, and addiction, all from wherever you are in Davenport or the surrounding Quad Cities.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid conditions.</p>
+                        <p>Acute concerns don't wait for office hours either, so flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain are all handled the same way.</p>
+                        <p>When labs are needed, we can order them drawn at a hospital or lab near you, including facilities in the Genesis Health System network that serves the Quad Cities, then review results and send specialty referrals if needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany has seen real success guiding patients through GLP-1 therapy, and she can help you get started too. Weight-management plans are built around Semaglutide and Tirzepatide, paired with coaching and nutritional guidance, all from home.</p>
+                        <p>Working with local compounding pharmacies keeps these medications within reach for non-diabetic patients and more affordable than many people expect.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +119,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Davenport and the Quad Cities</h2>
-                    <p>Our Iowa-licensed telehealth services reach Davenport, Bettendorf, Eldridge, LeClaire, Blue Grass, and the surrounding Quad Cities communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Iowa-licensed telehealth services reach Davenport, Bettendorf, Eldridge, LeClaire, Blue Grass, and the surrounding Quad Cities communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans. Davenport anchors the Iowa side of the Quad Cities along the Mississippi River and is home to Genesis Health System, the region's largest local hospital network and employer.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Davenport area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Davenport pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="divider-line"></div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Do I need to live directly in Davenport to use these services?</h3>
+                    <p>No. Tiffany is licensed throughout Iowa, so patients throughout the Quad Cities &mdash; including Bettendorf, Eldridge, LeClaire, and Blue Grass &mdash; can schedule the same telehealth visit.</p>
+                    <h3>Can I still use a Quad Cities hospital for labs and referrals?</h3>
+                    <p>Yes. We can order labs at a hospital or lab near you, including Genesis Health System locations, and send referrals to specialists in the Quad Cities when your care calls for it.</p>
+                    <h3>I'm looking for a psychiatric provider with a shorter wait than what's available locally &mdash; can telehealth help?</h3>
+                    <p>Yes. Many patients around the Quad Cities have told us how hard it is to find a psychiatric appointment quickly. Tiffany typically sees patients the same day or next, without the long wait common at many local practices.</p>
                 </div>
             </div>
         </div>

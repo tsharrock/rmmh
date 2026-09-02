@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is it hard to find a psychiatric provider in the Bitterroot Valley?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many communities in Ravalli County have limited local access to psychiatric care, which often means a long drive to Missoula. Telehealth lets you see Tiffany from home instead."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I get labs drawn locally in Hamilton?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We can order labs to be drawn at Bitterroot Health-Daly Hospital or another Ravalli County facility and review the results with you remotely."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you treat injuries from ranch work or outdoor recreation in the Bitterroot Mountains?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, acute injuries and pain from ranch work, hiking, hunting or other outdoor activity in the Bitterroot and Sapphire Mountains are a common reason patients schedule a virtual primary care visit."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Hamilton can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Montana and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Ravalli County's Bitterroot Valley is beautiful, but it's also rural, and many residents make the drive north to Missoula just to see a psychiatric provider. Tiffany's telehealth visits close that gap, with same-day or next-day scheduling available right from home.</p>
+                        <p>Licensed in Montana with more than 30 years of psychiatric experience, Tiffany treats ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions — no trip over the valley required.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We diagnose and manage chronic conditions like high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid disorders.</p>
+                        <p>Ranch work and time spent hiking or hunting in the Bitterroot and Sapphire Mountains can also mean acute needs — the flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain are all things we treat by telehealth.</p>
+                        <p>When bloodwork is needed, we can order labs through Bitterroot Health-Daly Hospital or another local facility, review results with you, and send specialty referrals if needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany has seen real success helping patients with GLP-1 medications, and she'll build a plan around yours. Our individualized weight management programs are delivered entirely by telehealth and combine Semaglutide or Tirzepatide therapy with coaching and nutritional guidance. Working with local compounding pharmacies keeps these medications accessible for non-diabetic patients and more affordable than many expect.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +118,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Hamilton and the Bitterroot Valley</h2>
-                    <p>Our Montana-licensed telehealth services reach Hamilton, Corvallis, Stevensville, Darby, Victor, and the surrounding Bitterroot Valley communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Montana-licensed telehealth services reach Hamilton, Corvallis, Stevensville, Darby, Victor, and the surrounding Bitterroot Valley communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans. Hamilton is also home to Rocky Mountain Laboratories, a National Institutes of Health biomedical research facility, and to Bitterroot Health-Daly Hospital, the valley's critical access hospital.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Hamilton area pharmacy.</li>
@@ -104,6 +136,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Hamilton pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Is it hard to find a psychiatric provider in the Bitterroot Valley?</h3>
+                    <p>Many communities in Ravalli County have limited local access to psychiatric care, which often means a long drive to Missoula. Telehealth lets you see Tiffany from home instead.</p>
+                    <h3>Can I get labs drawn locally in Hamilton?</h3>
+                    <p>Yes. We can order labs to be drawn at Bitterroot Health-Daly Hospital or another Ravalli County facility and review the results with you remotely.</p>
+                    <h3>Do you treat injuries from ranch work or outdoor recreation in the Bitterroot Mountains?</h3>
+                    <p>Yes, acute injuries and pain from ranch work, hiking, hunting or other outdoor activity in the Bitterroot and Sapphire Mountains are a common reason patients schedule a virtual primary care visit.</p>
                 </div>
             </div>
         </div>

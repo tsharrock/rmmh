@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Can patients throughout Cerro Gordo County use telehealth for psychiatric care?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Residents of Mason City, Clear Lake, Charles City, Nora Springs, Rockwell, and the wider north central Iowa region can see Tiffany by secure video — helpful in a part of the state where many rural communities have limited local access to psychiatric providers."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do I need to travel to see a doctor for lab work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Labs can typically be drawn at MercyOne North Iowa Medical Center or another lab near you, with results and any specialty referrals handled during your telehealth follow-up."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is GLP-1 weight-loss treatment available to Mason City patients?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Iowa has one of the higher adult obesity rates in the country, and Tiffany's use of local compounding pharmacies helps keep Semaglutide and Tirzepatide accessible and affordable, including for patients who aren't diabetic."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,25 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Mason City can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Rural stretches of north central Iowa often mean a long drive &mdash; or a long wait &mdash; to see a psychiatric provider in person. Tiffany typically has same-day or next-day openings, so Mason City-area patients aren't left waiting weeks just to get started.</p>
+                        <p>With more than 30 years of psychiatric experience and an active Iowa license, she treats ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation, and addiction, all through a secure video visit.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>Chronic conditions such as high blood pressure, diabetes, thyroid disease, PCOS, and hormonal changes &mdash; including menopause and low testosterone &mdash; are monitored and adjusted over time, just as they would be at an in-person clinic.</p>
+                        <p>Acute concerns are also welcome: flu symptoms, rashes, urinary or sexually transmitted infections, eye issues, minor injuries, and acute pain can all be evaluated by video.</p>
+                        <p>Labs can be ordered at MercyOne North Iowa Medical Center or another lab convenient to you, with results reviewed and any needed specialty referrals sent directly.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Semaglutide and Tirzepatide have given many patients real, sustainable success, and Tiffany builds each plan around your goals with ongoing coaching and nutritional guidance.</p>
+                        <p>By partnering with local compounding pharmacies, these GLP-1 medications stay within reach &mdash; including for non-diabetic patients &mdash; at a more affordable price point than many Mason City-area patients expect.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +119,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Mason City and North Central Iowa</h2>
-                    <p>Our Iowa-licensed telehealth services reach Mason City, Clear Lake, Charles City, Nora Springs, Rockwell, and the surrounding communities of north central Iowa. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Iowa-licensed telehealth services reach Mason City, Clear Lake, Charles City, Nora Springs, Rockwell, and the surrounding communities of north central Iowa. Mason City's Historic Park Inn Hotel and Stockman House &mdash; designed by Frank Lloyd Wright &mdash; anchor a downtown that helped inspire native son Meredith Willson's nickname for the city, "River City." Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Mason City area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Mason City pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="divider-line"></div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Can patients throughout Cerro Gordo County use telehealth for psychiatric care?</h3>
+                    <p>Yes. Residents of Mason City, Clear Lake, Charles City, Nora Springs, Rockwell, and the wider north central Iowa region can see Tiffany by secure video &mdash; helpful in a part of the state where many rural communities have limited local access to psychiatric providers.</p>
+                    <h3>Do I need to travel to see a doctor for lab work?</h3>
+                    <p>No. Labs can typically be drawn at MercyOne North Iowa Medical Center or another lab near you, with results and any specialty referrals handled during your telehealth follow-up.</p>
+                    <h3>Is GLP-1 weight-loss treatment available to Mason City patients?</h3>
+                    <p>Yes. Iowa has one of the higher adult obesity rates in the country, and Tiffany's use of local compounding pharmacies helps keep Semaglutide and Tirzepatide accessible and affordable, including for patients who aren't diabetic.</p>
                 </div>
             </div>
         </div>

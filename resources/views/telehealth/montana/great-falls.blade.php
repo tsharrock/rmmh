@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Do you see patients connected to Malmstrom Air Force Base?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Our telehealth visits are open to Great Falls-area residents of all backgrounds, including active-duty service members' families and civilians who work at Malmstrom Air Force Base."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Where can I get labs drawn if my visit requires bloodwork?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We can order labs to be drawn at Benefis Health System or another Great Falls-area facility, then review the results with you by telehealth."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can telehealth help with seasonal mood changes during Montana winters?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many patients notice their mood shifts as Great Falls' long, dark winters set in. Regular telehealth visits make it easier to stay on top of psychiatric care without having to travel on icy roads."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Great Falls can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Montana and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Between Malmstrom Air Force Base families, shift workers, and residents scattered across Cascade County's rolling plains, many Great Falls patients tell us it's hard to find a psychiatric provider with real openings. Tiffany typically offers same-day or next-day telehealth visits, so getting started doesn't mean months on a waitlist.</p>
+                        <p>Licensed in Montana with more than 30 years of psychiatric experience, Tiffany treats ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions. Long Montana winters can take a toll on mood, and telehealth means you never have to brave icy roads to keep an appointment.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>From high blood pressure and diabetes to hormonal imbalances, menopausal therapy, low testosterone, erectile issues, PCOS and thyroid conditions, we manage the chronic issues Great Falls patients live with day to day.</p>
+                        <p>Acute concerns don't wait for office hours, either — we treat the flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain over telehealth.</p>
+                        <p>Need bloodwork? We can order labs to be drawn at Benefis Health System or another Great Falls-area facility, review the results with you, and send specialty referrals when needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany has helped patients succeed with GLP-1 medications, and she can build a plan around your goals, too. Our individualized weight management programs, delivered entirely by telehealth, combine Semaglutide or Tirzepatide therapy with ongoing coaching and nutritional guidance. Because we work with local compounding pharmacies, these medications are within reach for non-diabetic patients and more affordable than many expect.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +118,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Great Falls and Cascade County</h2>
-                    <p>Our Montana-licensed telehealth services reach Great Falls, Black Eagle, Belt, Cascade, Vaughn, and the surrounding Cascade County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Montana-licensed telehealth services reach Great Falls, Black Eagle, Belt, Cascade, Vaughn, and the surrounding Cascade County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans. Great Falls is also home to Benefis Health System, the region's largest hospital network, and to Malmstrom Air Force Base, giving the community deep ties to both healthcare and military families.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Great Falls area pharmacy.</li>
@@ -104,6 +136,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Great Falls pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Do you see patients connected to Malmstrom Air Force Base?</h3>
+                    <p>Yes. Our telehealth visits are open to Great Falls-area residents of all backgrounds, including active-duty service members' families and civilians who work at Malmstrom Air Force Base.</p>
+                    <h3>Where can I get labs drawn if my visit requires bloodwork?</h3>
+                    <p>We can order labs to be drawn at Benefis Health System or another Great Falls-area facility, then review the results with you by telehealth.</p>
+                    <h3>Can telehealth help with seasonal mood changes during Montana winters?</h3>
+                    <p>Many patients notice their mood shifts as Great Falls' long, dark winters set in. Regular telehealth visits make it easier to stay on top of psychiatric care without having to travel on icy roads.</p>
                 </div>
             </div>
         </div>

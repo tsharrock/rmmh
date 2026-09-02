@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "I live outside Dillon in a rural part of Beaverhead County — can I still get scheduled quickly?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Telehealth reaches you anywhere in Beaverhead County with an internet connection, so the county's size — Montana's largest by land area — doesn't stand between you and an appointment."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Are University of Montana Western students eligible for telehealth visits?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Any patient physically located in Montana at the time of the visit can schedule with Tiffany, including UM Western students living in Dillon during the school year."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you treat mental health concerns tied to isolation on rural ranches?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Tiffany treats anxiety, depression, and other mental health concerns that can be harder to manage when the nearest provider is a long drive away, with scheduling that typically offers a same or next-day visit."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Dillon can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Montana and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Beaverhead County is Montana's largest county by land area, and that size alone means many ranching and farming families face a long drive for psychiatric care, when they can find an opening at all. Tiffany brings same or next-day scheduling to the Dillon area instead.</p>
+                        <p>Licensed in Montana with more than 30 years of experience, she treats ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions, from wherever you call home in the Beaverhead Valley.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>Chronic conditions such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid disorders are managed through the same secure video visits.</p>
+                        <p>Acute concerns are covered too: flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, and the strains and injuries that come with ranch work across Beaverhead County or student life at University of Montana Western.</p>
+                        <p>Labs can be ordered locally, results reviewed together, and specialty referrals sent whenever a concern needs more than telehealth can offer.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany's own experience with GLP-1 medications shapes the individualized weight-management plans she builds: Semaglutide or Tirzepatide therapy, paired with coaching and nutritional guidance, all managed from home rather than a long drive into Dillon. Local compounding pharmacies keep these medications within reach for non-diabetics and more affordable than ever.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +118,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Dillon and Beaverhead County</h2>
-                    <p>Our Montana-licensed telehealth services reach Dillon, Twin Bridges, Sheridan, Melrose, Lima, and the surrounding communities of southwest Montana. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Montana-licensed telehealth services reach Dillon, Twin Bridges, Sheridan, Melrose, Lima, and the surrounding communities of southwest Montana. Dillon is also home to the University of Montana Western, and the Beaverhead River that runs along the valley ties together the ranching communities our telehealth patients call home. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Dillon area pharmacy.</li>
@@ -104,6 +136,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Dillon pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="divider-line"></div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>I live outside Dillon in a rural part of Beaverhead County — can I still get scheduled quickly?</h3>
+                    <p>Yes. Telehealth reaches you anywhere in Beaverhead County with an internet connection, so the county's size — Montana's largest by land area — doesn't stand between you and an appointment.</p>
+                    <h3>Are University of Montana Western students eligible for telehealth visits?</h3>
+                    <p>Yes. Any patient physically located in Montana at the time of the visit can schedule with Tiffany, including UM Western students living in Dillon during the school year.</p>
+                    <h3>Do you treat mental health concerns tied to isolation on rural ranches?</h3>
+                    <p>Yes. Tiffany treats anxiety, depression, and other mental health concerns that can be harder to manage when the nearest provider is a long drive away, with scheduling that typically offers a same or next-day visit.</p>
                 </div>
             </div>
         </div>

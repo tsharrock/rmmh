@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Cedar Rapids already has hospitals like St. Luke's and Mercy. Do you replace my existing doctor?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, we complement the care you already receive. We can order labs to be drawn locally, review results with you, and send specialty referrals to Cedar Rapids providers when needed."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "I work rotating shifts at one of Cedar Rapids's food-processing or manufacturing plants. Can I schedule around that?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Telehealth visits are typically available the same day or next, and appointments can be scheduled around non-traditional shift work common to Cedar Rapids's manufacturing and food-processing employers."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you see patients throughout Linn County, not just inside Cedar Rapids?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Our Iowa-licensed telehealth services reach Cedar Rapids, Marion, Hiawatha, Robins, Fairfax, and the surrounding Linn County communities."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Cedar Rapids can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Even in a city the size of Cedar Rapids, psychiatric providers with real openings can be hard to find.  Tiffany is easy to schedule with and can typically see patients the same day or next, whether you're near downtown or out toward Marion.</p>
+                        <p>Tiffany holds an active Iowa license and brings over 30 years of psychiatric experience to conditions including ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid conditions for patients across Linn County.</p>
+                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain — including the kind of on-the-job strains and repetitive injuries common among Cedar Rapids's manufacturing and food-processing workforce.</p>
+                        <p>We can easily order labs to be drawn at UnityPoint Health-St. Luke's Hospital, Mercy Medical Center, or another lab near you, review the results, and send specialty referrals if needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Iowa consistently ranks among the higher-obesity states in the country, and Tiffany has seen firsthand how much GLP-1 therapy can change that trajectory for patients throughout Cedar Rapids and Linn County.  Our individualized programs, built around Semaglutide and Tirzepatide, pair the medication with coaching and nutritional guidance from home.  Working with local compounding pharmacies keeps these treatments accessible to non-diabetics and more affordable than ever.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -87,6 +119,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Cedar Rapids and Linn County</h2>
                     <p>Our Iowa-licensed telehealth services reach Cedar Rapids, Marion, Hiawatha, Robins, Fairfax, and the surrounding Linn County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Known as the "City of Five Seasons" and home to the world's largest cereal plant along the Cedar River, Cedar Rapids is served locally by UnityPoint Health-St. Luke's Hospital and Mercy Medical Center — and our telehealth visits complement the care you already receive there.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Cedar Rapids area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Cedar Rapids pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider-line"></div>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Cedar Rapids already has hospitals like St. Luke's and Mercy. Do you replace my existing doctor?</h3>
+                    <p>No, we complement the care you already receive. We can order labs to be drawn locally, review results with you, and send specialty referrals to Cedar Rapids providers when needed.</p>
+                    <h3>I work rotating shifts at one of Cedar Rapids's food-processing or manufacturing plants. Can I schedule around that?</h3>
+                    <p>Yes. Telehealth visits are typically available the same day or next, and appointments can be scheduled around non-traditional shift work common to Cedar Rapids's manufacturing and food-processing employers.</p>
+                    <h3>Do you see patients throughout Linn County, not just inside Cedar Rapids?</h3>
+                    <p>Yes. Our Iowa-licensed telehealth services reach Cedar Rapids, Marion, Hiawatha, Robins, Fairfax, and the surrounding Linn County communities.</p>
                 </div>
             </div>
         </div>

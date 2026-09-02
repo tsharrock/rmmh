@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is telehealth a good option if I live outside Dubuque proper, like Asbury or Peosta?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Tiffany's Iowa license covers the whole state, so patients throughout Dubuque County — including Asbury, Peosta, Dyersville, and Farley — can book the same telehealth visit."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How hard is it to get a psychiatric appointment through Redmond Medical and Mental Health compared to local wait times?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Much easier. Many communities in the Dubuque area have limited local access to psychiatric care with long waits. Tiffany typically sees patients the same day or next."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I still use my regular hospital for lab work if I switch to telehealth visits?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We can order labs to be drawn at a hospital or lab near you, including MercyOne Dubuque Medical Center or UnityPoint Health-Finley Hospital, and review the results together virtually."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,25 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Dubuque can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Dubuque and the surrounding tri-state area have long faced a shortage of psychiatric providers with short wait times, and many communities in the region have limited local access to psychiatric care. Tiffany keeps scheduling simple and typically sees patients the same day or next.</p>
+                        <p>Tiffany is licensed in Iowa with over 30 years of psychiatric experience treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation, and addiction, all from home along the bluffs of the Mississippi.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We diagnose and manage chronic conditions such as high blood pressure, diabetes, hormonal imbalances (including menopause and low testosterone), erectile issues, PCOS, and thyroid disorders.</p>
+                        <p>Acute concerns, including flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, injuries, and acute pain, are addressed virtually as well.</p>
+                        <p>We can order labs to be drawn at a hospital or lab near you, including MercyOne Dubuque Medical Center or UnityPoint Health-Finley Hospital, then review results and send specialty referrals if needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany has helped patients throughout eastern Iowa succeed with GLP-1 medications, and she can help you get started too. Programs are individualized around Semaglutide and Tirzepatide, combined with coaching and nutritional guidance, all from home.</p>
+                        <p>Working with local compounding pharmacies keeps these medications within reach for non-diabetic patients and more affordable than many people expect.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +119,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Dubuque and Dubuque County</h2>
-                    <p>Our Iowa-licensed telehealth services reach Dubuque, Asbury, Peosta, Dyersville, Farley, and the surrounding Dubuque County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Iowa-licensed telehealth services reach Dubuque, Asbury, Peosta, Dyersville, Farley, and the surrounding Dubuque County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans. Dubuque rises along the bluffs of the Mississippi River, home to landmarks like the Fenelon Place Elevator and the National Mississippi River Museum and Aquarium, as well as regional hospitals such as MercyOne Dubuque Medical Center and UnityPoint Health-Finley Hospital.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Dubuque area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Dubuque pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="divider-line"></div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Is telehealth a good option if I live outside Dubuque proper, like Asbury or Peosta?</h3>
+                    <p>Yes. Tiffany's Iowa license covers the whole state, so patients throughout Dubuque County &mdash; including Asbury, Peosta, Dyersville, and Farley &mdash; can book the same telehealth visit.</p>
+                    <h3>How hard is it to get a psychiatric appointment through Redmond Medical and Mental Health compared to local wait times?</h3>
+                    <p>Much easier. Many communities in the Dubuque area have limited local access to psychiatric care with long waits. Tiffany typically sees patients the same day or next.</p>
+                    <h3>Can I still use my regular hospital for lab work if I switch to telehealth visits?</h3>
+                    <p>Yes. We can order labs to be drawn at a hospital or lab near you, including MercyOne Dubuque Medical Center or UnityPoint Health-Finley Hospital, and review the results together virtually.</p>
                 </div>
             </div>
         </div>
