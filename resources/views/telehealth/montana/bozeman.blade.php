@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "I'm a Montana State University student — can I use telehealth if I'm away from my hometown doctor?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. As long as you're physically located in Montana at the time of your visit, you can schedule with Tiffany whether you're at your Bozeman address, a residence hall near MSU, or anywhere else in the Gallatin Valley."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does RMMH coordinate care with Bozeman Health if I need in-person treatment?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Redmond Medical and Mental Health is an independent telehealth practice and isn't affiliated with Bozeman Health. When a concern needs an in-person exam, imaging, or a specialist, we're glad to send a referral so you can be seen locally."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can telehealth help with seasonal mood changes during Gallatin Valley winters?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Tiffany treats anxiety, depression, and other mood concerns that can intensify during Montana's long winters, and appointments can be scheduled quickly rather than waiting weeks for an opening."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Bozeman can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Montana and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Bozeman's population has grown quickly alongside Montana State University, and local psychiatric practices often carry waitlists of many weeks. Tiffany takes a simpler approach, with scheduling that typically gets patients seen the same day or next.</p>
+                        <p>Licensed in Montana with more than 30 years of experience, she treats ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions, for students, families, and everyone else in the Gallatin Valley.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>Chronic conditions such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid disorders are managed through the same secure video visits.</p>
+                        <p>Acute concerns are handled too: flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, and the sprains and strains that come with skiing, biking, or hiking around the Bridger Mountains.</p>
+                        <p>Labs can be drawn locally, results reviewed together, and specialty referrals sent whenever a concern calls for more than a virtual visit.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany's own success with GLP-1 medications shapes how she builds each weight-management plan: Semaglutide or Tirzepatide therapy, paired with coaching and nutritional guidance, delivered from home. Local compounding pharmacies keep these medications within reach for non-diabetics and more affordable than ever.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +118,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Bozeman and Gallatin County</h2>
-                    <p>Our Montana-licensed telehealth services reach Bozeman, Belgrade, Four Corners, Manhattan, Livingston, and the surrounding Gallatin County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Montana-licensed telehealth services reach Bozeman, Belgrade, Four Corners, Manhattan, Livingston, and the surrounding Gallatin County communities. Bozeman is also home to Bozeman Health Deaconess Regional Medical Center, a Level III trauma center serving an eleven-county region of southwest Montana, and our telehealth visits are designed to work alongside the in-person care available there. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Bozeman area pharmacy.</li>
@@ -104,6 +136,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Bozeman pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="divider-line"></div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>I'm a Montana State University student — can I use telehealth if I'm away from my hometown doctor?</h3>
+                    <p>Yes. As long as you're physically located in Montana at the time of your visit, you can schedule with Tiffany whether you're at your Bozeman address, a residence hall near MSU, or anywhere else in the Gallatin Valley.</p>
+                    <h3>Does RMMH coordinate care with Bozeman Health if I need in-person treatment?</h3>
+                    <p>Redmond Medical and Mental Health is an independent telehealth practice and isn't affiliated with Bozeman Health. When a concern needs an in-person exam, imaging, or a specialist, we're glad to send a referral so you can be seen locally.</p>
+                    <h3>Can telehealth help with seasonal mood changes during Gallatin Valley winters?</h3>
+                    <p>Yes. Tiffany treats anxiety, depression, and other mood concerns that can intensify during Montana's long winters, and appointments can be scheduled quickly rather than waiting weeks for an opening.</p>
                 </div>
             </div>
         </div>

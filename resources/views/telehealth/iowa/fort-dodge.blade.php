@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "I live on a farm outside Fort Dodge — can I still get care without driving into town?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. As long as you're in Iowa at the time of your visit, you can connect from anywhere in Webster County or the surrounding farming communities — no drive required."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does allergy season around the corn and soybean fields affect the kind of care you provide?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We regularly help patients manage the seasonal allergy and respiratory symptoms that come with living in farming country, alongside ongoing chronic conditions like blood pressure and diabetes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does Redmond Medical and Mental Health help with the psychiatric provider shortage in this area?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many communities in north central Iowa have limited local access to psychiatric care. Tiffany is licensed in Iowa and typically sees patients the same day or next, cutting down the wait common at many local practices."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,25 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Fort Dodge can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Fort Dodge and the farming communities across Webster County have long dealt with limited local access to psychiatric care, with many patients facing long waits or long drives just to be seen. Tiffany makes scheduling simple and typically sees patients the same day or next.</p>
+                        <p>Tiffany is licensed in Iowa with over 30 years of psychiatric experience treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation, and addiction, all without leaving home in north central Iowa.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We diagnose and manage chronic conditions such as high blood pressure, diabetes, hormonal imbalances (including menopause and low testosterone), erectile issues, PCOS, and thyroid disorders, common concerns among farming and working families across Webster County.</p>
+                        <p>We also treat acute issues such as the flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, injuries, and acute pain.</p>
+                        <p>We can order labs to be drawn at a hospital or lab near you, including UnityPoint Health - Trinity Regional Medical Center, then review results and send specialty referrals if needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany has helped patients throughout Iowa succeed with GLP-1 medications, and she can help you get started too. Individualized programs built around Semaglutide and Tirzepatide, paired with coaching and nutritional guidance, are delivered from your own home.</p>
+                        <p>Local compounding pharmacies keep these medications accessible for non-diabetic patients and more affordable than many people expect.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +119,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Fort Dodge and Webster County</h2>
-                    <p>Our Iowa-licensed telehealth services reach Fort Dodge, Humboldt, Webster City, Gowrie, Eagle Grove, and the surrounding communities of north central Iowa. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Iowa-licensed telehealth services reach Fort Dodge, Humboldt, Webster City, Gowrie, Eagle Grove, and the surrounding communities of north central Iowa. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans. Long known as "The Gypsum City" for its historic gypsum and agricultural industries, Fort Dodge serves as the regional hub for north central Iowa and is home to UnityPoint Health - Trinity Regional Medical Center.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Fort Dodge area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Fort Dodge pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="divider-line"></div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>I live on a farm outside Fort Dodge &mdash; can I still get care without driving into town?</h3>
+                    <p>Yes. As long as you're in Iowa at the time of your visit, you can connect from anywhere in Webster County or the surrounding farming communities &mdash; no drive required.</p>
+                    <h3>Does allergy season around the corn and soybean fields affect the kind of care you provide?</h3>
+                    <p>We regularly help patients manage the seasonal allergy and respiratory symptoms that come with living in farming country, alongside ongoing chronic conditions like blood pressure and diabetes.</p>
+                    <h3>How does Redmond Medical and Mental Health help with the psychiatric provider shortage in this area?</h3>
+                    <p>Many communities in north central Iowa have limited local access to psychiatric care. Tiffany is licensed in Iowa and typically sees patients the same day or next, cutting down the wait common at many local practices.</p>
                 </div>
             </div>
         </div>

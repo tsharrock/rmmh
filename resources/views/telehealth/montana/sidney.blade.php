@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is telehealth psychiatric care available for Bakken oilfield workers with irregular schedules?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Video visits can be scheduled around shift work, and Tiffany treats anxiety, depression, and addictions common in demanding oilfield and agricultural jobs across the MonDak region."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you coordinate with Sidney Health Center for labs?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We can order labs to be drawn locally at Sidney Health Center, review the results with you, and send specialty referrals when needed."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can virtual primary care address seasonal mood changes from long Montana winters?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Long winters in northeastern Montana can affect mood and energy, and Tiffany treats these concerns as part of ongoing psychiatric care."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Sidney can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Montana and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Richland County and the wider MonDak region have limited local access to psychiatric providers, and the demands of oilfield shift work and life in a fast-growing Bakken-area community can add real strain. Tiffany offers a closer option: secure video visits, typically scheduled within a day or two.</p>
+                        <p>Licensed in Montana with more than 30 years in psychiatry, Tiffany treats ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions — comprehensive mental health care from the comfort of home.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We diagnose and manage chronic conditions such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid conditions for patients across Richland County's farming and oilfield community.</p>
+                        <p>Acute concerns are covered too: the flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, and the injuries that come with sugar beet harvest, ranch work and oilfield jobs.</p>
+                        <p>We can order labs to be drawn locally at Sidney Health Center, review the results and send specialty referrals, if needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany's individualized weight-management program — Semaglutide and Tirzepatide therapy, paired with coaching and nutritional guidance — is available to Sidney and the MonDak region by video visit. Local compounding pharmacy partnerships keep these medications accessible for non-diabetic patients and more affordable than ever.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +118,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Sidney and the MonDak region</h2>
-                    <p>Our Montana-licensed telehealth services reach Sidney, Fairview, Savage, Lambert, Richey, and the surrounding communities of the Bakken and eastern Montana. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Montana-licensed telehealth services reach Sidney, Fairview, Savage, Lambert, Richey, and the surrounding communities of the Bakken and eastern Montana. Sidney sits along the Yellowstone River near the North Dakota border, anchored by Sidney Health Center, which has served the MonDak region for more than a century. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Sidney area pharmacy.</li>
@@ -104,6 +136,18 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Sidney pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+            <div class="divider-line"></div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ: Telehealth in Sidney &amp; the MonDak Region</h2>
+                    <h3>Is telehealth psychiatric care available for Bakken oilfield workers with irregular schedules?</h3>
+                    <p>Yes. Video visits can be scheduled around shift work, and Tiffany treats anxiety, depression, and addictions common in demanding oilfield and agricultural jobs across the MonDak region.</p>
+                    <h3>Do you coordinate with Sidney Health Center for labs?</h3>
+                    <p>Yes. We can order labs to be drawn locally at Sidney Health Center, review the results with you, and send specialty referrals when needed.</p>
+                    <h3>Can virtual primary care address seasonal mood changes from long Montana winters?</h3>
+                    <p>Yes. Long winters in northeastern Montana can affect mood and energy, and Tiffany treats these concerns as part of ongoing psychiatric care.</p>
                 </div>
             </div>
         </div>

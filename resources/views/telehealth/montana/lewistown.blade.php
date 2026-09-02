@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Do I have to drive to Great Falls or Billings to see a psychiatric provider?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Many Fergus County residents currently travel to Great Falls or Billings for psychiatric care since local specialty access is limited. Tiffany provides the same psychiatric medication management by secure video, so you can be seen from home in Lewistown or anywhere in the Judith Basin."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can you help with the seasonal mood changes that come with central Montana winters?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Long, dark Judith Basin winters can worsen anxiety, depression, and other mood conditions. Tiffany treats these concerns as part of her psychiatric practice and can adjust your treatment plan seasonally."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Will you coordinate with Central Montana Medical Center if I need labs or a specialist?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We can order labs to be drawn locally at Central Montana Medical Center or another Lewistown-area facility, review the results with you, and send specialty referrals when needed."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Lewistown can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Montana and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Psychiatric specialists are in short supply across the Judith Basin — Central Montana Medical Center brings in visiting psychiatric providers only a few days a month, and many Fergus County residents otherwise drive to Great Falls or Billings for care. Tiffany offers a closer option: video visits that can usually be scheduled within a day or two, right from home.</p>
+                        <p>Licensed in Montana with more than 30 years in psychiatry, Tiffany manages ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions — the same conditions patients elsewhere travel hours to address, now handled from your own kitchen table.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We diagnose and manage chronic conditions common among Judith Basin's ranching and wheat-farming families — high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid conditions.</p>
+                        <p>We also treat acute concerns such as the flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain — the kind of everyday issues that come up on a working ranch or in town.</p>
+                        <p>Lab work can be drawn locally at Central Montana Medical Center or another Lewistown-area facility, with results reviewed and specialty referrals sent when needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany's individualized weight-management program — Semaglutide and Tirzepatide therapy, paired with coaching and nutritional guidance — is now available to Lewistown and the Judith Basin by video visit. Working with local compounding pharmacies keeps these medications accessible for non-diabetic patients and more affordable than ever.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +118,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Lewistown and Central Montana</h2>
-                    <p>Our Montana-licensed telehealth services reach Lewistown, Denton, Moore, Hobson, Grass Range, and the surrounding communities of central Montana. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Montana-licensed telehealth services reach Lewistown, Denton, Moore, Hobson, Grass Range, and the surrounding communities of central Montana. Lewistown sits at the geographic center of the state in the Judith Basin, anchored by Central Montana Medical Center, an outreach facility of Benefis Health System. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Lewistown area pharmacy.</li>
@@ -104,6 +136,18 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Lewistown pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+            <div class="divider-line"></div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ: Telehealth in Lewistown &amp; Central Montana</h2>
+                    <h3>Do I have to drive to Great Falls or Billings to see a psychiatric provider?</h3>
+                    <p>No. Many Fergus County residents currently travel to Great Falls or Billings for psychiatric care since local specialty access is limited. Tiffany provides the same psychiatric medication management by secure video, so you can be seen from home in Lewistown or anywhere in the Judith Basin.</p>
+                    <h3>Can you help with the seasonal mood changes that come with central Montana winters?</h3>
+                    <p>Yes. Long, dark Judith Basin winters can worsen anxiety, depression, and other mood conditions. Tiffany treats these concerns as part of her psychiatric practice and can adjust your treatment plan seasonally.</p>
+                    <h3>Will you coordinate with Central Montana Medical Center if I need labs or a specialist?</h3>
+                    <p>Absolutely. We can order labs to be drawn locally at Central Montana Medical Center or another Lewistown-area facility, review the results with you, and send specialty referrals when needed.</p>
                 </div>
             </div>
         </div>

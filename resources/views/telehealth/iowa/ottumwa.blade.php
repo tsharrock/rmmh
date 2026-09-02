@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is virtual psychiatric care available throughout Wapello County?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Patients in Ottumwa, Eddyville, Fairfield, Oskaloosa, Bloomfield, and surrounding southeast Iowa communities can meet with Tiffany online, which helps in a region where many smaller towns have limited local access to psychiatric providers."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Where can I get labs drawn for a virtual primary care visit?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Labs can typically be drawn at Ottumwa Regional Health Center or another local lab, with results and any referrals handled during a follow-up telehealth appointment."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Are GLP-1 weight-loss medications available to patients near Ottumwa?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Iowa has one of the higher rates of adult overweight and obesity nationally, and by working with local compounding pharmacies, Tiffany can offer Semaglutide and Tirzepatide at a more accessible cost, including for non-diabetic patients."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,25 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Ottumwa can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Psychiatric appointments in southeast Iowa can mean weeks on a waitlist, especially in the smaller communities around Ottumwa. Tiffany typically offers same-day or next-day scheduling, so getting started doesn't require months of patience.</p>
+                        <p>She's licensed in Iowa with over 30 years treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation, and addiction &mdash; all from a secure telehealth visit you can attend from home.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>From high blood pressure and diabetes to thyroid conditions, PCOS, and hormonal changes like menopause and low testosterone, chronic conditions are tracked and adjusted visit to visit, the same as an in-person practice.</p>
+                        <p>Acute needs are covered too &mdash; flu, rashes, urinary or sexually transmitted infections, eye concerns, injuries, and acute pain can all be assessed by video.</p>
+                        <p>Labs can be drawn at Ottumwa Regional Health Center or a lab of your choice, with results reviewed and specialty referrals sent when appropriate.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany has seen strong, sustainable results with Semaglutide and Tirzepatide, paired with individual coaching and nutrition support tailored to your routine.</p>
+                        <p>Local compounding pharmacy partnerships keep these GLP-1 medications more affordable and available to non-diabetic patients throughout the Ottumwa area.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +119,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Ottumwa and Southeast Iowa</h2>
-                    <p>Our Iowa-licensed telehealth services reach Ottumwa, Eddyville, Fairfield, Oskaloosa, Bloomfield, and the surrounding communities of southeast Iowa. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Iowa-licensed telehealth services reach Ottumwa, Eddyville, Fairfield, Oskaloosa, Bloomfield, and the surrounding communities of southeast Iowa. Ottumwa sits along the Des Moines River, within sight of the historic Wapello County Courthouse that has anchored the city's downtown since the 1890s. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Ottumwa area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Ottumwa pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="divider-line"></div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Is virtual psychiatric care available throughout Wapello County?</h3>
+                    <p>Yes. Patients in Ottumwa, Eddyville, Fairfield, Oskaloosa, Bloomfield, and surrounding southeast Iowa communities can meet with Tiffany online, which helps in a region where many smaller towns have limited local access to psychiatric providers.</p>
+                    <h3>Where can I get labs drawn for a virtual primary care visit?</h3>
+                    <p>Labs can typically be drawn at Ottumwa Regional Health Center or another local lab, with results and any referrals handled during a follow-up telehealth appointment.</p>
+                    <h3>Are GLP-1 weight-loss medications available to patients near Ottumwa?</h3>
+                    <p>Yes. Iowa has one of the higher rates of adult overweight and obesity nationally, and by working with local compounding pharmacies, Tiffany can offer Semaglutide and Tirzepatide at a more accessible cost, including for non-diabetic patients.</p>
                 </div>
             </div>
         </div>

@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is it hard to find a psychiatric provider in southeast Iowa?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It can be. Many communities along the Mississippi River in southeast Iowa have limited local access to psychiatric care, and telehealth lets Burlington-area residents see Tiffany without a long drive or a long wait for an opening."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "I live nearer Fort Madison or Mount Pleasant than Burlington. Can I still schedule with you?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Our telehealth services cover the Great River Health service area across southeast Iowa, so patients throughout Des Moines County and neighboring counties can be seen from home."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I get labs drawn locally if I'm a Burlington patient?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We can order labs to be drawn at Southeast Iowa Regional Medical Center in West Burlington or another lab near you, and Tiffany will review the results with you at your next visit."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Burlington can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Southeast Iowa's stretch along the Mississippi River doesn't have many psychiatric providers with real openings, and driving to Des Moines or the Quad Cities for care isn't realistic for most Burlington families.  Tiffany typically sees patients the same day or next, with none of the usual scheduling headaches.</p>
+                        <p>Tiffany holds an active Iowa license and brings over 30 years of psychiatric experience to conditions including ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Every appointment happens right from your own living room.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid conditions — the same conditions we see week after week across Des Moines County.</p>
+                        <p>The farmland surrounding Burlington brings seasonal corn and soybean pollen allergies on top of acute concerns like the flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
+                        <p>We can easily order labs to be drawn at Southeast Iowa Regional Medical Center in West Burlington or another lab near you, review the results, and send specialty referrals if needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Iowa consistently ranks among the higher-obesity states in the country, and Tiffany has seen firsthand how much GLP-1 therapy can change that trajectory for patients throughout the Burlington area.  Our individualized programs, built around Semaglutide and Tirzepatide, pair the medication with coaching and nutritional guidance from home.  Working with local compounding pharmacies keeps these treatments accessible to non-diabetics and more affordable than ever.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -87,6 +119,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Burlington and the Great River region</h2>
                     <p>Our Iowa-licensed telehealth services reach Burlington, West Burlington, Fort Madison, Mediapolis, Mount Pleasant, and the surrounding communities along the Mississippi. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Home to the famously winding Snake Alley and generations of river commerce on the Mississippi, Burlington is anchored regionally by Great River Health's Southeast Iowa Regional Medical Center in West Burlington — and our telehealth visits complement the care you already receive there.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Burlington area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Burlington pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider-line"></div>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Is it hard to find a psychiatric provider in southeast Iowa?</h3>
+                    <p>It can be. Many communities along the Mississippi River in southeast Iowa have limited local access to psychiatric care, and telehealth lets Burlington-area residents see Tiffany without a long drive or a long wait for an opening.</p>
+                    <h3>I live nearer Fort Madison or Mount Pleasant than Burlington. Can I still schedule with you?</h3>
+                    <p>Yes. Our telehealth services cover the Great River Health service area across southeast Iowa, so patients throughout Des Moines County and neighboring counties can be seen from home.</p>
+                    <h3>Can I get labs drawn locally if I'm a Burlington patient?</h3>
+                    <p>Yes. We can order labs to be drawn at Southeast Iowa Regional Medical Center in West Burlington or another lab near you, and Tiffany will review the results with you at your next visit.</p>
                 </div>
             </div>
         </div>

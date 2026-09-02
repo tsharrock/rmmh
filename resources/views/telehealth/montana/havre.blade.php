@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is psychiatric care hard to find on the Hi-Line?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many communities across Hill County and the Hi-Line have limited local access to psychiatric providers. Telehealth lets you meet with Tiffany without traveling long distances across the plains."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Where can I get labs drawn near Havre?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We can order labs to be drawn at Northern Montana Hospital or another local facility, then go over the results with you by telehealth."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you see Montana State University-Northern students?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, telehealth visits are available to MSU-Northern students and staff, as well as farming and ranching families throughout the Havre area."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Havre can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Montana and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Havre sits at the heart of Montana's Hi-Line, and psychiatric providers can be few and far between across Hill County's wide-open distances. Tiffany offers same-day or next-day telehealth visits, so care doesn't depend on a long drive across the plains.</p>
+                        <p>Licensed in Montana with more than 30 years of psychiatric experience, Tiffany treats ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions — all from wherever you are along the Hi-Line.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We diagnose and manage chronic conditions such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid conditions.</p>
+                        <p>We also treat acute concerns — the flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain — common among Hill County's farming and ranching families as well as Montana State University-Northern students and staff.</p>
+                        <p>Labs can be ordered through Northern Montana Hospital or another Havre-area facility, with results reviewed remotely and specialty referrals sent when needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany has helped patients succeed with GLP-1 medications and can do the same for you. Our individualized weight management programs run entirely through telehealth, pairing Semaglutide or Tirzepatide therapy with coaching and nutritional guidance. Because we partner with local compounding pharmacies, these medications are within reach for non-diabetic patients and more affordable than many expect.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +118,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Havre and the Hi-Line</h2>
-                    <p>Our Montana-licensed telehealth services reach Havre, Chinook, Box Elder, Rocky Boy, Havre North, and the surrounding communities of Montana's Hi-Line. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Montana-licensed telehealth services reach Havre, Chinook, Box Elder, Rocky Boy, Havre North, and the surrounding communities of Montana's Hi-Line. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans. Havre is anchored by Northern Montana Hospital, the Hi-Line's largest employer and critical access hospital, with the Bears Paw Mountains rising just to the south.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Havre area pharmacy.</li>
@@ -104,6 +136,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Havre pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Is psychiatric care hard to find on the Hi-Line?</h3>
+                    <p>Many communities across Hill County and the Hi-Line have limited local access to psychiatric providers. Telehealth lets you meet with Tiffany without traveling long distances across the plains.</p>
+                    <h3>Where can I get labs drawn near Havre?</h3>
+                    <p>We can order labs to be drawn at Northern Montana Hospital or another local facility, then go over the results with you by telehealth.</p>
+                    <h3>Do you see Montana State University-Northern students?</h3>
+                    <p>Yes, telehealth visits are available to MSU-Northern students and staff, as well as farming and ranching families throughout the Havre area.</p>
                 </div>
             </div>
         </div>

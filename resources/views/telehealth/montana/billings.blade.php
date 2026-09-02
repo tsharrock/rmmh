@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Do I need to already be a Billings Clinic patient to use RMMH telehealth?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Redmond Medical and Mental Health is an independent telehealth practice, not affiliated with Billings Clinic or any hospital system. You don't need to be an existing patient anywhere to schedule with Tiffany, and we're happy to send referrals or coordinate with your local providers if in-person care is ever needed."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I get labs drawn locally in Billings after a virtual visit?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We can order labs to be drawn at your preferred Billings-area hospital or lab, review the results with you over telehealth, and send a specialty referral if your care needs more than a virtual visit can provide."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does winter weather in Yellowstone County ever disrupt telehealth appointments?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Because visits happen over a secure video connection from your own home, winter storms and icy roads around Billings don't cause the delays or cancellations that in-person appointments sometimes do."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Billings can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Montana and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Billings may be Montana's largest city, but a psychiatric appointment here can still mean a months-long wait, especially if you're not already established with a large clinic. Tiffany offers a more direct path: scheduling is simple, and most patients are seen the same day or next.</p>
+                        <p>Licensed in Montana with more than 30 years of experience, Tiffany treats ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions. A long Yellowstone County winter is hard enough without also waiting weeks to be seen.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>Chronic conditions like high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid disorders are managed the same way they would be in an office visit, just without the drive.</p>
+                        <p>Acute concerns are covered too: flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, and the sprains and strains that come with a weekend on the trails below the Rimrocks or along the Yellowstone River.</p>
+                        <p>Labs can be drawn at your preferred local hospital, results reviewed together over video, and specialty referrals sent along whenever a concern needs more than telehealth can offer.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany has seen firsthand what GLP-1 medications can do, and she builds an individualized weight-management plan around that experience: Semaglutide or Tirzepatide therapy, paired with coaching and nutritional guidance, all from home. Working with local compounding pharmacies keeps these medications within reach for non-diabetics and more affordable than ever, no trip across Billings required.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +118,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Billings and Yellowstone County</h2>
-                    <p>Our Montana-licensed telehealth services reach Billings, Laurel, Lockwood, Shepherd, Huntley, and the surrounding Yellowstone County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Montana-licensed telehealth services reach Billings, Laurel, Lockwood, Shepherd, Huntley, and the surrounding Yellowstone County communities. Billings is also home to Billings Clinic, the largest healthcare system in Montana and Wyoming, and our telehealth visits are designed to complement the imaging, labs, and specialty referrals available there when in-person care is needed. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Billings area pharmacy.</li>
@@ -104,6 +136,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Billings pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="divider-line"></div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Do I need to already be a Billings Clinic patient to use RMMH telehealth?</h3>
+                    <p>No. Redmond Medical and Mental Health is an independent telehealth practice, not affiliated with Billings Clinic or any hospital system. You don't need to be an existing patient anywhere to schedule with Tiffany, and we're happy to send referrals or coordinate with your local providers if in-person care is ever needed.</p>
+                    <h3>Can I get labs drawn locally in Billings after a virtual visit?</h3>
+                    <p>Yes. We can order labs to be drawn at your preferred Billings-area hospital or lab, review the results with you over telehealth, and send a specialty referral if your care needs more than a virtual visit can provide.</p>
+                    <h3>Does winter weather in Yellowstone County ever disrupt telehealth appointments?</h3>
+                    <p>No. Because visits happen over a secure video connection from your own home, winter storms and icy roads around Billings don't cause the delays or cancellations that in-person appointments sometimes do.</p>
                 </div>
             </div>
         </div>

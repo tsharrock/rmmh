@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "I work in Omaha but live in Council Bluffs. Can I still see an Iowa-licensed provider?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, as long as you're physically located in Iowa at the time of your visit. That makes telehealth a convenient option for the many Council Bluffs residents who commute across the Missouri River for work."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is psychiatric care hard to find on the Iowa side of the Omaha metro?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It can be, especially outside Council Bluffs itself. Many communities in Pottawattamie County have limited local access to psychiatric providers, and telehealth lets you see Tiffany from home instead of crossing the river for care."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I get labs drawn locally if I'm a Council Bluffs patient?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We can order labs to be drawn at CHI Health Mercy Council Bluffs or another lab near you, and Tiffany will review the results with you at your next visit."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Council Bluffs can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Even so close to the Omaha metro, Iowa-licensed psychiatric providers with real openings in Council Bluffs can be hard to find.  Tiffany is easy to schedule with and can typically see patients the same day or next, no trip across the Missouri River required.</p>
+                        <p>Tiffany holds an active Iowa license and brings over 30 years of psychiatric experience to conditions including ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid conditions for patients throughout Pottawattamie County.</p>
+                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain, without adding a trip across the Missouri River to your day.</p>
+                        <p>We can easily order labs to be drawn at CHI Health Mercy Council Bluffs or another lab near you, review the results, and send specialty referrals if needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Iowa consistently ranks among the higher-obesity states in the country, and Tiffany has seen firsthand how much GLP-1 therapy can change that trajectory for patients throughout Council Bluffs and Pottawattamie County.  Our individualized programs, built around Semaglutide and Tirzepatide, pair the medication with coaching and nutritional guidance from home.  Working with local compounding pharmacies keeps these treatments accessible to non-diabetics and more affordable than ever.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -87,6 +119,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Council Bluffs and Pottawattamie County</h2>
                     <p>Our Iowa-licensed telehealth services reach Council Bluffs, Carter Lake, Crescent, Underwood, Treynor, and the surrounding Pottawattamie County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Sitting on the Missouri River across from Omaha, Council Bluffs was designated by President Lincoln as the eastern terminus of the transcontinental railroad and is served locally by CHI Health Mercy Council Bluffs — and our telehealth visits complement the care you already receive there.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Council Bluffs area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Council Bluffs pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider-line"></div>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>I work in Omaha but live in Council Bluffs. Can I still see an Iowa-licensed provider?</h3>
+                    <p>Yes, as long as you're physically located in Iowa at the time of your visit. That makes telehealth a convenient option for the many Council Bluffs residents who commute across the Missouri River for work.</p>
+                    <h3>Is psychiatric care hard to find on the Iowa side of the Omaha metro?</h3>
+                    <p>It can be, especially outside Council Bluffs itself. Many communities in Pottawattamie County have limited local access to psychiatric providers, and telehealth lets you see Tiffany from home instead of crossing the river for care.</p>
+                    <h3>Can I get labs drawn locally if I'm a Council Bluffs patient?</h3>
+                    <p>Yes. We can order labs to be drawn at CHI Health Mercy Council Bluffs or another lab near you, and Tiffany will review the results with you at your next visit.</p>
                 </div>
             </div>
         </div>

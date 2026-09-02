@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Do you work around Iowa State University's academic calendar?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Whether you're a student, faculty member, or staff at Iowa State University, telehealth visits fit around finals weeks, lab schedules, and academic-year moves in and out of Ames without requiring an in-person office visit."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "I live outside Ames in a smaller Story County town. Can I still get psychiatric care?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Many smaller communities in Story County and the surrounding region have limited local access to psychiatric providers, and telehealth lets you see Tiffany from home no matter how far you are from Ames."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I get labs drawn locally if I'm an Ames patient?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We can order labs to be drawn at Mary Greeley Medical Center or another lab near you in the Ames area, and Tiffany will review the results with you at your next visit."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,24 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Ames can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Between Iowa State University's demanding academic calendar and the pace of life across Story County, finding a psychiatric provider in Ames who has real openings can be a challenge.  Tiffany typically sees patients the same day or next, so care fits your schedule instead of the other way around.</p>
+                        <p>Tiffany holds an active Iowa license and brings over 30 years of psychiatric experience to conditions including ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Every visit happens from wherever you're most comfortable, whether that's a dorm room, farmhouse, or home office.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>From managing high blood pressure and diabetes to hormonal imbalances (including menopausal therapy and low testosterone), erectile issues, PCOS and thyroid conditions, we handle the chronic issues that keep Story County residents coming back year after year.</p>
+                        <p>Central Iowa's farm country brings its own seasonal challenges, from corn and soybean pollen allergies to acute concerns like the flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
+                        <p>We can easily order labs to be drawn at Mary Greeley Medical Center or another lab near you, review the results, and send specialty referrals if needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Iowa consistently ranks among the higher-obesity states in the country, and Tiffany has seen firsthand how much GLP-1 therapy can change that trajectory for Ames-area patients.  Our individualized programs, built around Semaglutide and Tirzepatide, pair the medication with coaching and nutritional guidance from home.  Working with local compounding pharmacies keeps these treatments accessible to non-diabetics and more affordable than ever.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -87,6 +119,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Ames and Story County</h2>
                     <p>Our Iowa-licensed telehealth services reach Ames, Nevada, Gilbert, Huxley, Story City, and the surrounding Story County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>From the South Skunk River corridor running through campus town to the farmland surrounding Iowa State University, Ames anchors a region served locally by Mary Greeley Medical Center, one of Story County's largest employers — and our telehealth visits complement the care you already receive there.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Ames area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Ames pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider-line"></div>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Do you work around Iowa State University's academic calendar?</h3>
+                    <p>Yes. Whether you're a student, faculty member, or staff at Iowa State University, telehealth visits fit around finals weeks, lab schedules, and academic-year moves in and out of Ames without requiring an in-person office visit.</p>
+                    <h3>I live outside Ames in a smaller Story County town. Can I still get psychiatric care?</h3>
+                    <p>Yes. Many smaller communities in Story County and the surrounding region have limited local access to psychiatric providers, and telehealth lets you see Tiffany from home no matter how far you are from Ames.</p>
+                    <h3>Can I get labs drawn locally if I'm an Ames patient?</h3>
+                    <p>Yes. We can order labs to be drawn at Mary Greeley Medical Center or another lab near you in the Ames area, and Tiffany will review the results with you at your next visit.</p>
                 </div>
             </div>
         </div>

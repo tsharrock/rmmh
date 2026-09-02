@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "I work downtown near the Capitol — can I fit a telehealth visit into a lunch break?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Visits are scheduled online and take place over a secure video link, so many Des Moines patients join from their office or home during a break in the day."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does Redmond Medical and Mental Health serve the whole Des Moines metro, or just the city itself?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our Iowa license covers the whole state, so patients throughout the metro — West Des Moines, Ankeny, Urbandale, Altoona, and beyond — can schedule the same telehealth visit as those in Des Moines proper."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I have labs drawn locally before a virtual primary care visit?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We can order labs at a hospital or lab near you, including MercyOne Des Moines or UnityPoint Health facilities, and review the results together during your telehealth appointment."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,25 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Des Moines can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Des Moines' insurance, financial services, and government workforce keeps schedules packed, and it can be hard to fit in an in-person psychiatric appointment. Tiffany makes scheduling simple and typically sees patients the same day or next.</p>
+                        <p>Tiffany is licensed in Iowa with more than 30 years of psychiatric experience treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation, and addiction, delivered virtually so you never have to leave the office or home.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>We manage chronic conditions such as high blood pressure, diabetes, hormonal imbalances (including menopause and low testosterone), erectile issues, PCOS, and thyroid disorders.</p>
+                        <p>Acute needs, including flu, rashes, urinary tract infections, sexually transmitted infections, eye problems, injuries, and acute pain, are handled the same way, without a trip downtown.</p>
+                        <p>When you need labs, we can order them drawn at a hospital or lab near you, including MercyOne Des Moines or UnityPoint Health facilities, then review results and coordinate specialist referrals.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Tiffany has helped patients across Iowa succeed with GLP-1 therapy, and she can do the same for you. Programs are built around Semaglutide and Tirzepatide, paired with coaching and nutrition guidance, a valuable option in a state that consistently ranks among the nation's higher rates of adult obesity.</p>
+                        <p>Partnering with local compounding pharmacies keeps these medications accessible for non-diabetic patients and more affordable than many expect.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +119,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Des Moines and Polk County</h2>
-                    <p>Our Iowa-licensed telehealth services reach Des Moines, West Des Moines, Ankeny, Urbandale, Altoona, and the surrounding Polk County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Iowa-licensed telehealth services reach Des Moines, West Des Moines, Ankeny, Urbandale, Altoona, and the surrounding Polk County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans. Des Moines sits at the confluence of the Des Moines and Raccoon Rivers near the Iowa State Capitol, and is home to major employers like MercyOne Des Moines Medical Center.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Des Moines area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Des Moines pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="divider-line"></div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>I work downtown near the Capitol &mdash; can I fit a telehealth visit into a lunch break?</h3>
+                    <p>Yes. Visits are scheduled online and take place over a secure video link, so many Des Moines patients join from their office or home during a break in the day.</p>
+                    <h3>Does Redmond Medical and Mental Health serve the whole Des Moines metro, or just the city itself?</h3>
+                    <p>Our Iowa license covers the whole state, so patients throughout the metro &mdash; West Des Moines, Ankeny, Urbandale, Altoona, and beyond &mdash; can schedule the same telehealth visit as those in Des Moines proper.</p>
+                    <h3>Can I have labs drawn locally before a virtual primary care visit?</h3>
+                    <p>Yes. We can order labs at a hospital or lab near you, including MercyOne Des Moines or UnityPoint Health facilities, and review the results together during your telehealth appointment.</p>
                 </div>
             </div>
         </div>

@@ -32,6 +32,38 @@
     }
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Can patients from smaller Woodbury County towns use telehealth psychiatric care?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Patients in Sergeant Bluff, Le Mars, Sloan, Moville, and greater Sioux City can see Tiffany by secure video, which helps since many smaller communities in the region have limited local access to psychiatric providers."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Where can I have labs drawn for a virtual primary care visit?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Labs can typically be drawn at UnityPoint Health–St. Luke's or another lab convenient to you, with results reviewed and referrals sent during your telehealth follow-up."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is weight-loss treatment with GLP-1 medications available in Sioux City?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Iowa has one of the higher adult obesity rates in the country, and Tiffany's local compounding pharmacy partnerships help make Semaglutide and Tirzepatide more affordable, including for patients who are not diabetic."
+            }
+        }
+    ]
+}
+</script>
 @endsection
 
 @section('content')
@@ -57,24 +89,25 @@
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Psychiatric Medication Management</h3>
-                        <p>Experienced psychiatric providers in Sioux City can be hard to find, especially those without a long wait.  Tiffany is easy to schedule with and can typically see patients the same day or next.  We take the headache out of scheduling and make the process simple.</p>
-                        <p>Tiffany is licensed in Iowa and has over 30 years of experience in psychiatry treating ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation and addictions.  Get all of your mental health concerns addressed from the comfort of home!</p>
+                        <p>Even in a regional hub like Sioux City, psychiatric appointments can be booked out for weeks, and patients in the surrounding Woodbury County towns often have even fewer options close to home. Tiffany typically sees new patients same-day or next-day, cutting that wait dramatically.</p>
+                        <p>Licensed in Iowa with 30-plus years of psychiatric experience, she manages ADD/ADHD, anxiety, depression, bipolar disorder, eating disorders, smoking cessation, and addiction through a secure video visit.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('psychiatric-care') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Virtual Primary Care</h3>
-                        <p>We diagnose and manage chronic medical issues such as high blood pressure, diabetes, hormonal imbalances (including menopausal therapy and low testosterone),  erectile issues, PCOS and thyroid conditions.</p>
-                        <p>We can also address acute concerns such as the flu, rashes or urinary tract infections, sexually transmitted infections, eye problems, injuries and acute pain.</p>
-                        <p>We can easily order labs to be drawn at your local hospital, review the results and send specialty referrals, if needed.</p>
+                        <p>High blood pressure, diabetes, thyroid disorders, PCOS, and hormonal shifts such as menopause and low testosterone are managed with ongoing, in-person-style continuity, just delivered by video.</p>
+                        <p>Acute concerns &mdash; flu, rashes, urinary or sexually transmitted infections, eye problems, injuries, and acute pain &mdash; are also seen promptly.</p>
+                        <p>Labs can be drawn at UnityPoint Health&ndash;St. Luke's or another lab near you, with results reviewed and specialty referrals sent as needed.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('family-medicine') }}">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Weight Loss Consultations</h3>
-                        <p>Tiffany has experienced success with GLP-1 medications and so can you!  We specialize in individualized weight management programs from the comfort of your home, including Semaglutide and Tirzepatide therapy, combined with coaching and nutritional guidance.  Our use of local compounding pharmacies means that these medications are no longer out of reach for non-diabetics and they are more affordable than ever!</p>
+                        <p>Semaglutide and Tirzepatide have helped many patients see real, lasting change, and Tiffany pairs each plan with coaching and nutritional guidance built around your life.</p>
+                        <p>Partnering with local compounding pharmacies keeps GLP-1 therapy more affordable and available to non-diabetic patients across the Sioux City area.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('weight-loss') }}">Read More</a></p>
                     </div>
                 </div>
@@ -86,7 +119,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Sioux City and Woodbury County</h2>
-                    <p>Our Iowa-licensed telehealth services reach Sioux City, Sergeant Bluff, Le Mars, Sloan, Moville, and the surrounding Woodbury County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Iowa-licensed telehealth services reach Sioux City, Sergeant Bluff, Le Mars, Sloan, Moville, and the surrounding Woodbury County communities. Sioux City sits where the Missouri, Big Sioux, and Floyd Rivers meet near the Iowa-Nebraska-South Dakota border, close to the landmark Woodbury County Courthouse and Morningside University. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Sioux City area pharmacy.</li>
@@ -104,6 +137,22 @@
                         <li><strong>The Visit:</strong> Meet with Tiffany Redmond, PA-C, to discuss your health goals and treatment plan from your home.</li>
                         <li><strong>Prescriptions &amp; Follow-up:</strong> Any necessary medications are sent to your preferred Sioux City pharmacy immediately.</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="divider-line"></div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2>Local FAQ</h2>
+                    <h3>Can patients from smaller Woodbury County towns use telehealth psychiatric care?</h3>
+                    <p>Yes. Patients in Sergeant Bluff, Le Mars, Sloan, Moville, and greater Sioux City can see Tiffany by secure video, which helps since many smaller communities in the region have limited local access to psychiatric providers.</p>
+                    <h3>Where can I have labs drawn for a virtual primary care visit?</h3>
+                    <p>Labs can typically be drawn at UnityPoint Health&ndash;St. Luke's or another lab convenient to you, with results reviewed and referrals sent during your telehealth follow-up.</p>
+                    <h3>Is weight-loss treatment with GLP-1 medications available in Sioux City?</h3>
+                    <p>Yes. Iowa has one of the higher adult obesity rates in the country, and Tiffany's local compounding pharmacy partnerships help make Semaglutide and Tirzepatide more affordable, including for patients who are not diabetic.</p>
                 </div>
             </div>
         </div>
