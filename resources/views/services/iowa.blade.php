@@ -32,6 +32,7 @@
                     <li>BCBS Wellmark of Iowa</li>
                     <li>BCBS Blue Card</li>
                     <li>Curative Health</li>
+                    <li>Midlands Choice (Cigna)</li>
                 </ul>
                 <p>Insurance acceptance may vary by plan. We recommend calling the number on the back of your card to
                     confirm your telemedicine benefit before your visit.</p>

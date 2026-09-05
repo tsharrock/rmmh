@@ -118,11 +118,19 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Polson and the Flathead Reservation</h2>
-                    <p>Our Montana-licensed telehealth services reach Polson, Ronan, Pablo, Bigfork, St. Ignatius, and the surrounding communities around Flathead Lake. Polson sits at the southern tip of Flathead Lake — the largest natural freshwater lake in the western United States — within the Flathead Indian Reservation, home to the Confederated Salish and Kootenai Tribes, with the Mission Mountains rising to the south. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans.</p>
+                    <p>Our Montana-licensed telehealth services reach Polson, Ronan, Pablo, Bigfork, St. Ignatius, and the surrounding communities around Flathead Lake. Polson sits at the southern tip of Flathead Lake — the largest natural freshwater lake in the western United States — within the Flathead Indian Reservation, home to the Confederated Salish and Kootenai Tribes, with the Mission Mountains rising to the south. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  Our in-network insurance plans are listed below, and we accept most other major carriers as well.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Polson area pharmacy.</li>
                         <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one convenient appointment.  Scheduling is easy and most patients can be seen the same day or next.  We allow you to save time and save copays.</li>
+                    </ul>
+
+                    <h3>Accepted Insurance Plans</h3>
+                    <ul>
+                        <li>BCBS Blue Card</li>
+                        <li>Moutain Health CO-OP</li>
+                        <li>Curative Health</li>
+                        <li>Allegiance Benefit Management Plan</li>
                     </ul>
                 </div>
             </div>

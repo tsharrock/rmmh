@@ -34,6 +34,7 @@
                     <li>BCBS Blue Card</li>
                     <li>Moutain Health CO-OP</li>
                     <li>Curative Health</li>
+                    <li>Allegiance Benefit Management Plan</li>
                 </ul>
                 <p>Insurance acceptance may vary by plan. We recommend calling the number on the back of your card to
                     confirm your telemedicine benefit before your visit.</p>

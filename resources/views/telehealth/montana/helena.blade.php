@@ -118,11 +118,19 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Helena and Lewis and Clark County</h2>
-                    <p>Our Montana-licensed telehealth services reach Helena, East Helena, Montana City, Boulder, Lincoln, and the surrounding Lewis and Clark County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans. As Montana's state capital, Helena is home to St. Peter's Health and Carroll College, with Mount Helena and the Helena-Lewis and Clark National Forest right at the city's edge.</p>
+                    <p>Our Montana-licensed telehealth services reach Helena, East Helena, Montana City, Boulder, Lincoln, and the surrounding Lewis and Clark County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're proud to be in-network with most major insurance carriers, listed below. As Montana's state capital, Helena is home to St. Peter's Health and Carroll College, with Mount Helena and the Helena-Lewis and Clark National Forest right at the city's edge.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Helena area pharmacy.</li>
                         <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one convenient appointment.  Scheduling is easy and most patients can be seen the same day or next.  We allow you to save time and save copays.</li>
+                    </ul>
+
+                    <h3>Accepted Insurance Plans</h3>
+                    <ul>
+                        <li>BCBS Blue Card</li>
+                        <li>Moutain Health CO-OP</li>
+                        <li>Curative Health</li>
+                        <li>Allegiance Benefit Management Plan</li>
                     </ul>
                 </div>
             </div>
