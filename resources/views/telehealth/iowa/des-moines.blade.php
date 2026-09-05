@@ -119,11 +119,19 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Des Moines and Polk County</h2>
-                    <p>Our Iowa-licensed telehealth services reach Des Moines, West Des Moines, Ankeny, Urbandale, Altoona, and the surrounding Polk County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with Blue Cross Blue Shield through the BlueCard program and with Curative Health Plan, and we accept most major insurance plans. Des Moines sits at the confluence of the Des Moines and Raccoon Rivers near the Iowa State Capitol, and is home to major employers like MercyOne Des Moines Medical Center.</p>
+                    <p>Our Iowa-licensed telehealth services reach Des Moines, West Des Moines, Ankeny, Urbandale, Altoona, and the surrounding Polk County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with most major insurance plans; see the accepted list below. Des Moines sits at the confluence of the Des Moines and Raccoon Rivers near the Iowa State Capitol, and is home to major employers like MercyOne Des Moines Medical Center.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Des Moines area pharmacy.</li>
                         <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one convenient appointment.  Scheduling is easy and most patients can be seen the same day or next.  We allow you to save time and save copays.</li>
+                    </ul>
+
+                    <h3>Accepted Insurance Plans</h3>
+                    <ul>
+                        <li>BCBS Wellmark of Iowa</li>
+                        <li>BCBS Blue Card</li>
+                        <li>Curative Health</li>
+                        <li>Midlands Choice (Cigna)</li>
                     </ul>
                 </div>
             </div>
