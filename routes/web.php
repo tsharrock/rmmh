@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\BookingIntakeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
@@ -61,6 +63,34 @@ Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 Route::view('/logan-cache-valley', 'logan-cache-valley')->name('logan-cache-valley');
+
+// Booking engine (on-site replacement for the NextPatient widget).
+// Static availability for now -- see config/booking.php.
+Route::get('/schedule', [BookingController::class, 'start'])->name('booking.start');
+Route::get('/schedule/times', [BookingController::class, 'times'])->name('booking.times');
+Route::post('/schedule/identify', [BookingController::class, 'identify'])->name('booking.identify');
+Route::get('/schedule/identify', [BookingController::class, 'showIdentify'])->name('booking.identify.show');
+Route::post('/schedule/details', [BookingController::class, 'details'])->name('booking.details');
+Route::get('/schedule/details', [BookingController::class, 'showDetails'])->name('booking.details.show');
+// Step 4 submit: creates the athena patient record, then hands off to intake.
+Route::post('/schedule/patient', [BookingController::class, 'submitPatient'])->name('booking.patient');
+
+// Intake — collected before the appointment is booked.
+Route::get('/schedule/consent', [BookingIntakeController::class, 'showConsent'])->name('booking.consent.show');
+Route::post('/schedule/consent', [BookingIntakeController::class, 'submitConsent'])->name('booking.consent');
+
+Route::get('/schedule/insurance', [BookingIntakeController::class, 'showInsurance'])->name('booking.insurance.show');
+Route::post('/schedule/insurance', [BookingIntakeController::class, 'submitInsurance'])->name('booking.insurance');
+Route::post('/schedule/insurance/photo', [BookingIntakeController::class, 'uploadInsurance'])->name('booking.insurance.photo');
+
+Route::get('/schedule/identification', [BookingIntakeController::class, 'showIdentification'])->name('booking.identification.show');
+Route::post('/schedule/identification', [BookingIntakeController::class, 'submitIdentification'])->name('booking.identification');
+Route::post('/schedule/identification/photo', [BookingIntakeController::class, 'uploadIdentification'])->name('booking.identification.photo');
+
+Route::get('/schedule/review', [BookingIntakeController::class, 'review'])->name('booking.review');
+Route::post('/schedule/complete', [BookingIntakeController::class, 'complete'])->name('booking.complete');
+
+Route::get('/schedule/confirmed', [BookingController::class, 'confirmed'])->name('booking.confirmed');
 
 // Utah telehealth city pages
 Route::view('/telehealth/utah/beaver', 'telehealth.utah.beaver')->name('telehealth.utah.beaver');

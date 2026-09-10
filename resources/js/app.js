@@ -5,6 +5,9 @@ import './bootstrap';
 import 'bootstrap/js/dist/collapse'; // navbar toggler
 import 'bootstrap/js/dist/dropdown'; // Services menu
 
+// Booking intake photo capture. No-ops on pages without the component.
+import './photo-capture';
+
 // Conversion tracking, delegated globally since these links appear on
 // nearly every page (schedule CTA) or vary in count (tel: links).
 document.addEventListener('click', function (e) {

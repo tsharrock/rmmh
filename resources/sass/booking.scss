@@ -1,0 +1,829 @@
+//
+// Booking engine
+// -----------------------------------------------------------------------------
+// Styles for the on-site appointment flow (/schedule). Mirrors the NextPatient
+// journey but uses RMMH brand colours and is built mobile-first -- the original
+// widget's fixed 3-column table did not survive a phone screen, and most
+// telehealth traffic arrives on mobile.
+//
+
+$booking-red:    #D2123A;
+$booking-red-dk: #971227;
+$booking-gray:   #f0f3f3;
+$booking-border: #dfe4e4;
+$booking-muted:  #6b7280;
+
+.booking-shell {
+    padding-top: 32px;
+    padding-bottom: 64px;
+
+    @media (min-width: 992px) {
+        padding-top: 56px;
+        padding-bottom: 96px;
+    }
+}
+
+.booking-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+        font-size: 36px;
+    }
+}
+
+.booking-card {
+    background: #fff;
+    border: 1px solid $booking-border;
+    border-radius: 12px;
+    padding: 24px;
+
+    @media (min-width: 768px) {
+        padding: 32px;
+    }
+}
+
+.booking-rule {
+    border: 0;
+    border-top: 1px solid $booking-border;
+    margin: 28px 0 24px;
+    opacity: 1;
+}
+
+.booking-footnote {
+    margin-top: 20px;
+    font-size: 14px;
+    color: $booking-muted;
+}
+
+// --- progress -----------------------------------------------------------------
+
+.booking-progress {
+    margin-bottom: 24px;
+
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: $booking-muted;
+    }
+
+    li.is-current {
+        color: #1a1a1a;
+        font-weight: 600;
+    }
+
+    li.is-done {
+        color: $booking-red;
+    }
+}
+
+.booking-progress__dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid currentColor;
+    font-size: 12px;
+    font-weight: 600;
+    flex: 0 0 auto;
+}
+
+.is-current .booking-progress__dot {
+    background: $booking-red;
+    border-color: $booking-red;
+    color: #fff;
+}
+
+.booking-progress__label {
+    white-space: nowrap;
+}
+
+// --- provider -----------------------------------------------------------------
+
+.booking-provider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.booking-provider__photo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    flex: 0 0 auto;
+
+    @media (min-width: 768px) {
+        width: 88px;
+        height: 88px;
+    }
+}
+
+.booking-provider__name {
+    font-size: 20px;
+    margin: 0 0 4px;
+}
+
+.booking-provider__practice {
+    font-size: 14px;
+    color: $booking-muted;
+    line-height: 1.5;
+}
+
+// --- slots --------------------------------------------------------------------
+
+.booking-slots__intro {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.booking-tz-note {
+    color: $booking-muted;
+    font-size: 13px;
+}
+
+.booking-hint {
+    color: $booking-muted;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.booking-empty {
+    background: $booking-gray;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.booking-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: stretch;
+
+    form {
+        display: flex;
+    }
+}
+
+.booking-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 44px;              // comfortable tap target
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    background: #fff;
+    border: 1px solid $booking-red;
+    border-radius: 8px;
+    color: $booking-red;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+    text-decoration: none;
+    transition: background-color .12s ease, color .12s ease;
+
+    &:hover,
+    &:focus-visible {
+        background: $booking-red;
+        color: #fff;
+    }
+
+    &:focus-visible {
+        outline: 3px solid rgba($booking-red, .35);
+        outline-offset: 2px;
+    }
+}
+
+.booking-slot--wide {
+    width: auto;
+    min-width: 130px;
+    margin-bottom: 0;
+}
+
+.booking-slot__day {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: .85;
+}
+
+.booking-slot__time {
+    font-size: 16px;
+}
+
+.booking-slot--more {
+    width: auto;
+    min-width: 90px;
+    margin-bottom: 0;
+    background: $booking-gray;
+    border-color: $booking-border;
+    color: #333;
+
+    &:hover,
+    &:focus-visible {
+        background: #e2e8e8;
+        color: #333;
+    }
+}
+
+// --- reason bar / timezone banner ---------------------------------------------
+
+.booking-reason-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    align-items: baseline;
+    justify-content: space-between;
+    background: $booking-gray;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.booking-reason-bar__label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: $booking-muted;
+}
+
+.booking-reason-bar__change {
+    font-size: 14px;
+    color: $booking-red;
+    white-space: nowrap;
+}
+
+.booking-tz-banner {
+    font-size: 13px;
+    color: $booking-muted;
+    border-left: 3px solid $booking-red;
+    padding-left: 12px;
+    margin-bottom: 24px;
+}
+
+// --- calendar -----------------------------------------------------------------
+
+.booking-calendar__nav {
+    display: none;                  // desktop only; mobile stacks the days
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.booking-calendar__days {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    flex: 1 1 auto;
+}
+
+.booking-calendar__heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px;
+    background: $booking-gray;
+    border-radius: 6px;
+}
+
+.booking-calendar__heading--inline {
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+        display: none;              // the nav row already labels the columns
+    }
+}
+
+.booking-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 auto;
+    border: 1px solid $booking-border;
+    border-radius: 8px;
+    background: #fff;
+    color: #333;
+    font-size: 20px;
+    line-height: 1;
+    text-decoration: none;
+
+    &:hover {
+        background: $booking-gray;
+        color: #333;
+    }
+
+    &.is-disabled {
+        opacity: .35;
+        cursor: default;
+    }
+}
+
+.booking-calendar__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        // line the columns up with the nav row above, which has arrows either side
+        padding: 0 52px;
+    }
+}
+
+.booking-calendar__column {
+    min-width: 0;
+}
+
+.booking-calendar__none {
+    text-align: center;
+    color: $booking-muted;
+    font-size: 14px;
+    padding: 12px 0;
+    margin: 0;
+}
+
+// On phones, lay the times out in a wrapping grid rather than one long column.
+@media (max-width: 767.98px) {
+    .booking-calendar__column {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+        gap: 8px;
+
+        .booking-calendar__heading--inline {
+            grid-column: 1 / -1;
+        }
+
+        .booking-calendar__none {
+            grid-column: 1 / -1;
+        }
+
+        .booking-slot {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// --- summary / panels ---------------------------------------------------------
+
+.booking-summary {
+    background: $booking-gray;
+    border-radius: 8px;
+    padding: 20px;
+
+    dl {
+        margin: 0;
+    }
+
+    dt {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        color: $booking-muted;
+        font-weight: 600;
+        margin-top: 14px;
+    }
+
+    dt:first-of-type {
+        margin-top: 0;
+    }
+
+    dd {
+        margin: 2px 0 0;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+.booking-summary__title {
+    font-size: 16px;
+    margin: 0 0 16px;
+}
+
+.booking-panel {
+    border: 1px solid $booking-border;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.booking-panel__title {
+    font-size: 17px;
+    margin: 0 0 16px;
+}
+
+.booking-panel__note {
+    font-size: 13px;
+    color: $booking-muted;
+    margin: 12px 0 0;
+}
+
+// Bootstrap scales <legend> up like a heading; inside the form it should read
+// as a field label, matching the ones around it.
+.booking-panel legend.form-label {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: .5rem;
+    float: none;
+    width: auto;
+    padding: 0;
+}
+
+.booking-fine-print {
+    display: block;
+    font-size: 12px;
+    color: $booking-muted;
+}
+
+.booking-field-error {
+    font-size: 14px;
+    color: #dc3545;
+    margin-top: 4px;
+}
+
+.booking-back {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 14px;
+    color: $booking-muted;
+
+    &:hover {
+        color: $booking-red;
+    }
+}
+
+// --- confirmation -------------------------------------------------------------
+
+.booking-card--confirmed {
+    text-align: center;
+}
+
+.booking-tick {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: $booking-red;
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.booking-confirmed__lead {
+    font-size: 24px;
+    margin: 0 0 16px;
+}
+
+.booking-confirmed__when {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.booking-confirmed__meta {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    color: $booking-muted;
+    margin-top: 4px;
+}
+
+.booking-confirmed__email {
+    font-size: 15px;
+}
+
+.booking-confirmed__ref {
+    font-size: 14px;
+    color: $booking-muted;
+}
+
+.booking-next-steps {
+    text-align: left;
+    background: $booking-gray;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+
+    h3 {
+        font-size: 16px;
+        margin: 0 0 8px;
+    }
+
+    p {
+        font-size: 15px;
+        margin: 0;
+    }
+}
+
+// --- intake: shared -----------------------------------------------------------
+
+.booking-lead {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.booking-step-note {
+    margin-top: 16px;
+    font-size: 13px;
+    color: $booking-muted;
+    border-left: 3px solid $booking-red;
+    padding-left: 12px;
+}
+
+.booking-alt {
+    position: relative;
+    text-align: center;
+    margin: 22px 0 16px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid $booking-border;
+    }
+}
+
+.booking-alt__rule {
+    position: relative;
+    display: inline-block;
+    padding: 0 14px;
+    background: #fff;
+    color: $booking-muted;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.booking-skip {
+    color: $booking-muted;
+    text-decoration: underline;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+    &:hover {
+        color: $booking-red;
+    }
+}
+
+// --- consent ------------------------------------------------------------------
+
+.consent-scroll {
+    max-height: 340px;
+    overflow-y: auto;
+    border: 1px solid $booking-border;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+    background: #fdfdfd;
+
+    // A scrollable legal document needs an obvious focus ring: people tab to it
+    // to read with the keyboard.
+    &:focus-visible {
+        outline: 3px solid rgba($booking-red, .35);
+        outline-offset: 2px;
+    }
+
+    h2 {
+        font-size: 17px;
+        margin-top: 20px;
+
+        &:first-child { margin-top: 0; }
+    }
+
+    h3 { font-size: 15px; margin-top: 16px; }
+    h4 { font-size: 14px; margin-top: 12px; }
+
+    p, li {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+}
+
+.consent-signature {
+    border: 1px solid $booking-border;
+    border-radius: 8px;
+    padding: 20px;
+
+    legend {
+        float: none;
+        width: auto;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 4px;
+    }
+}
+
+.consent-signature__hint {
+    font-size: 13px;
+    color: $booking-muted;
+    margin-bottom: 16px;
+}
+
+.consent-signature__name {
+    font-family: 'DejaVu Serif', Georgia, serif;
+    font-size: 20px;
+}
+
+// --- photo capture ------------------------------------------------------------
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+
+    @media (min-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.photo-capture {
+    border: 1px solid $booking-border;
+    border-radius: 10px;
+    padding: 16px;
+    background: #fff;
+    transition: border-color .15s ease;
+
+    &.is-done { border-color: #2f8f4e; }
+    &.is-error { border-color: #dc3545; }
+}
+
+.photo-capture__label {
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.photo-capture__hint {
+    font-size: 13px;
+    color: $booking-muted;
+    margin-bottom: 12px;
+}
+
+.photo-capture__frame {
+    position: relative;
+    aspect-ratio: 1.586;          // a payment card, so the preview matches reality
+    border-radius: 8px;
+    background: $booking-gray;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.photo-capture__preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-capture__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: $booking-muted;
+    font-size: 13px;
+}
+
+.photo-capture__tick {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #2f8f4e;
+    color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.photo-capture.is-done .photo-capture__tick { display: flex; }
+
+.photo-capture__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.photo-capture__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.photo-capture__status {
+    font-size: 13px;
+    color: $booking-muted;
+
+    .is-done & { color: #2f8f4e; }
+    .is-error & { color: #dc3545; }
+}
+
+// --- review -------------------------------------------------------------------
+
+.review-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.review-block {
+    background: $booking-gray;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.review-block__title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: $booking-muted;
+    margin: 0 0 8px;
+}
+
+.review-block__value {
+    font-size: 16px;
+    margin: 0 0 6px;
+}
+
+.review-block__meta {
+    font-size: 14px;
+    color: $booking-muted;
+    margin: 0;
+}
+
+.review-block__change {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: $booking-red;
+}
+
+.review-check {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+
+    li {
+        padding-left: 22px;
+        position: relative;
+        margin-bottom: 6px;
+    }
+
+    li.is-done::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #2f8f4e;
+        font-weight: 700;
+    }
+}
