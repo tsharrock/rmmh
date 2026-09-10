@@ -78,6 +78,21 @@
             </div>
         </div>
     </div>
+    <section id="insurance-plans" class="bg_rmmh_gray py-4 border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Accepted Insurance Plans</h2>
+                    <ul class="insurance-list">
+                        <li>BCBS Blue Card</li>
+                        <li>Moutain Health CO-OP</li>
+                        <li>Curative Health</li>
+                        <li>Allegiance Benefit Management Plan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="page-content">
         <div class="container py-lg-5">
             <div class="row">
@@ -118,19 +133,11 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Sidney and the MonDak region</h2>
-                    <p>Our Montana-licensed telehealth services reach Sidney, Fairview, Savage, Lambert, Richey, and the surrounding communities of the Bakken and eastern Montana. Sidney sits along the Yellowstone River near the North Dakota border, anchored by Sidney Health Center, which has served the MonDak region for more than a century. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We maintain in-network status with most major insurance plans — see the full list below.</p>
+                    <p>Our Montana-licensed telehealth services reach Sidney, Fairview, Savage, Lambert, Richey, and the surrounding communities of the Bakken and eastern Montana. Sidney sits along the Yellowstone River near the North Dakota border, anchored by Sidney Health Center, which has served the MonDak region for more than a century. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We maintain in-network status with most major insurance plans — see the full list above.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Sidney area pharmacy.</li>
                         <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one convenient appointment.  Scheduling is easy and most patients can be seen the same day or next.  We allow you to save time and save copays.</li>
-                    </ul>
-
-                    <h3>Accepted Insurance Plans</h3>
-                    <ul>
-                        <li>BCBS Blue Card</li>
-                        <li>Moutain Health CO-OP</li>
-                        <li>Curative Health</li>
-                        <li>Allegiance Benefit Management Plan</li>
                     </ul>
                 </div>
             </div>

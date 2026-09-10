@@ -77,3 +77,38 @@ section#hero {
     }
 }
 
+// On phones, drop the state-shaped buttons and show the states as a
+// simple stacked list of red text links instead.
+@media (max-width: 575.98px) {
+    #page-content {
+        .row.justify-content-center .col-auto {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .state-tile {
+            width: auto !important;
+            height: auto;
+            display: block;
+            padding: 0.35rem 0;
+
+            .state-tile-shape {
+                display: none;
+            }
+
+            .state-tile-label {
+                position: static;
+                margin-top: 0;
+                color: $rmmh_red;
+                font-size: 1.25rem;
+                text-shadow: none;
+                text-decoration: underline;
+            }
+
+            &:hover .state-tile-label {
+                color: #971227;
+            }
+        }
+    }
+}
+

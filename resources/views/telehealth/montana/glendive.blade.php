@@ -78,6 +78,21 @@
             </div>
         </div>
     </div>
+    <section id="insurance-plans" class="bg_rmmh_gray py-4 border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Accepted Insurance Plans</h2>
+                    <ul class="insurance-list">
+                        <li>BCBS Blue Card</li>
+                        <li>Moutain Health CO-OP</li>
+                        <li>Curative Health</li>
+                        <li>Allegiance Benefit Management Plan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="page-content">
         <div class="container py-lg-5">
             <div class="row">
@@ -118,19 +133,11 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Glendive and Dawson County</h2>
-                    <p>Our Montana-licensed telehealth services reach Glendive, Circle, Wibaux, Terry, Savage, and the surrounding communities of eastern Montana. Glendive is also home to Makoshika State Park, Montana's largest state park, and sits along the Yellowstone River in the heart of Dawson County's agricultural land, and our telehealth visits reach patients throughout that whole service area without requiring a trip into town. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  Most patients find their coverage is in-network with us — see the accepted plans below.</p>
+                    <p>Our Montana-licensed telehealth services reach Glendive, Circle, Wibaux, Terry, Savage, and the surrounding communities of eastern Montana. Glendive is also home to Makoshika State Park, Montana's largest state park, and sits along the Yellowstone River in the heart of Dawson County's agricultural land, and our telehealth visits reach patients throughout that whole service area without requiring a trip into town. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  Most patients find their coverage is in-network with us — see the accepted plans above.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Glendive area pharmacy.</li>
                         <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one convenient appointment.  Scheduling is easy and most patients can be seen the same day or next.  We allow you to save time and save copays.</li>
-                    </ul>
-
-                    <h3>Accepted Insurance Plans</h3>
-                    <ul>
-                        <li>BCBS Blue Card</li>
-                        <li>Moutain Health CO-OP</li>
-                        <li>Curative Health</li>
-                        <li>Allegiance Benefit Management Plan</li>
                     </ul>
                 </div>
             </div>

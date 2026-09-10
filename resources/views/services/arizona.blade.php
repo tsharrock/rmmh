@@ -20,8 +20,6 @@
                 <div class="breadcrumb">
                     <a href="{{ route('home') }}">Home</a> <span>></span> Arizona Services
                 </div>
-                <p>Tiffany Redmond, PA-C, is licensed in Arizona and provides the following services to patients across the state via secure telehealth. Ketamine Therapy and IV Nutrition & Injectables require in-person administration and are only available at our Hyde Park, Utah clinic.</p>
-
                 <h2>Accepted Insurance Plans in Arizona</h2>
                 <p>We're credentialed with the following insurance plans in Arizona:</p>
                 <ul>
@@ -30,6 +28,10 @@
                 </ul>
                 <p>Insurance acceptance may vary by plan. We recommend calling the number on the back of your card to confirm your telemedicine benefit before your visit.</p>
                 <p>Don't have insurance, or prefer not to bill your plan? We also accept cash pay for all services.</p>
+
+                <div class="divider-line"></div>
+
+                <p>Tiffany Redmond, PA-C, is licensed in Arizona and provides the following services to patients across the state via secure telehealth. Ketamine Therapy and IV Nutrition & Injectables require in-person administration and are only available at our Hyde Park, Utah clinic.</p>
 
                 <div class="divider-line"></div>
 

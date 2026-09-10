@@ -86,6 +86,19 @@
             </div>
         </div>
     </div>
+    <section id="insurance-plans" class="bg_rmmh_gray py-4 border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Accepted Insurance Plans</h2>
+                    <ul class="insurance-list">
+                        <li>BCBS Blue Card</li>
+                        <li>Curative Health</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="container mt-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
