@@ -112,6 +112,20 @@ class AthenaPatientRecords implements PatientRecords
      */
     protected function upload(callable $upload, string $what, string $patientId, int $bytes, bool $critical): void
     {
+        // TESTING ONLY: pretend the athena document upload succeeded, so the
+        // intake flow (consent -> insurance -> ID) can be clicked through
+        // before the athena document subclasses are confirmed. Gated behind
+        // BOOKING_FAKE_UPLOADS and must never be on in production.
+        if (config('booking.intake.fake_uploads')) {
+            Log::warning('FAKING athena upload — BOOKING_FAKE_UPLOADS is enabled', [
+                'what'    => $what,
+                'patient' => $patientId,
+                'bytes'   => $bytes,
+            ]);
+
+            return;
+        }
+
         try {
             $upload();
 

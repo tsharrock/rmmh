@@ -21,6 +21,10 @@
         .sig td.k { width: 42mm; color: #555; }
         .typed { font-family: DejaVu Serif, serif; font-size: 13pt; }
         .meta { margin-top: 4mm; font-size: 8pt; color: #666; }
+        .covers { margin: 0 0 1.5mm; font-size: 9.5pt; }
+        .covers-list { margin: 0 0 3mm 5mm; font-size: 9.5pt; }
+        .consent-doc { page-break-inside: auto; }
+        .consent-doc + .consent-doc { page-break-before: always; }
     </style>
 </head>
 <body>
@@ -36,6 +40,18 @@
     <div class="sig">
         <h3>Signature</h3>
 
+        @if (! empty($signature['documents']))
+            <p class="covers">
+                This signature covers, and the signatory agreed separately to, each of the
+                following:
+            </p>
+            <ul class="covers-list">
+                @foreach ($signature['documents'] as $title)
+                    <li>{{ $title }}</li>
+                @endforeach
+            </ul>
+        @endif
+
         <table>
             <tr>
                 <td class="k">Signed by</td>
@@ -46,13 +62,18 @@
                 <td>{{ $signature['dob'] }}</td>
             </tr>
             <tr>
-                <td class="k">Agreed</td>
+                <td class="k">Dated</td>
                 <td>{{ $signature['agreed_at']->format('l, j F Y \a\t g:ia T') }}</td>
             </tr>
             @if (! empty($signature['authorized_contacts']))
                 <tr>
                     <td class="k">Authorized contacts</td>
                     <td>{{ $signature['authorized_contacts'] }}</td>
+                </tr>
+            @else
+                <tr>
+                    <td class="k">Authorized contacts</td>
+                    <td><em>None given.</em></td>
                 </tr>
             @endif
         </table>

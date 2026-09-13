@@ -3,7 +3,9 @@
 namespace App\Services\Booking\Athena;
 
 use Carbon\CarbonImmutable;
+use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\PendingRequest;
+use Illuminate\Http\Client\RequestException;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
@@ -68,14 +70,14 @@ class AthenaClient
     /** Which required keys are missing, for the check command's error output. */
     public function missingConfig(): array
     {
-        $env  = $this->environment();
+        $env = $this->environment();
         $name = strtoupper($this->environmentName());
 
         $missing = [];
 
         foreach (['client_id', 'client_secret', 'practice_id', 'department_id'] as $key) {
             if (empty($env[$key])) {
-                $missing[] = 'ATHENA_' . $name . '_' . strtoupper($key);
+                $missing[] = 'ATHENA_'.$name.'_'.strtoupper($key);
             }
         }
 
@@ -122,13 +124,21 @@ class AthenaClient
             return $cached;
         }
 
-        $response = Http::asForm()
-            ->withBasicAuth($this->environment()['client_id'], $this->environment()['client_secret'])
-            ->timeout(15)
-            ->post($this->environment()['token_url'], [
-                'grant_type' => 'client_credentials',
-                'scope'      => $this->config['scope'] ?? 'athena/service/Athenanet.MDP.*',
-            ]);
+        try {
+            $response = Http::asForm()
+                ->withBasicAuth($this->environment()['client_id'], $this->environment()['client_secret'])
+                ->timeout($this->readTimeout())
+                ->post($this->environment()['token_url'], [
+                    'grant_type' => 'client_credentials',
+                    'scope' => $this->config['scope'] ?? 'athena/service/Athenanet.MDP.*',
+                ]);
+        } catch (ConnectionException $e) {
+            throw new AthenaApiException(
+                'Could not reach the Athena token endpoint.',
+                null,
+                ['reason' => $e->getMessage()],
+            );
+        }
 
         if ($response->failed()) {
             throw new AthenaApiException(
@@ -159,8 +169,8 @@ class AthenaClient
     {
         // Keyed by environment and credential so flipping ATHENA_ENV, or
         // rotating a secret, can never serve the other environment's token.
-        return 'athena:token:' . $this->environmentName()
-            . ':' . substr(hash('sha256', (string) ($this->environment()['client_id'] ?? '')), 0, 16);
+        return 'athena:token:'.$this->environmentName()
+            .':'.substr(hash('sha256', (string) ($this->environment()['client_id'] ?? '')), 0, 16);
     }
 
     /** Discard the cached token, so the next call re-authenticates. */
@@ -176,45 +186,109 @@ class AthenaClient
      * duplicate chart and a retried booking PUT can double-book; a transient
      * failure on a write must surface, not be papered over.
      */
-    protected function request(int $retries = 0): PendingRequest
+    protected function request(int $retries = 0, ?int $timeout = null): PendingRequest
     {
         $request = Http::withToken($this->token())
             ->acceptJson()
-            ->timeout((int) ($this->config['timeout'] ?? 15));
+            ->timeout($timeout ?? $this->readTimeout());
 
+        // Retry only on a server-side error, never on a timeout. Retrying a
+        // slow endpoint just doubles the wait for someone sitting in front of
+        // a spinner -- and a patient lookup that takes 25s twice is 50s of
+        // them thinking the site is broken.
         return $retries > 0
-            ? $request->retry($retries, 200, throw: false)
+            ? $request->retry($retries, 200, when: fn ($e) => $e instanceof RequestException, throw: false)
             : $request;
+    }
+
+    /** Reads are safe to retry, so they get a shorter leash. */
+    protected function readTimeout(): int
+    {
+        return (int) ($this->config['timeout'] ?? 30);
+    }
+
+    /**
+     * Writes get longer, because they are not retried.
+     *
+     * A write that times out may have landed anyway -- athena can create the
+     * patient and still fail to answer us. Giving up early on a write is worse
+     * than waiting, because the recovery is a duplicate record.
+     */
+    protected function writeTimeout(): int
+    {
+        return (int) ($this->config['write_timeout'] ?? max(45, $this->readTimeout()));
     }
 
     public function get(string $path, array $query = []): array
     {
-        return $this->handle(
-            $this->request(retries: 2)->get($this->url($path), $query),
-            'GET ' . $path,
+        return $this->send(
+            fn () => $this->request(retries: 2)->get($this->url($path), $query),
+            'GET '.$path,
         );
     }
 
     /** Athena's write endpoints take form-encoded bodies, not JSON. */
     public function post(string $path, array $form = []): array
     {
-        return $this->handle(
-            $this->request()->asForm()->post($this->url($path), $form),
-            'POST ' . $path,
+        return $this->send(
+            fn () => $this->request(timeout: $this->writeTimeout())->asForm()->post($this->url($path), $form),
+            'POST '.$path,
         );
     }
 
     public function put(string $path, array $form = []): array
     {
-        return $this->handle(
-            $this->request()->asForm()->put($this->url($path), $form),
-            'PUT ' . $path,
+        return $this->send(
+            fn () => $this->request(timeout: $this->writeTimeout())->asForm()->put($this->url($path), $form),
+            'PUT '.$path,
         );
+    }
+
+    /**
+     * Run a request, timing it, and turn transport failures into the same
+     * exception type as API failures.
+     *
+     * A timeout throws ConnectionException, which is NOT an AthenaApiException
+     * -- so without this every catch block in the booking flow misses it and a
+     * raw cURL message ends up in front of a patient. Everything that can go
+     * wrong with an athena call now arrives as one type.
+     */
+    protected function send(callable $perform, string $label): array
+    {
+        $startedAt = microtime(true);
+
+        try {
+            $response = $perform();
+        } catch (ConnectionException $e) {
+            $seconds = round(microtime(true) - $startedAt, 1);
+
+            Log::error('Athena call could not complete', [
+                'call' => $label,
+                'seconds' => $seconds,
+                'reason' => $e->getMessage(),
+            ]);
+
+            throw new AthenaApiException(
+                "Athena did not respond to {$label} within {$seconds}s.",
+                null,
+                ['reason' => $e->getMessage()],
+            );
+        }
+
+        $seconds = round(microtime(true) - $startedAt, 1);
+
+        // Athena's sandbox is routinely slow. Surfacing the slow ones makes a
+        // creeping timeout visible before it starts failing bookings.
+        if ($seconds >= 5) {
+            Log::info('Slow athena call', ['call' => $label, 'seconds' => $seconds]);
+        }
+
+        return $this->handle($response, $label);
     }
 
     protected function url(string $path): string
     {
-        return $this->baseUrl() . '/v1/' . $this->practiceId() . '/' . ltrim($path, '/');
+        return $this->baseUrl().'/v1/'.$this->practiceId().'/'.ltrim($path, '/');
     }
 
     protected function handle(Response $response, string $label): array
@@ -227,9 +301,9 @@ class AthenaClient
 
         if ($response->failed()) {
             Log::warning('Athena API call failed', [
-                'call'   => $label,
+                'call' => $label,
                 'status' => $response->status(),
-                'body'   => $response->json(),
+                'body' => $response->json(),
             ]);
 
             throw new AthenaApiException(
@@ -244,7 +318,7 @@ class AthenaClient
         // Athena returns 200 with an "error" key for some failures.
         if (is_array($body) && isset($body['error'])) {
             throw new AthenaApiException(
-                "Athena returned an error for {$label}: " . $body['error'],
+                "Athena returned an error for {$label}: ".$body['error'],
                 $response->status(),
                 $body,
             );
@@ -278,15 +352,15 @@ class AthenaClient
     public function appointmentReasons(int $departmentId, int $providerId, ?string $patientType = null): array
     {
         $path = match ($patientType) {
-            'new'         => 'patientappointmentreasons/newpatient',
+            'new' => 'patientappointmentreasons/newpatient',
             'established' => 'patientappointmentreasons/existingpatient',
-            default       => 'patientappointmentreasons',
+            default => 'patientappointmentreasons',
         };
 
         return $this->get($path, [
             'departmentid' => $departmentId,
-            'providerid'   => $providerId,
-            'limit'        => 1500,
+            'providerid' => $providerId,
+            'limit' => 1500,
         ])['patientappointmentreasons'] ?? [];
     }
 
@@ -312,11 +386,11 @@ class AthenaClient
     ): array {
         return $this->get('appointments/open', [
             'departmentid' => $departmentId,
-            'providerid'   => $providerId,
-            'reasonid'     => implode(',', $reasonIds),
-            'startdate'    => $start->format('m/d/Y'),
-            'enddate'      => $end->format('m/d/Y'),
-            'limit'        => 10000,
+            'providerid' => $providerId,
+            'reasonid' => implode(',', $reasonIds),
+            'startdate' => $start->format('m/d/Y'),
+            'enddate' => $end->format('m/d/Y'),
+            'limit' => 10000,
         ])['appointments'] ?? [];
     }
 
@@ -342,7 +416,7 @@ class AthenaClient
      * it. The seeding command enforces that -- see AthenaSeedSlots.
      *
      * @param  array<int, string>  $times  24-hour hh:mm starts
-     * @return array<string, mixed>  appointmentids, keyed by the time requested
+     * @return array<string, mixed> appointmentids, keyed by the time requested
      */
     public function createOpenSlots(
         int $departmentId,
@@ -357,12 +431,12 @@ class AthenaClient
         }
 
         $created = $this->post('appointments/open', array_filter([
-            'departmentid'      => $departmentId,
-            'providerid'        => $providerId,
-            'reasonid'          => $reasonId,
+            'departmentid' => $departmentId,
+            'providerid' => $providerId,
+            'reasonid' => $reasonId,
             'appointmenttypeid' => $appointmentTypeId,
-            'appointmentdate'   => $date->format('m/d/Y'),
-            'appointmenttime'   => implode(',', $times),
+            'appointmentdate' => $date->format('m/d/Y'),
+            'appointmenttime' => implode(',', $times),
         ], fn ($v) => $v !== null));
 
         return $created['appointmentids'] ?? [];
@@ -385,10 +459,10 @@ class AthenaClient
     ): array {
         return $this->get('appointments/open', [
             'departmentid' => $departmentId,
-            'reasonid'     => -1,
-            'startdate'    => $start->format('m/d/Y'),
-            'enddate'      => $end->format('m/d/Y'),
-            'limit'        => 1000,
+            'reasonid' => -1,
+            'startdate' => $start->format('m/d/Y'),
+            'enddate' => $end->format('m/d/Y'),
+            'limit' => 1000,
         ])['appointments'] ?? [];
     }
 
@@ -403,10 +477,10 @@ class AthenaClient
     {
         $matches = $this->get('patients', [
             'departmentid' => $departmentId,
-            'firstname'    => $patient['first_name'],
-            'lastname'     => $patient['last_name'],
-            'dob'          => $this->formatDob($patient['dob']),
-            'limit'        => 10,
+            'firstname' => $patient['first_name'],
+            'lastname' => $patient['last_name'],
+            'dob' => $this->formatDob($patient['dob']),
+            'limit' => 10,
         ])['patients'] ?? [];
 
         // Several matches means we cannot tell which chart is theirs. Creating
@@ -427,11 +501,11 @@ class AthenaClient
     {
         $payload = array_filter([
             'departmentid' => $departmentId,
-            'firstname'    => $patient['first_name'],
-            'lastname'     => $patient['last_name'],
-            'dob'          => $this->formatDob($patient['dob']),
-            'email'        => $patient['email'] ?? null,
-            'sex'          => $this->formatSex($patient['sex'] ?? null),
+            'firstname' => $patient['first_name'],
+            'lastname' => $patient['last_name'],
+            'dob' => $this->formatDob($patient['dob']),
+            'email' => $patient['email'] ?? null,
+            'sex' => $this->formatSex($patient['sex'] ?? null),
         ], fn ($v) => $v !== null && $v !== '');
 
         // Athena requires at least one phone number, in the matching field.
@@ -479,7 +553,7 @@ class AthenaClient
     public function uploadDriversLicense(string $patientId, string $base64Image, ?int $departmentId = null): bool
     {
         $result = $this->post("patients/{$patientId}/driverslicense", array_filter([
-            'image'        => $base64Image,
+            'image' => $base64Image,
             'departmentid' => $departmentId,
         ], fn ($v) => $v !== null));
 
@@ -501,7 +575,7 @@ class AthenaClient
         ?int $departmentId = null,
     ): bool {
         $result = $this->post("patients/{$patientId}/insurances/{$insuranceId}/image", array_filter([
-            'image'        => $base64Image,
+            'image' => $base64Image,
             'departmentid' => $departmentId,
         ], fn ($v) => $v !== null));
 
@@ -526,12 +600,14 @@ class AthenaClient
         ?int $departmentId = null,
     ): ?string {
         $result = $this->post("patients/{$patientId}/documents/admin", array_filter([
-            'attachmentcontents'  => $base64Contents,
-            'attachmenttype'      => $attachmentType,
-            'documentsubclass'    => $documentSubclass,
+            'attachmentcontents' => $base64Contents,
+            // Athena's ATTACHMENTTYPE enum only accepts uppercase extensions
+            // (PDF, JPG, PNG, ...); a lowercase value is rejected with a 400.
+            'attachmenttype' => strtoupper($attachmentType),
+            'documentsubclass' => $documentSubclass,
             'documentdescription' => $description,
-            'internalnote'        => $description,
-            'departmentid'        => $departmentId,
+            'internalnote' => $description,
+            'departmentid' => $departmentId,
         ], fn ($v) => $v !== null && $v !== ''));
 
         $id = $result['documentid'] ?? ($result[0]['documentid'] ?? null);
@@ -578,8 +654,8 @@ class AthenaClient
     {
         return match ($sex) {
             'female' => 'F',
-            'male'   => 'M',
-            default  => null,
+            'male' => 'M',
+            default => null,
         };
     }
 }

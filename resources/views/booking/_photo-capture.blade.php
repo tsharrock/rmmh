@@ -26,6 +26,9 @@
     <div class="photo-capture__frame">
         <img class="photo-capture__preview" alt="" hidden>
 
+        {{-- Live webcam preview, shown only while the camera is running --}}
+        <video class="photo-capture__video" playsinline muted hidden></video>
+
         <div class="photo-capture__empty">
             <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                  stroke-width="1.5" aria-hidden="true">
@@ -38,17 +41,30 @@
         <div class="photo-capture__tick" aria-hidden="true">✓</div>
     </div>
 
-    {{-- capture="environment" opens the rear camera straight away on a phone --}}
+    {{-- Fallback / gallery pick. On a phone this offers the camera too. --}}
     <input type="file"
            id="photo-{{ $name }}"
            class="photo-capture__input"
-           accept="image/*"
-           capture="environment">
+           accept="image/*">
 
     <div class="photo-capture__actions">
-        <button type="button" class="btn rmmh_button_secondary photo-capture__pick">
-            {{ ($done ?? false) ? 'Replace photo' : 'Take photo' }}
+        {{-- Live camera capture (laptops/desktops especially). Hidden by JS
+             when the browser has no camera access. --}}
+        <button type="button" class="btn rmmh_button_primary photo-capture__camera" hidden>
+            Use camera
         </button>
+        <button type="button" class="btn rmmh_button_secondary photo-capture__pick">
+            {{ ($done ?? false) ? 'Replace photo' : 'Upload photo' }}
+        </button>
+
+        {{-- Shown only while the camera is live --}}
+        <button type="button" class="btn rmmh_button_primary photo-capture__shoot" hidden>
+            Take picture
+        </button>
+        <button type="button" class="btn rmmh_button_secondary photo-capture__cancel" hidden>
+            Cancel
+        </button>
+
         <span class="photo-capture__status" role="status" aria-live="polite">
             @if ($done ?? false) Saved @endif
         </span>

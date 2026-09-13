@@ -30,8 +30,11 @@ function readAsImage(file) {
     });
 }
 
-function resizeToDataUrl(img) {
-    let { width, height } = img;
+// Works for both an <img> and a live <video> frame -- pass the source's
+// intrinsic pixel size so the camera path and the file path share one encoder.
+function resizeToDataUrl(source, srcWidth, srcHeight) {
+    let width = srcWidth ?? source.naturalWidth ?? source.width;
+    let height = srcHeight ?? source.naturalHeight ?? source.height;
 
     if (width > MAX_EDGE || height > MAX_EDGE) {
         const scale = MAX_EDGE / Math.max(width, height);
@@ -48,9 +51,13 @@ function resizeToDataUrl(img) {
     // composite to black and lose the card entirely.
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, width, height);
-    ctx.drawImage(img, 0, 0, width, height);
+    ctx.drawImage(source, 0, 0, width, height);
 
     return canvas.toDataURL('image/jpeg', QUALITY);
+}
+
+function cameraSupported() {
+    return !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
 }
 
 function csrfToken() {
@@ -106,14 +113,42 @@ async function upload(root, dataUrl) {
     return response.json();
 }
 
+// Resize the captured image, show it in the tile, and post it. Shared by the
+// file-upload path and the live-camera path so both behave identically.
+async function processAndUpload(root, source, srcWidth, srcHeight) {
+    const preview = root.querySelector('.photo-capture__preview');
+    const empty = root.querySelector('.photo-capture__empty');
+    const pick = root.querySelector('.photo-capture__pick');
+
+    const dataUrl = resizeToDataUrl(source, srcWidth, srcHeight);
+
+    if (preview) {
+        preview.src = dataUrl;
+        preview.hidden = false;
+    }
+    if (empty) empty.hidden = true;
+
+    setStatus(root, 'Uploading…', 'busy');
+    await upload(root, dataUrl);
+
+    setStatus(root, 'Saved', 'done');
+    if (pick) pick.textContent = 'Replace photo';
+    root.dispatchEvent(new CustomEvent('photo:saved', { bubbles: true }));
+}
+
 function wire(root) {
     const input = root.querySelector('.photo-capture__input');
     const pick = root.querySelector('.photo-capture__pick');
-    const preview = root.querySelector('.photo-capture__preview');
     const empty = root.querySelector('.photo-capture__empty');
+
+    const cameraBtn = root.querySelector('.photo-capture__camera');
+    const shootBtn = root.querySelector('.photo-capture__shoot');
+    const cancelBtn = root.querySelector('.photo-capture__cancel');
+    const video = root.querySelector('.photo-capture__video');
 
     if (!input || !pick) return;
 
+    // ---- file / gallery upload -------------------------------------------
     pick.addEventListener('click', () => input.click());
 
     input.addEventListener('change', async () => {
@@ -124,20 +159,7 @@ function wire(root) {
 
         try {
             const img = await readAsImage(file);
-            const dataUrl = resizeToDataUrl(img);
-
-            if (preview) {
-                preview.src = dataUrl;
-                preview.hidden = false;
-            }
-            if (empty) empty.hidden = true;
-
-            setStatus(root, 'Uploading…', 'busy');
-            await upload(root, dataUrl);
-
-            setStatus(root, 'Saved', 'done');
-            pick.textContent = 'Replace photo';
-            root.dispatchEvent(new CustomEvent('photo:saved', { bubbles: true }));
+            await processAndUpload(root, img);
         } catch (error) {
             setStatus(root, error.message, 'error');
             root.dispatchEvent(new CustomEvent('photo:failed', { bubbles: true }));
@@ -146,6 +168,88 @@ function wire(root) {
             input.value = '';
         }
     });
+
+    // ---- live camera ------------------------------------------------------
+    // Only offered when the browser exposes a camera and the page markup has
+    // the camera controls; otherwise the file upload above is the only path.
+    if (!cameraBtn || !shootBtn || !cancelBtn || !video || !cameraSupported()) {
+        return;
+    }
+
+    let stream = null;
+
+    const showCameraUI = (live) => {
+        const preview = root.querySelector('.photo-capture__preview');
+        const hasPhoto = preview && !preview.hidden;
+
+        video.hidden = !live;
+        // Placeholder shows only when the camera is off AND no photo is set.
+        if (empty) empty.hidden = live || hasPhoto;
+        cameraBtn.hidden = live;
+        pick.hidden = live;
+        shootBtn.hidden = !live;
+        cancelBtn.hidden = !live;
+    };
+
+    const stopCamera = () => {
+        if (stream) {
+            stream.getTracks().forEach((t) => t.stop());
+            stream = null;
+        }
+        video.srcObject = null;
+        showCameraUI(false);
+    };
+
+    cameraBtn.hidden = false;
+
+    cameraBtn.addEventListener('click', async () => {
+        setStatus(root, 'Opening camera…', 'busy');
+        try {
+            stream = await navigator.mediaDevices.getUserMedia({
+                video: { facingMode: 'environment', width: { ideal: 1920 }, height: { ideal: 1080 } },
+                audio: false,
+            });
+        } catch (error) {
+            setStatus(root, 'Could not open the camera. You can upload a photo instead.', 'error');
+            return;
+        }
+
+        video.srcObject = stream;
+        try {
+            await video.play();
+        } catch (e) {
+            // Autoplay can reject on some browsers; the stream is still live.
+        }
+
+        showCameraUI(true);
+        setStatus(root, 'Line up the card, then take the picture.', 'busy');
+    });
+
+    shootBtn.addEventListener('click', async () => {
+        if (!video.videoWidth) return;
+
+        const w = video.videoWidth;
+        const h = video.videoHeight;
+
+        // Grab the frame before tearing the stream down.
+        setStatus(root, 'Uploading…', 'busy');
+        try {
+            await processAndUpload(root, video, w, h);
+        } catch (error) {
+            setStatus(root, error.message, 'error');
+            root.dispatchEvent(new CustomEvent('photo:failed', { bubbles: true }));
+        } finally {
+            stopCamera();
+        }
+    });
+
+    cancelBtn.addEventListener('click', () => {
+        stopCamera();
+        setStatus(root, '', null);
+    });
+
+    // Don't leave the camera light on if the user navigates away.
+    window.addEventListener('pagehide', stopCamera);
 }
 
 document.addEventListener('DOMContentLoaded', () => {

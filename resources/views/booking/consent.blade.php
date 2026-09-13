@@ -21,53 +21,68 @@
                         @include('booking._summary')
 
                         <p class="booking-step-note">
-                            Your appointment isn't booked yet. We'll hold it while you finish these
+                            Your appointment isn't booked yet. It's held while you finish these
                             few steps.
                         </p>
                     </div>
 
                     <div class="col-lg-8 order-lg-1">
                         <p class="booking-lead">
-                            Please read the following and sign at the bottom. You'll get a copy by
-                            email once you're booked.
+                            Please read each form and tick to agree, then sign at the bottom.
+                            You'll get a copy by email once you're booked.
                         </p>
-
-                        <div class="consent-scroll" tabindex="0" role="region" aria-label="Consent forms">
-                            @include('booking.consent-text')
-                        </div>
 
                         <form method="POST" action="{{ route('booking.consent') }}" novalidate class="consent-form">
                             @csrf
 
-                            @if ($askContacts)
-                                <div class="mb-3">
-                                    <label for="authorized_contacts" class="form-label">
-                                        Authorized contacts <span class="text-muted">(optional)</span>
-                                    </label>
-                                    <textarea name="authorized_contacts" id="authorized_contacts" rows="3"
-                                              class="form-control @error('authorized_contacts') is-invalid @enderror"
-                                              placeholder="Name, phone number and relationship for anyone we may speak to about your care">{{ old('authorized_contacts') }}</textarea>
-                                    <div class="form-text">
-                                        Leave blank if you'd rather we only speak with you.
+                            @foreach ($documents as $key => $document)
+                                <article class="consent-block">
+                                    <div class="consent-scroll" tabindex="0" role="region"
+                                         aria-label="{{ $document['title'] }}">
+                                        <div class="consent-doc">
+                                            @include($document['view'])
+                                        </div>
                                     </div>
-                                    @error('authorized_contacts')<div class="invalid-feedback">{{ $message }}</div>@enderror
-                                </div>
-                            @endif
 
-                            <div class="form-check mb-4">
-                                <input class="form-check-input @error('agree') is-invalid @enderror"
-                                       type="checkbox" value="1" name="agree" id="agree"
-                                       @checked(old('agree'))>
-                                <label class="form-check-label" for="agree">
-                                    I have read and agree to the forms above.
-                                </label>
-                                @error('agree')<div class="invalid-feedback d-block">{{ $message }}</div>@enderror
-                            </div>
+                                    @if (! empty($document['collects_contacts']))
+                                        <div class="mb-3">
+                                            <label for="authorized_contacts" class="form-label">
+                                                Authorized contacts
+                                            </label>
+                                            <textarea name="authorized_contacts" id="authorized_contacts" rows="3"
+                                                      class="form-control @error('authorized_contacts') is-invalid @enderror"
+                                                      placeholder="Name, contact number and relationship">{{ old('authorized_contacts') }}</textarea>
+                                            <div class="form-text">
+                                                Please list authorized contact(s), contact number(s), and
+                                                Relationship Status for those we can communicate to and leave
+                                                messages regarding your medical record. Leave blank if you'd
+                                                rather we only speak with you.
+                                            </div>
+                                            @error('authorized_contacts')<div class="invalid-feedback">{{ $message }}</div>@enderror
+                                        </div>
+                                    @endif
+
+                                    <div class="form-check consent-agree">
+                                        <input class="form-check-input @error('agreements.' . $key) is-invalid @enderror"
+                                               type="checkbox" value="1"
+                                               name="agreements[{{ $key }}]"
+                                               id="agree-{{ $key }}"
+                                               @checked(old('agreements.' . $key))>
+                                        <label class="form-check-label" for="agree-{{ $key }}">
+                                            I agree to the {{ $document['title'] }}.
+                                        </label>
+                                        @error('agreements.' . $key)
+                                            <div class="invalid-feedback d-block">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </article>
+                            @endforeach
 
                             <fieldset class="consent-signature">
                                 <legend>Signature</legend>
                                 <p class="consent-signature__hint">
-                                    Sign by typing your full name and date of birth.
+                                    Please sign by typing your name and date of birth. This signs both
+                                    forms above.
                                 </p>
 
                                 <div class="mb-3">
@@ -108,6 +123,14 @@
                                     </div>
                                 </div>
                                 @error('signature_dob_day')<div class="booking-field-error">{{ $message }}</div>@enderror
+
+                                {{-- The date is stamped by us rather than typed, so it cannot be
+                                     backdated. Shown here so the patient can see what they're
+                                     dating it. --}}
+                                <p class="consent-signature__date">
+                                    Dated <strong>{{ $today->format('l, j F Y') }}</strong>
+                                    at the time you submit this form.
+                                </p>
                             </fieldset>
 
                             <button type="submit" class="btn rmmh_button_primary w-100 mt-4">

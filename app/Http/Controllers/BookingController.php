@@ -9,6 +9,7 @@ use App\Services\Booking\PatientRecords;
 use Carbon\CarbonImmutable;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
+use Throwable;
 
 /**
  * On-site booking flow, mirroring the NextPatient journey:
@@ -277,6 +278,15 @@ class BookingController extends Controller
             report($e);
 
             return back()->withInput()->withErrors(['first_name' => $e->getMessage()]);
+        } catch (Throwable $e) {
+            // Backstop. Anything that gets past the typed handlers above still
+            // must not reach a patient as a stack trace or a cURL string.
+            report($e);
+
+            return back()->withInput()->withErrors([
+                'first_name' => 'Something went wrong setting up your record. Please try again, '
+                    . 'or call or text us on ' . config('booking.practice.phone') . '.',
+            ]);
         }
 
         $this->putBooking($request, [

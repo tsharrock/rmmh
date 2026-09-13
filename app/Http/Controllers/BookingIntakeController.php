@@ -48,7 +48,8 @@ class BookingIntakeController extends Controller
         }
 
         return view('booking.consent', $this->slotContext($request) + [
-            'askContacts' => (bool) config('booking.consent.ask_authorized_contacts', true),
+            'documents' => config('booking.consent.documents', []),
+            'today'     => CarbonImmutable::now(config('booking.timezone')),
         ]);
     }
 
@@ -58,17 +59,27 @@ class BookingIntakeController extends Controller
             return $redirect;
         }
 
-        $validated = $request->validate([
-            'agree'               => ['accepted'],
+        $documents = config('booking.consent.documents', []);
+
+        // Each document is agreed to separately, so a patient cannot tick one
+        // box and be recorded as having accepted both.
+        $rules = [
             'signature_name'      => ['required', 'string', 'max:150'],
             'signature_dob_month' => ['required', 'integer', 'between:1,12'],
             'signature_dob_day'   => ['required', 'integer', 'between:1,31'],
             'signature_dob_year'  => ['required', 'integer', 'between:1900,' . now()->year],
             'authorized_contacts' => ['nullable', 'string', 'max:2000'],
-        ], [
-            'agree.accepted'          => 'Please tick the box to agree before continuing.',
-            'signature_name.required' => 'Please type your full name to sign.',
-        ]);
+        ];
+
+        $messages = ['signature_name.required' => 'Please type your full name to sign.'];
+
+        foreach ($documents as $key => $document) {
+            $rules["agreements.{$key}"] = ['accepted'];
+            $messages["agreements.{$key}.accepted"] =
+                'Please tick to agree to the ' . $document['title'] . ' before continuing.';
+        }
+
+        $validated = $request->validate($rules, $messages);
 
         $booking = $this->booking($request);
         $patient = $booking['patient'];
@@ -94,6 +105,9 @@ class BookingIntakeController extends Controller
             'agreed_at'           => CarbonImmutable::now(config('booking.timezone')),
             'ip'                  => $request->ip(),
             'authorized_contacts' => $validated['authorized_contacts'] ?? null,
+            // Recorded individually so the PDF shows exactly which documents
+            // this signature covers, not just that "consent" happened.
+            'documents'           => array_map(fn ($d) => $d['title'], $documents),
         ];
 
         try {
@@ -118,6 +132,7 @@ class BookingIntakeController extends Controller
 
         $this->putBooking($request, [
             'consent_signed_at'   => $signature['agreed_at']->toIso8601String(),
+            'consent_documents'   => array_keys($documents),
             'authorized_contacts' => $signature['authorized_contacts'],
         ]);
 
@@ -172,6 +187,20 @@ class BookingIntakeController extends Controller
             report($e);
 
             return response()->json(['message' => $e->getMessage()], 502);
+        } catch (Throwable $e) {
+            report($e);
+
+            return response()->json([
+                'message' => 'That did not save. Please try again, or call or text us on '
+                    . config('booking.practice.phone') . '.',
+            ], 502);
+        } catch (Throwable $e) {
+            report($e);
+
+            return response()->json([
+                'message' => 'That did not save. Please try again, or call or text us on '
+                    . config('booking.practice.phone') . '.',
+            ], 502);
         }
 
         $sides = $this->booking($request)['insurance_sides'] ?? [];
@@ -331,6 +360,13 @@ class BookingIntakeController extends Controller
             report($e);
 
             return redirect()->route('booking.review')->withErrors(['slot' => $e->getMessage()]);
+        } catch (Throwable $e) {
+            report($e);
+
+            return redirect()->route('booking.review')->withErrors([
+                'slot' => 'Something went wrong booking that appointment. Please try again, or '
+                    . 'call or text us on ' . config('booking.practice.phone') . '.',
+            ]);
         }
 
         $context = [

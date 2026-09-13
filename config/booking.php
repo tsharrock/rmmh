@@ -142,9 +142,29 @@ return [
     'consent' => [
         'version' => env('CONSENT_VERSION', '2026-09'),
 
-        // The Emergency Contact Release asks who may be told about the
-        // patient's care. Optional to fill in, but always shown.
-        'ask_authorized_contacts' => true,
+        /*
+        | The documents a patient agrees to, in order. Each gets its own
+        | "I agree" and all of them are covered by one signature at the end,
+        | which is how the practice's existing paper forms work.
+        |
+        | 'view' is rendered both on screen and into the signed PDF, so the two
+        | can never drift. Adding a document here adds it to both.
+        |
+        | 'collects_contacts' puts the authorized-contacts field directly under
+        | that document, because the field only makes sense next to the
+        | authorization it belongs to.
+        */
+        'documents' => [
+            'client_contract' => [
+                'title' => 'Client Contract',
+                'view'  => 'booking.consent.client-contract',
+            ],
+            'emergency_contact' => [
+                'title'             => 'Emergency Contact Release Form',
+                'view'              => 'booking.consent.emergency-contact',
+                'collects_contacts' => true,
+            ],
+        ],
     ],
 
     /*
@@ -200,6 +220,12 @@ return [
         // insurance question.
         'allow_self_pay' => true,
 
+        // TESTING ONLY: when true, athena document uploads (consent PDF,
+        // insurance card, ID) are skipped and treated as successful, so the
+        // intake flow can be exercised before the athena document subclasses
+        // are confirmed. Never enable in production.
+        'fake_uploads' => env('BOOKING_FAKE_UPLOADS', false),
+
         // Browser-side limits. Photos are resized before upload, so these are
         // a backstop against someone posting something enormous by hand.
         'max_upload_bytes' => 8 * 1024 * 1024,
@@ -209,8 +235,8 @@ return [
         // athena document classification. Confirm these against the practice's
         // athenaOne setup -- an unknown subclass is rejected on upload.
         'document_subclass' => [
-            'consent'        => env('ATHENA_SUBCLASS_CONSENT', 'ADMINDOC'),
-            'insurance_card' => env('ATHENA_SUBCLASS_INSURANCE', 'ADMINDOC'),
+            'consent'        => env('ATHENA_SUBCLASS_CONSENT', 'CONSENT'),
+            'insurance_card' => env('ATHENA_SUBCLASS_INSURANCE', 'INSURANCECARD'),
         ],
     ],
 
@@ -220,8 +246,17 @@ return [
         // promoting; see the checklist in claude/booking-engine-spec.md.
         'environment' => env('ATHENA_ENV', 'preview'), // preview | production
 
-        'scope'   => env('ATHENA_SCOPE', 'athena/service/Athenanet.MDP.*'),
-        'timeout' => 15,
+        'scope' => env('ATHENA_SCOPE', 'athena/service/Athenanet.MDP.*'),
+
+        // Athena's preview sandbox is routinely slow -- patient search in
+        // particular. These are seconds.
+        //
+        // Reads are retried on a 5xx but never on a timeout, so 'timeout' is
+        // close to the worst case a patient waits. Writes are never retried at
+        // all, so they get longer: giving up early on a write that has already
+        // landed leaves a duplicate record behind.
+        'timeout'       => (int) env('ATHENA_TIMEOUT', 25),
+        'write_timeout' => (int) env('ATHENA_WRITE_TIMEOUT', 45),
 
         // Seconds to cache an availability lookup. Short: a stale slot shown to
         // a patient is caught by the pre-booking re-check, but it still wastes

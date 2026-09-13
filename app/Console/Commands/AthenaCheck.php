@@ -24,6 +24,7 @@ class AthenaCheck extends Command
 
     protected $signature = 'athena:check
                             {--slots : Also try a real open-slot lookup using the configured provider and reason IDs}
+                            {--patients : Also time a patient search, the slowest call in the booking flow}
                             {--force : Skip the production confirmation prompt}';
 
     protected $description = 'Check the athena connection, credentials and configured IDs (read-only)';
@@ -55,10 +56,26 @@ class AthenaCheck extends Command
             $steps['Read open appointment slots'] = fn () => $this->checkSlots($client);
         }
 
+        if ($this->option('patients')) {
+            $steps['Search patients'] = fn () => $this->checkPatients($client);
+        }
+
         foreach ($steps as $label => $step) {
+            $startedAt = microtime(true);
+
             try {
-                $detail = $step();
-                $this->line(sprintf('  <fg=green>✓</> %-42s %s', $label, $detail));
+                $detail  = $step();
+                $seconds = round(microtime(true) - $startedAt, 1);
+
+                // Colour the timing: athena's sandbox drifts, and a call that
+                // creeps past the request timeout stops the booking flow dead.
+                $timing = match (true) {
+                    $seconds >= 15 => "<fg=red>{$seconds}s</>",
+                    $seconds >= 5  => "<fg=yellow>{$seconds}s</>",
+                    default        => "<fg=gray>{$seconds}s</>",
+                };
+
+                $this->line(sprintf('  <fg=green>✓</> %-38s %6s  %s', $label, $timing, $detail));
             } catch (AthenaApiException $e) {
                 $this->line(sprintf('  <fg=red>✗</> %-42s %s', $label, 'FAILED'));
                 $this->newLine();
@@ -256,6 +273,36 @@ class AthenaCheck extends Command
         return count($slots) . ' slots in 30 days';
     }
 
+    /**
+     * Patient search is the first athena call the booking flow makes after
+     * someone submits their details, and the one that has timed out in
+     * practice. Timing it directly says whether the endpoint is slow or
+     * something else is wrong.
+     */
+    protected function checkPatients(AthenaClient $client): string
+    {
+        $departmentId = $client->departmentId();
+
+        if (! $departmentId) {
+            return 'skipped — set a department ID first';
+        }
+
+        // A name that will not match anything: this measures the search, and
+        // reads nobody's record.
+        $matches = $client->findPatient([
+            'first_name' => 'Zzzztest',
+            'last_name'  => 'Nonexistent',
+            'dob'        => '1900-01-01',
+        ], (int) $departmentId);
+
+        $timeout = (int) config('booking.athena.timeout');
+
+        $this->line("    Request timeout is currently {$timeout}s "
+            . '(ATHENA_TIMEOUT). If the time above is close to that, raise it.');
+
+        return $matches === null ? 'no match, as expected' : 'unexpected match';
+    }
+
     protected function hintFor(string $step, AthenaApiException $e): string
     {
         if (str_starts_with($step, 'Authenticate')) {
@@ -263,6 +310,11 @@ class AthenaCheck extends Command
                 ? 'Check the client ID and secret for this environment, and that the key is enabled for this practice.'
                 : 'The token URL may be wrong for this environment — confirm it in the developer portal and set ATHENA_'
                     . strtoupper(config('booking.athena.environment')) . '_TOKEN_URL.';
+        }
+
+        if ($e->status === null) {
+            return 'That looks like a timeout rather than a rejection. Athena\'s sandbox is often '
+                . 'slow — raise ATHENA_TIMEOUT and try again before assuming anything is broken.';
         }
 
         if ($e->status === 403) {
