@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Morgan, UT | Redmond MMH')
-@section('description', 'No more long drives to Ogden, over the canyon for care.')
+@section('description', 'No more long drives to Ogden over the canyon for care. Redmond MMH offers psychiatric care, primary care, and weight loss via secure telehealth.')
 @section('keywords', 'Telehealth Morgan, Online Psychiatry Morgan County, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

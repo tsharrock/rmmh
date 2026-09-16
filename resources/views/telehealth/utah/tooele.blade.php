@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Tooele, UT | Redmond MMH')
-@section('description', 'No more long drives to Salt Lake City, over the pass for care.')
+@section('description', 'No more long drives to Salt Lake City over the pass for care. Redmond MMH offers psychiatric care, primary care, and weight loss via telehealth.')
 @section('keywords', 'Telehealth Tooele, Online Psychiatry Tooele County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

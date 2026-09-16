@@ -4,6 +4,73 @@
 @section('description', 'Find rapid relief from treatment-resistant depression and chronic pain in Utah and Arizona. Learn how our medically supervised Ketamine treatments help.')
 @section('keywords', 'Ketamine Therapy Utah, Ketamine Therapy Arizona, PTSD Treatment, IM Ketamine Therapy, Mental Health Innovation')
 
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Ketamine Therapy",
+  "description": "Medically supervised ketamine therapy for treatment-resistant depression, PTSD, and chronic pain at our Hyde Park, Utah clinic.",
+  "url": "https://redmondmmh.com/ketamine",
+  "provider": {
+    "@type": "MedicalBusiness",
+    "@id": "https://redmondmmh.com/#organization",
+    "name": "Redmond Medical & Mental Health",
+    "telephone": "+1-435-938-1440",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "245 N. 700 W.",
+      "addressLocality": "Hyde Park",
+      "addressRegion": "UT",
+      "postalCode": "84318",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Utah" },
+    { "@type": "State", "name": "Arizona" }
+  ],
+  "medicalSpecialty": "Psychiatry",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Ketamine Therapy Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "IM Ketamine Therapy for Depression" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Ketamine Therapy for PTSD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Ketamine Therapy for Chronic Pain" } }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is ketamine covered by insurance?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Possibly! While Ketamine is an \"off-label\" use for mental health conditions, we are happy to review your specific insurance plan to see if your treatments can be covered. We can use your insurance for your initial consultation." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will I be awake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. While you may feel \"detached\" from your body or surroundings, you remain conscious and are able to talk throughout the session." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is ketamine addictive?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ketamine is a controlled substance like opioids, stimulants and benzodiazepines. When used off the street, incorrectly, or not as prescribed, it can be abused and can cause dependence. In our controlled medical setting, this will not occur. Ketamine, used correctly, is very safe and effective." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I drive home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. To ensure your safety, you must arrange for a driver to take you home following your appointment. You should not operate machinery or make major decisions until the following day." }
+    }
+  ]
+}
+</script>
+@endsection
 
 @section('content')
     <div class="hero ketamine border-bottom">
@@ -36,7 +103,7 @@
                 <div class="col-6 offset-3 my-5">
                     <p class="mb-3">This video explains the biological mechanism of how ketamine works to repair neural pathways in the brain.</p>
                     <div class="ratio ratio-16x9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nW21-AYY_fs?si=-je7h9SsqYFNPgcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nW21-AYY_fs?si=-je7h9SsqYFNPgcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
 

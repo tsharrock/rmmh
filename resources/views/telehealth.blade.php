@@ -1,8 +1,46 @@
 @extends('layout')
 
-@section('title', 'Telehealth Services | Utah & Arizona | Redmond MMH')
-@section('description', 'RedmondMMH provides expert telehealth services in Utah and Arizona. Secure, private, and effective online mental health and primary care tailored to you.')
-@section('keywords', 'Telehealth Utah, Telehealth Arizona, Online Psychiatry, Virtual Primary Care, Secure Video Therapy')
+@section('title', 'Telehealth Services | UT, AZ, MT, IA & VA | Redmond MMH')
+@section('description', 'Redmond MMH provides telehealth in Utah, Arizona, Montana, Iowa, and Virginia. Secure, private online mental health and primary care tailored to you.')
+@section('keywords', 'Telehealth Utah, Telehealth Arizona, Telehealth Montana, Telehealth Iowa, Telehealth Virginia, Online Psychiatry, Virtual Primary Care, Secure Video Therapy')
+
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Telehealth Services",
+  "description": "Secure telehealth for psychiatric care, family medicine, and medical weight loss across Utah, Arizona, Montana, Iowa, and Virginia.",
+  "url": "https://redmondmmh.com/telehealth",
+  "telephone": "+1-435-938-1440",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "245 N. 700 W.",
+    "addressLocality": "Hyde Park",
+    "addressRegion": "UT",
+    "postalCode": "84318",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Utah" },
+    { "@type": "State", "name": "Arizona" },
+    { "@type": "State", "name": "Montana" },
+    { "@type": "State", "name": "Iowa" },
+    { "@type": "State", "name": "Virginia" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Telehealth Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Telehealth Psychiatry" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Virtual Primary Care" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Telehealth Weight Loss Consultations" } }
+    ]
+  }
+}
+</script>
+@endsection
 
 @section('content')
     <div class="hero telehealth border-bottom">

@@ -4,6 +4,48 @@
 @section('description', 'Revitalize your body with custom IV nutrition therapy and injectables in Utah and Arizona. We offer energy infusions, immunity boosts, and recovery drips.')
 @section('keywords', 'IV Therapy Utah, IV Nutrition Arizona, Vitamin Injections, Immunity Boost Drip, Energy Infusion, Hyde Park Clinic')
 
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - IV Nutrition Therapy",
+  "description": "Custom IV nutrition therapy and injectables, including energy infusions, immunity boosts, and recovery drips, at our Hyde Park, Utah clinic.",
+  "url": "https://redmondmmh.com/iv-fluids",
+  "provider": {
+    "@type": "MedicalBusiness",
+    "@id": "https://redmondmmh.com/#organization",
+    "name": "Redmond Medical & Mental Health",
+    "telephone": "+1-435-938-1440",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "245 N. 700 W.",
+      "addressLocality": "Hyde Park",
+      "addressRegion": "UT",
+      "postalCode": "84318",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Utah" },
+    { "@type": "State", "name": "Arizona" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "IV Nutrition & Injectables Menu",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Energy Infusion IV Drip" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Immunity IV Drip" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Fountain of Youth IV Drip" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Ironman Recovery IV Drip" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Hydration Elixir IV Drip" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Vitamin & Wellness Injectables" } }
+    ]
+  }
+}
+</script>
+@endsection
+
 @section('content')
     <div class="hero iv border-bottom">
         <div class="container">

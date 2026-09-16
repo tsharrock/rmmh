@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Park City, UT | Redmond MMH')
-@section('description', 'Concierge-style telehealth for Park City residents.')
+@section('description', 'Concierge-style telehealth for Park City residents. Redmond MMH offers psychiatric care, primary care, and medical weight loss via secure video visits.')
 @section('keywords', 'Telehealth Park City, Online Psychiatry Summit County, Mental Health Park City, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

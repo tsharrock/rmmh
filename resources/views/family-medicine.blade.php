@@ -4,6 +4,77 @@
 @section('description', 'Comprehensive primary care for Utah and Arizona. We offer wellness exams, chronic disease management, and specialized women\'s health services.')
 @section('keywords', 'Family Medicine Utah, Women\'s Health Arizona, Primary Care Hyde Park, Annual Wellness Exam, Chronic Disease Management, HRT')
 
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Family Medicine",
+  "description": "Comprehensive primary care and women's health services, including wellness exams and chronic disease management, in Utah and Arizona.",
+  "url": "https://redmondmmh.com/family-medicine",
+  "provider": {
+    "@type": "MedicalBusiness",
+    "@id": "https://redmondmmh.com/#organization",
+    "name": "Redmond Medical & Mental Health",
+    "telephone": "+1-435-938-1440",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "245 N. 700 W.",
+      "addressLocality": "Hyde Park",
+      "addressRegion": "UT",
+      "postalCode": "84318",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Utah" },
+    { "@type": "State", "name": "Arizona" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Family Medicine Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Annual Wellness Exams" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Chronic Disease Management" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Women's Health Services" } }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer same-day appointments?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Absolutely! It is important to us that we accommodate all patients as quickly as possible. Rest assured that Tiffany will go the extra mile to see you when you need to be seen; in-person, over telehealth, or even over the phone. Please call or text our office at (435) 938-1440 to check for last minute availability. You can also see all available appointment times on our website." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you treat pediatric patients?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes! We treat humans of all ages, big or small." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you accept patients without insurance?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, many of our patients are uninsured. We offer an easy cash-pay option for medical visits, labs, ketamine treatments or IV therapy." }
+    },
+    {
+      "@type": "Question",
+      "name": "As a patient, how difficult would it be to get a hold of you when I have a question?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We pride ourselves on being easy to contact. We are available by phone, text or email during most hours of the day. No more patient portals or waiting days for a response. We'll get back to you quickly." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I switch my primary care to RMMH if I already see you for Psychiatry?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Many of our patients find it much more convenient to have their physical and mental health managed by the same provider for better coordination of care." }
+    }
+  ]
+}
+</script>
+@endsection
 
 @section('sidebar')
     @@parent

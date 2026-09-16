@@ -4,6 +4,31 @@
 @section('description', 'Contact Redmond Medical & Mental Health at our Hyde Park office or via telehealth in Utah and Arizona. Serving the Cache Valley and beyond with integrated care.')
 @section('keywords', 'Contact Redmond MMH, Hyde Park Clinic Address, Utah Mental Health, Arizona Telehealth, Book Appointment')
 
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "url": "https://redmondmmh.com/contact",
+  "mainEntity": {
+    "@type": "MedicalBusiness",
+    "@id": "https://redmondmmh.com/#organization",
+    "name": "Redmond Medical & Mental Health",
+    "telephone": "+1-435-938-1440",
+    "email": "PatientSupport@RedmondMMH.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "245 N. 700 W.",
+      "addressLocality": "Hyde Park",
+      "addressRegion": "UT",
+      "postalCode": "84318",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
+@endsection
+
 @section('content')
     <div class="hero telehealth border-bottom">
         <div class="container">

@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Scottsdale, AZ | Redmond MMH')
-@section('description', 'Concierge-style telehealth for Scottsdale residents.')
+@section('description', 'Concierge-style telehealth for Scottsdale residents. Redmond MMH offers psychiatric care, primary care, and medical weight loss via secure video visits.')
 @section('keywords', 'Telehealth Scottsdale, Online Psychiatrist Scottsdale AZ, Concierge Telehealth Arizona, Mental Health Scottsdale, Online Doctor Scottsdale, Redmond MMH')
 
 @section('jsonld')

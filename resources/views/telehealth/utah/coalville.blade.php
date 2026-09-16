@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Coalville, UT | Redmond MMH')
-@section('description', 'No more long drives to Park City or Salt Lake City for care.')
+@section('description', 'No more long drives to Park City or Salt Lake City for care. Redmond MMH offers psychiatric care, primary care, and weight loss via telehealth.')
 @section('keywords', 'Telehealth Coalville, Online Psychiatry Summit County, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

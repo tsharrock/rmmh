@@ -1,8 +1,104 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Provo, UT | Redmond MMH')
-@section('description', 'Expert psychiatric care and medication management for Provo residents.')
+@section('description', 'Expert psychiatric care and medication management for Provo and Utah County residents via secure, same-week telehealth visits with Redmond MMH.')
 @section('keywords', 'Provo Psychiatry, Online Mental Health Provo, Utah County Telehealth, Psychiatrist Provo UT, Redmond Medical and Mental Health')
+
+@section('jsonld')
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://redmondmmh.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Telehealth", "item": "https://redmondmmh.com/telehealth" },
+        { "@type": "ListItem", "position": 3, "name": "Provo", "item": "https://redmondmmh.com/telehealth/utah/provo" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is telehealth psychiatry available to Provo residents?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Tiffany Redmond, PA-C is licensed in Utah and sees Provo, Orem, and Utah County patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit." }
+            },
+            {
+              "@type": "Question",
+              "name": "How long is the wait for a new patient appointment in Provo?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Utah County's fast growth has stretched local psychiatry waitlists. We typically offer new telehealth patients an appointment within a few days, often the same day or next." }
+            },
+            {
+              "@type": "Question",
+              "name": "Does insurance cover a Provo telehealth visit?",
+              "acceptedAnswer": { "@type": "Answer", "text": "We're in-network with most major Utah insurance plans, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our full accepted insurance list or call our office to confirm your specific plan." }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to travel to an office for care in Provo?",
+              "acceptedAnswer": { "@type": "Answer", "text": "No. Psychiatric medication management, primary care, and weight loss visits are handled entirely by video. Services that require a hands-on exam, such as Ketamine therapy or IV nutrition, are provided in person at our Hyde Park, UT clinic." }
+            }
+          ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "MedicalBusiness",
+          "name": "Redmond Medical & Mental Health - Provo Psychiatry",
+          "alternateName": "Redmond MMH",
+          "description": "Specialized online psychiatry and mental health medication management for Provo and Utah County residents via secure telehealth.",
+          "url": "https://redmondmmh.com/telehealth/utah/provo",
+          "telephone": "+1-435-938-1440",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Provo",
+            "addressRegion": "UT",
+            "addressCountry": "US"
+          },
+          "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": 40.2338,
+              "longitude": -111.6585
+            },
+            "geoRadius": "30000"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Provo Mental Health Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Psychiatric Medication Management"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "ADHD Treatment"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Telehealth Psychiatry"
+                }
+              }
+            ]
+          }
+        }
+    </script>
+@endsection
 
 @section('content')
 
@@ -26,17 +122,6 @@
             </ol>
         </nav>
     </div>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://redmondmmh.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Telehealth", "item": "https://redmondmmh.com/telehealth" },
-        { "@type": "ListItem", "position": 3, "name": "Provo", "item": "https://redmondmmh.com/telehealth/utah/provo" }
-      ]
-    }
-    </script>
     <section id="page-content">
         <div class="container py-lg-5">
             <div class="row">
@@ -160,87 +245,4 @@
             </div>
         </div>
     </section>
-
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Is telehealth psychiatry available to Provo residents?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Tiffany Redmond, PA-C is licensed in Utah and sees Provo, Orem, and Utah County patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit." }
-            },
-            {
-              "@type": "Question",
-              "name": "How long is the wait for a new patient appointment in Provo?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Utah County's fast growth has stretched local psychiatry waitlists. We typically offer new telehealth patients an appointment within a few days, often the same day or next." }
-            },
-            {
-              "@type": "Question",
-              "name": "Does insurance cover a Provo telehealth visit?",
-              "acceptedAnswer": { "@type": "Answer", "text": "We're in-network with most major Utah insurance plans, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our full accepted insurance list or call our office to confirm your specific plan." }
-            },
-            {
-              "@type": "Question",
-              "name": "Do I need to travel to an office for care in Provo?",
-              "acceptedAnswer": { "@type": "Answer", "text": "No. Psychiatric medication management, primary care, and weight loss visits are handled entirely by video. Services that require a hands-on exam, such as Ketamine therapy or IV nutrition, are provided in person at our Hyde Park, UT clinic." }
-            }
-          ]
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "MedicalBusiness",
-          "name": "Redmond Medical & Mental Health - Provo Psychiatry",
-          "alternateName": "Redmond MMH",
-          "description": "Specialized online psychiatry and mental health medication management for Provo and Utah County residents via secure telehealth.",
-          "url": "https://redmondmmh.com/telehealth/utah/provo",
-          "telephone": "+1-435-938-1440",
-          "priceRange": "$$",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Provo",
-            "addressRegion": "UT",
-            "addressCountry": "US"
-          },
-          "serviceArea": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-              "@type": "GeoCoordinates",
-              "latitude": 40.2338,
-              "longitude": -111.6585
-            },
-            "geoRadius": "30000"
-          },
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Provo Mental Health Services",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Psychiatric Medication Management"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "ADHD Treatment"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Telehealth Psychiatry"
-                }
-              }
-            ]
-          }
-        }
-    </script>
 @endsection

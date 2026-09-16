@@ -4,6 +4,41 @@
 @section('description', 'Explore our full range of services in Utah — Psychiatric Care, Ketamine, Family Medicine, Weight Loss, IV Therapy, and Telehealth.')
 @section('keywords', 'Utah Medical Services, Utah Mental Health, Ketamine Therapy Utah, IV Therapy Utah, Utah Insurance Credentials, Hyde Park Clinic')
 
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Utah Services",
+  "description": "Psychiatric care, ketamine therapy, family medicine, medical weight loss, IV therapy, and telehealth services in Utah, offered in person in Hyde Park and via telehealth statewide.",
+  "url": "https://redmondmmh.com/services/utah",
+  "telephone": "+1-435-938-1440",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "245 N. 700 W.",
+    "addressLocality": "Hyde Park",
+    "addressRegion": "UT",
+    "postalCode": "84318",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "State", "name": "Utah" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Utah Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Psychiatric Care" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ketamine Therapy" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Family Medicine & Women's Health" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Medical Weight Loss" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IV Therapy & Injectables" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Telehealth Services" } }
+    ]
+  }
+}
+</script>
+@endsection
+
 @section('content')
     <div class="hero utah border-bottom">
         <div class="container">

@@ -4,6 +4,39 @@
 @section('description', 'Telehealth psychiatric care, family medicine, and medical weight loss for patients across Arizona, plus accepted insurance.')
 @section('keywords', 'Arizona Telehealth, Arizona Mental Health, Arizona Insurance Credentials, Psychiatric Care Arizona, Medical Weight Loss Arizona')
 
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Arizona Telehealth Services",
+  "description": "Telehealth psychiatric care, family medicine, and medical weight loss for patients across Arizona.",
+  "url": "https://redmondmmh.com/services/arizona",
+  "telephone": "+1-435-938-1440",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "245 N. 700 W.",
+    "addressLocality": "Hyde Park",
+    "addressRegion": "UT",
+    "postalCode": "84318",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "State", "name": "Arizona" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Arizona Telehealth Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Psychiatric Care" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Family Medicine & Women's Health" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Medical Weight Loss" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Telehealth Services" } }
+    ]
+  }
+}
+</script>
+@endsection
+
 @section('content')
     <div class="hero arizona border-bottom">
         <div class="container">

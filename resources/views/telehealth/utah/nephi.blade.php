@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Nephi, UT | Redmond MMH')
-@section('description', 'No more long drives to Provo to the north for care.')
+@section('description', 'No more long drives to Provo for care. Redmond MMH offers psychiatric care, primary care, and weight loss via secure telehealth for Nephi, UT residents.')
 @section('keywords', 'Telehealth Nephi, Online Psychiatry Juab County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

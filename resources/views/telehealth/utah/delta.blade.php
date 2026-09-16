@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Delta, UT | Redmond MMH')
-@section('description', 'No more long drives to Provo, nearly two hours east for care.')
+@section('description', 'No more long drives to Provo, nearly two hours east, for care. Redmond MMH offers psychiatric care, primary care, and weight loss via telehealth.')
 @section('keywords', 'Telehealth Delta, Online Psychiatry Millard County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

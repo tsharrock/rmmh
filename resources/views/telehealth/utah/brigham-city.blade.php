@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Brigham City, UT | Redmond MMH')
-@section('description', 'No more long drives to Ogden to the south for care.')
+@section('description', 'No more long drives to Ogden for care. Redmond MMH offers psychiatric care, primary care, and weight loss telehealth for Brigham City residents.')
 @section('keywords', 'Telehealth Brigham City, Online Psychiatry Box Elder County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Parowan, UT | Redmond MMH')
-@section('description', 'No more long drives to Cedar City, a short drive south for care.')
+@section('description', 'No more long drives to Cedar City for care. Redmond MMH offers psychiatric care, primary care, and weight loss via secure telehealth for Parowan, UT.')
 @section('keywords', 'Telehealth Parowan, Online Psychiatry Iron County, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

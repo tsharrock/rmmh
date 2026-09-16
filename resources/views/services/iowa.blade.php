@@ -6,6 +6,39 @@
 @section('keywords', 'Iowa Telehealth, Iowa Mental Health, Iowa Insurance Credentials, Psychiatric Care Iowa, Medical
     Weight Loss Iowa')
 
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Iowa Telehealth Services",
+  "description": "Telehealth psychiatric care, family medicine, and medical weight loss for patients across Iowa.",
+  "url": "https://redmondmmh.com/services/iowa",
+  "telephone": "+1-435-938-1440",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "245 N. 700 W.",
+    "addressLocality": "Hyde Park",
+    "addressRegion": "UT",
+    "postalCode": "84318",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "State", "name": "Iowa" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Iowa Telehealth Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Psychiatric Care" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Family Medicine & Women's Health" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Medical Weight Loss" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Telehealth Services" } }
+    ]
+  }
+}
+</script>
+@endsection
+
 @section('content')
     <div class="hero iowa hero-ia-4 border-bottom">
         <div class="container">

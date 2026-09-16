@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Garden City, UT | Redmond MMH')
-@section('description', 'No more long drives to Logan, an hour west over the summit for care.')
+@section('description', 'No more long drives to Logan over the summit for care. Redmond MMH offers psychiatric care, primary care, and weight loss via secure telehealth.')
 @section('keywords', 'Telehealth Garden City, Online Psychiatry Rich County, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

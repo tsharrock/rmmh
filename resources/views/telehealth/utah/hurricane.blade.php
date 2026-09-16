@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'Telehealth in Hurricane, UT | Redmond MMH')
-@section('description', 'No more long drives to St. George, a short drive west for care.')
+@section('description', 'No more long drives to St. George for care. Redmond MMH offers psychiatric care, primary care, and weight loss via secure telehealth for Hurricane, UT.')
 @section('keywords', 'Telehealth Hurricane, Online Psychiatry Washington County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

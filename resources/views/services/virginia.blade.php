@@ -6,6 +6,39 @@
 @section('keywords', 'Virginia Telehealth, Virginia Mental Health, Virginia Insurance Credentials, Psychiatric Care
     Virginia, Medical Weight Loss Virginia')
 
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Virginia Telehealth Services",
+  "description": "Telehealth psychiatric care, family medicine, and medical weight loss for patients across Virginia.",
+  "url": "https://redmondmmh.com/services/virginia",
+  "telephone": "+1-435-938-1440",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "245 N. 700 W.",
+    "addressLocality": "Hyde Park",
+    "addressRegion": "UT",
+    "postalCode": "84318",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "State", "name": "Virginia" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Virginia Telehealth Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Psychiatric Care" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Family Medicine & Women's Health" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Medical Weight Loss" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Telehealth Services" } }
+    ]
+  }
+}
+</script>
+@endsection
+
 @section('content')
     <div class="hero virginia hero-va-4 border-bottom">
         <div class="container">

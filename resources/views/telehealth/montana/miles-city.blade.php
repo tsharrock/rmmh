@@ -148,7 +148,7 @@
                     <h3>Accepted Insurance Plans</h3>
                     <ul>
                         <li>BCBS Blue Card</li>
-                        <li>Moutain Health CO-OP</li>
+                        <li>Mountain Health CO-OP</li>
                         <li>Curative Health</li>
                         <li>Allegiance Benefit Management Plan</li>
                     </ul>
