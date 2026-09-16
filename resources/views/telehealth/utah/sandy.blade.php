@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Sandy | Online Mental Health & Psychiatry | Redmond MMH')
-@section('description', 'Skip the I-15 and the wait list. Redmond MMH provides expert psychiatric care, family medicine, and weight loss treatment to Sandy and South Salt Lake County via secure telehealth.')
+@section('title', 'Telehealth in Sandy, UT | Redmond MMH')
+@section('description', 'Skip the I-15 and the wait list. Redmond MMH treats Sandy and South Salt Lake County with psychiatric, primary, and weight-loss care via telehealth.')
 @section('keywords', 'Telehealth Sandy Utah, Online Psychiatry Salt Lake County, Mental Health Sandy, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

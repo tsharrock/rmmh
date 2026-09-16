@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Duchesne | Online Mental Health & Medical Care | Redmond MMH')
-@section('description', 'No more long drives to Provo, over Daniels Summit for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Duchesne and Duchesne County via secure telehealth.')
+@section('title', 'Telehealth in Duchesne, UT | Redmond MMH')
+@section('description', 'No more long drives to Provo over Daniels Summit for care. Redmond MMH offers psychiatric care, primary care, and weight loss via telehealth.')
 @section('keywords', 'Telehealth Duchesne, Online Psychiatry Duchesne County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

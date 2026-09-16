@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Apache Junction | Online Mental Health & Psychiatry in AZ | Redmond MMH')
-@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Apache Junction residents via secure telehealth—care without the drive into the Valley.')
+@section('title', 'Telehealth in Apache Junction, AZ | Redmond MMH')
+@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Apache Junction residents via secure telehealth—care without the drive.')
 @section('keywords', 'Telehealth Apache Junction AZ, Online Psychiatrist Apache Junction, Mental Health Pinal County, Telehealth Arizona, Online Doctor Apache Junction, Redmond MMH')
 
 @section('jsonld')

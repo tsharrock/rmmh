@@ -1,8 +1,46 @@
 @extends('layout')
 
-@section('title', 'Telehealth Services | Utah & Arizona | Redmond MMH')
-@section('description', 'RedmondMMH provides expert telehealth services in Utah and Arizona. Secure, private, and effective online mental health and primary care tailored to you.')
-@section('keywords', 'Telehealth Utah, Telehealth Arizona, Online Psychiatry, Virtual Primary Care, Secure Video Therapy')
+@section('title', 'Telehealth Services | UT, AZ, MT, IA & VA | Redmond MMH')
+@section('description', 'Redmond MMH provides telehealth in Utah, Arizona, Montana, Iowa, and Virginia. Secure, private online mental health and primary care tailored to you.')
+@section('keywords', 'Telehealth Utah, Telehealth Arizona, Telehealth Montana, Telehealth Iowa, Telehealth Virginia, Online Psychiatry, Virtual Primary Care, Secure Video Therapy')
+
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Telehealth Services",
+  "description": "Secure telehealth for psychiatric care, family medicine, and medical weight loss across Utah, Arizona, Montana, Iowa, and Virginia.",
+  "url": "https://redmondmmh.com/telehealth",
+  "telephone": "+1-435-938-1440",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "245 N. 700 W.",
+    "addressLocality": "Hyde Park",
+    "addressRegion": "UT",
+    "postalCode": "84318",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Utah" },
+    { "@type": "State", "name": "Arizona" },
+    { "@type": "State", "name": "Montana" },
+    { "@type": "State", "name": "Iowa" },
+    { "@type": "State", "name": "Virginia" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Telehealth Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Telehealth Psychiatry" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Virtual Primary Care" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Telehealth Weight Loss Consultations" } }
+    ]
+  }
+}
+</script>
+@endsection
 
 @section('content')
     <div class="hero telehealth border-bottom">
@@ -53,7 +91,7 @@
                 <div class="divider-line"></div>
 
                 <h3>Telehealth Service Areas</h3>
-                <p>Tiffany Redmond, PA-C, is licensed in Utah, Arizona, Montana, and Iowa. Pick your city below for an overview of how telehealth fits your area:</p>
+                <p>Tiffany Redmond, PA-C, is licensed in Utah, Arizona, Montana, Iowa, and Virginia. Pick your city below for an overview of how telehealth fits your area:</p>
                 <div class="row">
                     <div class="col-md-6">
                         <h4 class="mt-3">Utah</h4>
@@ -175,6 +213,28 @@
                             <li><a href="{{ route('telehealth.iowa.ottumwa') }}">Ottumwa</a></li>
                             <li><a href="{{ route('telehealth.iowa.burlington') }}">Burlington</a></li>
                             <li><a href="{{ route('telehealth.iowa.carroll') }}">Carroll</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mt-3">Virginia</h4>
+                        <ul>
+                            <li><a href="{{ route('telehealth.virginia.virginia-beach') }}">Virginia Beach</a></li>
+                            <li><a href="{{ route('telehealth.virginia.norfolk') }}">Norfolk</a></li>
+                            <li><a href="{{ route('telehealth.virginia.richmond') }}">Richmond</a></li>
+                            <li><a href="{{ route('telehealth.virginia.arlington') }}">Arlington</a></li>
+                            <li><a href="{{ route('telehealth.virginia.chesapeake') }}">Chesapeake</a></li>
+                            <li><a href="{{ route('telehealth.virginia.roanoke') }}">Roanoke</a></li>
+                            <li><a href="{{ route('telehealth.virginia.lynchburg') }}">Lynchburg</a></li>
+                            <li><a href="{{ route('telehealth.virginia.charlottesville') }}">Charlottesville</a></li>
+                            <li><a href="{{ route('telehealth.virginia.abingdon') }}">Abingdon</a></li>
+                            <li><a href="{{ route('telehealth.virginia.big-stone-gap') }}">Big Stone Gap</a></li>
+                            <li><a href="{{ route('telehealth.virginia.marion') }}">Marion</a></li>
+                            <li><a href="{{ route('telehealth.virginia.galax') }}">Galax</a></li>
+                            <li><a href="{{ route('telehealth.virginia.tazewell') }}">Tazewell</a></li>
+                            <li><a href="{{ route('telehealth.virginia.farmville') }}">Farmville</a></li>
+                            <li><a href="{{ route('telehealth.virginia.south-boston') }}">South Boston</a></li>
+                            <li><a href="{{ route('telehealth.virginia.grundy') }}">Grundy</a></li>
+                            <li><a href="{{ route('telehealth.virginia.chincoteague') }}">Chincoteague</a></li>
                         </ul>
                     </div>
                 </div>

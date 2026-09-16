@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Layton | Online Mental Health & Psychiatry | Redmond MMH')
-@section('description', 'Skip the wait list and the I-15 commute. Redmond MMH offers expert psychiatric care, family medicine, and weight loss treatment to Layton and Davis County via secure telehealth.')
+@section('title', 'Telehealth in Layton, UT | Redmond MMH')
+@section('description', 'Skip the wait list and the I-15 commute. Redmond MMH treats Layton and Davis County with psychiatric, primary, and weight-loss care via telehealth.')
 @section('keywords', 'Telehealth Layton, Online Psychiatry Davis County, Mental Health Layton, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

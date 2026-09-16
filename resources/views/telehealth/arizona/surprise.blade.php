@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Surprise | Online Mental Health & Psychiatry in AZ | Redmond MMH')
+@section('title', 'Telehealth in Surprise, AZ | Redmond MMH')
 @section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Surprise residents via secure telehealth—skip the West Valley wait list.')
 @section('keywords', 'Telehealth Surprise AZ, Online Psychiatrist Surprise, Mental Health Northwest Valley, Telehealth Arizona, Online Doctor Surprise, Redmond MMH')
 

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Helper | Online Mental Health & Psychiatry | Redmond MMH')
+@section('title', 'Telehealth in Helper, UT | Redmond MMH')
 @section('description', 'Specialty mental health and primary care for Helper, Utah delivered via secure telehealth—no drive to Provo or Salt Lake required.')
 @section('keywords', 'Telehealth Helper Utah, Online Psychiatry Helper, Mental Health Carbon County, Telehealth Utah, Redmond MMH')
 

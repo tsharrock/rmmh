@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Castle Dale | Online Psychiatry & Mental Health | Redmond MMH')
-@section('description', 'No more long drives to Price to the north for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Castle Dale and Emery County via secure telehealth.')
+@section('title', 'Telehealth in Castle Dale, UT | Redmond MMH')
+@section('description', 'No more long drives to Price for care. Redmond MMH offers psychiatric care, primary care, and weight loss telehealth for Castle Dale residents.')
 @section('keywords', 'Telehealth Castle Dale, Online Psychiatry Emery County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

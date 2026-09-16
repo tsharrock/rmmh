@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Prescott | Online Mental Health & Psychiatry in AZ | Redmond MMH')
-@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Prescott and Yavapai County via secure telehealth—no drive down to the Valley required.')
+@section('title', 'Telehealth in Prescott, AZ | Redmond MMH')
+@section('description', 'Arizona-licensed psychiatric care and weight loss treatment for Prescott and Yavapai County via telehealth—no drive to the Valley required.')
 @section('keywords', 'Telehealth Prescott AZ, Online Psychiatrist Prescott, Mental Health Yavapai County, Telehealth Arizona, Online Doctor Prescott, Redmond MMH')
 
 @section('jsonld')

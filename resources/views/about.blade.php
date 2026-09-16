@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title', 'About Redmond Medical & Mental Health | Utah & Arizona')
-@section('description', 'Meet Tiffany Redmond, PA-C, providing integrated primary care and psychiatric services in Utah and Arizona. Learn about our holistic approach to mental and physical wellness.')
+@section('description', 'Meet Tiffany Redmond, PA-C, providing integrated primary care and psychiatric services across UT, AZ, MT, IA, and VA.')
 @section('keywords', 'Tiffany Redmond PA-C, Redmond Medical and Mental Health, Hyde Park Clinic, Cache Valley Healthcare, Integrated Medicine Utah, Arizona Telehealth')
 
 @section('jsonld')

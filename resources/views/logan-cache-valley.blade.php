@@ -1,8 +1,37 @@
 @extends('layout')
 
-@section('title', 'Psychiatry & Primary Care | Logan & Cache Valley, UT | Redmond MMH')
+@section('title', 'Psychiatry & Primary Care | Cache Valley, UT')
 @section('description', 'Serving Logan, Smithfield, Nibley, Hyde Park and all of Cache Valley with comprehensive in-person or telehealth care. From Ketamine to Family Medicine.')
 @section('keywords', 'Logan UT Psychiatry, Cache Valley Primary Care, Mental Health Logan Utah, Hyde Park Clinic, Integrated Care Cache Valley')
+
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "@id": "https://redmondmmh.com/#organization",
+  "name": "Redmond Medical & Mental Health",
+  "description": "Integrated psychiatry, primary care, ketamine therapy, IV nutrition, and medical weight loss serving Logan, Smithfield, Nibley, Hyde Park, and all of Cache Valley, in person and via telehealth.",
+  "url": "https://redmondmmh.com/logan-cache-valley",
+  "telephone": "+1-435-938-1440",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "245 N. 700 W.",
+    "addressLocality": "Hyde Park",
+    "addressRegion": "UT",
+    "postalCode": "84318",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Logan, UT" },
+    { "@type": "City", "name": "Hyde Park, UT" },
+    { "@type": "City", "name": "Smithfield, UT" },
+    { "@type": "City", "name": "Nibley, UT" }
+  ]
+}
+</script>
+@endsection
 
 @section('content')
     <div class="hero logan-cache-valley border-bottom">

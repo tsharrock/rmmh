@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Orem | Online Mental Health & Psychiatry | Redmond MMH')
-@section('description', 'Skip the wait list. Redmond MMH offers expert psychiatric care, family medicine, and weight loss treatment to Orem and Utah County residents through secure telehealth.')
+@section('title', 'Telehealth in Orem, UT | Redmond MMH')
+@section('description', 'Skip the wait list. Redmond MMH treats Orem and Utah County with psychiatric, primary, and weight-loss care via telehealth.')
 @section('keywords', 'Telehealth Orem, Online Psychiatry Utah County, Mental Health Orem, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

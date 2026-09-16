@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Carroll | Online Mental Health & Psychiatry in IA | Redmond MMH')
+@section('title', 'Telehealth in Carroll, IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Carroll and West Central Iowa via secure telehealth.')
 @section('keywords', 'Telehealth Carroll, Online Psychiatrist Carroll IA, Mental Health Carroll County, Telehealth Iowa, Redmond MMH')
 
@@ -78,6 +78,26 @@
             </div>
         </div>
     </div>
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('telehealth') }}">Telehealth</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Carroll</li>
+            </ol>
+        </nav>
+    </div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://redmondmmh.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Telehealth", "item": "https://redmondmmh.com/telehealth" },
+        { "@type": "ListItem", "position": 3, "name": "Carroll", "item": "https://redmondmmh.com/telehealth/iowa/carroll" }
+      ]
+    }
+    </script>
     <section id="page-content">
         <div class="container py-lg-5">
             <div class="row">

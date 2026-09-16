@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Flagstaff | Online Mental Health & Psychiatry in AZ | Redmond MMH')
-@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Flagstaff and Coconino County via secure telehealth. Skip the drive down to the Valley.')
+@section('title', 'Telehealth in Flagstaff, AZ | Redmond MMH')
+@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Flagstaff and Coconino County via secure telehealth.')
 @section('keywords', 'Telehealth Flagstaff, Online Psychiatrist Flagstaff AZ, Mental Health Coconino County, Telehealth Northern Arizona, Online Doctor Flagstaff, Redmond MMH')
 
 @section('jsonld')

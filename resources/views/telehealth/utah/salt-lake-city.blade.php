@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Salt Lake City | Online Mental Health & Psychiatry | Redmond MMH')
+@section('title', 'Telehealth in Salt Lake City, UT | Redmond MMH')
 @section('description', 'Secure telehealth psychiatry, primary care, and medical weight loss for Salt Lake City residents. Skip the waitlist and book your visit with Redmond MMH.')
 @section('keywords', 'Telehealth Salt Lake City, Online Psychiatry SLC, Mental Health Utah, Online Weight Loss Salt Lake City, Redmond MMH')
 

@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Kingman | Online Mental Health & Psychiatry in AZ | Redmond MMH')
-@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Kingman and Mohave County via secure telehealth—no four-hour drive required.')
+@section('title', 'Telehealth in Kingman, AZ | Redmond MMH')
+@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Kingman and Mohave County via secure telehealth—no four-hour drive.')
 @section('keywords', 'Telehealth Kingman, Online Psychiatrist Kingman AZ, Mental Health Mohave County, Telehealth Western Arizona, Online Doctor Kingman, Redmond MMH')
 
 @section('jsonld')

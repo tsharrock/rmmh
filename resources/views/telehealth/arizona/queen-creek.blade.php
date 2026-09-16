@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Queen Creek | Online Mental Health & Psychiatry in AZ | Redmond MMH')
-@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Queen Creek residents via secure telehealth—skip the Southeast Valley wait list.')
+@section('title', 'Telehealth in Queen Creek, AZ | Redmond MMH')
+@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Queen Creek residents via secure telehealth—skip the Southeast Valley.')
 @section('keywords', 'Telehealth Queen Creek AZ, Online Psychiatrist Queen Creek, Mental Health Southeast Valley, Telehealth Arizona, Online Doctor Queen Creek, Redmond MMH')
 
 @section('jsonld')

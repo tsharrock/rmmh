@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Tempe | Online Mental Health & Psychiatry in AZ | Redmond MMH')
+@section('title', 'Telehealth in Tempe, AZ | Redmond MMH')
 @section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Tempe residents and ASU students via secure telehealth.')
 @section('keywords', 'Telehealth Tempe, Online Psychiatrist Tempe AZ, Mental Health ASU, Telehealth Arizona, Online Doctor Tempe, Redmond MMH')
 

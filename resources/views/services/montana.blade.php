@@ -1,12 +1,45 @@
 @extends('layout')
 
-@section('title', 'Telehealth Services & Insurance in Montana | Redmond Medical & Mental Health')
+@section('title', 'Montana Telehealth Services & Insurance | Redmond MMH')
 @section('description',
     'Telehealth psychiatric care, family medicine, and medical weight loss for patients across
     Montana, plus accepted insurance plans and credentialing.')
 @section('keywords',
     'Montana Telehealth, Montana Mental Health, Montana Insurance Credentials, Psychiatric Care
     Montana, Medical Weight Loss Montana')
+
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Montana Telehealth Services",
+  "description": "Telehealth psychiatric care, family medicine, and medical weight loss for patients across Montana.",
+  "url": "https://redmondmmh.com/services/montana",
+  "telephone": "+1-435-938-1440",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "245 N. 700 W.",
+    "addressLocality": "Hyde Park",
+    "addressRegion": "UT",
+    "postalCode": "84318",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "State", "name": "Montana" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Montana Telehealth Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Psychiatric Care" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Family Medicine & Women's Health" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Medical Weight Loss" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Telehealth Services" } }
+    ]
+  }
+}
+</script>
+@endsection
 
 @section('content')
     <div class="hero montana hero-mt-6 border-bottom">
@@ -32,7 +65,7 @@
                 <p>We're credentialed with the following insurance plans in Montana:</p>
                 <ul>
                     <li>BCBS Blue Card</li>
-                    <li>Moutain Health CO-OP</li>
+                    <li>Mountain Health CO-OP</li>
                     <li>Curative Health</li>
                     <li>Allegiance Benefit Management Plan</li>
                 </ul>

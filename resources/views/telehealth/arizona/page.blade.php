@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Page AZ | Online Mental Health & Psychiatry | Redmond MMH')
+@section('title', 'Telehealth in Page, AZ | Redmond MMH')
 @section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Page and the Lake Powell region via secure telehealth.')
 @section('keywords', 'Telehealth Page Arizona, Online Psychiatrist Page AZ, Mental Health Lake Powell, Telehealth Northern Arizona, Online Doctor Page, Redmond MMH')
 

@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth St. George | Medical Weight Loss & Psychiatry | Redmond MMH')
-@section('description', 'Access expert medical weight loss, psychiatry, and mental health services from home. Redmond MMH offers secure telehealth for St. George and Southern Utah residents. Book your virtual visit today!')
+@section('title', 'Telehealth in St. George, UT | Redmond MMH')
+@section('description', 'Access expert medical weight loss, psychiatry, and mental health services from home. Redmond MMH offers secure telehealth for St.')
 @section('keywords', 'Telehealth St. George, Medical Weight Loss St. George, Online Psychiatry Utah, Semaglutide St. George, Mental Health Southern Utah')
 
 @section('jsonld')

@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Dutch John | Online Mental Health & Psychiatry | Redmond MMH')
-@section('description', 'Specialty care for Dutch John and the Flaming Gorge area via secure telehealth. Skip the long drive out of Daggett County for psychiatric care, primary care, and weight loss treatment.')
+@section('title', 'Telehealth in Dutch John, UT | Redmond MMH')
+@section('description', 'Specialty care for Dutch John and the Flaming Gorge area via secure telehealth.')
 @section('keywords', 'Telehealth Dutch John, Online Psychiatry Daggett County, Flaming Gorge Telehealth, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

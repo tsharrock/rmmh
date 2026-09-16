@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Lake Havasu City | Online Mental Health & Psychiatry in AZ | Redmond MMH')
+@section('title', 'Telehealth in Lake Havasu City, AZ | Redmond MMH')
 @section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Lake Havasu City and Mohave County via secure telehealth.')
 @section('keywords', 'Telehealth Lake Havasu City, Online Psychiatrist Lake Havasu, Mental Health Mohave County, Telehealth Western Arizona, Online Doctor Havasu, Redmond MMH')
 

@@ -292,9 +292,10 @@ a.appt, button.appt {
         background-image: url("./img/az/az1.webp");
         background-position: center 39%;
     }
-    // Montana & Iowa — placeholder image until per-state assets are dropped in
+    // Montana, Iowa & Virginia — placeholder image until per-state assets are dropped in
     &.montana,
-    &.iowa {
+    &.iowa,
+    &.virginia {
         background-image: url("./img/header_telehealth.webp");
         background-position: center 39%;
     }
@@ -313,6 +314,19 @@ a.appt, button.appt {
     &.hero-ia-3 { background-image: url("./img/ia/ia-3.webp"); background-position: center 39%; }
     &.hero-ia-4 { background-image: url("./img/ia/ia-4.webp"); background-position: center 69%; }
     &.hero-ia-5 { background-image: url("./img/ia/ia-5.webp"); background-position: center 39%; }
+
+    // Virginia — dedicated city images
+    &.charlottesville { background-image: url("./img/va/charlottesville.webp"); background-position: center 39%; }
+    &.richmond { background-image: url("./img/va/richmond.webp"); background-position: center 39%; }
+    &.virginia-beach { background-image: url("./img/va/virginia-beach.webp"); background-position: center 39%; }
+    &.chincoteague { background-image: url("./img/va/chincoteague.webp"); background-position: center 39%; }
+
+    // Virginia — randomly chosen per page load from resources/sass/img/va for cities without a dedicated image
+    &.hero-va-1 { background-image: url("./img/va/va1.webp"); background-position: center 39%; }
+    &.hero-va-2 { background-image: url("./img/va/va2.webp"); background-position: center 39%; }
+    &.hero-va-3 { background-image: url("./img/va/va3.webp"); background-position: center 39%; }
+    &.hero-va-4 { background-image: url("./img/va/va4.webp"); background-position: center 39%; }
+    &.hero-va-5 { background-image: url("./img/va/va5.webp"); background-position: center 39%; }
 
     // Frosted-glass panel behind hero text on city pages (AZ + UT).
     &.apache-junction,
@@ -417,10 +431,28 @@ a.appt, button.appt {
     &.burlington,
     &.carroll,
     &.yuma,
+    &.virginia-beach,
+    &.norfolk,
+    &.richmond,
+    &.arlington,
+    &.chesapeake,
+    &.roanoke,
+    &.lynchburg,
+    &.charlottesville,
+    &.abingdon,
+    &.big-stone-gap,
+    &.marion,
+    &.galax,
+    &.tazewell,
+    &.farmville,
+    &.south-boston,
+    &.grundy,
+    &.chincoteague,
     &.utah,
     &.arizona,
     &.montana,
-    &.iowa {
+    &.iowa,
+    &.virginia {
         > .container > .row > [class*="col-"] {
             background: rgba(255, 255, 255, 0.32);
             backdrop-filter: blur(5px) saturate(140%);
@@ -445,7 +477,8 @@ a.appt, button.appt {
     &.provo,
     &.hero-mt-3,
     &.hero-ia-3,
-    &.hero-ia-5 {
+    &.hero-ia-5,
+    &.hero-va-4 {
         > .container > .row > [class*="col-"] {
             background: rgba(0, 0, 0, 0.4);
             border-color: rgba(255, 255, 255, 0.18);

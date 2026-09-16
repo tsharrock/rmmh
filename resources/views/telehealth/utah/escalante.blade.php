@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Escalante | Online Mental Health & Medical Care | Redmond MMH')
-@section('description', 'No more long drives to Cedar City or Richfield, each hours away for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Escalante and Garfield County via secure telehealth.')
+@section('title', 'Telehealth in Escalante, UT | Redmond MMH')
+@section('description', 'No more long drives to Cedar City or Richfield, each hours away for care.')
 @section('keywords', 'Telehealth Escalante, Online Psychiatry Garfield County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

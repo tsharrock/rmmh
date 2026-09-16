@@ -1,8 +1,97 @@
 @extends('layout')
 
-@section('title', 'Online Therapy & Telehealth Ogden | Redmond MMH')
+@section('title', 'Telehealth in Ogden, UT | Redmond MMH')
 @section('description', 'Connect with expert mental health providers in Ogden via secure telehealth. Specialized in online therapy, psychiatry, and family medicine for Weber County.')
 @section('keywords', 'Online Therapy Ogden, Telehealth Ogden, Mental Health Weber County, Ogden Psychiatrist Online, Redmond Medical and Mental Health')
+
+@section('jsonld')
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://redmondmmh.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Telehealth", "item": "https://redmondmmh.com/telehealth" },
+        { "@type": "ListItem", "position": 3, "name": "Ogden", "item": "https://redmondmmh.com/telehealth/utah/ogden" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is telehealth psychiatry available to Ogden residents?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Tiffany Redmond, PA-C is licensed in Utah and sees Ogden, North Ogden, South Ogden, and Weber County patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit." }
+            },
+            {
+              "@type": "Question",
+              "name": "How long is the wait for a new patient appointment in Ogden?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Many Weber County practices have multi-week waitlists for psychiatry. We typically offer new telehealth patients an appointment within a few days, often the same day or next." }
+            },
+            {
+              "@type": "Question",
+              "name": "Does insurance cover an Ogden telehealth visit?",
+              "acceptedAnswer": { "@type": "Answer", "text": "We're in-network with most major Utah insurance plans, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our full accepted insurance list or call our office to confirm your specific plan." }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to travel to an office for care in Ogden?",
+              "acceptedAnswer": { "@type": "Answer", "text": "No. Psychiatric medication management, primary care, and weight loss visits are handled entirely by video. Services that require a hands-on exam, such as Ketamine therapy or IV nutrition, are provided in person at our Hyde Park, UT clinic." }
+            }
+          ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "MedicalBusiness",
+          "name": "Redmond Medical & Mental Health - Ogden Telehealth",
+          "alternateName": "Redmond MMH",
+          "description": "Providing expert online therapy, psychiatry, and family medicine services to the Ogden area through secure telehealth.",
+          "url": "https://redmondmmh.com/telehealth/utah/ogden",
+          "telephone": "+1-435-938-1440",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ogden",
+            "addressRegion": "UT",
+            "addressCountry": "US"
+          },
+          "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": 41.2230,
+              "longitude": -111.9738
+            },
+            "geoRadius": "25000"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Telehealth Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Online Therapy"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Telehealth Psychiatry"
+                }
+              }
+            ]
+          }
+        }
+    </script>
+@endsection
 
 @section('content')
 
@@ -26,17 +115,6 @@
             </ol>
         </nav>
     </div>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://redmondmmh.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Telehealth", "item": "https://redmondmmh.com/telehealth" },
-        { "@type": "ListItem", "position": 3, "name": "Ogden", "item": "https://redmondmmh.com/telehealth/utah/ogden" }
-      ]
-    }
-    </script>
     <section id="page-content">
         <div class="container py-lg-5">
             <div class="row">
@@ -173,80 +251,4 @@
             </div>
         </div>
     </section>
-
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Is telehealth psychiatry available to Ogden residents?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Tiffany Redmond, PA-C is licensed in Utah and sees Ogden, North Ogden, South Ogden, and Weber County patients for psychiatric medication management, primary care, and weight loss consultations by secure video visit." }
-            },
-            {
-              "@type": "Question",
-              "name": "How long is the wait for a new patient appointment in Ogden?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Many Weber County practices have multi-week waitlists for psychiatry. We typically offer new telehealth patients an appointment within a few days, often the same day or next." }
-            },
-            {
-              "@type": "Question",
-              "name": "Does insurance cover an Ogden telehealth visit?",
-              "acceptedAnswer": { "@type": "Answer", "text": "We're in-network with most major Utah insurance plans, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our full accepted insurance list or call our office to confirm your specific plan." }
-            },
-            {
-              "@type": "Question",
-              "name": "Do I need to travel to an office for care in Ogden?",
-              "acceptedAnswer": { "@type": "Answer", "text": "No. Psychiatric medication management, primary care, and weight loss visits are handled entirely by video. Services that require a hands-on exam, such as Ketamine therapy or IV nutrition, are provided in person at our Hyde Park, UT clinic." }
-            }
-          ]
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "MedicalBusiness",
-          "name": "Redmond Medical & Mental Health - Ogden Telehealth",
-          "alternateName": "Redmond MMH",
-          "description": "Providing expert online therapy, psychiatry, and family medicine services to the Ogden area through secure telehealth.",
-          "url": "https://redmondmmh.com/telehealth/utah/ogden",
-          "telephone": "+1-435-938-1440",
-          "priceRange": "$$",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Ogden",
-            "addressRegion": "UT",
-            "addressCountry": "US"
-          },
-          "serviceArea": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-              "@type": "GeoCoordinates",
-              "latitude": 41.2230,
-              "longitude": -111.9738
-            },
-            "geoRadius": "25000"
-          },
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Telehealth Services",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Online Therapy"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Telehealth Psychiatry"
-                }
-              }
-            ]
-          }
-        }
-    </script>
 @endsection

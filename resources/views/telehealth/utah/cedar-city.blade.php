@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Psychiatry & Primary Care | Cedar City, UT | Redmond MMH')
-@section('description', 'Skip the drive to Logan. Redmond Medical and Mental Health offers secure, integrated telehealth services for Cedar City residents. Specializing in ADHD, Anxiety, and Primary Care.')
+@section('title', 'Telehealth in Cedar City, UT | Redmond MMH')
+@section('description', 'Skip the drive to Logan. Redmond Medical and Mental Health offers secure, integrated telehealth services for Cedar City residents.')
 @section('keywords', 'Cedar City Telehealth, Online Psychiatry Southern Utah, Mental Health Cedar City, Online Therapy Utah, Redmond MMH')
 
 @section('jsonld')

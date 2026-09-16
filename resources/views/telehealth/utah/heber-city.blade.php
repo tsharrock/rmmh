@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Heber City | Online Mental Health & Psychiatry | Redmond MMH')
-@section('description', 'Skip the canyon drive. Redmond MMH provides expert psychiatric care, family medicine, and weight loss treatment to Heber City and the Heber Valley via secure telehealth.')
+@section('title', 'Telehealth in Heber City, UT | Redmond MMH')
+@section('description', 'Skip the canyon drive. Redmond MMH treats Heber City and the Heber Valley with psychiatric, primary, and weight-loss care via telehealth.')
 @section('keywords', 'Telehealth Heber City, Online Psychiatry Wasatch County, Mental Health Heber Valley, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

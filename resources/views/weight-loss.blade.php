@@ -1,8 +1,70 @@
 @extends('layout')
 
-@section('title', 'Medical Weight Loss | Semaglutide & Tirzepatide in Utah & Arizona')
-@section('description', 'Start your journey to a healthier you with RedmondMMH. We offer physician-supervised medical weight loss, GLP-1 treatments, and behavioral support in Utah and Arizona.')
+@section('title', 'Medical Weight Loss | Semaglutide & Tirzepatide')
+@section('description', 'Physician-supervised weight loss featuring GLP-1 treatments and behavioral support, in-person or via telehealth.')
 @section('keywords', 'Medical Weight Loss Utah, Medical Weight Loss Arizona, Semaglutide, Tirzepatide, GLP-1 Therapy, Medical Weight Management')
+
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Medical Weight Loss",
+  "description": "Physician-supervised medical weight loss featuring Semaglutide and Tirzepatide (GLP-1) treatments and behavioral support, in person or via telehealth.",
+  "url": "https://redmondmmh.com/weight-loss",
+  "provider": {
+    "@type": "MedicalBusiness",
+    "@id": "https://redmondmmh.com/#organization",
+    "name": "Redmond Medical & Mental Health",
+    "telephone": "+1-435-938-1440",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "245 N. 700 W.",
+      "addressLocality": "Hyde Park",
+      "addressRegion": "UT",
+      "postalCode": "84318",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Utah" },
+    { "@type": "State", "name": "Arizona" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Medical Weight Loss Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Semaglutide Therapy" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Tirzepatide Therapy" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Behavioral Weight Management Support" } }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is medication required?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Medication is a tool we use for those who meet clinical criteria, but we focus on a holistic approach for everyone." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this covered by insurance?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Coverage varies by provider and plan. We can provide documentation for you to submit to your insurance or discuss our self-pay options." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much weight will I lose?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Results vary, but our goal is a safe, sustainable loss of 1-2 lbs per week to ensure the weight stays off." }
+    }
+  ]
+}
+</script>
+@endsection
 
 @section('content')
     <div class="hero weight border-bottom">

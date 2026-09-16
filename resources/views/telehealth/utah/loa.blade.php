@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Loa Telehealth | Psychiatry, Primary Care & Weight Loss | Redmond MMH')
-@section('description', 'No more long drives to Richfield, an hour west over the summit for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Loa and Wayne County via secure telehealth.')
+@section('title', 'Telehealth in Loa, UT | Redmond MMH')
+@section('description', 'No more long drives to Richfield, an hour west over the summit for care.')
 @section('keywords', 'Telehealth Loa, Online Psychiatry Wayne County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

@@ -1,8 +1,49 @@
 @extends('layout')
 
-@section('title', 'Psychiatric Medication Management & ADHD Treatment | Utah & Arizona')
-@section('description', 'Specialized mental health care in Utah and Arizona. We provide expert diagnosis and medication management for ADHD, anxiety, depression, bipolar disorder, and addictions.')
+@section('title', 'Psychiatric Care & ADHD Treatment | Redmond MMH')
+@section('description', 'Expert diagnosis and medication management for ADHD, anxiety, depression, bipolar disorder, and addiction via telehealth.')
 @section('keywords', 'Psychiatric Medication Management Utah, ADHD Treatment Arizona, Depression Help, Bipolar Disorder Care, Mental Health Services Utah')
+
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Redmond Medical & Mental Health - Psychiatric Care",
+  "description": "Psychiatric medication management for ADHD, anxiety, depression, bipolar disorder, and addiction, in person in Utah and via telehealth in Utah and Arizona.",
+  "url": "https://redmondmmh.com/psychiatric-care",
+  "provider": {
+    "@type": "MedicalBusiness",
+    "@id": "https://redmondmmh.com/#organization",
+    "name": "Redmond Medical & Mental Health",
+    "telephone": "+1-435-938-1440",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "245 N. 700 W.",
+      "addressLocality": "Hyde Park",
+      "addressRegion": "UT",
+      "postalCode": "84318",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Utah" },
+    { "@type": "State", "name": "Arizona" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Psychiatric Care Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Depression Treatment" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Anxiety & Panic Disorder Treatment" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "ADHD Medication Management" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Bipolar Disorder Treatment" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MedicalTherapy", "name": "Suboxone Treatment for Addiction" } }
+    ]
+  }
+}
+</script>
+@endsection
 
 @section('content')
     <div class="hero psychiatric-care border-bottom">

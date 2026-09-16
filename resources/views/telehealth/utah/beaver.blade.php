@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Beaver | Online Mental Health & Psychiatry | Redmond MMH')
-@section('description', 'No more long drives to Cedar City or Provo. Redmond MMH provides expert psychiatric care, family medicine, and weight loss treatment to Beaver County via secure telehealth.')
+@section('title', 'Telehealth in Beaver, UT | Redmond MMH')
+@section('description', 'No more long drives to Cedar City or Provo. Redmond MMH treats Beaver County with psychiatric, primary, and weight-loss care via telehealth.')
 @section('keywords', 'Telehealth Beaver, Online Psychiatry Beaver County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

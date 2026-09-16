@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Spanish Fork | Online Mental Health & Psychiatry | Redmond MMH')
-@section('description', 'Skip the I-15 traffic. Redmond MMH provides expert psychiatric care, family medicine, and weight loss treatment to Spanish Fork and South Utah County via secure telehealth.')
+@section('title', 'Telehealth in Spanish Fork, UT | Redmond MMH')
+@section('description', 'Skip the I-15 traffic. Redmond MMH treats Spanish Fork and South Utah County with psychiatric, primary, and weight-loss care via telehealth.')
 @section('keywords', 'Telehealth Spanish Fork, Online Psychiatry Utah County, Mental Health Spanish Fork, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

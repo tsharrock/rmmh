@@ -1,8 +1,27 @@
 @extends('layout')
 
-@section('title', 'Accepted Insurance | Redmond Medical & Mental Health | Utah, Arizona, Montana & Iowa')
-@section('description', 'View accepted insurance providers by state. Redmond Medical & Mental Health is credentialed with Aetna, SelectHealth, BCBS, Humana, Curative Health, and more across Utah, Arizona, Montana, and Iowa.')
+@section('title', 'Accepted Insurance Plans | Redmond MMH')
+@section('description', 'View accepted insurance by state. Credentialed with Aetna, SelectHealth, BCBS, Humana, and more across UT, AZ, MT, IA & VA.')
 @section('keywords', 'Accepted Insurance Redmond MMH, SelectHealth Utah, Blue Cross Blue Shield, Curative Health, Arizona Insurance, Montana Insurance, Iowa Insurance')
+
+@section('jsonld')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Accepted Insurance Providers by State",
+  "description": "Insurance plans accepted by Redmond Medical & Mental Health, organized by state: Utah, Arizona, Montana, Iowa, and Virginia.",
+  "url": "https://redmondmmh.com/insurance",
+  "hasPart": [
+    { "@type": "WebPage", "name": "Utah Insurance & Services", "url": "https://redmondmmh.com/services/utah" },
+    { "@type": "WebPage", "name": "Arizona Insurance & Services", "url": "https://redmondmmh.com/services/arizona" },
+    { "@type": "WebPage", "name": "Montana Insurance & Services", "url": "https://redmondmmh.com/services/montana" },
+    { "@type": "WebPage", "name": "Iowa Insurance & Services", "url": "https://redmondmmh.com/services/iowa" },
+    { "@type": "WebPage", "name": "Virginia Insurance & Services", "url": "https://redmondmmh.com/services/virginia" }
+  ]
+}
+</script>
+@endsection
 
 @section('content')
 
