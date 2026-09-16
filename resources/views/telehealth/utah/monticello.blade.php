@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Monticello Telehealth | Psychiatry, Primary Care & Weight Loss | Redmond MMH')
-@section('description', 'No more long drives to Moab or Cortez, each an hour or more away for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Monticello and San Juan County via secure telehealth.')
+@section('title', 'Telehealth in Monticello, UT | Redmond MMH')
+@section('description', 'No more long drives to Moab or Cortez, each an hour or more away for care.')
 @section('keywords', 'Telehealth Monticello, Online Psychiatry San Juan County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

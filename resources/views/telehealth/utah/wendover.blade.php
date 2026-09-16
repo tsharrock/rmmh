@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Wendover | Online Mental Health & Psychiatry | Redmond MMH')
-@section('description', 'Specialty care without the desert drive. Redmond MMH provides expert psychiatric care, family medicine, and weight loss treatment to Wendover and West Tooele County via secure telehealth.')
+@section('title', 'Telehealth in Wendover, UT | Redmond MMH')
+@section('description', 'Specialty care without the desert drive. Redmond MMH treats Wendover and West Tooele County with psychiatric, primary, and weight-loss care via telehealth.')
 @section('keywords', 'Telehealth Wendover, Online Psychiatry Tooele County, Mental Health Wendover Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

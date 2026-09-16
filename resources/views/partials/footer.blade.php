@@ -28,7 +28,7 @@
 
     @media (min-width: 992px) {
         .footer-container {
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(7, 1fr);
         }
     }
 
@@ -102,7 +102,7 @@
 
 <footer>
     <div class="tagline text-center mb-3">
-        <h3>Serving Utah, Arizona, Montana & Iowa</h3>
+        <h3>Serving Utah, Arizona, Montana, Iowa & Virginia</h3>
     </div>
     <div class="footer-container">
 
@@ -180,6 +180,22 @@
                 </li>
                 <li><a href="{{ route('telehealth.iowa.iowa-city') }}"><strong>Iowa City:</strong> Telehealth</a></li>
                 <li><a href="{{ route('telehealth.iowa.waterloo') }}"><strong>Waterloo:</strong> Telehealth</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Virginia Telehealth</h4>
+            <ul>
+                <li><a href="{{ route('telehealth.virginia.virginia-beach') }}"><strong>Virginia Beach:</strong>
+                        Telehealth</a></li>
+                <li><a href="{{ route('telehealth.virginia.norfolk') }}"><strong>Norfolk:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.virginia.richmond') }}"><strong>Richmond:</strong> Telehealth</a>
+                </li>
+                <li><a href="{{ route('telehealth.virginia.arlington') }}"><strong>Arlington:</strong> Telehealth</a>
+                </li>
+                <li><a href="{{ route('telehealth.virginia.roanoke') }}"><strong>Roanoke:</strong> Telehealth</a></li>
+                <li><a href="{{ route('telehealth.virginia.charlottesville') }}"><strong>Charlottesville:</strong>
+                        Telehealth</a></li>
             </ul>
         </div>
     </div>

@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Casa Grande | Online Mental Health & Psychiatry in AZ | Redmond MMH')
-@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Casa Grande and Pinal County via secure telehealth. No drive to Phoenix or Tucson required.')
+@section('title', 'Telehealth in Casa Grande, AZ | Redmond MMH')
+@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Casa Grande and Pinal County via secure telehealth.')
 @section('keywords', 'Telehealth Casa Grande, Online Psychiatrist Pinal County, Mental Health Casa Grande AZ, Telehealth Arizona, Online Doctor Casa Grande, Redmond MMH')
 
 @section('jsonld')

@@ -45,6 +45,7 @@
                             <li><a class="dropdown-item" href="{{ route('services.arizona') }}">Arizona</a></li>
                             <li><a class="dropdown-item" href="{{ route('services.montana') }}">Montana</a></li>
                             <li><a class="dropdown-item" href="{{ route('services.iowa') }}">Iowa</a></li>
+                            <li><a class="dropdown-item" href="{{ route('services.virginia') }}">Virginia</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>

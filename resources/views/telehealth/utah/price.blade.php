@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Price | Online Mental Health & Psychiatry | Redmond MMH')
-@section('description', 'Specialty care without the canyon drive. Redmond MMH provides expert psychiatric care, family medicine, and weight loss treatment to Price and Carbon County via secure telehealth.')
+@section('title', 'Telehealth in Price, UT | Redmond MMH')
+@section('description', 'Specialty care without the canyon drive. Redmond MMH treats Price and Carbon County with psychiatric, primary, and weight-loss care via telehealth.')
 @section('keywords', 'Telehealth Price Utah, Online Psychiatry Carbon County, Mental Health Castle Country, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

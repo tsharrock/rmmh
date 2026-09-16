@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Services & Insurance in Montana | Redmond Medical & Mental Health')
+@section('title', 'Montana Telehealth Services & Insurance | Redmond MMH')
 @section('description',
     'Telehealth psychiatric care, family medicine, and medical weight loss for patients across
     Montana, plus accepted insurance plans and credentialing.')

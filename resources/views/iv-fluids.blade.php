@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'IV Therapy & Injectables | Nutrient Infusion in Utah & Arizona')
+@section('title', 'IV Therapy & Injectables | Redmond MMH')
 @section('description', 'Revitalize your body with custom IV nutrition therapy and injectables in Utah and Arizona. We offer energy infusions, immunity boosts, and recovery drips.')
 @section('keywords', 'IV Therapy Utah, IV Nutrition Arizona, Vitamin Injections, Immunity Boost Drip, Energy Infusion, Hyde Park Clinic')
 

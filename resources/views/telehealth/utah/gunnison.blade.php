@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Gunnison | Online Psychiatry & Mental Health | Redmond MMH')
-@section('description', 'No more long drives to Provo or Richfield for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Gunnison and Sanpete County via secure telehealth.')
+@section('title', 'Telehealth in Gunnison, UT | Redmond MMH')
+@section('description', 'No more long drives to Provo or Richfield for care.')
 @section('keywords', 'Telehealth Gunnison, Online Psychiatry Sanpete County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

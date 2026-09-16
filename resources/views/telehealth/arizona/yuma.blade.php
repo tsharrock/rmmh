@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Yuma | Online Mental Health & Psychiatry in AZ | Redmond MMH')
-@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Yuma residents via secure telehealth. Skip the three-hour drive to Phoenix or Tucson.')
+@section('title', 'Telehealth in Yuma, AZ | Redmond MMH')
+@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Yuma residents via secure telehealth.')
 @section('keywords', 'Telehealth Yuma, Online Psychiatrist Yuma AZ, Mental Health Yuma County, Telehealth Southwestern Arizona, Online Doctor Yuma, Redmond MMH')
 
 @section('jsonld')

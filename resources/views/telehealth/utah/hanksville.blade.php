@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Hanksville | Online Mental Health & Medical Care | Redmond MMH')
-@section('description', 'No more long drives to Richfield or Green River, each roughly two hours away for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Hanksville and Wayne County via secure telehealth.')
+@section('title', 'Telehealth in Hanksville, UT | Redmond MMH')
+@section('description', 'No more long drives to Richfield or Green River, each roughly two hours away for care.')
 @section('keywords', 'Telehealth Hanksville, Online Psychiatry Wayne County, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Psychiatry Services Provo | Online Mental Health | Redmond MMH')
-@section('description', 'Expert psychiatric care and medication management for Provo residents. Redmond MMH offers secure telehealth services for ADHD, depression, and anxiety in Utah County.')
+@section('title', 'Telehealth in Provo, UT | Redmond MMH')
+@section('description', 'Expert psychiatric care and medication management for Provo residents.')
 @section('keywords', 'Provo Psychiatry, Online Mental Health Provo, Utah County Telehealth, Psychiatrist Provo UT, Redmond Medical and Mental Health')
 
 @section('content')

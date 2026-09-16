@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Kanab | Online Mental Health & Medical Care | Redmond MMH')
-@section('description', 'No more long drives to St. George or Cedar City, each well over an hour away for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Kanab and Kane County via secure telehealth.')
+@section('title', 'Telehealth in Kanab, UT | Redmond MMH')
+@section('description', 'No more long drives to St. George or Cedar City, each well over an hour away for care.')
 @section('keywords', 'Telehealth Kanab, Online Psychiatry Kane County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

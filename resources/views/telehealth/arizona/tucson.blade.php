@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Tucson | Online Mental Health & Psychiatry in AZ | Redmond MMH')
-@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Tucson residents via secure telehealth. Skip the wait list and the drive across town.')
+@section('title', 'Telehealth in Tucson, AZ | Redmond MMH')
+@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Tucson residents via secure telehealth.')
 @section('keywords', 'Telehealth Tucson, Online Psychiatrist Tucson AZ, Mental Health Pima County, Telehealth Arizona, Online Doctor Tucson, Redmond MMH')
 
 @section('jsonld')

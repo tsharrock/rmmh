@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Panguitch Telehealth | Psychiatry, Primary Care & Weight Loss | Redmond MMH')
-@section('description', 'No more long drives to Cedar City, an hour west over the summit for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Panguitch and Garfield County via secure telehealth.')
+@section('title', 'Telehealth in Panguitch, UT | Redmond MMH')
+@section('description', 'No more long drives to Cedar City, an hour west over the summit for care.')
 @section('keywords', 'Telehealth Panguitch, Online Psychiatry Garfield County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

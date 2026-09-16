@@ -47,6 +47,7 @@ Route::view('/services/utah', 'services.utah')->name('services.utah');
 Route::view('/services/arizona', 'services.arizona')->name('services.arizona');
 Route::view('/services/montana', 'services.montana')->name('services.montana');
 Route::view('/services/iowa', 'services.iowa')->name('services.iowa');
+Route::view('/services/virginia', 'services.virginia')->name('services.virginia');
 
 Route::get('/telehealth', function () {
     return view('telehealth');
@@ -163,6 +164,25 @@ Route::view('/telehealth/iowa/davenport', 'telehealth.iowa.davenport')->name('te
 Route::view('/telehealth/iowa/sioux-city', 'telehealth.iowa.sioux-city')->name('telehealth.iowa.sioux-city');
 Route::view('/telehealth/iowa/iowa-city', 'telehealth.iowa.iowa-city')->name('telehealth.iowa.iowa-city');
 Route::view('/telehealth/iowa/waterloo', 'telehealth.iowa.waterloo')->name('telehealth.iowa.waterloo');
+
+// Virginia telehealth city pages
+Route::view('/telehealth/virginia/virginia-beach', 'telehealth.virginia.virginia-beach')->name('telehealth.virginia.virginia-beach');
+Route::view('/telehealth/virginia/norfolk', 'telehealth.virginia.norfolk')->name('telehealth.virginia.norfolk');
+Route::view('/telehealth/virginia/richmond', 'telehealth.virginia.richmond')->name('telehealth.virginia.richmond');
+Route::view('/telehealth/virginia/arlington', 'telehealth.virginia.arlington')->name('telehealth.virginia.arlington');
+Route::view('/telehealth/virginia/chesapeake', 'telehealth.virginia.chesapeake')->name('telehealth.virginia.chesapeake');
+Route::view('/telehealth/virginia/roanoke', 'telehealth.virginia.roanoke')->name('telehealth.virginia.roanoke');
+Route::view('/telehealth/virginia/lynchburg', 'telehealth.virginia.lynchburg')->name('telehealth.virginia.lynchburg');
+Route::view('/telehealth/virginia/charlottesville', 'telehealth.virginia.charlottesville')->name('telehealth.virginia.charlottesville');
+Route::view('/telehealth/virginia/abingdon', 'telehealth.virginia.abingdon')->name('telehealth.virginia.abingdon');
+Route::view('/telehealth/virginia/big-stone-gap', 'telehealth.virginia.big-stone-gap')->name('telehealth.virginia.big-stone-gap');
+Route::view('/telehealth/virginia/marion', 'telehealth.virginia.marion')->name('telehealth.virginia.marion');
+Route::view('/telehealth/virginia/galax', 'telehealth.virginia.galax')->name('telehealth.virginia.galax');
+Route::view('/telehealth/virginia/tazewell', 'telehealth.virginia.tazewell')->name('telehealth.virginia.tazewell');
+Route::view('/telehealth/virginia/farmville', 'telehealth.virginia.farmville')->name('telehealth.virginia.farmville');
+Route::view('/telehealth/virginia/south-boston', 'telehealth.virginia.south-boston')->name('telehealth.virginia.south-boston');
+Route::view('/telehealth/virginia/grundy', 'telehealth.virginia.grundy')->name('telehealth.virginia.grundy');
+Route::view('/telehealth/virginia/chincoteague', 'telehealth.virginia.chincoteague')->name('telehealth.virginia.chincoteague');
 Route::view('/telehealth/iowa/ames', 'telehealth.iowa.ames')->name('telehealth.iowa.ames');
 Route::view('/telehealth/iowa/council-bluffs', 'telehealth.iowa.council-bluffs')->name('telehealth.iowa.council-bluffs');
 Route::view('/telehealth/iowa/dubuque', 'telehealth.iowa.dubuque')->name('telehealth.iowa.dubuque');

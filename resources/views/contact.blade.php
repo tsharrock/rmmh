@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Contact Us | Redmond Medical & Mental Health | Utah & Arizona')
+@section('title', 'Contact Us | Redmond Medical & Mental Health')
 @section('description', 'Contact Redmond Medical & Mental Health at our Hyde Park office or via telehealth in Utah and Arizona. Serving the Cache Valley and beyond with integrated care.')
 @section('keywords', 'Contact Redmond MMH, Hyde Park Clinic Address, Utah Mental Health, Arizona Telehealth, Book Appointment')
 

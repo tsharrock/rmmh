@@ -1,13 +1,10 @@
 @extends('layout')
 
-@section('title', 'Redmond Medical and Mental Health | Integrated Care in Utah, Arizona, Montana, and Iowa')
-@section('description',
-    'Redmond Medical and Mental Health offers a unique "one-stop-shop" for Psychiatric care, IV
-    Therapy, Ketamine treatments, and Family Medicine, plus telehealth now serving Utah, Arizona, Montana, and Iowa. Book
-    your holistic wellness visit today.')
+@section('title', 'Integrated Mental Health & Primary Care | Redmond MMH')
+@section('description', 'One-stop psychiatric care, primary care, IV therapy, Ketamine, and weight loss via telehealth in UT, AZ, MT, IA & VA.')
 @section('keywords',
     'Integrated Mental Health Utah, Primary Care Hyde Park, IV Therapy Logan, Ketamine Treatment Utah,
-    Medical Weight Loss Logan, Telehealth Montana, Telehealth Iowa')
+    Medical Weight Loss Logan, Telehealth Montana, Telehealth Iowa, Telehealth Virginia')
 
 @section('jsonld')
     <script type="application/ld+json">
@@ -94,7 +91,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-white">
-                    <h1 class="text-white">Integrated Mental Health & Primary Care in Utah, Arizona, Montana and Iowa</h1>
+                    <h1 class="text-white">Integrated Mental Health & Primary Care in Utah, Arizona, Montana, Iowa and Virginia</h1>
                     <p>We know your time is valuable and attending multiple doctor appointments to get each of your medical
                         concerns addressed is very time-consuming. Our goal has always been to simplify this process. Say
                         goodbye to long waits in waiting rooms and endless referrals by providers who are unable to address
@@ -136,6 +133,12 @@
                     <a class="state-tile iowa" href="{{ route('services.iowa') }}">
                         <span class="state-tile-shape"></span>
                         <span class="state-tile-label">Iowa</span>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a class="state-tile virginia" href="{{ route('services.virginia') }}">
+                        <span class="state-tile-shape"></span>
+                        <span class="state-tile-label">Virginia</span>
                     </a>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Online Therapy & Telehealth Ogden | Redmond MMH')
+@section('title', 'Telehealth in Ogden, UT | Redmond MMH')
 @section('description', 'Connect with expert mental health providers in Ogden via secure telehealth. Specialized in online therapy, psychiatry, and family medicine for Weber County.')
 @section('keywords', 'Online Therapy Ogden, Telehealth Ogden, Mental Health Weber County, Ogden Psychiatrist Online, Redmond Medical and Mental Health')
 

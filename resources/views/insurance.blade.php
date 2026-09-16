@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Accepted Insurance | Redmond Medical & Mental Health | Utah, Arizona, Montana & Iowa')
-@section('description', 'View accepted insurance providers by state. Redmond Medical & Mental Health is credentialed with Aetna, SelectHealth, BCBS, Humana, Curative Health, and more across Utah, Arizona, Montana, and Iowa.')
+@section('title', 'Accepted Insurance Plans | Redmond MMH')
+@section('description', 'View accepted insurance by state. Credentialed with Aetna, SelectHealth, BCBS, Humana, and more across UT, AZ, MT, IA & VA.')
 @section('keywords', 'Accepted Insurance Redmond MMH, SelectHealth Utah, Blue Cross Blue Shield, Curative Health, Arizona Insurance, Montana Insurance, Iowa Insurance')
 
 @section('content')

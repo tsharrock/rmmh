@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Tuba City | Online Mental Health & Psychiatry in AZ | Redmond MMH')
+@section('title', 'Telehealth in Tuba City, AZ | Redmond MMH')
 @section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Tuba City and the western Navajo Nation via secure telehealth.')
 @section('keywords', 'Telehealth Tuba City, Online Psychiatrist Navajo Nation, Mental Health Coconino County, Telehealth Northern Arizona, Online Doctor Tuba City, Redmond MMH')
 

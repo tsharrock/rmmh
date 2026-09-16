@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Services & Insurance in Iowa | Redmond Medical & Mental Health')
+@section('title', 'Iowa Telehealth Services & Insurance | Redmond MMH')
 @section('description', 'Telehealth psychiatric care, family medicine, and medical weight loss for patients across Iowa,
     plus accepted insurance plans and credentialing.')
 @section('keywords', 'Iowa Telehealth, Iowa Mental Health, Iowa Insurance Credentials, Psychiatric Care Iowa, Medical

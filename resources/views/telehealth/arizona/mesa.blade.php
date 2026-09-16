@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Mesa | Online Mental Health & Psychiatry in AZ | Redmond MMH')
+@section('title', 'Telehealth in Mesa, AZ | Redmond MMH')
 @section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Mesa residents via secure telehealth. Skip the East Valley wait list.')
 @section('keywords', 'Telehealth Mesa AZ, Online Psychiatrist Mesa, Mental Health East Valley, Telehealth Arizona, Online Doctor Mesa Arizona, Redmond MMH')
 

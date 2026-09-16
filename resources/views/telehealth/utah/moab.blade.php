@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Moab | Online Mental Health & Psychiatry | Redmond MMH')
-@section('description', 'Skip the four-hour drive. Redmond MMH delivers expert psychiatric care, family medicine, and weight loss treatment to Moab and Grand County through secure telehealth.')
+@section('title', 'Telehealth in Moab, UT | Redmond MMH')
+@section('description', 'Skip the four-hour drive. Redmond MMH treats Moab and Grand County with psychiatric, primary, and weight-loss care via telehealth.')
 @section('keywords', 'Telehealth Moab, Online Psychiatry Moab, Mental Health Grand County, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

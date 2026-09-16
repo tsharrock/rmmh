@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Fillmore | Online Mental Health & Medical Care | Redmond MMH')
-@section('description', 'No more long drives to Provo or Cedar City, each far up or down I-15 for care. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Fillmore and Millard County via secure telehealth.')
+@section('title', 'Telehealth in Fillmore, UT | Redmond MMH')
+@section('description', 'No more long drives to Provo or Cedar City, each far up or down I-15 for care.')
 @section('keywords', 'Telehealth Fillmore, Online Psychiatry Millard County, Mental Health Rural Utah, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

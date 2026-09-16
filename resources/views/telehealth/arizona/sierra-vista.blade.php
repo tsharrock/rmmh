@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Sierra Vista | Online Mental Health & Psychiatry in AZ | Redmond MMH')
+@section('title', 'Telehealth in Sierra Vista, AZ | Redmond MMH')
 @section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Sierra Vista, Fort Huachuca, and Cochise County via secure telehealth.')
 @section('keywords', 'Telehealth Sierra Vista, Online Psychiatrist Sierra Vista AZ, Mental Health Cochise County, Telehealth Fort Huachuca, Online Doctor Southeast Arizona, Redmond MMH')
 

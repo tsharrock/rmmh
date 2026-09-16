@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Psychiatric Medication Management & ADHD Treatment | Utah & Arizona')
-@section('description', 'Specialized mental health care in Utah and Arizona. We provide expert diagnosis and medication management for ADHD, anxiety, depression, bipolar disorder, and addictions.')
+@section('title', 'Psychiatric Care & ADHD Treatment | Redmond MMH')
+@section('description', 'Expert diagnosis and medication management for ADHD, anxiety, depression, bipolar disorder, and addiction via telehealth.')
 @section('keywords', 'Psychiatric Medication Management Utah, ADHD Treatment Arizona, Depression Help, Bipolar Disorder Care, Mental Health Services Utah')
 
 @section('content')

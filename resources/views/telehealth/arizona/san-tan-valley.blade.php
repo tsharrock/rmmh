@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth San Tan Valley | Online Mental Health & Psychiatry in AZ | Redmond MMH')
+@section('title', 'Telehealth in San Tan Valley, AZ | Redmond MMH')
 @section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for San Tan Valley residents via secure telehealth.')
 @section('keywords', 'Telehealth San Tan Valley AZ, Online Psychiatrist San Tan Valley, Mental Health Pinal County, Telehealth Arizona, Online Doctor San Tan Valley, Redmond MMH')
 

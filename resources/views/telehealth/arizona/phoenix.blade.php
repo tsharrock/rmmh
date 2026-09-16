@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Phoenix | Online Mental Health & Psychiatry in AZ | Redmond MMH')
-@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Phoenix residents via secure telehealth. Skip the Valley traffic and the wait list.')
+@section('title', 'Telehealth in Phoenix, AZ | Redmond MMH')
+@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Phoenix residents via secure telehealth.')
 @section('keywords', 'Telehealth Phoenix, Online Psychiatrist Phoenix AZ, Mental Health Maricopa County, Telehealth Arizona, Online Doctor Phoenix, Redmond MMH')
 
 @section('jsonld')

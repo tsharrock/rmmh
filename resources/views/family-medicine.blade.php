@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Family Medicine & Women\'s Health | Primary Care in Utah and Arizona')
+@section('title', 'Family Medicine & Women\'s Health | Redmond MMH')
 @section('description', 'Comprehensive primary care for Utah and Arizona. We offer wellness exams, chronic disease management, and specialized women\'s health services.')
 @section('keywords', 'Family Medicine Utah, Women\'s Health Arizona, Primary Care Hyde Park, Annual Wellness Exam, Chronic Disease Management, HRT')
 

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Cedar Rapids | Online Mental Health & Psychiatry in IA | Redmond MMH')
+@section('title', 'Telehealth in Cedar Rapids, IA | Redmond MMH')
 @section('description', 'Iowa-licensed psychiatric care, family medicine, and weight loss treatment for Cedar Rapids and Linn County via secure telehealth.')
 @section('keywords', 'Telehealth Cedar Rapids, Online Psychiatrist Cedar Rapids IA, Mental Health Linn County, Telehealth Iowa, Redmond MMH')
 
@@ -78,6 +78,26 @@
             </div>
         </div>
     </div>
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('telehealth') }}">Telehealth</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Cedar Rapids</li>
+            </ol>
+        </nav>
+    </div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://redmondmmh.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Telehealth", "item": "https://redmondmmh.com/telehealth" },
+        { "@type": "ListItem", "position": 3, "name": "Cedar Rapids", "item": "https://redmondmmh.com/telehealth/iowa/cedar-rapids" }
+      ]
+    }
+    </script>
     <section id="page-content">
         <div class="container py-lg-5">
             <div class="row">

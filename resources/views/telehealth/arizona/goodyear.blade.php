@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Goodyear | Online Mental Health & Psychiatry in AZ | Redmond MMH')
+@section('title', 'Telehealth in Goodyear, AZ | Redmond MMH')
 @section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Goodyear residents via secure telehealth—skip the West Valley wait list.')
 @section('keywords', 'Telehealth Goodyear AZ, Online Psychiatrist West Valley, Mental Health Goodyear, Telehealth Arizona, Online Doctor Goodyear, Redmond MMH')
 

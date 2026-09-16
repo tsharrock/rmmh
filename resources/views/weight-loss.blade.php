@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Medical Weight Loss | Semaglutide & Tirzepatide in Utah & Arizona')
-@section('description', 'Start your journey to a healthier you with RedmondMMH. We offer physician-supervised medical weight loss, GLP-1 treatments, and behavioral support in Utah and Arizona.')
+@section('title', 'Medical Weight Loss | Semaglutide & Tirzepatide')
+@section('description', 'Physician-supervised weight loss featuring GLP-1 treatments and behavioral support, in-person or via telehealth.')
 @section('keywords', 'Medical Weight Loss Utah, Medical Weight Loss Arizona, Semaglutide, Tirzepatide, GLP-1 Therapy, Medical Weight Management')
 
 @section('content')

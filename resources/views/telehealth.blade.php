@@ -53,7 +53,7 @@
                 <div class="divider-line"></div>
 
                 <h3>Telehealth Service Areas</h3>
-                <p>Tiffany Redmond, PA-C, is licensed in Utah, Arizona, Montana, and Iowa. Pick your city below for an overview of how telehealth fits your area:</p>
+                <p>Tiffany Redmond, PA-C, is licensed in Utah, Arizona, Montana, Iowa, and Virginia. Pick your city below for an overview of how telehealth fits your area:</p>
                 <div class="row">
                     <div class="col-md-6">
                         <h4 class="mt-3">Utah</h4>
@@ -175,6 +175,28 @@
                             <li><a href="{{ route('telehealth.iowa.ottumwa') }}">Ottumwa</a></li>
                             <li><a href="{{ route('telehealth.iowa.burlington') }}">Burlington</a></li>
                             <li><a href="{{ route('telehealth.iowa.carroll') }}">Carroll</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mt-3">Virginia</h4>
+                        <ul>
+                            <li><a href="{{ route('telehealth.virginia.virginia-beach') }}">Virginia Beach</a></li>
+                            <li><a href="{{ route('telehealth.virginia.norfolk') }}">Norfolk</a></li>
+                            <li><a href="{{ route('telehealth.virginia.richmond') }}">Richmond</a></li>
+                            <li><a href="{{ route('telehealth.virginia.arlington') }}">Arlington</a></li>
+                            <li><a href="{{ route('telehealth.virginia.chesapeake') }}">Chesapeake</a></li>
+                            <li><a href="{{ route('telehealth.virginia.roanoke') }}">Roanoke</a></li>
+                            <li><a href="{{ route('telehealth.virginia.lynchburg') }}">Lynchburg</a></li>
+                            <li><a href="{{ route('telehealth.virginia.charlottesville') }}">Charlottesville</a></li>
+                            <li><a href="{{ route('telehealth.virginia.abingdon') }}">Abingdon</a></li>
+                            <li><a href="{{ route('telehealth.virginia.big-stone-gap') }}">Big Stone Gap</a></li>
+                            <li><a href="{{ route('telehealth.virginia.marion') }}">Marion</a></li>
+                            <li><a href="{{ route('telehealth.virginia.galax') }}">Galax</a></li>
+                            <li><a href="{{ route('telehealth.virginia.tazewell') }}">Tazewell</a></li>
+                            <li><a href="{{ route('telehealth.virginia.farmville') }}">Farmville</a></li>
+                            <li><a href="{{ route('telehealth.virginia.south-boston') }}">South Boston</a></li>
+                            <li><a href="{{ route('telehealth.virginia.grundy') }}">Grundy</a></li>
+                            <li><a href="{{ route('telehealth.virginia.chincoteague') }}">Chincoteague</a></li>
                         </ul>
                     </div>
                 </div>

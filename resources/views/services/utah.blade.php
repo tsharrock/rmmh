@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Services & Insurance in Utah | Redmond Medical & Mental Health')
-@section('description', 'Explore Redmond Medical and Mental Health\'s full range of services in Utah, including Psychiatric Care, Ketamine Therapy, Family Medicine, Medical Weight Loss, IV Therapy, and Telehealth, plus our accepted insurance plans.')
+@section('title', 'Utah Services & Insurance | Redmond MMH')
+@section('description', 'Explore our full range of services in Utah — Psychiatric Care, Ketamine, Family Medicine, Weight Loss, IV Therapy, and Telehealth.')
 @section('keywords', 'Utah Medical Services, Utah Mental Health, Ketamine Therapy Utah, IV Therapy Utah, Utah Insurance Credentials, Hyde Park Clinic')
 
 @section('content')

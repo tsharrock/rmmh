@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Psychiatry & Primary Care | Logan & Cache Valley, UT | Redmond MMH')
+@section('title', 'Psychiatry & Primary Care | Cache Valley, UT')
 @section('description', 'Serving Logan, Smithfield, Nibley, Hyde Park and all of Cache Valley with comprehensive in-person or telehealth care. From Ketamine to Family Medicine.')
 @section('keywords', 'Logan UT Psychiatry, Cache Valley Primary Care, Mental Health Logan Utah, Hyde Park Clinic, Integrated Care Cache Valley')
 

@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Buckeye | Online Mental Health & Psychiatry in AZ | Redmond MMH')
-@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Buckeye residents via secure telehealth. Specialty care that keeps up with one of the fastest-growing cities in the country.')
+@section('title', 'Telehealth in Buckeye, AZ | Redmond MMH')
+@section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Buckeye residents via secure telehealth.')
 @section('keywords', 'Telehealth Buckeye AZ, Online Psychiatrist Buckeye, Mental Health Far West Valley, Telehealth Arizona, Online Doctor Buckeye, Redmond MMH')
 
 @section('jsonld')

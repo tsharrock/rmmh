@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Bozeman | Online Mental Health & Psychiatry in MT | Redmond MMH')
+@section('title', 'Telehealth in Bozeman, MT | Redmond MMH')
 @section('description', 'Montana-licensed psychiatric care, family medicine, and weight loss treatment for Bozeman and Gallatin County via secure telehealth.')
 @section('keywords', 'Telehealth Bozeman, Online Psychiatrist Bozeman MT, Mental Health Gallatin County, Telehealth Montana, Redmond MMH')
 
@@ -78,6 +78,26 @@
             </div>
         </div>
     </div>
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('telehealth') }}">Telehealth</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Bozeman</li>
+            </ol>
+        </nav>
+    </div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://redmondmmh.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Telehealth", "item": "https://redmondmmh.com/telehealth" },
+        { "@type": "ListItem", "position": 3, "name": "Bozeman", "item": "https://redmondmmh.com/telehealth/montana/bozeman" }
+      ]
+    }
+    </script>
     <section id="page-content">
         <div class="container py-lg-5">
             <div class="row">

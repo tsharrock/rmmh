@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Murray | Online Psychiatry & Mental Health | Redmond MMH')
-@section('description', 'Skip the commute and the weeks-long wait. Redmond MMH provides expert psychiatric care, family medicine, and weight-loss treatment to Murray and Salt Lake County via secure telehealth.')
+@section('title', 'Telehealth in Murray, UT | Redmond MMH')
+@section('description', 'Skip the commute and the weeks-long wait. Redmond MMH treats Murray and Salt Lake County with psychiatric, primary, and weight-loss care via telehealth.')
 @section('keywords', 'Telehealth Murray, Online Psychiatry Salt Lake County, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Vernal | Online Mental Health & Psychiatry | Redmond MMH')
-@section('description', 'Skip the drive over the mountains. Redmond MMH provides expert psychiatric care, family medicine, and weight loss treatment to Vernal and the Uintah Basin via secure telehealth.')
+@section('title', 'Telehealth in Vernal, UT | Redmond MMH')
+@section('description', 'Skip the drive over the mountains. Redmond MMH treats Vernal and the Uintah Basin with psychiatric, primary, and weight-loss care via telehealth.')
 @section('keywords', 'Telehealth Vernal, Online Psychiatry Vernal, Mental Health Uintah County, Telehealth Utah, Redmond MMH')
 
 @section('jsonld')

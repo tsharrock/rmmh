@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Telehealth Maricopa | Online Mental Health & Psychiatry in AZ | Redmond MMH')
+@section('title', 'Telehealth in Maricopa, AZ | Redmond MMH')
 @section('description', 'Arizona-licensed psychiatric care, family medicine, and weight loss treatment for Maricopa, AZ residents via secure telehealth—no commute up I-10 required.')
 @section('keywords', 'Telehealth Maricopa AZ, Online Psychiatrist Maricopa Arizona, Mental Health Pinal County, Telehealth Arizona, Online Doctor Maricopa, Redmond MMH')
 

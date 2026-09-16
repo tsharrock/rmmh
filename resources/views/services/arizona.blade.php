@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Telehealth Services & Insurance in Arizona | Redmond Medical & Mental Health')
-@section('description', 'Redmond Medical and Mental Health offers telehealth Psychiatric Care, Family Medicine, and Medical Weight Loss to patients across Arizona, plus accepted insurance plans.')
+@section('title', 'Arizona Telehealth Services & Insurance | Redmond MMH')
+@section('description', 'Telehealth psychiatric care, family medicine, and medical weight loss for patients across Arizona, plus accepted insurance.')
 @section('keywords', 'Arizona Telehealth, Arizona Mental Health, Arizona Insurance Credentials, Psychiatric Care Arizona, Medical Weight Loss Arizona')
 
 @section('content')
