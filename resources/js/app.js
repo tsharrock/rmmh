@@ -19,3 +19,32 @@ document.addEventListener('click', function (e) {
         gtag('event', 'phone_click', { link_url: link.href });
     }
 });
+
+// Site-wide move announcement banner. Bump the storage key (e.g. _v2) to
+// re-show the banner to everyone for a future announcement.
+(function () {
+    const BANNER_DISMISSED_KEY = 'rmmh_banner_dismissed_v1';
+    const banner = document.getElementById('move-banner');
+    if (!banner) return;
+
+    try {
+        if (localStorage.getItem(BANNER_DISMISSED_KEY)) {
+            banner.remove();
+            return;
+        }
+    } catch (e) {
+        // localStorage unavailable (private mode, blocked, etc.) — leave banner visible.
+    }
+
+    const closeButton = document.getElementById('move-banner-close');
+    if (!closeButton) return;
+
+    closeButton.addEventListener('click', function () {
+        banner.remove();
+        try {
+            localStorage.setItem(BANNER_DISMISSED_KEY, '1');
+        } catch (e) {
+            // Ignore storage errors — banner is still dismissed for this page view.
+        }
+    });
+})();

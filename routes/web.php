@@ -42,6 +42,8 @@ Route::get('/insurance', function () {
     return view('insurance');
 })->name('insurance');
 
+Route::view('/notifications', 'notifications')->name('notifications');
+
 // State services & insurance pages
 Route::view('/services/utah', 'services.utah')->name('services.utah');
 Route::view('/services/arizona', 'services.arizona')->name('services.arizona');
@@ -53,10 +55,9 @@ Route::get('/telehealth', function () {
     return view('telehealth');
 })->name('telehealth');
 
-
-//Route::get('/areas-served/salt-lake-city', function () {
+// Route::get('/areas-served/salt-lake-city', function () {
 //    return view('areas-served/salt-lake-city');
-//});
+// });
 
 Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');

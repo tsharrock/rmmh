@@ -42,6 +42,7 @@ h3 {
 
 
 $rmmh_red: #D2123A;
+$rmmh_gold: #e0b973;
 
 .rmmh_red {
     color: $rmmh_red;
@@ -529,6 +530,53 @@ a.appt, button.appt {
         margin-top: 56px;
         margin-bottom: 56px;
     }
+}
+
+.move-banner {
+    background-color: $rmmh_gold;
+    color: #1a1a1a;
+}
+
+.move-banner-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 10px 40px 10px 16px;
+    position: relative;
+}
+
+.move-banner-text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.move-banner-link {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-decoration: underline;
+    white-space: nowrap;
+    margin-left: 8px;
+}
+
+.move-banner-link:hover {
+    color: #1a1a1a;
+}
+
+.move-banner-close {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: 0;
+    color: #1a1a1a;
+    font-size: 24px;
+    line-height: 1;
+    padding: 0;
+    cursor: pointer;
 }
 
 .navbar {
