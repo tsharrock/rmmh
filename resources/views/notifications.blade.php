@@ -29,9 +29,8 @@
                         Logan, Utah 84321
                     </p>
                     <p>
-                        If you have an upcoming appointment or questions about the move, please
-                        <a href="{{ route('contact') }}">contact us</a> or call us at
-                        <a href="tel:4359381440">(435) 938-1440</a>.
+                        If you have an upcoming appointment or questions about the move, <br class="d-none d-lg-block"/> please
+                        call or text us at <a href="tel:4359381440">(435) 938-1440</a>.
                     </p>
                 </div>
                 <div class="col-md-5 mt-4 mt-md-0">
