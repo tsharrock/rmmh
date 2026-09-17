@@ -8,17 +8,22 @@
 @section('content')
     <section class="py-5">
         <div class="container">
-            <h1>We're Moving</h1>
+            <h1>We're Moving!</h1>
             <div class="row align-items-start">
                 <div class="col-md-7">
                     <p>
                         We're excited to share that Redmond Medical & Mental Health is moving to a new
                         location in Logan, Utah. Our last day at our current address is
-                        <strong>October 9th</strong>. Our phone number, providers, and services remain the
-                        same &mdash; only our address is changing.
+                        <strong>October 12th, 2026</strong>.
                     </p>
                     <p>
-                        <strong>Our new address (starting October 10th):</strong><br>
+                        Our phone number, provider and services will mostly remain the same.  Our new location will serve as our home for ketamine treatments and in-person appointments, as needed.  The majority of appointments will now be scheduled as telehealth.  If you need a telehealth or ketamine appointment, please continue to use the online scheduler.
+                    </p>
+                    <p style="font-weight: 800; font-size: 18px">
+                        If you need an in-person appointment for injections, diabetes checks, drug tests, etc., please text us and we will schedule the appointment for you.
+                    </p>
+                    <p>
+                        <strong>Our new address (starting October 12th):</strong><br>
                         Redmond Medical & Mental Health<br>
                         196 South 100 West, Suite 101<br>
                         Logan, Utah 84321
