@@ -7,6 +7,7 @@
         <title>@yield('title')</title>
         <meta name="description" content="@yield('description', 'Redmond Medical and Mental Health')">
         <meta name="keywords" content="@yield('keywords', 'Salt Lake City Psychiatry, St. George Weight Loss, Ogden Online Therapy, Provo Mental Health')">
+        <meta name="robots" content="@yield('robots', 'index, follow')">
 
         <link rel="icon" type="image/png" href="/cross_icon.png">
         @php($canonicalUrl = rtrim(config('app.url'), '/') . request()->getPathInfo())
@@ -52,6 +53,7 @@
     </head>
     <body>
         @include('partials.header')
+        @include('partials.banner')
 
         @yield('content')
 
