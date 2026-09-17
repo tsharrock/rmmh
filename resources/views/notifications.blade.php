@@ -25,7 +25,7 @@
                     <p>
                         <strong>Our new address (starting October 12th):</strong><br>
                         Redmond Medical & Mental Health<br>
-                        196 South 100 West, Suite 101<br>
+                        196 South 100 West<br>
                         Logan, Utah 84321
                     </p>
                     <p>
