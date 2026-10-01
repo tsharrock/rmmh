@@ -78,6 +78,7 @@
             </div>
         </div>
     </div>
+    @include('partials.insurance-strip', ['state' => 'montana'])
     <div class="container mt-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -138,20 +139,13 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Lewistown and Central Montana</h2>
-                    <p>Our Montana-licensed telehealth services reach Lewistown, Denton, Moore, Hobson, Grass Range, and the surrounding communities of central Montana. Lewistown sits at the geographic center of the state in the Judith Basin, anchored by Central Montana Medical Center, an outreach facility of Benefis Health System. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with most major insurance plans; the full list appears below.</p>
+                    <p>Our Montana-licensed telehealth services reach Lewistown, Denton, Moore, Hobson, Grass Range, and the surrounding communities of central Montana. Lewistown sits at the geographic center of the state in the Judith Basin, anchored by Central Montana Medical Center, an outreach facility of Benefis Health System. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  We're in-network with most major insurance plans; the full list appears above.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Lewistown area pharmacy.</li>
                         <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one convenient appointment.  Scheduling is easy and most patients can be seen the same day or next.  We allow you to save time and save copays.</li>
                     </ul>
 
-                    <h3>Accepted Insurance Plans</h3>
-                    <ul>
-                        <li>BCBS Blue Card</li>
-                        <li>Mountain Health CO-OP</li>
-                        <li>Curative Health</li>
-                        <li>Allegiance Benefit Management Plan</li>
-                    </ul>
                 </div>
             </div>
             <div class="divider-line"></div>

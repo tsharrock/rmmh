@@ -78,6 +78,7 @@
             </div>
         </div>
     </div>
+    @include('partials.insurance-strip', ['state' => 'virginia'])
     <div class="container mt-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -145,10 +146,6 @@
                         <li><strong>Integrated Care:</strong> Cover physical and mental health in one visit &mdash; same-day or next-day scheduling saves you both time and copays.</li>
                     </ul>
 
-                    <h3>Accepted Insurance Plans</h3>
-                    <ul>
-                        <li>BCBS Blue Card</li>
-                    </ul>
                 </div>
             </div>
             <div class="divider-line"></div>

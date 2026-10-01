@@ -78,6 +78,7 @@
             </div>
         </div>
     </div>
+    @include('partials.insurance-strip', ['state' => 'iowa'])
     <div class="container mt-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -138,7 +139,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Council Bluffs and Pottawattamie County</h2>
-                    <p>Our Iowa-licensed telehealth services reach Council Bluffs, Carter Lake, Crescent, Underwood, Treynor, and the surrounding Pottawattamie County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  In-network coverage includes most major insurance plans — see below for details.</p>
+                    <p>Our Iowa-licensed telehealth services reach Council Bluffs, Carter Lake, Crescent, Underwood, Treynor, and the surrounding Pottawattamie County communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  In-network coverage includes most major insurance plans — see above for details.</p>
                     <p>Sitting on the Missouri River across from Omaha, Council Bluffs was designated by President Lincoln as the eastern terminus of the transcontinental railroad and is served locally by CHI Health Mercy Council Bluffs — and our telehealth visits complement the care you already receive there.</p>
                     <ul>
                         <li><strong>Iowa-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Iowa license and treats Iowa residents directly via secure telehealth.</li>
@@ -146,13 +147,6 @@
                         <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one convenient appointment.  Scheduling is easy and most patients can be seen the same day or next.  We allow you to save time and save copays.</li>
                     </ul>
 
-                    <h3>Accepted Insurance Plans</h3>
-                    <ul>
-                        <li>BCBS Wellmark of Iowa</li>
-                        <li>BCBS Blue Card</li>
-                        <li>Curative Health</li>
-                        <li>Midlands Choice (Cigna)</li>
-                    </ul>
                 </div>
             </div>
             <div class="divider-line"></div>

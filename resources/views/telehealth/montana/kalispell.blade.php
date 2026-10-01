@@ -78,6 +78,7 @@
             </div>
         </div>
     </div>
+    @include('partials.insurance-strip', ['state' => 'montana'])
     <div class="container mt-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -138,20 +139,13 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Kalispell and the Flathead Valley</h2>
-                    <p>Our Montana-licensed telehealth services reach Kalispell, Whitefish, Columbia Falls, Evergreen, Bigfork, and the surrounding Flathead Valley communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  Most major insurance plans are accepted; see our full list below. Kalispell is home to Logan Health, the region's largest hospital system, and serves as a gateway to both Flathead Lake and Glacier National Park.</p>
+                    <p>Our Montana-licensed telehealth services reach Kalispell, Whitefish, Columbia Falls, Evergreen, Bigfork, and the surrounding Flathead Valley communities. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages.  We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients.  Most major insurance plans are accepted; see our full list above. Kalispell is home to Logan Health, the region's largest hospital system, and serves as a gateway to both Flathead Lake and Glacier National Park.</p>
                     <ul>
                         <li><strong>Montana-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Montana license and treats Montana residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Kalispell area pharmacy.</li>
                         <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one convenient appointment.  Scheduling is easy and most patients can be seen the same day or next.  We allow you to save time and save copays.</li>
                     </ul>
 
-                    <h3>Accepted Insurance Plans</h3>
-                    <ul>
-                        <li>BCBS Blue Card</li>
-                        <li>Mountain Health CO-OP</li>
-                        <li>Curative Health</li>
-                        <li>Allegiance Benefit Management Plan</li>
-                    </ul>
                 </div>
             </div>
             <div class="divider-line"></div>

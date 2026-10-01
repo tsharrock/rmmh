@@ -49,6 +49,7 @@
             </div>
         </div>
     </div>
+    @include('partials.insurance-strip', ['state' => 'virginia'])
     <div class="container my-5">
         <div class="row">
             <div class="col-md-8">
@@ -59,13 +60,6 @@
                     state via secure telehealth. Ketamine Therapy and IV Nutrition & Injectables require in-person
                     administration and are only available at our Hyde Park, Utah clinic.</p>
 
-                <h2>Accepted Insurance Plans in Virginia</h2>
-                <p>We're credentialed with the following insurance plan in Virginia:</p>
-                <ul>
-                    <li>BCBS Blue Card</li>
-                </ul>
-                <p>Insurance acceptance may vary by plan. We recommend calling the number on the back of your card to
-                    confirm your telemedicine benefit before your visit.</p>
                 <p>Don't have insurance, or prefer not to bill your plan? We also accept cash pay for all services.</p>
 
                 <div class="divider-line"></div>

@@ -49,6 +49,7 @@
             </div>
         </div>
     </div>
+    @include('partials.insurance-strip', ['state' => 'iowa'])
     <div class="container my-5">
         <div class="row">
             <div class="col-md-8">
@@ -59,16 +60,6 @@
                     state via secure telehealth. Ketamine Therapy and IV Nutrition & Injectables require in-person
                     administration and are only available at our Hyde Park, Utah clinic.</p>
 
-                <h2>Accepted Insurance Plans in Iowa</h2>
-                <p>We're credentialed with the following insurance plans in Iowa:</p>
-                <ul>
-                    <li>BCBS Wellmark of Iowa</li>
-                    <li>BCBS Blue Card</li>
-                    <li>Curative Health</li>
-                    <li>Midlands Choice (Cigna)</li>
-                </ul>
-                <p>Insurance acceptance may vary by plan. We recommend calling the number on the back of your card to
-                    confirm your telemedicine benefit before your visit.</p>
                 <p>Don't have insurance, or prefer not to bill your plan? We also accept cash pay for all services.</p>
 
                 <div class="divider-line"></div>

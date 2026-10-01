@@ -78,6 +78,7 @@
             </div>
         </div>
     </div>
+    @include('partials.insurance-strip', ['state' => 'virginia'])
     <div class="container mt-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -138,17 +139,13 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Serving Chesapeake and Hampton Roads</h2>
-                    <p>Our Virginia-licensed telehealth services reach Chesapeake's Great Bridge, Deep Creek, South Norfolk, and Western Branch neighborhoods, along with Norfolk, Virginia Beach, and Suffolk across the wider Hampton Roads region. Bordering the Great Dismal Swamp and the Elizabeth River, Chesapeake is one of Virginia's largest cities by land area. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages. We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients. We're in-network with the insurance plan listed below.</p>
+                    <p>Our Virginia-licensed telehealth services reach Chesapeake's Great Bridge, Deep Creek, South Norfolk, and Western Branch neighborhoods, along with Norfolk, Virginia Beach, and Suffolk across the wider Hampton Roads region. Bordering the Great Dismal Swamp and the Elizabeth River, Chesapeake is one of Virginia's largest cities by land area. Redmond Medical and Mental Health brings virtual psychiatric services and specialty care to patients of all ages. We treat children as young as 4 years old, as well as adolescents, adults and geriatric patients. We're in-network with the insurance plans listed above.</p>
                     <ul>
                         <li><strong>Virginia-Licensed Provider:</strong> Tiffany Redmond, PA-C, holds an active Virginia license and treats Virginia residents directly via secure telehealth.</li>
                         <li><strong>Local Pharmacy Partnerships:</strong> Prescriptions are sent electronically to your preferred Chesapeake area pharmacy.</li>
                         <li><strong>Integrated Care:</strong> Address both your physical and mental health needs in one convenient appointment. Scheduling is easy and most patients can be seen the same day or next. We allow you to save time and save copays.</li>
                     </ul>
 
-                    <h3>Accepted Insurance Plans</h3>
-                    <ul>
-                        <li>BCBS Blue Card</li>
-                    </ul>
                 </div>
             </div>
             <div class="divider-line"></div>

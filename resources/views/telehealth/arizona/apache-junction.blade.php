@@ -86,6 +86,7 @@
             </div>
         </div>
     </div>
+    @include('partials.insurance-strip', ['state' => 'arizona'])
     <div class="container mt-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
