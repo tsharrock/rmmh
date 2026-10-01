@@ -4,6 +4,18 @@ section#hero {
     background-position: center bottom;
     padding: 100px 0;
 
+    // Desktop: fixed-height hero, content vertically centered
+    @media (min-width: 992px) {
+        height: 350px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        > .container {
+            width: 100%;
+        }
+    }
+
     // Phones: short image strip on top, text below on plain white
     @media (max-width: 767.98px) {
         position: relative;
@@ -34,7 +46,8 @@ section#hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 220px;
+    --tile-h: 220px;
+    height: var(--tile-h);
     text-decoration: none;
 
     .state-tile-shape {
@@ -54,19 +67,19 @@ section#hero {
     // sit close together instead of leaving uneven whitespace inside a
     // fixed-width column.
     &.utah {
-        width: 220px * (50 / 63);
+        width: calc(var(--tile-h) * 0.7937);
     }
     &.arizona {
-        width: 220px * (53 / 62);
+        width: calc(var(--tile-h) * 0.8548);
     }
     &.montana {
-        width: 220px * (85 / 50);
+        width: calc(var(--tile-h) * 1.7);
     }
     &.iowa {
-        width: 220px * (76 / 50);
+        width: calc(var(--tile-h) * 1.52);
     }
     &.virginia {
-        width: 220px * (100.29 / 44);
+        width: calc(var(--tile-h) * 2.2793);
     }
 
     &:hover .state-tile-shape {
@@ -91,6 +104,19 @@ section#hero {
     // offset leaves the label floating over empty space above the shape.
     &.virginia .state-tile-label {
         margin-top: 74px;
+    }
+
+    // Desktop: shrink so all five fit in one row
+    @media (min-width: 992px) {
+        --tile-h: 110px;
+
+        .state-tile-label {
+            font-size: 1rem;
+        }
+
+        &.virginia .state-tile-label {
+            margin-top: 37px;
+        }
     }
 
     // Phones/tablets: smaller tiles (2 per row on phones, 3 on tablets); the shape scales to fit via mask-size: contain
