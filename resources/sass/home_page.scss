@@ -3,6 +3,30 @@ section#hero {
     background-size: cover;
     background-position: center bottom;
     padding: 100px 0;
+
+    // Phones: short image strip on top, text below on plain white
+    @media (max-width: 767.98px) {
+        position: relative;
+        padding: 240px 0 32px;
+        background-color: #fff;
+        background-size: 0 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 220px;
+            background: inherit;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .text-white {
+            color: #1a1a1a !important;
+        }
+    }
 }
 
 .state-tile {
@@ -67,6 +91,32 @@ section#hero {
     // offset leaves the label floating over empty space above the shape.
     &.virginia .state-tile-label {
         margin-top: 74px;
+    }
+
+    // Phones/tablets: smaller tiles (2 per row on phones, 3 on tablets); the shape scales to fit via mask-size: contain
+    @media (max-width: 991.98px) {
+        height: 120px;
+        width: 100% !important;
+
+        .state-tile-label {
+            font-size: 1rem;
+        }
+
+        &.virginia .state-tile-label {
+            margin-top: 40px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        height: 100px;
+
+        .state-tile-label {
+            font-size: 0.9rem;
+        }
+
+        &.virginia .state-tile-label {
+            margin-top: 34px;
+        }
     }
 
     &.utah .state-tile-shape {

@@ -110,33 +110,33 @@
                     <p>Choose your state to see the services and insurance we offer near you.</p>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-end g-4 mt-2">
-                <div class="col-auto">
+            <div class="row justify-content-center align-items-end g-3 g-md-4 mt-2">
+                <div class="col-6 col-md-4 col-lg-auto">
                     <a class="state-tile utah" href="{{ route('services.utah') }}">
                         <span class="state-tile-shape"></span>
                         <span class="state-tile-label">Utah</span>
                     </a>
                 </div>
-                <div class="col-auto">
+                <div class="col-6 col-md-4 col-lg-auto">
                     <a class="state-tile arizona" href="{{ route('services.arizona') }}">
                         <span class="state-tile-shape"></span>
                         <span class="state-tile-label">Arizona</span>
                     </a>
                 </div>
-                <div class="col-auto">
+                <div class="col-6 col-md-4 col-lg-auto">
                     <a class="state-tile montana" href="{{ route('services.montana') }}">
                         <span class="state-tile-shape"></span>
                         <span class="state-tile-label">Montana</span>
                     </a>
                 </div>
                 <div class="w-100 d-none d-lg-block"></div>
-                <div class="col-auto">
+                <div class="col-6 col-md-4 col-lg-auto">
                     <a class="state-tile iowa" href="{{ route('services.iowa') }}">
                         <span class="state-tile-shape"></span>
                         <span class="state-tile-label">Iowa</span>
                     </a>
                 </div>
-                <div class="col-auto">
+                <div class="col-6 col-md-4 col-lg-auto">
                     <a class="state-tile virginia" href="{{ route('services.virginia') }}">
                         <span class="state-tile-shape"></span>
                         <span class="state-tile-label">Virginia</span>

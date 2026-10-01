@@ -526,6 +526,47 @@ a.appt, button.appt {
             }
         }
     }
+
+    // Phones: short image strip on top, text below on plain white (no overlay panel).
+    // `.border-bottom` bumps specificity to match the per-variant rules above; source order wins.
+    @media (max-width: 767.98px) {
+        &.border-bottom {
+            position: relative;
+            padding: 240px 0 32px;
+            background-color: #fff;
+            background-size: 0 0; // hide the full-bleed image; the strip below re-draws it
+            color: #1a1a1a !important;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 220px;
+                background: inherit; // picks up the variant's image + position
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            > .container > .row > [class*="col-"] {
+                background: none;
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+                padding-left: calc(var(--bs-gutter-x) * .5);
+                padding-right: calc(var(--bs-gutter-x) * .5);
+                padding-top: 0;
+                padding-bottom: 0;
+
+                h1, p {
+                    color: #1a1a1a !important;
+                }
+            }
+        }
+    }
 }
 
 .sidebar-border {
