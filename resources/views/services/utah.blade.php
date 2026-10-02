@@ -61,7 +61,6 @@
                 <p>We're credentialed with the following insurance plans in Utah. Coverage can vary by plan, so we recommend confirming your telemedicine or in-office benefit before your visit.</p>
                 <div class="row">
                     <div class="col-lg-6">
-                        <h4>Current credentials:</h4>
                         <ul>
                             <li>Aetna</li>
                             <li>Altius/Coventry</li>
@@ -81,12 +80,16 @@
                             <li>HealthNet Tricare</li>
                             <li>HealthUtah Physicians Network</li>
                             <li>HealthWest Administrators</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul>
                             <li>Humana</li>
                             <li>Medicaid of Utah</li>
                             <li>Medicaid of Idaho</li>
                             <li>Medicare Part B of Utah</li>
                             <li>Medicare Railroad</li>
-                            <li>Molina Medicaid</li>
+                            <li>Molina Healthcare of Utah (commercial plans only)</li>
                             <li>Motiv Health</li>
                             <li>MultiPlan/PHCS (Beech Street)</li>
                             <li>Optum Behavioral Health</li>
@@ -94,16 +97,11 @@
                             <li>Regence Blue Cross Blue Shield</li>
                             <li>Samera Health</li>
                             <li>Select Health</li>
+                            <li>Triwest Healthcare Alliance</li>
                             <li>UMR</li>
                             <li>United Healthcare</li>
                             <li>University of Utah Health Plan / Healthy U</li>
                             <li>Wise</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4>Pending credentials:</h4>
-                        <ul>
-                            <li>Triwest Healthcare Alliance</li>
                         </ul>
                     </div>
                 </div>

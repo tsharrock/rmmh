@@ -616,15 +616,24 @@ a.appt, button.appt {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    padding: 10px 40px 10px 16px;
+    padding: 20px 40px 20px 16px;
     position: relative;
 }
 
 .move-banner-text {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    line-height: 1.5;
     text-align: center;
+
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.move-banner-line {
+    display: block;
 }
 
 .move-banner-link {
