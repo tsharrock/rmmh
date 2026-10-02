@@ -53,7 +53,10 @@
     </head>
     <body>
         @include('partials.header')
-        @include('partials.banner')
+        {{-- Move banner is only relevant to Utah + main-site pages; hide on out-of-state pages --}}
+        @unless (request()->is('services/arizona', 'services/montana', 'services/iowa', 'services/virginia', 'telehealth/arizona/*', 'telehealth/montana/*', 'telehealth/iowa/*', 'telehealth/virginia/*'))
+            @include('partials.banner')
+        @endunless
 
         @yield('content')
 

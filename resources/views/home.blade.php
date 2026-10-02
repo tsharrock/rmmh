@@ -90,7 +90,7 @@
     <section id="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-white">
+                <div class="col-12 text-white">
                     <h1 class="text-white">Integrated Mental Health & Primary Care in Utah, Arizona, Montana, Iowa and Virginia</h1>
                     <p>We know your time is valuable and attending multiple doctor appointments to get each of your medical
                         concerns addressed is very time-consuming. Our goal has always been to simplify this process. Say
@@ -102,41 +102,40 @@
             </div>
         </div>
     </section>
-    <section id="page-content" class="py-5">
-        <div class="container py-lg-5">
+    <section id="page-content" class="pb-5">
+        <div class="container py-lg-3">
             <div class="row text-center">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Where are you located?</h2>
                     <p>Choose your state to see the services and insurance we offer near you.</p>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-end g-4 mt-2">
-                <div class="col-auto">
-                    <a class="state-tile utah" href="{{ route('services.utah') }}">
-                        <span class="state-tile-shape"></span>
-                        <span class="state-tile-label">Utah</span>
-                    </a>
-                </div>
-                <div class="col-auto">
+            <div class="row justify-content-center align-items-end g-3 g-md-4 mt-2">
+                <div class="col-6 col-md-4 col-lg-auto">
                     <a class="state-tile arizona" href="{{ route('services.arizona') }}">
                         <span class="state-tile-shape"></span>
                         <span class="state-tile-label">Arizona</span>
                     </a>
                 </div>
-                <div class="col-auto">
-                    <a class="state-tile montana" href="{{ route('services.montana') }}">
-                        <span class="state-tile-shape"></span>
-                        <span class="state-tile-label">Montana</span>
-                    </a>
-                </div>
-                <div class="w-100 d-none d-lg-block"></div>
-                <div class="col-auto">
+                <div class="col-6 col-md-4 col-lg-auto">
                     <a class="state-tile iowa" href="{{ route('services.iowa') }}">
                         <span class="state-tile-shape"></span>
                         <span class="state-tile-label">Iowa</span>
                     </a>
                 </div>
-                <div class="col-auto">
+                <div class="col-6 col-md-4 col-lg-auto">
+                    <a class="state-tile montana" href="{{ route('services.montana') }}">
+                        <span class="state-tile-shape"></span>
+                        <span class="state-tile-label">Montana</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-auto">
+                    <a class="state-tile utah" href="{{ route('services.utah') }}">
+                        <span class="state-tile-shape"></span>
+                        <span class="state-tile-label">Utah</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-auto">
                     <a class="state-tile virginia" href="{{ route('services.virginia') }}">
                         <span class="state-tile-shape"></span>
                         <span class="state-tile-label">Virginia</span>
@@ -145,7 +144,7 @@
             </div>
         </div>
     </section>
-    <section id="work-together" class="mt-3 mt-lg-5">
+    <section id="work-together" class="mt-3 mt-lg-0">
         <div class="row py-lg-5">
             <div class="col-lg-6 offset-lg-3">
                 <h3>How these services work together</h3>

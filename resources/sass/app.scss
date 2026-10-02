@@ -78,6 +78,39 @@ a.appt, button.appt {
     }
 }
 
+.insurance-strip {
+    background-color: $rmmh_gray;
+    border-bottom: 1px solid #dde3e3;
+    border-left: 4px solid $rmmh_red;
+    padding: 1.25rem 0;
+
+    .insurance-strip-title {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .insurance-strip-plans {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 0 0 0.75rem;
+        padding: 0;
+    }
+
+    .insurance-pill {
+        background: #fff;
+        border: 1px solid $rmmh_red;
+        border-radius: 999px;
+        padding: 0.25rem 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .insurance-strip-note {
+        font-size: 0.85rem;
+        margin: 0;
+    }
+}
+
 .hero {
     padding: 150px 0;
     background-repeat: no-repeat;
@@ -493,6 +526,47 @@ a.appt, button.appt {
             }
         }
     }
+
+    // Phones: short image strip on top, text below on plain white (no overlay panel).
+    // `.border-bottom` bumps specificity to match the per-variant rules above; source order wins.
+    @media (max-width: 767.98px) {
+        &.border-bottom {
+            position: relative;
+            padding: 240px 0 32px;
+            background-color: #fff;
+            background-size: 0 0; // hide the full-bleed image; the strip below re-draws it
+            color: #1a1a1a !important;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 220px;
+                background: inherit; // picks up the variant's image + position
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            > .container > .row > [class*="col-"] {
+                background: none;
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+                padding-left: calc(var(--bs-gutter-x) * .5);
+                padding-right: calc(var(--bs-gutter-x) * .5);
+                padding-top: 0;
+                padding-bottom: 0;
+
+                h1, p {
+                    color: #1a1a1a !important;
+                }
+            }
+        }
+    }
 }
 
 .sidebar-border {
@@ -542,15 +616,24 @@ a.appt, button.appt {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    padding: 10px 40px 10px 16px;
+    padding: 20px 40px 20px 16px;
     position: relative;
 }
 
 .move-banner-text {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    line-height: 1.5;
     text-align: center;
+
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.move-banner-line {
+    display: block;
 }
 
 .move-banner-link {
