@@ -11,7 +11,9 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/checkin', function() {
-    return view('checkin');
+    return response()
+        ->view('checkin')
+        ->header('X-Robots-Tag', 'noindex, nofollow, noarchive, nosnippet, noimageindex');
 });
 
 Route::get('/about', function () {

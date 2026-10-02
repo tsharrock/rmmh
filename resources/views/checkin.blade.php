@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <title>RMMH Check in</title>
     <style>
         div {
