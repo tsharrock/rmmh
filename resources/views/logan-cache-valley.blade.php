@@ -40,7 +40,7 @@
                 <div class="col-lg-5">
                     <h1 class="text-white">Integrated Medical & Mental Health in Cache Valley</h1>
                     <p class="text-white">Serving Logan, Smithfield, Nibley, Hyde Park and all of Cache Valley with comprehensive in-person or telehealth care. </p>
-                    <a class="btn rmmh_button_primary me-3" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Schedule Your Visit</a>
+                    <a class="btn rmmh_button_primary me-3" href="{{ route('book') }}">Schedule Your Visit</a>
                 </div>
             </div>
         </div>

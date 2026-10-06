@@ -1,0 +1,118 @@
+.iv-checklist {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        padding-left: 1.75rem;
+        position: relative;
+        font-weight: 600;
+        margin-bottom: .35rem;
+
+        &::before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: #6b6b6b;
+        }
+    }
+}
+
+.drip-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin: 1.5rem 0;
+}
+
+.drip {
+    --drip-color: #ccc;
+    --drip-text: #fff;
+    position: relative;
+    background: var(--drip-color);
+    color: var(--drip-text);
+    padding: 3.25rem 1.5rem 2.5rem;
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(0deg);
+    text-align: center;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .drip-name {
+        position: absolute;
+        top: .9rem;
+        left: 1.5rem;
+        font-family: "Brush Script MT", "Segoe Script", cursive;
+        font-style: italic;
+        font-size: 1.35rem;
+        color: var(--drip-color);
+        filter: brightness(.85);
+        text-transform: lowercase;
+    }
+
+    p {
+        margin: 0;
+        font-weight: 500;
+        line-height: 1.35;
+    }
+
+    .drip-price {
+        position: absolute;
+        right: .5rem;
+        bottom: .5rem;
+        background: var(--drip-price, #555);
+        color: #fff;
+        font-weight: 700;
+        padding: .55rem .7rem;
+        border-radius: 0 50% 50% 50%;
+        font-size: .95rem;
+    }
+
+    &.fountain { --drip-color: #f0b9a3; --drip-text: #3a2a24; --drip-price: #7d97a3; }
+    &.ironman { --drip-color: #e5b93f; --drip-text: #3a2f10; --drip-price: #e5b93f; }
+    &.skinny { --drip-color: #7d8f3a; --drip-text: #fff; --drip-price: #3a3036; }
+    &.pain { --drip-color: #503d4c; --drip-text: #e8dce4; --drip-price: #a2492e; }
+    &.hydration { --drip-color: #c9604c; --drip-text: #fff; --drip-price: #e0a690; }
+    &.immunity { --drip-color: #8fa1a8; --drip-text: #1f2a2e; --drip-price: #8fa1a8; }
+}
+
+.im-injectables {
+    background: #e6e6e6;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+    }
+
+    .im-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        columns: 2 260px;
+        column-gap: 2.5rem;
+
+        li {
+            display: flex;
+            align-items: baseline;
+            gap: .4rem;
+            font-weight: 600;
+            break-inside: avoid;
+            margin-bottom: .25rem;
+
+            &::after {
+                content: "";
+                order: 1;
+                flex: 1;
+                border-bottom: 2px dotted #888;
+            }
+
+            .price { order: 2; }
+            small { font-weight: 400; display: block; }
+        }
+    }
+}

@@ -81,7 +81,7 @@
                 <div class="col-lg-5">
                     <h1>Telehealth in American Fork</h1>
                     <p>See a Utah-licensed provider from home or the office &mdash; no commute, no waiting room.</p>
-                    <a class="btn rmmh_button_primary me-3" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Schedule Your Visit</a>
+                    <a class="btn rmmh_button_primary me-3" href="{{ route('book') }}">Schedule Your Visit</a>
                 </div>
             </div>
         </div>

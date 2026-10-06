@@ -164,7 +164,7 @@
 
                 <h2>Ready to find a new perspective?</h2>
                 <p>Don't wait months for a "maybe." Experience the rapid change that integrated medical and mental health care can provide.</p>
-                <a class="btn rmmh_button_primary" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Book Your Evaluation</a> <a class="btn rmmh_button_secondary" href="tel:4359381440">Call/Text (435) 938-1440</a>
+                <a class="btn rmmh_button_primary" href="{{ route('book') }}">Book Your Evaluation</a> <a class="btn rmmh_button_secondary" href="tel:4359381440">Call/Text (435) 938-1440</a>
 
             </div>
 

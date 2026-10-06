@@ -73,7 +73,7 @@
                 <div class="col-lg-5">
                     <h1>Telehealth in Charlottesville</h1>
                     <p>Virginia-licensed Mental Health and medical care from the comfort of your home.</p>
-                    <a class="btn rmmh_button_primary me-3" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Schedule Your Visit</a>
+                    <a class="btn rmmh_button_primary me-3" href="{{ route('book') }}">Schedule Your Visit</a>
                 </div>
             </div>
         </div>

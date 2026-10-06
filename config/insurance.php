@@ -17,7 +17,7 @@ return [
             'BCBS Blue Card',
             'Mountain Health CO-OP',
             'Curative Health',
-            'Allegiance Benefit Management Plan',
+            'Allegiance Benefit Management Plan (Cigna)',
             'First Choice Health Network (Aetna)',
             'Optum Behavioral Health',
         ],

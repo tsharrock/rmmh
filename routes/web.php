@@ -48,6 +48,8 @@ Route::get('/insurance', function () {
     return view('insurance');
 })->name('insurance');
 
+Route::view('/book', 'book')->name('book');
+
 Route::view('/notifications', 'notifications')->name('notifications');
 
 // State services & insurance pages

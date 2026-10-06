@@ -4,6 +4,5 @@
         <img src="/img/tiffany_redmond_cropped.webp" alt="Tiffany Redmond, PA-C"/>
         <h4 class="my-3">Tiffany Redmond, PA-C</h4>
     </div>
-    <div id="nextpatient-widget"></div>
-    <script src="https://nextpatient.co/p/2083/provider-search.js" async=""></script>
+    @include('partials.booking-gate', ['mode' => 'widget'])
 </div>

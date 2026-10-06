@@ -85,7 +85,7 @@
                 <div class="col-lg-5">
                     <h1>Expert Psychiatric & Medical Care for Cedar City—From the Comfort of Home.</h1>
                     <p>Tiffany Redmond, PA-C, provides integrated telehealth services to patients across Iron County and the Cedar City area, home to Southern Utah University and the Utah Shakespeare Festival. Your time is important to us and we won’t waste it — we are on time for our visits and can usually see patients the same day or next.</p>
-                    <a class="btn rmmh_button_primary me-3" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Schedule Your Visit</a>
+                    <a class="btn rmmh_button_primary me-3" href="{{ route('book') }}">Schedule Your Visit</a>
                 </div>
             </div>
         </div>

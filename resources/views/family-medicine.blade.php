@@ -166,7 +166,7 @@
                 <h2>Take the Next Step Toward Wellness</h2>
                 <p class="mb-3">Whether it’s time for your annual check-up or you have a specific health concern, our team is ready
                     to listen.</p>
-                <a class="btn rmmh_button_primary" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Schedule an Appointment</a> <a class="btn rmmh_button_secondary" href="/about#meet-provider">Meet your provider</a>
+                <a class="btn rmmh_button_primary" href="{{ route('book') }}">Schedule an Appointment</a> <a class="btn rmmh_button_secondary" href="/about#meet-provider">Meet your provider</a>
 
             </div>
 

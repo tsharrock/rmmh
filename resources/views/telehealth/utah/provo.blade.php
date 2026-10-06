@@ -108,7 +108,7 @@
                 <div class="col-lg-5">
                     <h1>Psychiatry Services in Provo</h1>
                     <p>Expert Mental Health Care and Medication Management for Utah County Residents via Secure Telehealth.</p>
-                    <a class="btn rmmh_button_primary me-3" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Schedule Your Visit</a>
+                    <a class="btn rmmh_button_primary me-3" href="{{ route('book') }}">Schedule Your Visit</a>
                 </div>
             </div>
         </div>

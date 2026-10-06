@@ -85,7 +85,7 @@
                 <div class="col-lg-5">
                     <h1>St. George Telehealth Services</h1>
                     <p>Premium Psychiatry, Family Medicine, and Weight Loss for Washington County Residents.</p>
-                    <a class="btn rmmh_button_primary me-3" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Schedule Your Visit</a>
+                    <a class="btn rmmh_button_primary me-3" href="{{ route('book') }}">Schedule Your Visit</a>
                 </div>
             </div>
         </div>

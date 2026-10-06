@@ -124,10 +124,6 @@ a.appt, button.appt {
         background-image: url("./img/header_psych.webp");
         padding: 160px 0;
         background-position: center 80%;
-        color: #fff !important;
-        h1 {
-            color: #fff !important;
-        }
     }
     &.ketamine {
         background-image: url("./img/header_mental_health.webp");
@@ -848,4 +844,5 @@ section#page-content {
 @import "buttons";
 @import "home_page";
 @import "about";
+@import "iv_fluids";
 

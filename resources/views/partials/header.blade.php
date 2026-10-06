@@ -7,8 +7,7 @@
                 <div class="nav-cta d-none d-lg-flex">
                     <div class="nav-phone text-black">Phone or Text: <a class="text-black" href="tel:4359381440">(435)
                             938-1440</a></div>
-                    <a href="https://nextpatient.co/p/redmondmedical/schedule" class="btn rmmh_button_primary"
-                        target="_blank">Schedule an Appointment</a>
+                    <a href="{{ route('book') }}" class="btn rmmh_button_primary">Schedule an Appointment</a>
                 </div>
 
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -54,8 +53,7 @@
                 <div class="nav-cta nav-cta-mobile d-lg-none">
                     <div class="nav-phone text-black">Phone or Text: <a class="text-black" href="tel:4359381440">(435)
                             938-1440</a></div>
-                    <a href="https://nextpatient.co/p/redmondmedical/schedule" class="appt appt-sm"
-                        target="_blank">Schedule an Appointment</a>
+                    <a href="{{ route('book') }}" class="appt appt-sm">Schedule an Appointment</a>
                 </div>
             </div>
         </div>

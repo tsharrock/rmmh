@@ -70,34 +70,65 @@
 
                 <div class="divider-line"></div>
 
-                <h3>Our Customizable Drip Menu</h3>
-                <p>Choose from our seven specialized formulas tailored to your specific health goals:</p>
-                <ul>
-                    <li>⚡ <strong>The Energy Infusion:</strong> Packed with B vitamins and amino acids to fight chronic fatigue and dehydration.</li>
-
-                    <li>🛡️ <strong>The Immunity Drip:</strong> Your best defense against cold and flu season. Loaded with Vitamin C, Zinc, and B vitamins.</li>
-
-                    <li>✨ <strong>The Fountain of Youth:</strong> The "mother of all drips" for healthy skin, hair, and nails. Designed to fight aging from a cellular level.</li>
-
-                    <li>🏋️ <strong>The Ironman:</strong> Performance and recovery for athletes. Loaded with minerals, amino acids, and Vitamin C to get you back in the gym faster.</li>
-
-                    <li>💊 <strong>The Pain Pill:</strong> A "stacked" drip for fast recovery. Contains fluids, B vitamins, and anti-nausea/pain medications to relieve headaches and muscle spasms.</li>
-
-                    <li>💧 <strong>The Hydration Elixir:</strong> Pure, effective hydration to combat the symptoms of dehydration and brain fog.</li>
-
-                    <li>🔥 <strong>The Skinny Shot:</strong> A potent formula to kickstart fat loss and maintain results after Semaglutide or Tirzepatide therapy.</li>
+                <h3>IV Nutrition &amp; Injectables</h3>
+                <p>Experience the benefits of:</p>
+                <ul class="iv-checklist">
+                    <li>Rapid Rehydration &amp; Nutrient Absorption</li>
+                    <li>Anti-Aging Benefit</li>
+                    <li>Boosts Energy</li>
+                    <li>Supports Athletic Performance</li>
+                    <li>Improves Overall Wellness</li>
                 </ul>
 
-                <div class="divider-line"></div>
+                <div class="drip-grid">
+                    <div class="drip fountain">
+                        <span class="drip-name">fountain of youth</span>
+                        <p>The ultimate drip for radiant, strong &amp; healthy skin, hair &amp; nails</p>
+                        <span class="drip-price">$149</span>
+                    </div>
+                    <div class="drip ironman">
+                        <span class="drip-name">the ironman</span>
+                        <p>Recover faster with our packed drip formulated for muscle, energy &amp; stress recovery</p>
+                        <span class="drip-price">$129</span>
+                    </div>
+                    <div class="drip skinny">
+                        <span class="drip-name">skinny shot</span>
+                        <p>Vitamins &amp; nutrients that target fat. Jump start your metabolism or enhance your current weight loss regimen</p>
+                        <span class="drip-price">$129</span>
+                    </div>
+                    <div class="drip pain">
+                        <span class="drip-name">pain pill</span>
+                        <p>Recover from the party with a drip formulated for headaches, nausea, pain, dehydration, muscle spasms, &amp; fatigue</p>
+                        <span class="drip-price">$149</span>
+                    </div>
+                    <div class="drip hydration">
+                        <span class="drip-name">hydration elixir</span>
+                        <p>Relieve symptoms of dehydration like thirst &amp; fatigue to feel better fast</p>
+                        <span class="drip-price">$109</span>
+                    </div>
+                    <div class="drip immunity">
+                        <span class="drip-name">immunity drip</span>
+                        <p>Boost your immune system fast with Vitamin C, Zinc, and B-Vitamins</p>
+                        <span class="drip-price">$99</span>
+                    </div>
+                </div>
 
-                <h3>Injectables & Quick Boosters</h3>
-                <p>Don’t have time for a full IV? Our targeted injectables provide a quick clinical boost in minutes:</p>
-                <ul>
-                    <li><strong>Wellness:</strong> Vitamin B12, Vitamin D3 (50,000 IU), Vitamin C</li>
-                    <li><strong>Beauty & Detox:</strong> Biotin, Glutathione, Taurine</li>
-                    <li><strong>Recovery:</strong> Toradol (Pain), Zofran (Nausea), NAD+</li>
-                    <li><strong>Immunity:</strong> Immunity Booster (C, Glutathione, & Zinc)</li>
-                </ul>
+                <div class="im-injectables">
+                    <h3>IM Injectables</h3>
+                    <ul class="im-list">
+                        <li><span>Ascorbic Acid (Vitamin C)</span><span class="price">$25</span></li>
+                        <li><span>B12</span><span class="price">$25</span></li>
+                        <li><span>Biotin</span><span class="price">$30</span></li>
+                        <li><span>Glutathione</span><span class="price">$35</span></li>
+                        <li><span>Immunity Booster<small>(Glutathione, Zinc, Vitamin C)</small></span><span class="price">$35</span></li>
+                        <li><span>Kenalog</span><span class="price">$35</span></li>
+                        <li><span>NAD+</span><span class="price">$100</span></li>
+                        <li><span>Ondansetron</span><span class="price">$18</span></li>
+                        <li><span>Taurine</span><span class="price">$25</span></li>
+                        <li><span>Toradol</span><span class="price">$35</span></li>
+                        <li><span>Vitamin D 50,000 IU</span><span class="price">$35</span></li>
+                    </ul>
+                </div>
 
                 <div class="divider-line"></div>
 
@@ -117,7 +148,7 @@
 
                 <h3>Ready to feel your best?</h3>
                 <p>Visit us in Hyde Park or schedule your appointment online.</p>
-                <a class="btn rmmh_button_primary" href="https://nextpatient.co/p/redmondmedical/schedule" target="_blank">Schedule and appointment</a> <a class="btn rmmh_button_secondary" href="tel:4359381440">Call/Text (435) 938-1440</a>
+                <a class="btn rmmh_button_primary" href="{{ route('book') }}">Schedule and appointment</a> <a class="btn rmmh_button_secondary" href="tel:4359381440">Call/Text (435) 938-1440</a>
             </div>
 
             <div class="col-md-4">

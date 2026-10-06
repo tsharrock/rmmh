@@ -96,8 +96,7 @@
                         concerns addressed is very time-consuming. Our goal has always been to simplify this process. Say
                         goodbye to long waits in waiting rooms and endless referrals by providers who are unable to address
                         all of your issues in a single visit. Welcome to Redmond Medical and Mental Health.</p>
-                    <a class="btn rmmh_button_primary me-3" href="https://nextpatient.co/p/redmondmedical/schedule"
-                        target="_blank">Schedule an Appointment</a>
+                    <a class="btn rmmh_button_primary me-3" href="{{ route('book') }}">Schedule an Appointment</a>
                 </div>
             </div>
         </div>
