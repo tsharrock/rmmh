@@ -16,10 +16,10 @@
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "245 N. 700 W.",
-    "addressLocality": "Hyde Park",
+    "streetAddress": "196 South 100 West",
+    "addressLocality": "Logan",
     "addressRegion": "UT",
-    "postalCode": "84318",
+    "postalCode": "84321",
     "addressCountry": "US"
   },
   "areaServed": [
@@ -261,7 +261,7 @@
 
 
                 <p><span class="question">Can new patients start with telehealth?</span><br />
-                In many cases, yes. We can conduct initial psychiatric or medical consultations virtually. However, some services—like Ketamine Therapy, IV Nutrition, or certain physical exams—must be done in person at our Hyde Park clinic.</p>
+                In many cases, yes. We can conduct initial psychiatric or medical consultations virtually. However, some services—like Ketamine Therapy, IV Nutrition, or certain physical exams—must be done in person at our Logan clinic.</p>
 
                 <div class="divider-line"></div>
 

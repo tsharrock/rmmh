@@ -66,7 +66,7 @@
       "name": "Do I need to visit an office in Tucson?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No physical office visit is required — Arizona telehealth appointments are conducted securely from home. Services that require a hands-on exam, such as Ketamine therapy or IV nutrition, are only available in person at our Hyde Park, Utah clinic."
+        "text": "No physical office visit is required — Arizona telehealth appointments are conducted securely from home. Services that require a hands-on exam, such as Ketamine therapy or IV nutrition, are only available in person at our Logan, Utah clinic."
       }
     }
   ]
@@ -207,7 +207,7 @@
                     We're in-network with most major Arizona insurance plans. See our <a class="rmmh_red" href="{{ route('insurance') }}">full accepted insurance list</a> or call our office to confirm your specific plan.</p>
 
                     <p><span class="question">Do I need to visit an office in Tucson?</span><br />
-                    No physical office visit is required — Arizona telehealth appointments are conducted securely from home. Services that require a hands-on exam, such as <a class="rmmh_red" href="{{ route('ketamine') }}">Ketamine therapy</a> or <a class="rmmh_red" href="{{ route('iv-fluids') }}">IV nutrition</a>, are only available in person at our Hyde Park, Utah clinic.</p>
+                    No physical office visit is required — Arizona telehealth appointments are conducted securely from home. Services that require a hands-on exam, such as <a class="rmmh_red" href="{{ route('ketamine') }}">Ketamine therapy</a> or <a class="rmmh_red" href="{{ route('iv-fluids') }}">IV nutrition</a>, are only available in person at our Logan, Utah clinic.</p>
                 </div>
             </div>
         </div>

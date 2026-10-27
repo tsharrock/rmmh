@@ -18,10 +18,10 @@
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "245 N. 700 W.",
-    "addressLocality": "Hyde Park",
+    "streetAddress": "196 South 100 West",
+    "addressLocality": "Logan",
     "addressRegion": "UT",
-    "postalCode": "84318",
+    "postalCode": "84321",
     "addressCountry": "US"
   },
   "areaServed": { "@type": "State", "name": "Iowa" },
@@ -58,7 +58,7 @@
                 </div>
                 <p>Tiffany Redmond, PA-C, is licensed in Iowa and provides the following services to patients across the
                     state via secure telehealth. Ketamine Therapy and IV Nutrition & Injectables require in-person
-                    administration and are only available at our Hyde Park, Utah clinic.</p>
+                    administration and are only available at our Logan, Utah clinic.</p>
 
                 <p>Don't have insurance, or prefer not to bill your plan? We also accept cash pay for all services.</p>
 

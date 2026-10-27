@@ -19,10 +19,10 @@
     "telephone": "+1-435-938-1440",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "245 N. 700 W.",
-      "addressLocality": "Hyde Park",
+      "streetAddress": "196 South 100 West",
+      "addressLocality": "Logan",
       "addressRegion": "UT",
-      "postalCode": "84318",
+      "postalCode": "84321",
       "addressCountry": "US"
     }
   },

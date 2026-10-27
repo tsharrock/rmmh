@@ -10,7 +10,7 @@
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Ketamine Therapy",
-  "description": "Medically supervised ketamine therapy for treatment-resistant depression, PTSD, and chronic pain at our Hyde Park, Utah clinic.",
+  "description": "Medically supervised ketamine therapy for treatment-resistant depression, PTSD, and chronic pain at our Logan, Utah clinic.",
   "url": "https://redmondmmh.com/ketamine",
   "provider": {
     "@type": "MedicalBusiness",
@@ -19,10 +19,10 @@
     "telephone": "+1-435-938-1440",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "245 N. 700 W.",
-      "addressLocality": "Hyde Park",
+      "streetAddress": "196 South 100 West",
+      "addressLocality": "Logan",
       "addressRegion": "UT",
-      "postalCode": "84318",
+      "postalCode": "84321",
       "addressCountry": "US"
     }
   },

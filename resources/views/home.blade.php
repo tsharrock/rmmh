@@ -3,7 +3,7 @@
 @section('title', 'Integrated Mental Health & Primary Care | Redmond MMH')
 @section('description', 'One-stop psychiatric care, primary care, IV therapy, Ketamine, and weight loss via telehealth in UT, AZ, MT, IA & VA.')
 @section('keywords',
-    'Integrated Mental Health Utah, Primary Care Hyde Park, IV Therapy Logan, Ketamine Treatment Utah,
+    'Integrated Mental Health Utah, Primary Care Logan, IV Therapy Logan, Ketamine Treatment Utah,
     Medical Weight Loss Logan, Telehealth Montana, Telehealth Iowa, Telehealth Virginia')
 
 @section('jsonld')
@@ -14,7 +14,7 @@
   "@id": "https://redmondmmh.com/#organization",
   "name": "Redmond Medical & Mental Health",
   "alternateName": "Redmond MMH",
-  "description": "Integrated psychiatric care, family medicine, medical weight loss, ketamine therapy, and IV nutrition, offered in person in Hyde Park, Utah and via telehealth throughout Utah and Arizona.",
+  "description": "Integrated psychiatric care, family medicine, medical weight loss, ketamine therapy, and IV nutrition, offered in person in Logan, Utah and via telehealth throughout Utah and Arizona.",
   "url": "https://redmondmmh.com/",
   "telephone": "+1-435-938-1440",
   "email": "PatientSupport@RedmondMMH.com",
@@ -22,10 +22,10 @@
   "image": "https://redmondmmh.com/img/logo.png",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "245 N. 700 W.",
-    "addressLocality": "Hyde Park",
+    "streetAddress": "196 South 100 West",
+    "addressLocality": "Logan",
     "addressRegion": "UT",
-    "postalCode": "84318",
+    "postalCode": "84321",
     "addressCountry": "US"
   },
   "geo": {
@@ -156,7 +156,7 @@
                     <li><strong>Modern Modalities:</strong> Using cutting-edge tools like Ketamine and Semaglutide alongside
                         traditional medicine.</li>
 
-                    <li><strong>Accessibility:</strong> Located in Hyde Park, UT, with a mission to make high-quality care
+                    <li><strong>Accessibility:</strong> Located in Logan, UT, with a mission to make high-quality care
                         affordable.</li>
                 </ul>
             </div>

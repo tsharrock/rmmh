@@ -2,7 +2,7 @@
 
 @section('title', 'Utah Services & Insurance | Redmond MMH')
 @section('description', 'Explore our full range of services in Utah — Psychiatric Care, Ketamine, Family Medicine, Weight Loss, IV Therapy, and Telehealth.')
-@section('keywords', 'Utah Medical Services, Utah Mental Health, Ketamine Therapy Utah, IV Therapy Utah, Utah Insurance Credentials, Hyde Park Clinic')
+@section('keywords', 'Utah Medical Services, Utah Mental Health, Ketamine Therapy Utah, IV Therapy Utah, Utah Insurance Credentials, Logan Clinic')
 
 @section('jsonld')
 <script type="application/ld+json">
@@ -10,16 +10,16 @@
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - Utah Services",
-  "description": "Psychiatric care, ketamine therapy, family medicine, medical weight loss, IV therapy, and telehealth services in Utah, offered in person in Hyde Park and via telehealth statewide.",
+  "description": "Psychiatric care, ketamine therapy, family medicine, medical weight loss, IV therapy, and telehealth services in Utah, offered in person in Logan and via telehealth statewide.",
   "url": "https://redmondmmh.com/services/utah",
   "telephone": "+1-435-938-1440",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "245 N. 700 W.",
-    "addressLocality": "Hyde Park",
+    "streetAddress": "196 South 100 West",
+    "addressLocality": "Logan",
     "addressRegion": "UT",
-    "postalCode": "84318",
+    "postalCode": "84321",
     "addressCountry": "US"
   },
   "areaServed": { "@type": "State", "name": "Utah" },
@@ -55,7 +55,7 @@
                 <div class="breadcrumb">
                     <a href="{{ route('home') }}">Home</a> <span>></span> Utah Services
                 </div>
-                <p>Our Hyde Park clinic offers the full range of Redmond Medical & Mental Health services in person, alongside telehealth visits for patients across the state.</p>
+                <p>Our Logan clinic offers the full range of Redmond Medical & Mental Health services in person, alongside telehealth visits for patients across the state.</p>
 
                 <h2>Accepted Insurance Plans in Utah</h2>
                 <p>We're credentialed with the following insurance plans in Utah. Coverage can vary by plan, so we recommend confirming your telemedicine or in-office benefit before your visit.</p>

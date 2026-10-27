@@ -66,7 +66,7 @@
             "name": "Does anything require an in-person appointment?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Medication management, primary care, and weight-loss care are fully virtual. Only treatments that need a physical exam — Ketamine therapy, IV nutrition — take place at our Hyde Park, UT clinic."
+                "text": "Medication management, primary care, and weight-loss care are fully virtual. Only treatments that need a physical exam — Ketamine therapy, IV nutrition — take place at our Logan, UT clinic."
             }
         }
     ]
@@ -222,7 +222,7 @@
                     Most major Utah insurers are accepted, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our insurance page or call the office to confirm your coverage.</p>
 
                     <p><span class="question">Does anything require an in-person appointment?</span><br />
-                    Medication management, primary care, and weight-loss care are fully virtual. Only treatments that need a physical exam &mdash; Ketamine therapy, IV nutrition &mdash; take place at our Hyde Park, UT clinic.</p>
+                    Medication management, primary care, and weight-loss care are fully virtual. Only treatments that need a physical exam &mdash; Ketamine therapy, IV nutrition &mdash; take place at our Logan, UT clinic.</p>
                 </div>
             </div>
         </div>
