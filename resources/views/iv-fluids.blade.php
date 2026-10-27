@@ -1,8 +1,8 @@
 @extends('layout')
 
 @section('title', 'IV Therapy & Injectables | Redmond MMH')
-@section('description', 'Revitalize your body with custom IV nutrition therapy and injectables in Utah and Arizona. We offer energy infusions, immunity boosts, and recovery drips.')
-@section('keywords', 'IV Therapy Utah, IV Nutrition Arizona, Vitamin Injections, Immunity Boost Drip, Energy Infusion, Hyde Park Clinic')
+@section('description', 'Revitalize your body with custom IV nutrition therapy and injectables in Logan, Utah. We offer energy infusions, immunity boosts, and recovery drips.')
+@section('keywords', 'IV Therapy Utah, Vitamin Injections, Immunity Boost Drip, Energy Infusion, Logan Clinic')
 
 @section('jsonld')
 <script type="application/ld+json">
@@ -10,7 +10,7 @@
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   "name": "Redmond Medical & Mental Health - IV Nutrition Therapy",
-  "description": "Custom IV nutrition therapy and injectables, including energy infusions, immunity boosts, and recovery drips, at our Hyde Park, Utah clinic.",
+  "description": "Custom IV nutrition therapy and injectables, including energy infusions, immunity boosts, and recovery drips, at our Logan, Utah clinic.",
   "url": "https://redmondmmh.com/iv-fluids",
   "provider": {
     "@type": "MedicalBusiness",
@@ -19,16 +19,15 @@
     "telephone": "+1-435-938-1440",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "245 N. 700 W.",
-      "addressLocality": "Hyde Park",
+      "streetAddress": "196 South 100 West",
+      "addressLocality": "Logan",
       "addressRegion": "UT",
-      "postalCode": "84318",
+      "postalCode": "84321",
       "addressCountry": "US"
     }
   },
   "areaServed": [
-    { "@type": "State", "name": "Utah" },
-    { "@type": "State", "name": "Arizona" }
+    { "@type": "State", "name": "Utah" }
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -141,13 +140,13 @@
 
                 <div class="divider-line"></div>
 
-                <h3>Integrated Care in Hyde Park</h3>
+                <h3>Integrated Care in Logan</h3>
                 <p>Because we are a full-service medical and mental health clinic, we can integrate your IV therapy with other treatments, such as Ketamine therapy or Medical Weight Loss, to provide a truly comprehensive path to health.</p>
 
                 <div class="divider-line"></div>
 
                 <h3>Ready to feel your best?</h3>
-                <p>Visit us in Hyde Park or schedule your appointment online.</p>
+                <p>Visit us in Logan or schedule your appointment online.</p>
                 <a class="btn rmmh_button_primary" href="{{ route('book') }}">Schedule and appointment</a> <a class="btn rmmh_button_secondary" href="tel:4359381440">Call/Text (435) 938-1440</a>
             </div>
 

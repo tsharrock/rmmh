@@ -66,7 +66,7 @@
             "name": "Do I ever need to come into an office?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No. Psychiatric, primary care, and weight-loss visits happen entirely by video. Only hands-on services like Ketamine therapy and IV nutrition are done in person at our Hyde Park, UT clinic."
+                "text": "No. Psychiatric, primary care, and weight-loss visits happen entirely by video. Only hands-on services like Ketamine therapy and IV nutrition are done in person at our Logan, UT clinic."
             }
         }
     ]
@@ -222,7 +222,7 @@
                     We're in-network with most major Utah plans, including SelectHealth, Blue Cross Blue Shield of Utah, and PEHP. See our full accepted insurance list or call to confirm your plan.</p>
 
                     <p><span class="question">Do I ever need to come into an office?</span><br />
-                    No. Psychiatric, primary care, and weight-loss visits happen entirely by video. Only hands-on services like Ketamine therapy and IV nutrition are done in person at our Hyde Park, UT clinic.</p>
+                    No. Psychiatric, primary care, and weight-loss visits happen entirely by video. Only hands-on services like Ketamine therapy and IV nutrition are done in person at our Logan, UT clinic.</p>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 
 @section('title', 'Psychiatry & Primary Care | Cache Valley, UT')
 @section('description', 'Serving Logan, Smithfield, Nibley, Hyde Park and all of Cache Valley with comprehensive in-person or telehealth care. From Ketamine to Family Medicine.')
-@section('keywords', 'Logan UT Psychiatry, Cache Valley Primary Care, Mental Health Logan Utah, Hyde Park Clinic, Integrated Care Cache Valley')
+@section('keywords', 'Logan UT Psychiatry, Cache Valley Primary Care, Mental Health Logan Utah, Logan Clinic, Integrated Care Cache Valley')
 
 @section('jsonld')
 <script type="application/ld+json">
@@ -17,10 +17,10 @@
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "245 N. 700 W.",
-    "addressLocality": "Hyde Park",
+    "streetAddress": "196 South 100 West",
+    "addressLocality": "Logan",
     "addressRegion": "UT",
-    "postalCode": "84318",
+    "postalCode": "84321",
     "addressCountry": "US"
   },
   "areaServed": [
@@ -49,7 +49,7 @@
         <div class="container py-lg-5">
             <div class="row">
                 <div class="col">
-                    <h2>Complete Care, Right Here in Hyde Park</h2>
+                    <h2>Complete Care, Right Here in Logan</h2>
                     <p>While we serve all of Utah and Arizona via telehealth, our Cache Valley patients have exclusive access to our full suite of hands-on treatments and clinical therapies.</p>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                 <div class="col-md-6 col-lg-4 mb-2 mt-lg-3 mb-lg-0">
                     <div class="info-card">
                         <h3 class="text-center">Hybrid Telehealth</h3>
-                        <p>Can't make it to Hyde Park? Local patients can still switch between in-person visits and convenient video calls for follow-ups and medication refills.</p>
+                        <p>Can't make it to our Logan office? Local patients can still switch between in-person visits and convenient video calls for follow-ups and medication refills.</p>
                         <p class="mb-0 link"><a class="rmmh_red" href="{{ route('telehealth') }}">How it works</a></p>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                 <div class="row py-5">
                     <h2>Your Neighbors in Health</h2>
                     <p class="">
-                        Redmond Medical & Mental Health is proud to call Cache Valley home. Located conveniently in <strong>Hyde Park</strong>, we are just a short drive for residents of <strong>Logan</strong>, <strong>North Logan</strong>, <strong>Smithfield</strong>, <strong>Nibley</strong>, <strong>Providence</strong>, <strong>Richmond</strong>, and <strong>Wellsville</strong>.
+                        Redmond Medical & Mental Health is proud to call Cache Valley home. Located conveniently in <strong>Logan</strong>, we are just a short drive for residents of <strong>North Logan</strong>, <strong>Hyde Park</strong>, <strong>Smithfield</strong>, <strong>Nibley</strong>, <strong>Providence</strong>, <strong>Richmond</strong>, and <strong>Wellsville</strong>.
                     </p>
                     <p class="">
                         We believe that rural and suburban communities deserve the same high-quality, integrated healthcare found in big cities. By combining psychiatry and primary care under one roof, we save you time and provide a level of coordinated care that is hard to find elsewhere.
@@ -113,12 +113,12 @@
 
                     <div class="col-lg-4 py-5 ">
                         <h4 class="font-bold text-teal-900 mb-2">Clinic Location:</h4>
-                        <p class="text-gray-800">245 N 700 W, Hyde Park, UT 84318</p>
-                        <p class="text-gray-600 text-sm mt-2">(Just off Hwy 91 behind Freckle Farm Nursery and near Castle Manor)</p>
+                        <p class="text-gray-800">196 South 100 West, Logan, UT 84321</p>
+                        <p class="text-gray-600 text-sm mt-2">(Directly across from the Logan High School Aquatic Center. Parking is behind the building; enter through the north doors.)</p>
                     </div>
                     <div class="col-lg-8 py-5">
                         <div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.101530897449!2d-111.83863512326047!3d41.804573171249885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87547db546537017%3A0x4f9d9c9e48698725!2sRedmond%20Medical%20and%20Mental%20Health!5e0!3m2!1sen!2sus!4v1771086788276!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps?q=196+South+100+West+Suite+101+Logan+UT+84321&amp;output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

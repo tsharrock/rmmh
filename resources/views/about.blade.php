@@ -2,7 +2,7 @@
 
 @section('title', 'About Redmond Medical & Mental Health | Utah & Arizona')
 @section('description', 'Meet Tiffany Redmond, PA-C, providing integrated primary care and psychiatric services across UT, AZ, MT, IA, and VA.')
-@section('keywords', 'Tiffany Redmond PA-C, Redmond Medical and Mental Health, Hyde Park Clinic, Cache Valley Healthcare, Integrated Medicine Utah, Arizona Telehealth')
+@section('keywords', 'Tiffany Redmond PA-C, Redmond Medical and Mental Health, Logan Clinic, Cache Valley Healthcare, Integrated Medicine Utah, Arizona Telehealth')
 
 @section('jsonld')
 <script type="application/ld+json">
@@ -20,10 +20,10 @@
     "telephone": "+1-435-938-1440",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "245 N. 700 W.",
-      "addressLocality": "Hyde Park",
+      "streetAddress": "196 South 100 West",
+      "addressLocality": "Logan",
       "addressRegion": "UT",
-      "postalCode": "84318",
+      "postalCode": "84321",
       "addressCountry": "US"
     }
   },
@@ -67,7 +67,7 @@
                     <div class="divider-line"></div>
 
                     <h3>Commitment to Our Community</h3>
-                    <p>Based in Hyde Park, Utah, we are more than just a clinic—we are your neighbors. We are dedicated to expanding access to high-quality healthcare for the residents of Logan and the surrounding areas. We believe that everyone deserves a provider who listens, respects their journey, and uses the best available science to help them feel their best.</p>
+                    <p>Based in Logan, Utah, we are more than just a clinic—we are your neighbors. We are dedicated to expanding access to high-quality healthcare for the residents of Logan and the surrounding areas. We believe that everyone deserves a provider who listens, respects their journey, and uses the best available science to help them feel their best.</p>
                 </div>
             </div>
         </div>
